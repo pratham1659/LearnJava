@@ -12,6 +12,7 @@ public class BinarySearch {
 
         int[] array = new int[size];
 
+
         // Input the sorted array elements
         System.out.println("Enter the sorted array elements in ascending order:");
         for (int i = 0; i < size; i++) {
