@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java01Basic/Fibo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java01Basic/Fibo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java01Basic/Prime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java01Basic/PrimeCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaBasic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Make changes">
+      <change beforePath="$PROJECT_DIR$/src/Java01Basic/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java01Basic/Palindrome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +146,7 @@
       <workItem from="1688409195173" duration="641000" />
       <workItem from="1688409845935" duration="172000" />
       <workItem from="1688410027276" duration="867000" />
-      <workItem from="1688410904765" duration="4049000" />
+      <workItem from="1688410904765" duration="4373000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -163,7 +156,23 @@
       <option name="project" value="LOCAL" />
       <updated>1688408876305</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created a First Program">
+      <option name="closed" value="true" />
+      <created>1688447105862</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688447105862</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Make changes">
+      <option name="closed" value="true" />
+      <created>1688447150093</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688447150093</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +191,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created a First Program" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a First Program" />
+    <MESSAGE value="Make changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make changes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
