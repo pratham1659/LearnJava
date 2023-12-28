@@ -1,4 +1,4 @@
-package Java03String;
+package Java04String;
 import java.util.*;
 
 public class StringBasics {

@@ -1,4 +1,4 @@
-package Java04Search;
+package Java05Search;
 
 import java.util.Scanner;
 
