@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Make changes">
-      <change afterPath="$PROJECT_DIR$/src/Java03Loops/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java03Loops/StarPractice.java" afterDir="false" />
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Loops Practice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java03Loops/StarPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/StarPractice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Practice">
+  <component name="RunManager" selected="Application.StarPractice">
     <configuration name="DoWhileLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java03Loops.DoWhileLoop" />
       <module name="LearnJava" />
@@ -118,8 +117,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WhileLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java03Loops.WhileLoops" />
+    <configuration name="StarPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java03Loops.StarPractice" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
@@ -133,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StarPractice" />
         <item itemvalue="Application.Practice" />
         <item itemvalue="Application.LoopsPractice" />
         <item itemvalue="Application.DoWhileLoop" />
         <item itemvalue="Application.ForLoops" />
-        <item itemvalue="Application.WhileLoops" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +181,7 @@
       <workItem from="1701017253762" duration="983000" />
       <workItem from="1702397416277" duration="6361000" />
       <workItem from="1703489237318" duration="17000" />
-      <workItem from="1703765178101" duration="5004000" />
+      <workItem from="1703765178101" duration="10660000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -264,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703765567466</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Loops Practice">
+      <option name="closed" value="true" />
+      <created>1703774697345</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703774697345</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +292,24 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="created a First Program" />
     <MESSAGE value="Make changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make changes" />
+    <MESSAGE value="Loops Practice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loops Practice" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Java03Loops/StarPractice.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Java03Loops/StarPractice.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
