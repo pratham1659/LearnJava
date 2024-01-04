@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Loops Practice part 1">
-      <change afterPath="$PROJECT_DIR$/src/Java03Loops/patterns/NumericalPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java03Loops/patterns/StarPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java03Loops/patterns/patternPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java05Array/ArrayPrac2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java05Array/ArrayPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java05Array/SolveArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java06String/StringBasics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java06String/StringPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java06String/stringSubString.java" afterDir="false" />
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Arrays Practice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java04Array/ArrayInJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/ArrayInJava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java04String/StringBasics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java05Array/ArrayPrac2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/ArrayPrac2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java05Array/SolveArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/SolveArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +68,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ArrayPrac2">
+  <component name="RunManager" selected="Application.SolveArray">
     <configuration name="ArrayInJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java05Array.ArrayInJava" />
       <module name="LearnJava" />
@@ -130,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="patternPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java03Loops.patterns.patternPractice" />
+    <configuration name="SolveArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java05Array.SolveArray" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java03Loops.patterns.*" />
+          <option name="PATTERN" value="Java05Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SolveArray" />
         <item itemvalue="Application.ArrayPrac2" />
         <item itemvalue="Application.ArrayPractice" />
         <item itemvalue="Application.ArrayInJava" />
         <item itemvalue="Application.NumericalPattern" />
-        <item itemvalue="Application.patternPractice" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +188,7 @@
       <workItem from="1703765178101" duration="16620000" />
       <workItem from="1704209593882" duration="667000" />
       <workItem from="1704210271129" duration="8703000" />
-      <workItem from="1704359658148" duration="20097000" />
+      <workItem from="1704359658148" duration="22393000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -295,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703783520540</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Arrays Practice">
+      <option name="closed" value="true" />
+      <created>1704398397038</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704398397038</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +317,8 @@
     <MESSAGE value="Make changes" />
     <MESSAGE value="Loops Practice" />
     <MESSAGE value="Loops Practice part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loops Practice part 1" />
+    <MESSAGE value="Arrays Practice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrays Practice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

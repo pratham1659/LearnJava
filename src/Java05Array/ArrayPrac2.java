@@ -5,16 +5,16 @@ import java.util.Scanner;
 
 public class ArrayPrac2 {
 
-   static void printArray(int[] arr){
-        for(int i: arr){
+    static void printArray(int[] arr) {
+        for (int i : arr) {
             System.out.print(i + " ");
         }
     }
 
-//    Count the number of occurrences of a particular element x.
-    static int countNum(int[] arr, int x){
+    //    Count the number of occurrences of a particular element x.
+    static int countNum(int[] arr, int x) {
         int count = 0;
-        for (int i=0; i<arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] == x) {
                 count++;
             }
@@ -22,22 +22,22 @@ public class ArrayPrac2 {
         return count;
     }
 
-//    Find the last occurrence of an element x in a given array.
-    static int lastOccurrence(int[] arr, int x){
+    //    Find the last occurrence of an element x in a given array.
+    static int lastOccurrence(int[] arr, int x) {
         int lastIndex = -1;
-        for (int i=0; i<arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] == x) {
                 lastIndex = i;
             }
         }
         return lastIndex;
-}
+    }
 
-//    Count the number of elements strictly greater than value x.
-    static int maxNum(int[] arr, int x){
+    //    Count the number of elements strictly greater than value x.
+    static int maxNum(int[] arr, int x) {
         int max = 0;
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]>x){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > x) {
                 max++;
             }
         }
@@ -45,11 +45,11 @@ public class ArrayPrac2 {
         return max;
     }
 
-//    Check if the given array is sorted or not.
-    static boolean sortedArray(int[] arr){
+    //    Check if the given array is sorted or not.
+    static boolean sortedArray(int[] arr) {
         boolean check = true;
-        for(int i=1; i<arr.length; i++){
-            if(arr[i] < arr[i-1]){
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < arr[i - 1]) {
                 check = false;
                 break;
             }
@@ -58,22 +58,23 @@ public class ArrayPrac2 {
     }
 
     //Find smallestAndLargestElement in Array
-    static int[] smallestAndLargest(int[] arr){
+    static int[] smallestAndLargest(int[] arr) {
 
         Arrays.sort(arr);
-        int[] ans = {arr[0], arr[arr.length-1]};
+        int[] ans = {arr[0], arr[arr.length - 1]};
         return ans;
     }
 
-    static int[] KthSmallestAndLargest(int[] arr,int k){
-       Arrays.sort(arr);
-       int smallest = arr[k-1];
-       int largest = arr[arr.length-k];
+    static int[] KthSmallestAndLargest(int[] arr, int k) {
+        Arrays.sort(arr);
+        int smallest = arr[k - 1];
+        int largest = arr[arr.length - k];
 
-       int[] ans = {smallest, largest};
+        int[] ans = {smallest, largest};
 
-       return  ans;
+        return ans;
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -81,7 +82,7 @@ public class ArrayPrac2 {
         int n = sc.nextInt();
         System.out.println("Enter Elements: ");
         int[] arr = new int[n];
-        for(int i=0; i<arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
 
