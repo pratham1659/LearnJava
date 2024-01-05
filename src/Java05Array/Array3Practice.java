@@ -3,7 +3,7 @@ package Java05Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayPractice {
+public class Array3Practice {
 
     static void printArray(int[] arr){
         for(int i : arr){
@@ -99,7 +99,7 @@ public class ArrayPractice {
 
     public static void main(String[] args) {
 
-        ArrayPractice obj = new ArrayPractice();
+        Array3Practice obj = new Array3Practice();
 
 
         obj.inputArray();

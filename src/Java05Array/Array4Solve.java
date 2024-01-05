@@ -2,7 +2,7 @@ package Java05Array;
 
 import java.util.Scanner;
 
-public class SolveArray {
+public class Array4Solve {
 //    Find the total number of pairs in the Array whose sum is equal to the given value x
     static int pairSum(int[] arr, int x){
         int n = arr.length;
@@ -60,6 +60,42 @@ public class SolveArray {
 
         return ans;
     }
+
+    static int findMax(int[] arr){
+        int max = Integer.MIN_VALUE;
+        for(int i=0; i<arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    static int secondMax(int[] arr){
+        int max = findMax(arr);
+        for(int i=0; i<arr.length; i++){
+            if(arr[i] == max){
+                arr[i] = Integer.MIN_VALUE;
+            }
+        }
+        int ans = findMax(arr);
+        return ans;
+    }
+
+//    Given an array 'a' consisting of integers. Return the first value that is repeating in this array. If
+//    no value is being repeated, return -1.
+
+    static int findFirstRepeat(int[] arr){
+        int ans = 0;
+        for(int i=0; i<arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    return arr[i];
+                }
+            }
+        }
+        return -1;
+    }
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -76,8 +112,10 @@ public class SolveArray {
 //        int x = sc.nextInt();
 
 //        System.out.println(pairSum(arr, x));
-
 //        System.out.println(findTripletSum(arr, x));
-        System.out.println(uniqueNum(arr));
+//        System.out.println(uniqueNum(arr));
+//        System.out.println(findMax(arr));
+//        System.out.println("Second Max in Array: " + secondMax(arr));
+        System.out.println("Find First Repeat: " + findFirstRepeat(arr));
     }
 }
