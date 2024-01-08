@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Arrays Practice">
-      <change afterPath="$PROJECT_DIR$/src/Java05Array/Array5Misc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java02Conditional/JavaOperands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java05Array/MiniMalCost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java06Collections/ArrayList/Java01ArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/ArrayInJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array1InJava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/ArrayPrac2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array2Practice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/ArrayPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array3Practice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/SolveArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array4Solve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java02Conditional/JavaIfElse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java02Conditional/JavaIfElse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array5Misc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array5Misc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java06Collections/ArrayList.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,9 +72,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Array4Solve">
-    <configuration name="Array1InJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java05Array.Array1InJava" />
+  <component name="RunManager" selected="Application.JavaOperands">
+    <configuration name="Array5Misc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java05Array.Array5Misc" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
@@ -85,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Array2Practice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java05Array.Array2Practice" />
+    <configuration name="Java01ArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java06Collections.ArrayList.Java01ArrayList" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java05Array.*" />
+          <option name="PATTERN" value="Java06Collections.ArrayList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Array3Practice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java05Array.Array3Practice" />
+    <configuration name="JavaIfElse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java02Conditional.JavaIfElse" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java05Array.*" />
+          <option name="PATTERN" value="Java02Conditional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Array4Solve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java05Array.Array4Solve" />
+    <configuration name="JavaOperands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java02Conditional.JavaOperands" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java05Array.*" />
+          <option name="PATTERN" value="Java02Conditional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumericalPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java03Loops.patterns.NumericalPattern" />
+    <configuration name="MiniMalCost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java05Array.MiniMalCost" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java03Loops.patterns.*" />
+          <option name="PATTERN" value="Java05Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Array4Solve" />
-        <item itemvalue="Application.Array2Practice" />
-        <item itemvalue="Application.Array3Practice" />
-        <item itemvalue="Application.Array1InJava" />
-        <item itemvalue="Application.NumericalPattern" />
+        <item itemvalue="Application.JavaOperands" />
+        <item itemvalue="Application.JavaIfElse" />
+        <item itemvalue="Application.Java01ArrayList" />
+        <item itemvalue="Application.MiniMalCost" />
+        <item itemvalue="Application.Array5Misc" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +192,7 @@
       <workItem from="1703765178101" duration="16620000" />
       <workItem from="1704209593882" duration="667000" />
       <workItem from="1704210271129" duration="8703000" />
-      <workItem from="1704359658148" duration="30300000" />
+      <workItem from="1704359658148" duration="53765000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -305,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704405341225</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Arrays Practice">
+      <option name="closed" value="true" />
+      <created>1704484137522</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1704484137522</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
