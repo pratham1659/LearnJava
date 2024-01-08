@@ -2,7 +2,7 @@ package Java02Conditional;
 
 import java.util.Scanner;
 
-public class JavaIfElse {
+public class Java1IfElse {
 
 //    Find EvenOdd
     static void evenOdd(int num){
@@ -109,18 +109,19 @@ public class JavaIfElse {
            System.out.println("Invalid Input");
        }
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter Number Here: ");
-        int num1 = sc.nextInt();
-//        int num2 = sc.nextInt();
-//        evenOdd(num);
-//        divideBy5(num);
-//        leapYear(num);
-//        absoluteInt(num1);
-//        profitLoss(num1, num2);
-//        maxRectangle(num1, num2);
-        marks(num1);
+        int A = sc.nextInt();
+//        int B = sc.nextInt();
+//        evenOdd(A);
+//        divideBy5(A);
+//        leapYear(A);
+//        absoluteInt(A);
+//        profitLoss(A, B);
+//        maxRectangle(A, B);
+        marks(A);
     }
 }

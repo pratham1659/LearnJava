@@ -2,7 +2,7 @@ package Java02Conditional;
 
 import java.util.Scanner;
 
-public class JavaOperands {
+public class Java2Operands {
 
 //    Ques: Take positive integer input and tell if it
 //    is a three-digit number or not.
@@ -61,23 +61,42 @@ public class JavaOperands {
         }else {
             System.out.println("Invalid Triangle");
         }
+    }
 
+//    Ques: Take positive integer input and tell if it
+//    is divisible by 5 or 3 but not divisible by 15.
+    static void divisible3or5not15(int num){
+//        if(num % 3 ==0 || num % 5 == 0) {
+//            if(num % 15 == 0){
+//                System.out.println("Not Divisible");
+//            }else {
+//                System.out.println(num + " is Divisible by 3 or 5");
+//            }
+//        }else{
+//            System.out.println("Not Divisible");
+//        }
+        if(((num % 3) == 0 || (num %  5) == 0) && (num % 15 != 0)){
+            System.out.println(num + " is Divisible by 3 or 5 but not 15");
+        }else{
+            System.out.println("Not Divisible");
+        }
     }
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Number Here");
-//        int num = sc.nextInt();
         int A = sc.nextInt();
-        int B = sc.nextInt();
-        int C = sc.nextInt();
+//        int B = sc.nextInt();
+//        int C = sc.nextInt();
 
-//        ThreeDigit(num);
-//        divideBy5and3(num);
+//        ThreeDigit(A);
+//        divideBy5and3(A);
 //        GreatestNum(A, B, C);
 //        YoungAge(A, B, C);
 
-        checkTriangle(A, B, C);
+//        checkTriangle(A, B, C);
+
+        divisible3or5not15(A);
 
     }
 }
