@@ -1,4 +1,4 @@
-package Java06String;
+package Java07String;
 
 import java.util.Scanner;
 

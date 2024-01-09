@@ -1,4 +1,4 @@
-package Java05Array;
+package Java04Array;
 
 public class MiniMalCost {
     public static long solve(int N, int M, int K) {

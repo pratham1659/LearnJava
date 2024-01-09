@@ -1,6 +1,4 @@
-package Java07HashMap;
-
-import java.util.HashMap;
+package Java10HashMap;
 
 public class JavaHashMap {
     public static void main(String[] args) {

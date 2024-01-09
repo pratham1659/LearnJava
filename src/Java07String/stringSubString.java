@@ -1,4 +1,4 @@
-package Java06String;
+package Java07String;
 
 public class stringSubString {
     public static void main(String[] args) {

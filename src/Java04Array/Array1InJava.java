@@ -1,4 +1,4 @@
-package Java05Array;
+package Java04Array;
 
 public class Array1InJava {
 
