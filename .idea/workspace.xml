@@ -4,30 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Basic Java Practice">
-      <change afterPath="$PROJECT_DIR$/src/Java06Maths/JavaMaths.java" afterDir="false" />
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Add JavaMaths">
+      <change afterPath="$PROJECT_DIR$/src/Java01Basic/BasicProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java04Array/Practice/JavaPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java06Maths/TimeAndSpace/TimeComplex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java01Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java02Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java03Modifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/OutsidePackage/JavaOutSide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice/ArrayBitwiseOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice/IBM/MissingElementFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice/IBM/StringCompressor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice/IBM/UserAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice/IBM/UserLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice/Infosys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice/SubstringLength.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java04Maths/JavaMaths.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array1InJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java04Array/Array1InJava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array2Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java04Array/Array2Practice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array3Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java04Array/Array3Practice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array4Solve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java04Array/Array4Solve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array5Misc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java04Array/Array5Misc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/MiniMalCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java04Array/MiniMalCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java06Collections/ArrayList/Java01ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java09Collections/ArrayList/Java01ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java06String/StringBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07String/StringBasics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java06String/StringPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07String/StringPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java06String/stringSubString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07String/stringSubString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java07HashMap/JavaHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java10HashMap/JavaHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/.cph/.GoodCharacter.java_2e4288360fedcf928bc3bab3856c0483.prob" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/.cph/.JavaPractice.java_f1eaab8c1eca23d5dbf08b2ffc032065.prob" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/.cph/.Practice.java_d2dbeda701c037c339fd413266b5c162.prob" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/GoodCharacter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/JavaPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice/JavaPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/Practice/GoodCharacter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/Practice/JavaPractice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/Practice/Practice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/Solve.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java01Basic/Fact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java01Basic/Prime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java01Basic/PrimeCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java08Oops/Java1Class.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice/JavaPractice.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,32 +66,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.JavaMaths">
-    <configuration name="Java1IfElse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java02Conditional.Java1IfElse" />
+}</component>
+  <component name="RunManager" selected="Application.BasicProgram">
+    <configuration name="BasicProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java01Basic.BasicProgram" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java02Conditional.*" />
+          <option name="PATTERN" value="Java01Basic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java2Operands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java02Conditional.Java2Operands" />
+    <configuration name="Infosys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice.Infosys" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java02Conditional.*" />
+          <option name="PATTERN" value="Practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java3Maths" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java02Conditional.Java3Maths" />
+    <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice.Tester" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java02Conditional.*" />
+          <option name="PATTERN" value="Practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java4Switch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java02Conditional.Java4Switch" />
+    <configuration name="UserAuthentication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice.IBM.UserAuthentication" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java02Conditional.*" />
+          <option name="PATTERN" value="Practice.IBM.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaMaths" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java06Maths.JavaMaths" />
+    <configuration name="UserLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice.IBM.UserLogin" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java06Maths.*" />
+          <option name="PATTERN" value="Practice.IBM.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JavaMaths" />
-        <item itemvalue="Application.Java4Switch" />
-        <item itemvalue="Application.Java3Maths" />
-        <item itemvalue="Application.Java2Operands" />
-        <item itemvalue="Application.Java1IfElse" />
+        <item itemvalue="Application.BasicProgram" />
+        <item itemvalue="Application.Infosys" />
+        <item itemvalue="Application.Tester" />
+        <item itemvalue="Application.UserAuthentication" />
+        <item itemvalue="Application.UserLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +205,11 @@
       <workItem from="1703765178101" duration="16620000" />
       <workItem from="1704209593882" duration="667000" />
       <workItem from="1704210271129" duration="8703000" />
-      <workItem from="1704359658148" duration="66203000" />
+      <workItem from="1704359658148" duration="84307000" />
+      <workItem from="1705228701464" duration="3248000" />
+      <workItem from="1705776472624" duration="2824000" />
+      <workItem from="1705830675324" duration="3890000" />
+      <workItem from="1706002294271" duration="5739000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -354,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704745357286</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add JavaMaths">
+      <option name="closed" value="true" />
+      <created>1704831570115</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1704831570115</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +388,8 @@
     <MESSAGE value="Loops Practice part 1" />
     <MESSAGE value="Arrays Practice" />
     <MESSAGE value="Basic Java Practice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic Java Practice" />
+    <MESSAGE value="Add JavaMaths" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add JavaMaths" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -393,6 +403,11 @@
           <url>file://$PROJECT_DIR$/src/Java03Loops/StarPractice.java</url>
           <line>75</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Practice/IBM/MissingElementFinder.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
