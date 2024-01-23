@@ -85,8 +85,8 @@ public class BasicProgram {
 //        }
 
         int i = 2;
-        while (i < num){
-            if(num % 2 == 0){
+        while (i < num) {
+            if (num % 2 == 0) {
                 return false;
             }
             i++;
@@ -94,9 +94,39 @@ public class BasicProgram {
         return true;
     }
 
-//  Create a program to reverse the digits of a number.
-    public static void reverseDigit(){
+    //  Create a program to reverse the digits of a number.
+    public static void reverseDigit(int num) {
+        int newNum = 0;
+        while (num > 0) {
+            int digit = num % 10;
+            newNum = newNum * 10 + digit;
+            num = num / 10;
+        }
+        System.out.println(newNum);
+    }
 
+    //    Create a program to print the Fibonacci series up to a certain number.
+    public static void fibonacci(int num) {
+        int firstTerm = 0, secondTerm = 1;
+
+        if(num <=0 ){
+            System.out.println("Please enter a positive integer greater than 0.");
+        }
+        else if (num == 1) {
+            System.out.print(firstTerm);
+        } else if (num == 2) {
+            System.out.print(firstTerm + " " + secondTerm);
+        } else {
+            System.out.print(firstTerm + " " + secondTerm + " ");
+
+            for (int i = 2; i < num; i++) {
+                int nextTerm = firstTerm + secondTerm;
+                System.out.print(nextTerm + " ");
+
+                firstTerm = secondTerm;
+                secondTerm = nextTerm;
+            }
+        }
     }
     public static void main(String[] args) {
 
@@ -108,7 +138,11 @@ public class BasicProgram {
 //        System.out.println(lcmDigit(4, 6));
 //        System.out.println(gcdDigit(4, 6));
 
-        System.out.println(checkPrime(19));
+//        System.out.println(checkPrime(19));
+
+//        reverseDigit(2050);
+
+        fibonacci(4);
 
     }
 
