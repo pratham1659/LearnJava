@@ -1,1 +1,0 @@
-{"name":"Local: hello","url":"/Users/prathamkumar/IdeaProjects/LearnJava/src/hello.py","tests":[{"id":1703490798797,"input":"3\ndba","output":"b\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/prathamkumar/IdeaProjects/LearnJava/src/hello.py","group":"local","local":true}
