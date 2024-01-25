@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Basic Programs">
-      <change afterPath="$PROJECT_DIR$/src/Java04Array/AdvanceArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice/IBM/CircleRelations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice/IBM/Shopkeeper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.cph/.hello.py_81c0a3c859b230276eb5ab03567a29bd.prob" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java01Basic/AdvanceProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java01Basic/AdvanceProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java04Array/AdvanceArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java04Array/AdvanceArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +67,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CircleRelations">
+  <component name="RunManager" selected="Application.AdvanceArray">
     <configuration name="AdvanceArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java04Array.AdvanceArray" />
       <module name="LearnJava" />
@@ -139,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AdvanceArray" />
         <item itemvalue="Application.CircleRelations" />
         <item itemvalue="Application.Shopkeeper" />
         <item itemvalue="Application.CircleRelation" />
         <item itemvalue="Application.CircleRelationship" />
-        <item itemvalue="Application.AdvanceArray" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +191,8 @@
       <workItem from="1705228701464" duration="3248000" />
       <workItem from="1705776472624" duration="2824000" />
       <workItem from="1705830675324" duration="3890000" />
-      <workItem from="1706002294271" duration="23003000" />
+      <workItem from="1706002294271" duration="25254000" />
+      <workItem from="1706122117108" duration="10111000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -365,7 +362,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706038885282</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Basic Programs">
+      <option name="closed" value="true" />
+      <created>1706120471682</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1706120471682</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
