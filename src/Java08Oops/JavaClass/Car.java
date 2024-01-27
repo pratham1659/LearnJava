@@ -2,26 +2,57 @@ package Java08Oops.JavaClass;
 
 public class Car {
 
+    static int noOfCarsAvail = 0;
     int noOfWheels;
     String color;
     float maxSpeed;
     float currentFuelInLiters;
     int noOfSeats;
 
-    public void drive(){
-        System.out.println("Car is Drive");
-        currentFuelInLiters --;
+    static{
+        noOfCarsAvail = 0;
+        System.out.println("Blocks with static run once when the class is Loaded");
+    }{
+        noOfCarsAvail++;
+        System.out.println("Code blocks f} determine the scope of variables");
     }
 
-    public void addFuel(float fuel){
-        currentFuelInLiters +=  fuel;
+    Car(String color, int noOfSeats) {       // Default Constructor
+        noOfWheels = 4;
+        this.color = color;             //Parametrized Constructor
+        maxSpeed = 120;
+        currentFuelInLiters = 2;
+        this.noOfSeats = noOfSeats;
     }
 
-    public float getCurrentFuelLevel(){
+    Car() {       // Default Constructor
+        this("Black", 7);
+        currentFuelInLiters = 5;
+    }
+
+
+    public Car start() {
+        if (currentFuelInLiters <= 0) {
+            System.out.println("Car is Out of Fuel, cannot Start");
+        } else if (currentFuelInLiters < 5) {
+            System.out.println("Car is in Reserved Mode, Please Refuel!");
+        } else {
+            System.out.println("Car is Started.... Bruhhh");
+        }
+        return this;
+    }
+
+    public void drive() {
+        currentFuelInLiters--;
+        System.out.println("Car is Driving");
+
+    }
+
+    public void addFuel(float currentFuelInLiters) {
+        this.currentFuelInLiters += currentFuelInLiters;
+    }
+
+    public float getCurrentFuelLevel() {
         return currentFuelInLiters;
-    }
-
-    public static void main(String[] args) {
-        Car car = new Car();
     }
 }

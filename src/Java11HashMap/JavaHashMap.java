@@ -1,4 +1,4 @@
-package Java10HashMap;
+package Java11HashMap;
 
 public class JavaHashMap {
     public static void main(String[] args) {
