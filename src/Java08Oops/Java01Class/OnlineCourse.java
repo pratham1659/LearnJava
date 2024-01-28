@@ -1,4 +1,4 @@
-package Java08Oops.JavaClass;
+package Java08Oops.Java01Class;
 
 
 class OnlineCourse {
