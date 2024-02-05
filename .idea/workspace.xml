@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Oops Concepts">
-      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java03Encapsulation/getterSetter/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java03Encapsulation/publicClass/JavaPublicClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java03Encapsulation/publicClass/getterSetterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java03Encapsulation/questions/Banks/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java03Encapsulation/questions/Banks/testAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java03Encapsulation/questions/Employee/JavaEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java03Encapsulation/questions/Geometry/Circles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java03Encapsulation/questions/Geometry/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java03Encapsulation/questions/Utills/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java04Inheritance/ArrayOperationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java04Inheritance/PersonTest/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java04Inheritance/PersonTest/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java04Inheritance/VehicleTest/TestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java04Inheritance/VehicleTest/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java04Inheritance/libraryItems/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java04Inheritance/libraryItems/DVD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java04Inheritance/libraryItems/LibraryExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java04Inheritance/libraryItems/LibraryItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java04Inheritance/libraryItems/Magazine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java05EqualHashNode/JavaEqualHash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java08Oops/Java05EqualHashNode/JavaTestEqual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java12Sortings/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java12Sortings/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java12Sortings/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java12Sortings/SortPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice/Mitsogo/MinDistanceToFriends.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice/Mitsogo/MinOperationsToPalindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java01Basic/AdvanceProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java01Basic/AdvanceProgram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +85,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.JavaEmployee">
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08Oops.Java03Encapsulation.questions.Utills.Calculator" />
+  <component name="RunManager" selected="Application.SortPractice">
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java12Sortings.InsertionSort" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java08Oops.Java03Encapsulation.questions.Utills.*" />
+          <option name="PATTERN" value="Java12Sortings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaEmployee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08Oops.Java03Encapsulation.questions.Employee.JavaEmployee" />
+    <configuration name="MinDistanceToFriends" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice.Mitsogo.MinDistanceToFriends" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java08Oops.Java03Encapsulation.questions.Employee.*" />
+          <option name="PATTERN" value="Practice.Mitsogo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringBuildPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java07String.StringBuildPractice" />
+    <configuration name="MinOperationsToPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice.Mitsogo.MinOperationsToPalindrome" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java07String.*" />
+          <option name="PATTERN" value="Practice.Mitsogo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="getterSetterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08Oops.Java03Encapsulation.publicClass.getterSetterTest" />
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java12Sortings.SelectionSort" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java08Oops.Java03Encapsulation.publicClass.*" />
+          <option name="PATTERN" value="Java12Sortings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testAccount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08Oops.Java03Encapsulation.questions.Banks.testAccount" />
+    <configuration name="SortPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java12Sortings.SortPractice" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java08Oops.Java03Encapsulation.questions.Banks.*" />
+          <option name="PATTERN" value="Java12Sortings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JavaEmployee" />
-        <item itemvalue="Application.testAccount" />
-        <item itemvalue="Application.Calculator" />
-        <item itemvalue="Application.getterSetterTest" />
-        <item itemvalue="Application.StringBuildPractice" />
+        <item itemvalue="Application.SortPractice" />
+        <item itemvalue="Application.InsertionSort" />
+        <item itemvalue="Application.MinOperationsToPalindrome" />
+        <item itemvalue="Application.MinDistanceToFriends" />
+        <item itemvalue="Application.SelectionSort" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +212,12 @@
       <workItem from="1706002294271" duration="25254000" />
       <workItem from="1706122117108" duration="53980000" />
       <workItem from="1706473901038" duration="596000" />
-      <workItem from="1706694608175" duration="5641000" />
+      <workItem from="1706694608175" duration="5674000" />
+      <workItem from="1706733326412" duration="13571000" />
+      <workItem from="1706853278816" duration="2121000" />
+      <workItem from="1706947815338" duration="3160000" />
+      <workItem from="1706955473144" duration="98000" />
+      <workItem from="1707138392328" duration="2799000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -412,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706447818873</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Oops Concepts">
+      <option name="closed" value="true" />
+      <created>1706733316687</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1706733316687</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

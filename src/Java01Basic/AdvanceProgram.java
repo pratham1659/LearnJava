@@ -108,7 +108,7 @@ public class AdvanceProgram {
 //        starRightTriangle(6);
 
 //        reverseRightTriangle(6);
-        printLeftHalfPyramid(6);
+//        printLeftHalfPyramid(6);
 
     }
 }
