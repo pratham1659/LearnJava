@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="DSA questions">
-      <change afterPath="$PROJECT_DIR$/src/Java09Recursion/recursionPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java12Sortings/AdvanceSort/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java13Searching/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice/CheckPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice/LargestPerimeterPolygon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice/Infosys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice/Mitsogo/MinDistanceToFriends.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice/Mitsogo/MinOperationsToPalindrome.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BinarySearch">
+  <component name="RunManager" selected="Application.CheckPalindrome">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java13Searching.BinarySearch" />
       <module name="LearnJava" />
@@ -83,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java12Sortings.InsertionSort" />
+    <configuration name="CheckPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice.CheckPalindrome" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java12Sortings.*" />
+          <option name="PATTERN" value="Practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinDistanceToFriends" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice.Mitsogo.MinDistanceToFriends" />
+    <configuration name="ForLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java03Loops.ForLoops" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice.Mitsogo.*" />
+          <option name="PATTERN" value="Java03Loops.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinOperationsToPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice.Mitsogo.MinOperationsToPalindrome" />
+    <configuration name="LargestPerimeterPolygon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice.LargestPerimeterPolygon" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice.Mitsogo.*" />
+          <option name="PATTERN" value="Practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CheckPalindrome" />
+        <item itemvalue="Application.LargestPerimeterPolygon" />
+        <item itemvalue="Application.ForLoops" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.SortPractice" />
-        <item itemvalue="Application.InsertionSort" />
-        <item itemvalue="Application.MinOperationsToPalindrome" />
-        <item itemvalue="Application.MinDistanceToFriends" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +204,11 @@
       <workItem from="1706947815338" duration="3160000" />
       <workItem from="1706955473144" duration="98000" />
       <workItem from="1707138392328" duration="4170000" />
-      <workItem from="1707241548560" duration="9900000" />
+      <workItem from="1707241548560" duration="11111000" />
+      <workItem from="1707388985002" duration="1511000" />
+      <workItem from="1707986518771" duration="1505000" />
+      <workItem from="1708000909441" duration="1289000" />
+      <workItem from="1708453321516" duration="399000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -428,7 +434,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707155904201</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="DSA questions">
+      <option name="closed" value="true" />
+      <created>1707306888319</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1707306888319</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
