@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="DSA questions">
-      <change afterPath="$PROJECT_DIR$/src/Practice/CheckPalindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice/LargestPerimeterPolygon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/Infosys.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/Mitsogo/MinDistanceToFriends.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/Mitsogo/MinOperationsToPalindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java10Collections/ArrayList/Java01ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java10Collections/ArrayList/Java01ArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,24 +63,11 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CheckPalindrome">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java13Searching.BinarySearch" />
-      <module name="LearnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java13Searching.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Java01ArrayList">
     <configuration name="CheckPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Practice.CheckPalindrome" />
       <module name="LearnJava" />
@@ -111,6 +94,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Java01ArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java10Collections.ArrayList.Java01ArrayList" />
+      <module name="LearnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java10Collections.ArrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LargestPerimeterPolygon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Practice.LargestPerimeterPolygon" />
       <module name="LearnJava" />
@@ -124,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java12Sortings.SortPractice" />
+    <configuration name="PrintArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java10Collections.ArrayList.PrintArrayList" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java12Sortings.*" />
+          <option name="PATTERN" value="Java10Collections.ArrayList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Java01ArrayList" />
+        <item itemvalue="Application.PrintArrayList" />
         <item itemvalue="Application.CheckPalindrome" />
         <item itemvalue="Application.LargestPerimeterPolygon" />
         <item itemvalue="Application.ForLoops" />
-        <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.SortPractice" />
       </list>
     </recent_temporary>
   </component>
@@ -209,6 +205,12 @@
       <workItem from="1707986518771" duration="1505000" />
       <workItem from="1708000909441" duration="1289000" />
       <workItem from="1708453321516" duration="399000" />
+      <workItem from="1708464236559" duration="1218000" />
+      <workItem from="1709716758985" duration="7000" />
+      <workItem from="1710193113108" duration="9202000" />
+      <workItem from="1710271204761" duration="419000" />
+      <workItem from="1711020290477" duration="36000" />
+      <workItem from="1711574359280" duration="143000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -442,7 +444,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707306888319</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="DSA questions">
+      <option name="closed" value="true" />
+      <created>1708464251641</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1708464251641</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

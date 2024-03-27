@@ -1,114 +1,50 @@
 package Java10Collections.ArrayList;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class Java01ArrayList {
+    public static void reverseArraylist(ArrayList<Integer> itr) {
 
+        System.out.println("reverseArraytClass: ");
+        int i = 0, j = itr.size() - 1;
 
-    static void reverseList(ArrayList<Integer> list){
-
-        int i = 0, j = list.size() - 1;
-        System.out.println("Original List: " + list);
-        while(i<j){
-            /*
-            int temp = a;
-            a = b;
-            b = temp;
-             */
-            Integer temp = list.get(i);
-            list.set(i,list.get(j));
-            list.set(j,temp);
+        while (i < j) {
+            Integer temp = itr.get(i);
+            itr.set(i, itr.get(j));
+            itr.set(j, temp);
             i++;
             j--;
         }
-        System.out.println("Reverse List" + list);
+
+        System.out.println(itr);
+
     }
 
-    public static void main(String[] args) {
+    public static void setArrayList() {
+        System.out.println("SetArrayListClass: ");
+        ArrayList<Integer> list = new ArrayList<>();
 
-        //Wrapper Classes in Arraylist
-//        Integer i = Integer.valueOf(4);
-//        System.out.println(i);
-//
-//        Float f = Float.valueOf(4.5f);
-//        System.out.println(f);
+        for (int i = 0; i < 10; i++) {
+            if (i % 2 == 0) {
+                list.add(i);
+            }
+        }
 
+        list.set(0, 2);
+        list.set(2, 10);
+        list.set(4, 24);
 
-        ArrayList<Integer> arr = new ArrayList<>();
-        ArrayList<Boolean> bool = new ArrayList<>();
-        ArrayList<Float> flot = new ArrayList<>();
-
-        arr.add(5);
-        arr.add(6);
-        arr.add(7);
-        arr.add(8);
-        arr.add(9);
-
-
-        //get an element at index
-        System.out.println(arr.get(2));
-
-        for (int i = 0; i < arr.size(); i++) {
-            System.out.print(arr.get(i) + " ");
+        for (int i : list) {
+            System.out.print(i + " ");
         }
         System.out.println();
 
-        //printing the array list directly
-        System.out.println(arr);
+    }
 
-        //adding element at some index i
-        arr.add(0, 100);
-        System.out.println(arr);
-
-
-        //modifying element at index i
-        arr.set(0, 110);
-        System.out.println(arr);
-
-
-        //removing an element at index i
-        arr.remove(0);
-        System.out.println(arr);
-
-        //removing an element X
-        arr.remove(Integer.valueOf(9));
-        System.out.println(arr);
-
-
-//        if element not present in array
-        System.out.println(arr.remove(Integer.valueOf(18)));
-
-        //checking if an element exists
-        System.out.println(arr.contains(12));
-
-        ArrayList<Object> any = new ArrayList<>();
-
-        any.add(23);
-        any.add("Pratham");
-
-        System.out.println(any);
-
-        ArrayList<Integer> listArr = new ArrayList<>();
-
-        listArr.add(23);
-        listArr.add(34);
-        listArr.add(45);
-        listArr.add(56);
-        listArr.add(67);
-        listArr.add(78);
-
-        //Reverse an ArrayList
-        System.out.println("Reverse Using Collection InBuilt: ");
-        Collections.reverse(listArr);
-        System.out.println(listArr);
-//        reverseList(listArr)
-
-
-        Collections.sort(listArr);
-        System.out.println("Sorted Array: ");
-        System.out.println(listArr);
-
+    public static void sortingArray() {
+        System.out.println("SortingArrayClass: ");
 
         ArrayList<String> str = new ArrayList<>();
 
@@ -117,17 +53,121 @@ public class Java01ArrayList {
         str.add("Isha");
         str.add("Mom");
 
-        System.out.println("Origin String : ");
-        System.out.println(str);
-        Collections.reverse(str);
-        System.out.println(str);
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(21);
+        list.add(11);
+        list.add(51);
+        list.add(1);
 
-//        Collections.sort(listArr, Collections.reverseOrder());
-        listArr.sort(Collections.reverseOrder());
+        Collections.sort(list);
+        System.out.println("Sorted Array: " + list);
+
+        Collections.reverse(list);
+        System.out.println("Reverse Array: " + list);
+
+        Collections.sort(list, Collections.reverseOrder());
+        list.sort(Collections.reverseOrder());
         System.out.println("Descending Order :");
-        System.out.println(listArr);
-
-
+        System.out.println(list);
 
     }
+
+    public static void basicArrayListOperation() {
+        ArrayList<Integer> arr = new ArrayList<>();
+
+        arr.add(5);
+        arr.add(6);
+        arr.add(7);
+        arr.add(8);
+        arr.add(9);
+
+        System.out.println("Original Array: " + arr);
+
+        // get an element at index
+        System.out.println("Array at Index 2: " + arr.get(2));
+
+        for (int i = 0; i < arr.size(); i++) {
+            System.out.print(arr.get(i) + " ");
+        }
+        System.out.println();
+
+        // adding element at some index i
+        arr.add(0, 100);
+        System.out.println("Array at index 0:" + arr);
+
+        // modifying element at index i
+        arr.set(0, 110);
+        System.out.println("Array at index 0:" + arr);
+
+        // removing an element at index i
+        arr.remove(0);
+        System.out.println("List remove from index 0: " + arr);
+
+        // removing an element X
+        arr.remove(Integer.valueOf(9));
+        System.out.println(arr);
+
+        // if element not present in array
+        System.out.println("Elemnets present: " + arr.remove(Integer.valueOf(8)));
+
+        // checking if an element exists
+        System.out.println("Elemnets contains: " + arr.contains(7));
+
+    }
+
+    public static void objectsInArray() {
+        ArrayList<Object> any = new ArrayList<Object>();
+
+        any.add(2);
+        any.add("Three");
+
+        System.out.println(any);
+
+    }
+
+    @SuppressWarnings("rawtypes")
+    public static void main(String[] args) {
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for (int i = 0; i < 10; i++) {
+            if (i % 2 == 0) {
+                list.add(i);
+            }
+        }
+
+        // Iterating ArrayList using Iterator
+        // Iterator iter = list.iterator();
+        // while (iter.hasNext()) {
+        // System.out.print(iter.next());
+        // }
+
+        reverseArraylist(list);
+        Collections.sort(list);
+
+        System.out.println("Sorted Array : " + list);
+
+        ArrayList<String> str = new ArrayList<>();
+
+        str.add("Mango");
+        str.add("Papaya");
+        str.add("Mango");
+        str.add("Apple");
+
+        // Iterating ArrayList using For-each loop
+        for (String fruit : str) {
+            System.out.println(fruit);
+        }
+
+        // Get and Set ArrayList
+        setArrayList();
+
+        sortingArray();
+
+        basicArrayListOperation();
+
+        objectsInArray();
+
+    }
+
 }
