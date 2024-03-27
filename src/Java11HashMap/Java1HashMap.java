@@ -1,9 +1,10 @@
-package Collections.HashMap;
+package Java11HashMap;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map.Entry;
 
-public class Java2HashMap {
+public class Java1HashMap {
 
     /**
      * @param args

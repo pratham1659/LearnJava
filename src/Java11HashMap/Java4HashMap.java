@@ -1,6 +1,7 @@
-package Collections.HashMap;
+package Java11HashMap;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Java4HashMap {
 

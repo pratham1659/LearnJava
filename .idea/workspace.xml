@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="DSA questions">
+      <change afterPath="$PROJECT_DIR$/src/Java10Collections/LinkedList/Link1Basic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java10Collections/ArrayList/Java01ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java10Collections/ArrayList/Java01ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java02Conditional/Java1IfElse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java02Conditional/Java1IfElse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice/Palincpp.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,26 +69,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Java01ArrayList">
+  <component name="RunManager" selected="Application.Link1Basic">
     <configuration name="CheckPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Practice.CheckPalindrome" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ForLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java03Loops.ForLoops" />
-      <module name="LearnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java03Loops.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,6 +109,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Link1Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java10Collections.LinkedList.Link1Basic" />
+      <module name="LearnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java10Collections.LinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PrintArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java10Collections.ArrayList.PrintArrayList" />
       <module name="LearnJava" />
@@ -135,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Link1Basic" />
         <item itemvalue="Application.Java01ArrayList" />
         <item itemvalue="Application.PrintArrayList" />
         <item itemvalue="Application.CheckPalindrome" />
         <item itemvalue="Application.LargestPerimeterPolygon" />
-        <item itemvalue="Application.ForLoops" />
       </list>
     </recent_temporary>
   </component>
@@ -211,6 +213,8 @@
       <workItem from="1710271204761" duration="419000" />
       <workItem from="1711020290477" duration="36000" />
       <workItem from="1711574359280" duration="143000" />
+      <workItem from="1711574729483" duration="177000" />
+      <workItem from="1711575132828" duration="836000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -452,7 +456,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708464251641</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="DSA questions">
+      <option name="closed" value="true" />
+      <created>1711574750395</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1711574750396</updated>
+    </task>
+    <task id="LOCAL-00032" summary="DSA questions">
+      <option name="closed" value="true" />
+      <created>1711574772553</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1711574772553</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
