@@ -6,9 +6,6 @@ import java.util.Map.Entry;
 
 public class Java1HashMap {
 
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
 
         /*
