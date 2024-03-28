@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="DSA questions">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java14Stack/Stack01Array.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java14Stack/Stack02ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java14Stack/Stack03LinkList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java14Stack/StackBasic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java14Stack/StackProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java15Queue/Queue01Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java15Queue/Queue03LinkList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java15Queue/QueueBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java15Queue/QueueUsingStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java16Tree/BinaryTreeBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java16Tree/Tree01Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java10Collections/LinkedList/Link1Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java10Collections/LinkedList/Link1Basic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,13 +78,13 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StackProblem">
-    <configuration name="Stack01Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java14Stack.Stack01Array" />
+  <component name="RunManager" selected="Application.Tree01Order">
+    <configuration name="BinaryTreeBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java16Tree.BinaryTreeBasic" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java14Stack.*" />
+          <option name="PATTERN" value="Java16Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Stack02ArrayList$StackUsingArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java14Stack.Stack02ArrayList$StackUsingArrayList" />
+    <configuration name="Queue03LinkList$LinkedListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java15Queue.Queue03LinkList$LinkedListQueue" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java14Stack.*" />
+          <option name="PATTERN" value="Java15Queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Stack03LinkList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java14Stack.Stack03LinkList" />
+    <configuration name="QueueBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java15Queue.QueueBasic" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java14Stack.*" />
+          <option name="PATTERN" value="Java15Queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java14Stack.StackBasic" />
+    <configuration name="QueueUsingStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java15Queue.QueueUsingStack" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java14Stack.*" />
+          <option name="PATTERN" value="Java15Queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java14Stack.StackProblem" />
+    <configuration name="Tree01Order" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java16Tree.Tree01Order" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java14Stack.*" />
+          <option name="PATTERN" value="Java16Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StackProblem" />
-        <item itemvalue="Application.StackBasic" />
-        <item itemvalue="Application.Stack02ArrayList$StackUsingArrayList" />
-        <item itemvalue="Application.Stack01Array" />
-        <item itemvalue="Application.Stack03LinkList" />
+        <item itemvalue="Application.Tree01Order" />
+        <item itemvalue="Application.BinaryTreeBasic" />
+        <item itemvalue="Application.QueueUsingStack" />
+        <item itemvalue="Application.QueueBasic" />
+        <item itemvalue="Application.Queue03LinkList$LinkedListQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +223,7 @@
       <workItem from="1711020290477" duration="36000" />
       <workItem from="1711574359280" duration="143000" />
       <workItem from="1711574729483" duration="177000" />
-      <workItem from="1711575132828" duration="11390000" />
+      <workItem from="1711575132828" duration="18580000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -490,7 +489,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711576224428</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="DSA questions">
+      <option name="closed" value="true" />
+      <created>1711623520933</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1711623520933</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
