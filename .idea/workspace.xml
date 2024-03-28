@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="DSA questions">
-      <change afterPath="$PROJECT_DIR$/src/Java10Collections/LinkedList/Link1Basic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java14Stack/Stack01Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java14Stack/Stack02ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java14Stack/Stack03LinkList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java14Stack/StackBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java14Stack/StackProblem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java02Conditional/Java1IfElse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java02Conditional/Java1IfElse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/Palincpp.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java10Collections/LinkedList/Link1Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java10Collections/LinkedList/Link1Basic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,32 +54,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/prathamkumar/IdeaProjects/LearnJava/src/Java11HashMap",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.Link1Basic">
-    <configuration name="CheckPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice.CheckPalindrome" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Java11HashMap" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StackProblem">
+    <configuration name="Stack01Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java14Stack.Stack01Array" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice.*" />
+          <option name="PATTERN" value="Java14Stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java01ArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java10Collections.ArrayList.Java01ArrayList" />
+    <configuration name="Stack02ArrayList$StackUsingArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java14Stack.Stack02ArrayList$StackUsingArrayList" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java10Collections.ArrayList.*" />
+          <option name="PATTERN" value="Java14Stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LargestPerimeterPolygon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice.LargestPerimeterPolygon" />
+    <configuration name="Stack03LinkList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java14Stack.Stack03LinkList" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Practice.*" />
+          <option name="PATTERN" value="Java14Stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Link1Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java10Collections.LinkedList.Link1Basic" />
+    <configuration name="StackBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java14Stack.StackBasic" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java10Collections.LinkedList.*" />
+          <option name="PATTERN" value="Java14Stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java10Collections.ArrayList.PrintArrayList" />
+    <configuration name="StackProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java14Stack.StackProblem" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java10Collections.ArrayList.*" />
+          <option name="PATTERN" value="Java14Stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Link1Basic" />
-        <item itemvalue="Application.Java01ArrayList" />
-        <item itemvalue="Application.PrintArrayList" />
-        <item itemvalue="Application.CheckPalindrome" />
-        <item itemvalue="Application.LargestPerimeterPolygon" />
+        <item itemvalue="Application.StackProblem" />
+        <item itemvalue="Application.StackBasic" />
+        <item itemvalue="Application.Stack02ArrayList$StackUsingArrayList" />
+        <item itemvalue="Application.Stack01Array" />
+        <item itemvalue="Application.Stack03LinkList" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +224,7 @@
       <workItem from="1711020290477" duration="36000" />
       <workItem from="1711574359280" duration="143000" />
       <workItem from="1711574729483" duration="177000" />
-      <workItem from="1711575132828" duration="836000" />
+      <workItem from="1711575132828" duration="11390000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -472,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711574772553</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="DSA questions">
+      <option name="closed" value="true" />
+      <created>1711576224428</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1711576224428</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
