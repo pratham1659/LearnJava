@@ -2,10 +2,6 @@ package Java10Collections.LinkedList;
 
 public class Link1Basic {
 
-    /*
-
-     */
-
     public static class Node {
         int data;
         Node next;
@@ -24,6 +20,12 @@ public class Link1Basic {
             System.out.print(head.data + " ");
             head = head.next;
         }
+    }
+
+    public static void displayRecursive(Node head) {
+        if (head == null) return;
+        displayRecursive(head.next);
+        System.out.print(head.data + " ");
     }
 
 
@@ -61,6 +63,8 @@ public class Link1Basic {
 
 
         display(a);
+        System.out.println();
+        displayRecursive(a);
 
 
     }

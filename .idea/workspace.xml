@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="DSA questions">
-      <change afterPath="$PROJECT_DIR$/src/Java12HashSet/HashSet01Basic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java16Tree/Tree02Match.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java16Tree/Tree03Basic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java16Tree/Tree04BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java10Collections/LinkedList/Link2Problems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java10Collections/LinkedList/Link3Implementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java11HashMap/Java1HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java11HashMap/Java1HashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java16Tree/BinaryTreeBasic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java16Tree/Tree01Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java16Tree/Tree01Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java10Collections/LinkedList/Link1Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java10Collections/LinkedList/Link1Basic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java16Tree/Tree04BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java16Tree/Tree04BinarySearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +76,7 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tree04BinarySearch">
+  <component name="RunManager" selected="Application.Link3Implementation">
     <configuration name="HashSet01Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java12HashSet.HashSet01Basic" />
       <module name="LearnJava" />
@@ -93,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree01Order" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java16Tree.Tree01Order" />
+    <configuration name="Link1Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java10Collections.LinkedList.Link1Basic" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java16Tree.*" />
+          <option name="PATTERN" value="Java10Collections.LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree02Match" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java16Tree.Tree02Match" />
+    <configuration name="Link2Problems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java10Collections.LinkedList.Link2Problems" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java16Tree.*" />
+          <option name="PATTERN" value="Java10Collections.LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree03Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java16Tree.Tree03Basic" />
+    <configuration name="Link3Implementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java10Collections.LinkedList.Link3Implementation" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java16Tree.*" />
+          <option name="PATTERN" value="Java10Collections.LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Link3Implementation" />
+        <item itemvalue="Application.Link2Problems" />
+        <item itemvalue="Application.Link1Basic" />
         <item itemvalue="Application.Tree04BinarySearch" />
         <item itemvalue="Application.HashSet01Basic" />
-        <item itemvalue="Application.Tree02Match" />
-        <item itemvalue="Application.Tree03Basic" />
-        <item itemvalue="Application.Tree01Order" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +221,7 @@
       <workItem from="1711020290477" duration="36000" />
       <workItem from="1711574359280" duration="143000" />
       <workItem from="1711574729483" duration="177000" />
-      <workItem from="1711575132828" duration="30735000" />
+      <workItem from="1711575132828" duration="40318000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -506,7 +503,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711637450948</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="DSA questions">
+      <option name="closed" value="true" />
+      <created>1711664061843</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1711664061843</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
