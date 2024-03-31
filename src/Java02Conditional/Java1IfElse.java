@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Java1IfElse {
 
-    // Find EvenOdd
+    // Ques: Find EvenOdd of integer
     static void evenOdd(int num) {
         if (num % 2 == 0) {
             System.out.println("This is Even Number");
@@ -36,7 +36,6 @@ public class Java1IfElse {
 
     // Ques: Take integer input and print the
     // absolute value of that integer A
-
     static void absoluteInt(int num) {
         if (num < 0) {
             num = num * (-1);

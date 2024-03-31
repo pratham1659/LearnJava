@@ -22,6 +22,15 @@ public class Link1Basic {
         }
     }
 
+    public static void insertAtEndViaNode(Node head, int value) {
+        Node temp = new Node(value);
+        Node t = head;
+        while (t.next != null) {
+            t = t.next;
+        }
+        t.next = temp;
+    }
+
     public static void displayRecursive(Node head) {
         if (head == null) return;
         displayRecursive(head.next);
@@ -62,6 +71,7 @@ public class Link1Basic {
         */
 
 
+        insertAtEndViaNode(a, 87);
         display(a);
         System.out.println();
         displayRecursive(a);

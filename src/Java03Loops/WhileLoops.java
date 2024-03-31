@@ -3,6 +3,17 @@ package Java03Loops;
 import java.util.Scanner;
 
 public class WhileLoops {
+
+    // Ques Multiplication Table of 2
+    public static void multiplyTable(int num) {
+        int i = 1;
+        while (i <= 10) {
+            System.out.printf("5 X %d = %d%n", i, i * num);
+            i++;
+        }
+    }
+
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
