@@ -12,9 +12,6 @@ public class NumericalPattern {
         System.out.println("Enter the Number of Columns: ");
         int c = sc.nextInt();
 
-
-
-
         //Numerical Rectangular print
 //        for(int i=1; i<=r; i++){
 //            for(int j=i; j<=r; j++){

@@ -1,4 +1,4 @@
-package Array.Problems;
+package Java04Array;
 
 public class Array1Swap {
 

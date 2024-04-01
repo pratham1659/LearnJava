@@ -2,12 +2,12 @@ package Java04Array;
 
 public class Array1InJava {
 
-    static void sum(int a, int b){
-        int c = a+b;
+    static void sum(int a, int b) {
+        int c = a + b;
         System.out.println(c);
     }
 
-    void singleArray(){
+    void singleArray() {
 //        Representation of Arrays
         int[] uid;
 //        String[] name;
@@ -30,11 +30,11 @@ public class Array1InJava {
 //           System.out.print(i + " ");
 //       }
 
-       int k=0;
-       while(k< ages.length){
-           System.out.print(ages[k] + " ");
-           k++;
-       }
+        int k = 0;
+        while (k < ages.length) {
+            System.out.print(ages[k] + " ");
+            k++;
+        }
 
 
 //        String[] name = {"Raj", "Vikash", "Ball", "Hero"};
@@ -42,7 +42,7 @@ public class Array1InJava {
 
     }
 
-    void multiArray(){
+    void multiArray() {
 //        int[][] arr2d = new int [3][3];
 
         int[][] arr2d = {{23, 34, 34}, {34, 78, 98}, {56, 76, 67}};
@@ -50,20 +50,20 @@ public class Array1InJava {
         System.out.println(arr2d[0][0]); // 23
         System.out.println(arr2d[1][1]); // 78
 
-        for(int i=0; i<3; i++){
-            for(int j=0; j<3; j++){
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 System.out.print(arr2d[i][j] + " ");
             }
             System.out.println();
         }
     }
 
-    void sumOfArray(){
+    void sumOfArray() {
 
-        int[] arr = {1,2, 3, 4, 6, 7, 8};
+        int[] arr = {1, 2, 3, 4, 6, 7, 8};
         int sum = 0;
 
-        for(int i=0; i<arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             sum = sum + arr[i];
         }
 
@@ -76,7 +76,7 @@ public class Array1InJava {
 
 //        obj.singleArray();
 //        obj.multiArray();
-        obj.sumOfArray();
+//        obj.sumOfArray();
 
 
     }
