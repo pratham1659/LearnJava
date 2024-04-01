@@ -3,7 +3,7 @@ package Java04Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Array2Practice {
+public class Array5Practice {
 
     static void printArray(int[] arr) {
         for (int i : arr) {

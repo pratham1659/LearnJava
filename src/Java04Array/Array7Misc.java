@@ -2,7 +2,7 @@ package Java04Array;
 
 import java.util.Scanner;
 
-public class Array5Misc {
+public class Array7Misc {
 
     static void printArray(int[] arr){
         for(int i=0; i < arr.length; i++){

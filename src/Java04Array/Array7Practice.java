@@ -2,7 +2,7 @@ package Java04Array;
 
 import java.util.Scanner;
 
-public class Array06Practice {
+public class Array7Practice {
 
     public static int arraySum(int[] arr) {
         int sum = 0;

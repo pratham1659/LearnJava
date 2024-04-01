@@ -1,6 +1,6 @@
 package Array.Problems;
 
-public class Array3Duplicate {
+public class Array4Duplicate {
 
     public static void findDuplicates(String[] num) {
 

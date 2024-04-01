@@ -1,6 +1,6 @@
 package Java04Array;
 
-public class Array1Swap {
+public class Array2Swap {
 
     public static void swapWithTemp(int a, int b) {
 

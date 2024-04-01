@@ -2,7 +2,7 @@ package Array.Problems;
 
 import java.util.Arrays;
 
-public class Array4Search {
+public class Array5Search {
 
     /*
      * How to find Missing Number In Array

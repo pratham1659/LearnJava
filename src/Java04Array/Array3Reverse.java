@@ -1,6 +1,6 @@
 package Array.Problems;
 
-public class Array2Reverse {
+public class Array3Reverse {
 
     // Apporaoch - 1
     public static void reverseInteger(int num) {

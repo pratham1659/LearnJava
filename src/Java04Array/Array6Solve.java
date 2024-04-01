@@ -2,7 +2,7 @@ package Java04Array;
 
 import java.util.Scanner;
 
-public class Array4Solve {
+public class Array6Solve {
 //    Find the total number of pairs in the Array whose sum is equal to the given value x
     static int pairSum(int[] arr, int x){
         int n = arr.length;
