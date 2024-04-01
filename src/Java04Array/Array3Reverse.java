@@ -2,7 +2,7 @@ package Java04Array;
 
 public class Array3Reverse {
 
-    // Apporaoch - 1
+    // Approach - 1
     public static void reverseInteger(int num) {
         int rev = 0;
         while (num != 0) {
@@ -21,10 +21,8 @@ public class Array3Reverse {
 
     }
 
-    /*
-     * How to check Palindrome number
-     */
 
+     // How to check Palindrome number
     public static void checkPalindrome(int num) {
 
         int reserve = 0;
@@ -45,10 +43,12 @@ public class Array3Reverse {
     }
 
     public static boolean isPalindrome(String str) {
-        // Convert the number to a string
-        // String str = Integer.toString(num);
+        /*
+         Convert the number to a strings
+         String str = Integer.toString(num);
+         Reverse the string
+        */
 
-        // Reverse the string
         StringBuilder reversed = new StringBuilder(str).reverse();
         return str.equals(reversed.toString());
     }

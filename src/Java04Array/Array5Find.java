@@ -23,7 +23,7 @@ public class Array5Find {
         // Calculate the sum of digits raised to the power of the number of digits
         while (num > 0) {
             int digit = num % 10;
-            sum += Math.pow(digit, numberOfDigits);
+            sum += (int) Math.pow(digit, numberOfDigits);
             num /= 10;
         }
 
@@ -37,9 +37,8 @@ public class Array5Find {
      * fact of 4 = 4 * 3 * 2 * 1 = 24
      */
 
+    // 1. without recursive -- use for loop
     public static int findFactorial(int num) {
-
-        // 1. without recursive -- use for loop
         int fact = 1;
         if (num == 0) {
             return 1;
