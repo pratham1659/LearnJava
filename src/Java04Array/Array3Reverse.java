@@ -15,7 +15,6 @@ public class Array3Reverse {
 
     // Approach - 2
     public static void reverseStringInteger(int num) {
-
         StringBuffer sb = new StringBuffer(String.valueOf(num));
         sb.reverse();
         System.out.println("Reverse Using Buffer: " + sb);
@@ -61,23 +60,38 @@ public class Array3Reverse {
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j <= n; j++) {
                 String substring = str.substring(i, j);
-                if (isPalindrome(substring)) {
+                if (isPalindromeString(substring)) {
                     System.out.println("Palindrome found: " + substring);
                 }
             }
         }
     }
 
+    public static boolean isPalindromeString(String str) {
+        int left = 0;
+        int right = str.length() - 1;
+
+        // Check if the string is a palindrome
+        while (left < right) {
+            if (str.charAt(left++) != str.charAt(right--)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
 
-        reverseInteger(12345);
-        reverseStringInteger(12345);
-
-        checkPalindrome(121);
-        int num1 = 12321;
-        System.out.println(num1 + " is palindrome? " + isPalindrome(Integer.toString(num1)));
+//        reverseInteger(12345);
+//        reverseStringInteger(12345);
+//
+//        checkPalindrome(121);
+//        int num1 = 12321;
+//        System.out.println(num1 + " is palindrome? " + isPalindrome(Integer.toString(num1)));
 
         int inputString = 121454;
-        findPalindromicSubstrings(Integer.toString(inputString));
+        String str = "abacdgfdcaba";
+//        findPalindromicSubstrings(Integer.toString(inputString));
+        findPalindromicSubstrings(str);
     }
 }
