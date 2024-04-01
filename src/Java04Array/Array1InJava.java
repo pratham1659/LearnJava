@@ -73,6 +73,7 @@ public class Array1InJava {
 
         Array1InJava obj = new Array1InJava();
 
+//        sum(23, 34);
 //        obj.singleArray();
 //        obj.multiArray();
 //        obj.sumOfArray();
