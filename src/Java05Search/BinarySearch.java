@@ -1,53 +1,74 @@
 package Java05Search;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BinarySearch {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        // Input the size of the array
-        System.out.print("Enter the size of the sorted array: ");
-        int size = scanner.nextInt();
+    // 1. binary Search using Array : Time Complexity O(logN), Space Complexity O(1)
+    public static int binarySearchArray(int[] arr, int key) {
 
-        int[] array = new int[size];
-
-
-        // Input the sorted array elements
-        System.out.println("Enter the sorted array elements in ascending order:");
-        for (int i = 0; i < size; i++) {
-            array[i] = scanner.nextInt();
-        }
-
-        // Input the element to search
-        System.out.print("Enter the element to search: ");
-        int searchElement = scanner.nextInt();
-
-        int index = binarySearch(array, searchElement);
-
-        if (index != -1) {
-            System.out.println("Element " + searchElement + " found at index " + index);
-        } else {
-            System.out.println("Element " + searchElement + " not found in the array.");
-        }
-    }
-
-    public static int binarySearch(int[] array, int searchElement) {
         int left = 0;
-        int right = array.length - 1;
+        int right = arr.length - 1;
 
         while (left <= right) {
             int mid = left + (right - left) / 2;
 
-            if (array[mid] == searchElement) {
-                return mid; // Element found at the middle index
-            } else if (array[mid] < searchElement) {
-                left = mid + 1; // Search in the right half of the array
-            } else {
-                right = mid - 1; // Search in the left half of the array
+            // Check if target is present at mid
+            if (arr[mid] == key) {
+                return mid;
+            }
+
+            // If target is greater, ignore left half
+            if (arr[mid] < key) {
+                left = mid + 1;
+            }
+
+            // If target is smaller, ignore right half
+            else {
+                right = mid - 1;
             }
         }
 
-        return -1; // Element not found in the array
+        return -1;
     }
+
+    public static int binarySearchArrayList(ArrayList<Integer> arr, int key) {
+
+        int left = 0;
+        int right = arr.size() - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (arr.get(mid) == key) {
+                return mid;
+            }
+
+            if (arr.get(mid) < key) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = {2, 4, 6, 8, 10, 12, 14};
+        System.out.println("Binary Search Array at index: " + binarySearchArray(arr, 12));
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.add(2);
+        arrayList.add(4);
+        arrayList.add(6);
+        arrayList.add(8);
+        arrayList.add(10);
+        arrayList.add(12);
+        arrayList.add(14);
+
+        System.out.println("Binary Search ArrayList: " + binarySearchArrayList(arrayList, 10));
+    }
+
 }

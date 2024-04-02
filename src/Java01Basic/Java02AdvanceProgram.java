@@ -1,5 +1,6 @@
 package Java01Basic;
 
+
 public class Java02AdvanceProgram {
 
     // Ques: program to print the Fibonacci series up to a certain number.
@@ -131,7 +132,7 @@ public class Java02AdvanceProgram {
     public static void main(String[] args) {
 
         fibonacciSeries(12);
-        System.out.println("\nCheck Palindrome: " + checkPalindromeNumber(121));
+        System.out.println("\nCheck Palindrom: " + checkPalindromeNumber(121));
         System.out.println("Power of Two Number: " + pow(5, 3));
         System.out.println("Check Armstrong: " + checkArmstrong(9474));
         starPrintRightTriangle(5);
