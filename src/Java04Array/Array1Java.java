@@ -1,6 +1,6 @@
 package Java04Array;
 
-public class Array1InJava {
+public class Array1Java {
 
     static void sum(int a, int b) {
         int c = a + b;
@@ -71,7 +71,7 @@ public class Array1InJava {
 
     public static void main(String[] args) {
 
-        Array1InJava obj = new Array1InJava();
+        Array1Java obj = new Array1Java();
 
 //        sum(23, 34);
 //        obj.singleArray();
