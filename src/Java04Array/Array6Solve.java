@@ -3,91 +3,99 @@ package Java04Array;
 import java.util.Scanner;
 
 public class Array6Solve {
-//    Find the total number of pairs in the Array whose sum is equal to the given value x
-    static int pairSum(int[] arr, int x){
-        int n = arr.length;
-    int pairCount = 0;
+    // 1. Find the total number of pairs in the Array whose sum is equal key.
+    public static int countPairs(int[] arr, int key) {
 
-    for(int i=0; i<n; i++){ //first Number
-        for(int j=i+1; j<n; j++ ){ //Second Number
-            if(arr[i] + arr[j] == x){
-                pairCount++;
-            }
-        }
-    }
-        return pairCount;
-    }
-
-
-//    Count the number of triplets whose sum is equal to the given value x.
-
-    static int findTripletSum(int[] arr, int x){
-        int n = arr.length;
-        int ans = 0;
-
-        for(int i=0; i<n; i++){
-            for(int j=i+1; j<n; j++){
-                for(int k=j+1; k<n; k++){
-                  if(  arr[i] + arr[j] + arr[k] == x){
-//                      int[] qrr = {arr[i], arr[j], arr[k]};
-                      ans++;
-                  }
-                }
-            }
-        }
-            return ans;
-    }
-
-
-    static  int uniqueNum(int[] arr){
-        int ans = 0;
-        int n = arr.length;
-
-        for(int i=0; i<n; i++){
-            for(int j=i+1; j<n; j++){
-                if(arr[i] == arr[j]){
-                   arr[i] = -1;
-                   arr[j] = -1;
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] + arr[j] == key) {
+                    count++;
                 }
             }
         }
 
-        for(int i=0; i<n; i++){
-            if(arr[i] > 0){
+        return count;
+    }
+
+    // 2. Count the number of triplets whose sum is equal to the given value x.
+    public static int countTriplets(int[] arr, int key) {
+
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                for (int k = j + 1; k < arr.length; k++) {
+                    if (arr[i] + arr[j] + arr[k] == key) {
+                        count++;
+                    }
+                }
+            }
+        }
+
+        return count;
+    }
+
+    // 3. find Unique number in Array
+    public static int findUnique(int[] arr) {
+        int ans = 0;
+        int n = arr.length;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    arr[i] = -1;
+                    arr[j] = -1;
+                }
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (arr[i] > 0) {
                 ans = arr[i];
             }
         }
 
         return ans;
+
     }
 
-    static int findMax(int[] arr){
-        int max = Integer.MIN_VALUE;
-        for(int i=0; i<arr.length; i++){
-            if(arr[i] > max){
+    // 4. Find Max Number in Array
+    public static int findMax(int[] arr) {
+        int max = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
                 max = arr[i];
             }
         }
         return max;
     }
 
-    static int secondMax(int[] arr){
-        int max = findMax(arr);
-        for(int i=0; i<arr.length; i++){
-            if(arr[i] == max){
-                arr[i] = Integer.MIN_VALUE;
+    // 5. Find Max Number in Array
+    public static int findMin(int[] arr) {
+        int min = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
             }
         }
-        int ans = findMax(arr);
-        return ans;
+        return min;
     }
 
-//    Given an array 'a' consisting of integers. Return the first value that is repeating in this array. If
-//    no value is being repeated, return -1.
+    // 6. find Second Max Number in Array
+    public static int secondMax(int[] arr) {
+        int max = findMax(arr);
 
-    static int findFirstRepeat(int[] arr){
-        int ans = 0;
-        for(int i=0; i<arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == max) {
+                arr[i] = -1;
+            }
+        }
+        return findMax(arr);
+    }
+
+    // 7. find First Repetitive number in Array
+    public static int findFirstRepeat(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] == arr[j]) {
                     return arr[i];
@@ -96,26 +104,25 @@ public class Array6Solve {
         }
         return -1;
     }
+
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        int[] arr = { 1, 2, 3, 5, 6, 8, 9, 4, 2 };
 
-        System.out.println("Enter Array Size: ");
-        int n = sc.nextInt();
-        System.out.println("Enter " + n + " Elements: ");
-        int[] arr = new int[n];
-        for(int i=0; i<arr.length; i++){
-            arr[i] = sc.nextInt();
-        }
+        int[] duplicateArray = { 2, 3, 4, 2, 6, 3, 4, 7, 9, 8 };
 
-//        System.out.println("Enter Target: ");
-//        int x = sc.nextInt();
+        System.out.println("Count Sum of pairs: " + countPairs(arr, 8));
+        System.out.println("Count triple Pair: " + countTriplets(arr, 9));
 
-//        System.out.println(pairSum(arr, x));
-//        System.out.println(findTripletSum(arr, x));
-//        System.out.println(uniqueNum(arr));
-//        System.out.println(findMax(arr));
-//        System.out.println("Second Max in Array: " + secondMax(arr));
-        System.out.println("Find First Repeat: " + findFirstRepeat(arr));
+        System.out.println("Find Unique Array: " + findUnique(duplicateArray));
+
+        System.out.println("Find Max in Array: " + findMax(arr));
+        System.out.println("Find Min in Array: " + findMin(arr));
+
+        System.out.println("Second Maximum Array: " + secondMax(arr));
+
+        System.out.println("First Repetitive Array: " + findFirstRepeat(duplicateArray));
+
     }
+
 }
