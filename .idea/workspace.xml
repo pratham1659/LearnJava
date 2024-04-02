@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Arrays Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java04Array/Array3Reverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java04Array/Array3Reverse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java04Array/Array5Find.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java04Array/Array5Find.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java04Array/Array5Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java04Array/Array5Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java04Array/Array5Practice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java04Array/Array6Solve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java04Array/Array6Solve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Array3Reverse">
+  <component name="RunManager" selected="Application.Array5Practice">
     <configuration name="Array1InJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java04Array.Array1InJava" />
       <module name="LearnJava" />
@@ -102,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java01BasicProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java01Basic.Java01BasicProgram" />
+    <configuration name="Array5Practice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java04Array.Array5Practice" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java01Basic.*" />
+          <option name="PATTERN" value="Java04Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Link3Implementation (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java10Collections.LinkedList.Link3Implementation" />
+    <configuration name="Java01BasicProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java01Basic.Java01BasicProgram" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java10Collections.LinkedList.*" />
+          <option name="PATTERN" value="Java01Basic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Array5Practice" />
         <item itemvalue="Application.Array3Reverse" />
         <item itemvalue="Application.Array1InJava" />
         <item itemvalue="Application.LoopsPractice" />
         <item itemvalue="Application.Java01BasicProgram" />
-        <item itemvalue="Application.Link3Implementation (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +220,7 @@
       <workItem from="1711020290477" duration="36000" />
       <workItem from="1711574359280" duration="143000" />
       <workItem from="1711574729483" duration="177000" />
-      <workItem from="1711575132828" duration="78934000" />
+      <workItem from="1711575132828" duration="83709000" />
     </task>
     <task id="LOCAL-00001" summary="created a First Program">
       <option name="closed" value="true" />
@@ -558,7 +558,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711977757867</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Arrays Update questions">
+      <option name="closed" value="true" />
+      <created>1711980164763</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1711980164763</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

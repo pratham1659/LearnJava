@@ -6,16 +6,16 @@ public class Array6Solve {
 //    Find the total number of pairs in the Array whose sum is equal to the given value x
     static int pairSum(int[] arr, int x){
         int n = arr.length;
-    int ans = 0;
+    int pairCount = 0;
 
     for(int i=0; i<n; i++){ //first Number
         for(int j=i+1; j<n; j++ ){ //Second Number
             if(arr[i] + arr[j] == x){
-                ans++;
+                pairCount++;
             }
         }
     }
-        return ans;
+        return pairCount;
     }
 
 
