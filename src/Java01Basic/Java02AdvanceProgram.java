@@ -30,7 +30,7 @@ public class Java02AdvanceProgram {
     // Ques 2: Program to check Palindrome Number.
     public static boolean checkPalindromeNumber(int num) {
 
-        int orginal = num;
+        int original = num;
         int newNum = 0;
         while (num > 0) {
             int digit = num % 10;
@@ -38,7 +38,7 @@ public class Java02AdvanceProgram {
             num = num / 10;
         }
 
-        return orginal == newNum;
+        return original == newNum;
     }
 
     // Ques 3: Program to check Power.
@@ -131,8 +131,8 @@ public class Java02AdvanceProgram {
 
     public static void main(String[] args) {
 
-        fibonacciSeries(12);
-        System.out.println("\nCheck Palindrom: " + checkPalindromeNumber(121));
+        fibonacciSeries(9);
+        System.out.println("\nCheck Palindrome: " + checkPalindromeNumber(121));
         System.out.println("Power of Two Number: " + pow(5, 3));
         System.out.println("Check Armstrong: " + checkArmstrong(9474));
         starPrintRightTriangle(5);
