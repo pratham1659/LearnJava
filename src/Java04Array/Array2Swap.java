@@ -2,47 +2,64 @@ package Java04Array;
 
 public class Array2Swap {
 
-    public static void swapWithTemp(int a, int b) {
+    // Printing Array Methods
+    public static void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
 
-        int temp = a;
-        a = b;
-        b = temp;
-        System.out.println("First swap: " + a + " Last swap: " + b);
+    // 1. swap in Array Methods
+    public static void swapInArray(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    // 2. swap in Array Methods
+    public static int[] swapOutArray(int[] arr) {
+        int i = 0;
+        int j = arr.length - 1;
+
+        while (i < j) {
+            swapInArray(arr, i, j);
+            i++;
+            j--;
+        }
+        return arr;
 
     }
 
-    /*
-     * Swap two integers without using temp/third variable
-     */
+    // 3. Rotate the given array 'a' by k steps, where k is non-negative.
+    // Note: k can be greater than n as well.
+    public static int[] rotateA(int[] arr, int k) {
+        int n = arr.length;
+        k = k % n;
+        int[] ans = new int[n];
+        int j = 0;
 
-    public static void swapWithoutTemp(int a, int b) {
+        for (int i = n - k; i < n; i++) {
+            ans[j++] = arr[i];
+        }
 
-        // without using third var: using + operator
-        a = a + b;
-        b = a - b;
-        a = a - b;
-
-        System.out.println("First swap: " + a + " Last swap: " + b);
-
-        // without using third var: using * operator
-        a = a * b;
-        b = a / b;
-        a = a / b;
-
-        System.out.println("First swap: " + a + " Last swap: " + b);
-
-        // without using third var: using zor(^) operator
-        a = a ^ b;
-        b = a ^ b;
-        a = a ^ b;
-
-        System.out.println("First swap: " + a + " Last swap: " + b);
-
+        for (int i = 0; i < n - k; i++) {
+            ans[j++] = arr[i];
+        }
+        return ans;
     }
 
     public static void main(String[] args) {
 
-        swapWithTemp(23, 45);
-        swapWithoutTemp(23, 45);
+        int[] arr = { 1, 2, 3, 5, 6, 8, 9, 4, 2 };
+
+        System.out.println("Swapping in Array Reverse: ");
+        printArray(swapOutArray(arr));
+
+        int[] ans = rotateA(arr, 2);
+        printArray(ans);
+
     }
+
 }
+
