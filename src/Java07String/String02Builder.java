@@ -1,6 +1,6 @@
 package String.Basic;
 
-public class Java2StringBuilder {
+public class String02Builder {
 
     public static void main(String[] args) {
 
@@ -78,6 +78,16 @@ public class Java2StringBuilder {
             System.out.println("Palindrome");
         } else
             System.out.println(" Not Palindrome");
+
+
+//        String[] arr = new String[] {"Java", "is" ,"the" ,"best" ,"programming" ,"Language"};
+//
+//        StringBuilder sb = new StringBuilder();
+//        for(String i : arr){
+//            sb.append(i).append(" ");
+//        }
+//
+//        System.out.println(sb);
 
     }
 }

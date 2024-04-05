@@ -1,4 +1,4 @@
-package Java07String;
+package Java07String.Problems;
 
 public class stringSubString {
     public static void main(String[] args) {

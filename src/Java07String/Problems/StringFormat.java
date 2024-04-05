@@ -1,8 +1,6 @@
-package Java07String;
+package Java07String.Problems;
 
 public class StringFormat {
-
-
 
     public static void main(String[] args) {
         String name = "Sandeep";

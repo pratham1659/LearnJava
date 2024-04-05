@@ -1,4 +1,4 @@
-package Java07String;
+package Java07String.Problems;
 
 import java.util.Scanner;
 

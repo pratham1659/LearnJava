@@ -2,7 +2,7 @@ package String.Basic;
 
 import java.util.ArrayList;
 
-public class Java3StringProblems {
+public class String04Problems {
 
     public static boolean checkPalindrome(String str) {
 
