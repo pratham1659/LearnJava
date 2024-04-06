@@ -3,7 +3,7 @@ package Java12HashMap;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Java4HashMap {
+public class HashMap03Hashing {
 
     /*
      * How HashMap works Internally

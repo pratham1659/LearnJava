@@ -5,15 +5,20 @@ import java.util.Iterator;
 import java.util.Map.Entry;
 
 public class HashMap01Basic {
-
     public static void main(String[] args) {
 
         /*
          * No order - no indexing
-         * stores value - key value <k, v>
+         * stores value - key value <Key, Value>
          * key can not be duplicate
          * can store null Values but only one null key
-         * 
+         *
+         * Searching
+         * Insertion
+         * Deletion
+         * Contains
+         *
+         * Time Complexity O(1);
          */
 
         HashMap<String, String> capitalMap = new HashMap<String, String>();
@@ -32,10 +37,8 @@ public class HashMap01Basic {
         System.out.println(capitalMap.get("France"));
 
         // iterator: over the keys: by using keySet()
-        Iterator<String> it = capitalMap.keySet().iterator();
 
-        while (it.hasNext()) {
-            String key = it.next();
+        for (String key : capitalMap.keySet()) {
             String value = capitalMap.get(key);
             System.out.println("Key: " + key + " Value: " + value);
         }
@@ -51,7 +54,7 @@ public class HashMap01Basic {
         }
 
         System.out.println("------------------------");
-        // literate hashmao usina iava 8 for each and lambda:
+        // literate HashMap using java 8 for each and lambda:
         capitalMap.forEach((k, v) -> System.out.println("key =" + k + "and value = " + v));
 
     }
