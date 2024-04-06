@@ -13,12 +13,11 @@ public class String01Basic {
          * constant pool.
          * 
          * No two string objects can have the same value in a string constant pool.
-         * 
-         * 
+         *
          * Why is Java provided with String constant pool
          * 
          * as we can store the objects in heap memory?
-         * String constant pool provides the facility of reusability of the existing
+         * String constant pool provides the facility of re-usability of the existing
          * string objects.
          * 
          * When a new string object is created using the string literals, then JVM first
@@ -31,8 +30,7 @@ public class String01Basic {
          * This will help in the speeding up of the application and also helps in saving
          * the memory as no two
          * objects will have the same content.
-         * 
-         * 
+         *
          * Why is string made immutable in JAVA?
          * 
          * Immutable means unmodifiable or unchangeable.

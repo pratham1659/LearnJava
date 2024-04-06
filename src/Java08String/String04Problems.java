@@ -1,4 +1,4 @@
-package String.Basic;
+package Java08String;
 
 import java.util.ArrayList;
 
