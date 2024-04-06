@@ -23,13 +23,13 @@ public class String04Problems {
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
             for (int j = i + 1; j <= str.length(); j++) {
-                if (checkPalindrome(str.substring(i, j)) == true) {
+                if (checkPalindrome(str.substring(i, j))) {
                     System.out.print((str.substring(i, j)) + " ");
                     count++;
                 }
             }
         }
-        System.out.println("The number of palindrome substing : " + count);
+        System.out.println("The number of palindrome substring : " + count);
     }
 
     public static void reverseEachWord(String str) {

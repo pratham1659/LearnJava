@@ -1,4 +1,4 @@
-package String.Problems;
+package Java08String.Problems;
 
 public class String1Reverse {
 
@@ -10,65 +10,70 @@ public class String1Reverse {
      */
 
     // Approach-1
-    public static void reverseAtCharArray(String str) {
-        int length = str.length();
+    public static String reverseCharAt(String str) {
 
-        char[] charArray = str.toCharArray();
+        int length = str.length();
+        StringBuilder newStr = new StringBuilder();
         for (int i = length - 1; i >= 0; i--) {
-            System.out.print(charArray[i]);
+            newStr.append(str.charAt(i));
         }
-        System.out.println();
+        return newStr.toString();
     }
 
     // Approach-2
-    public static void reverseCharAt(String str) {
+    public static String reverseAtCharArray(String str) {
 
-        int length = str.length();
-        for (int i = length - 1; i >= 0; i--) {
-            System.out.print(str.charAt(i));
+        char[] charArray = str.toCharArray();
+        int start = 0;
+        int end = str.length() - 1;
+        while(start < end){
+            char temp = charArray[start];
+            charArray[start] = charArray[end];
+            charArray[end] = temp;
+            start++;
+            end--;
         }
-        System.out.println();
+
+        return new String(charArray);
     }
 
     // Approach-3
-    public static void reverseStringBuilder(String str) {
+    public static String reverseStringBuilder(String str) {
 
         StringBuilder sb = new StringBuilder(str);
-        System.out.println(sb.reverse());
-        System.out.println();
+        return sb.reverse().toString();
     }
 
-    /*
-     * Java Program To Reverse Each Word In String
-     */
 
-    public static void reverseWord(String str) {
+     // Java Program To Reverse Each Word In String
+    public static String reverseWordStringArray(String str) {
         System.out.println("Original String: " + str);
 
         String[] words = str.split(" ");
-        String output = "";
+        StringBuilder output = new StringBuilder();
 
         for (String word : words) {
-            String reverseWord = "";
+            StringBuilder reverseWord = new StringBuilder();
             for (int i = word.length() - 1; i >= 0; i--) {
-                reverseWord = reverseWord + word.charAt(i);
+                reverseWord.append(word.charAt(i));
             }
 
-            output = output + reverseWord + " ";
+            output.append(reverseWord).append(" ");
         }
 
-        System.out.println("Reverse Word: " + output);
+        return output.toString();
     }
 
     public static void main(String[] args) {
 
         String strAtChar = "Hello";
-        reverseAtCharArray(strAtChar);
-        reverseCharAt(strAtChar);
-        reverseStringBuilder(strAtChar);
+        System.out.println("Reverse String atCharAt: " + reverseCharAt(strAtChar));
+        System.out.println("Reverse String atCharArray: " + reverseAtCharArray(strAtChar));
+
+        System.out.println("Reverse String using Builder: " + reverseStringBuilder(strAtChar));
 
         String strString = "This is Hello World";
-        reverseWord(strString);
+        System.out.println("Reverse words in String: " +  reverseWordStringArray(strString));
 
     }
 
