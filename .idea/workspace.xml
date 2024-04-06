@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="HashMap Update questions">
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="String Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java08String/String01Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/String01Basic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/String02Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/String02Builder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.String0Swap">
+  <component name="RunManager" selected="Application.String01Basic">
     <configuration name="HashMap01Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java12HashMap.HashMap01Basic" />
       <module name="LearnJava" />
@@ -101,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String05LeetCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08String.String05LeetCode" />
+    <configuration name="String01Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java08String.String01Basic" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
@@ -142,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.String01Basic" />
         <item itemvalue="Application.String0Swap" />
         <item itemvalue="Application.HashMap04Problems" />
         <item itemvalue="Application.HashMap01Basic" />
         <item itemvalue="Application.String06Geeks" />
-        <item itemvalue="Application.String05LeetCode" />
       </list>
     </recent_temporary>
   </component>
@@ -221,15 +220,7 @@
       <workItem from="1711574729483" duration="177000" />
       <workItem from="1711575132828" duration="101884000" />
       <workItem from="1712279407402" duration="19092000" />
-      <workItem from="1712403683250" duration="566000" />
-    </task>
-    <task id="LOCAL-00005" summary="Make changes">
-      <option name="closed" value="true" />
-      <created>1688465183193</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1688465183193</updated>
+      <workItem from="1712403683250" duration="2716000" />
     </task>
     <task id="LOCAL-00006" summary="Make changes">
       <option name="closed" value="true" />
@@ -615,7 +606,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712405905791</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="String Update questions">
+      <option name="closed" value="true" />
+      <created>1712406424831</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1712406424831</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,9 +647,9 @@
     <MESSAGE value="Oops Concepts" />
     <MESSAGE value="DSA questions" />
     <MESSAGE value="Arrays Update questions" />
-    <MESSAGE value="String Update questions" />
     <MESSAGE value="HashMap Update questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="HashMap Update questions" />
+    <MESSAGE value="String Update questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="String Update questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
