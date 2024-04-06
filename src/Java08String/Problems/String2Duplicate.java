@@ -1,4 +1,4 @@
-package String.Problems;
+package Java08String.Problems;
 
 import java.util.*;
 import java.util.Map.Entry;
@@ -69,7 +69,7 @@ public class String2Duplicate {
         System.out.println(sb);
     }
 
-    // Dupplicate elements in String Array
+    // Duplicate elements in String Array
     public static void findDuplicates(String[] str) {
 
         // Approach - 1; Time Complexity O(N)^2 -- Worst Solution
@@ -85,12 +85,12 @@ public class String2Duplicate {
         Set<String> store = new HashSet<String>();
 
         for (String name : str) {
-            if (store.add(name) == false) {
+            if (!store.add(name)) {
                 System.out.println("Found Duplicate element: " + name);
             }
         }
 
-        // Appraoch - 3 Using HashMap, Time Complexity - O(n+m) -- worst solution
+        // Approach - 3 Using HashMap, Time Complexity - O(n+m) -- worst solution
         Map<String, Integer> map = new HashMap<>();
 
         for (String name : str) {
@@ -112,10 +112,8 @@ public class String2Duplicate {
         }
     }
 
-    /*
-     * Java Program to Count Number of Duplicate Words in Given String
-     */
 
+     // Java Program to Count Number of Duplicate Words in Given String
     public static void findDuplicateWord(String inputString) {
 
         // split:

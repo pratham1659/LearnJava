@@ -33,13 +33,11 @@ public class String1Reverse {
             start++;
             end--;
         }
-
         return new String(charArray);
     }
 
     // Approach-3
     public static String reverseStringBuilder(String str) {
-
         StringBuilder sb = new StringBuilder(str);
         return sb.reverse().toString();
     }
@@ -57,10 +55,8 @@ public class String1Reverse {
             for (int i = word.length() - 1; i >= 0; i--) {
                 reverseWord.append(word.charAt(i));
             }
-
             output.append(reverseWord).append(" ");
         }
-
         return output.toString();
     }
 
@@ -74,7 +70,5 @@ public class String1Reverse {
 
         String strString = "This is Hello World";
         System.out.println("Reverse words in String: " +  reverseWordStringArray(strString));
-
     }
-
 }
