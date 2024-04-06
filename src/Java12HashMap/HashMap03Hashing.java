@@ -5,10 +5,7 @@ import java.util.Map;
 
 public class HashMap03Hashing {
 
-    /*
-     * How HashMap works Internally
-     */
-
+    // How HashMap works Internally
     public static void hashCode(Map<String, Integer> marks) {
 
     }

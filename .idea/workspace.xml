@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="String Update questions">
-      <change afterPath="$PROJECT_DIR$/src/Java12HashMap/HashMap04Problems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java12HashMap/HashMap05Rules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java13HashSet/HashSet02Problems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java12HashMap/HashMap01Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java12HashMap/HashMap01Basic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java12HashMap/Java4HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java12HashMap/HashMap03Hashing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java12HashMap/HashMap02Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java12HashMap/HashMap02Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java12HashMap/HashMap03Hashing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java12HashMap/HashMap03Hashing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java12HashMap/HashMap04Problems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java12HashMap/HashMap04Problems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java12HashMap/HashMap05Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java12HashMap/HashMap05Rules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java13HashSet/HashSet01Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java13HashSet/HashSet01Basic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,14 +225,7 @@
       <workItem from="1711574729483" duration="177000" />
       <workItem from="1711575132828" duration="101884000" />
       <workItem from="1712279407402" duration="19092000" />
-    </task>
-    <task id="LOCAL-00003" summary="Make changes">
-      <option name="closed" value="true" />
-      <created>1688447150093</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1688447150093</updated>
+      <workItem from="1712403683250" duration="286000" />
     </task>
     <task id="LOCAL-00004" summary="Make changes">
       <option name="closed" value="true" />
@@ -616,7 +611,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712304961417</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="String Update questions">
+      <option name="closed" value="true" />
+      <created>1712403701453</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1712403701454</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

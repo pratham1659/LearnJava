@@ -17,16 +17,16 @@ public class HashSet01Basic {
         System.out.println("Size of the Test: " + set.size());
 
         //Search
-        if(set.contains(1)){
+        if (set.contains(1)) {
             System.out.println("Set Contains");
-        }else{
+        } else {
             System.out.println("Does Not Contains");
         }
 
         //Iterator
         Iterator it = set.iterator();
 
-        while(it.hasNext()){
+        while (it.hasNext()) {
             System.out.print(it.next() + " ");
         }
 
@@ -34,5 +34,25 @@ public class HashSet01Basic {
         set.remove(1);
         System.out.println(set);
 
+
+        HashSet<String> hs = new HashSet<>();
+
+        hs.add("James");
+        hs.add("John");
+        hs.add("James");
+        hs.add("Ankita");
+
+        System.out.println(hs);
+        System.out.println(hs.contains("James"));
+        System.out.println(hs.size());
+        System.out.println(hs.remove("John"));
+
+        System.out.println(hs);
+
+        for (String s : hs) {
+            System.out.print(s + " ");
+        }
+        System.out.println();
     }
 }
+
