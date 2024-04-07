@@ -53,6 +53,7 @@ public class String2Duplicate {
         StringBuilder sb = new StringBuilder();
         str.chars().distinct().forEach(c -> sb.append((char) c));
         System.out.println(sb);
+
     }
 
     // Approach - 4
