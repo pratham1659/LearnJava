@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Array Update questions" />
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Array Update questions">
+      <change afterPath="$PROJECT_DIR$/src/Java05Array/Array12Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array04Reverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array04Reverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array05Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array05Sorting.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,15 +222,7 @@
       <workItem from="1711574729483" duration="177000" />
       <workItem from="1711575132828" duration="101884000" />
       <workItem from="1712279407402" duration="19092000" />
-      <workItem from="1712403683250" duration="13519000" />
-    </task>
-    <task id="LOCAL-00011" summary="Loops Practice">
-      <option name="closed" value="true" />
-      <created>1703774697345</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1703774697345</updated>
+      <workItem from="1712403683250" duration="15711000" />
     </task>
     <task id="LOCAL-00012" summary="Loops Practice part 1">
       <option name="closed" value="true" />
@@ -611,7 +608,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712637454881</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Array Update questions">
+      <option name="closed" value="true" />
+      <created>1712637620993</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1712637620993</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
