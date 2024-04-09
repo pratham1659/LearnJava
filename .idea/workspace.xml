@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="String Update questions">
-      <change afterPath="$PROJECT_DIR$/src/Java05Array/Array01Basic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java05Array/Array03Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java05Array/Array04Reverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java05Array/Array05Sorting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java05Array/Array06Duplicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java05Array/Array07Insert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java05Array/Array11LeetCode.java" afterDir="false" />
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Array Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array1Basic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array2Swap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array02Swap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array3Practice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array3Reverse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array4Duplicate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array5Find.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array08Find.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array5Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array09Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array6Solve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array10Solve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array7Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array08Practice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/String2Duplicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/String2Duplicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java05Array/Array05Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java05Array/Array05Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java06Search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java06Search/BinarySearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,15 +221,7 @@
       <workItem from="1711574729483" duration="177000" />
       <workItem from="1711575132828" duration="101884000" />
       <workItem from="1712279407402" duration="19092000" />
-      <workItem from="1712403683250" duration="11822000" />
-    </task>
-    <task id="LOCAL-00009" summary="Make changes">
-      <option name="closed" value="true" />
-      <created>1694456087322</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1694456087322</updated>
+      <workItem from="1712403683250" duration="12849000" />
     </task>
     <task id="LOCAL-00010" summary="Make changes">
       <option name="closed" value="true" />
@@ -630,7 +607,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712417431363</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Array Update questions">
+      <option name="closed" value="true" />
+      <created>1712481534157</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1712481534157</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +650,8 @@
     <MESSAGE value="Arrays Update questions" />
     <MESSAGE value="HashMap Update questions" />
     <MESSAGE value="String Update questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="String Update questions" />
+    <MESSAGE value="Array Update questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Array Update questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

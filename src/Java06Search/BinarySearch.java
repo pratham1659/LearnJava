@@ -82,7 +82,7 @@ public class BinarySearch {
             int mid = start + (end - start) / 2;
             if (target == arr[mid]) {
                 firstOccur = mid;
-                end = mid-1;
+                end = mid - 1;
                 return mid;
             } else if (target < arr[mid]) {
                 end = mid - 1;
@@ -93,7 +93,7 @@ public class BinarySearch {
         return firstOccur;
     }
 
-    public static int findLastOccurrence(int[] arr, int target){
+    public static int findLastOccurrence(int[] arr, int target) {
         int len = arr.length;
         int start = 0;
         int end = len - 1;
@@ -115,20 +115,20 @@ public class BinarySearch {
 
 //    Find the square root of the given non negative value x. Round it off to the nearest floor integer value.
 
-    public static int squareRootBinarySearch(int target){
+    public static int squareRootBinarySearch(int target) {
         int start = 0, end = target;
         int ans = -1;
 
-        while (start <= end){
-            int mid = start + (end- start)/2;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
             long value = (long) mid * mid;
-            if(value == target){
-                return  mid;
-            }else if(value < target){
+            if (value == target) {
+                return mid;
+            } else if (value < target) {
                 ans = mid;
                 start = mid + 1;
-            }else{
-                end = mid -1;
+            } else {
+                end = mid - 1;
                 ans = mid;
             }
         }

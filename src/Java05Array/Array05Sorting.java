@@ -36,7 +36,7 @@ public class Array05Sorting {
         return arr;
     }
 
-    // 3. Java Program to find Third Largest Number in an Array
+    // 3. Java Program to find Third-Largest Number in an Array
     public static int findThirdLargestNumber(int[] arr) {
 
         int n = arr.length;
@@ -54,7 +54,7 @@ public class Array05Sorting {
         return arr[n - 3];
     }
 
-    // 5. Java Program to find Third Largest Number in an Array
+    // 5. Java Program to find Second-Largest Number in an Array
     public static int findSecondLargestNumber(int[] arr) {
 
         int n = arr.length;
