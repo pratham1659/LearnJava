@@ -1,4 +1,4 @@
-package Java07Sorting.AdvanceSort;
+package Java07Sorting;
 
 public class MergeSort {
 
