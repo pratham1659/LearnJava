@@ -2,7 +2,7 @@ package Java09Recursion;
 
 import java.util.Scanner;
 
-public class JavaClass {
+public class Recursion03Practice {
     static Scanner sc = new Scanner(System.in);
 
     //Factorial in Java using Loops
@@ -179,11 +179,11 @@ public class JavaClass {
 //    recursion.
 
     public static boolean checkPalindrome(String str) {
-        if(str.length() <= 1){
+        if (str.length() <= 1) {
             return true;
         }
         int lastPos = str.length() - 1;
-        if(str.charAt(0) != str.charAt(lastPos)){
+        if (str.charAt(0) != str.charAt(lastPos)) {
             return false;
         }
         String newStr = str.substring(1, lastPos);
@@ -191,37 +191,38 @@ public class JavaClass {
     }
 
     public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.print("please Enter your num: ");
-//        int num = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("please Enter your num: ");
+        int num = sc.nextInt();
 
         System.out.print("Enter your String: ");
         String str = sc.next();
-//        System.out.println("Factorial of " + num + " is " + factorial(num));
+        System.out.println("Factorial of " + num + " is " + factorial(num));
 
-//        checkPassword();
+        checkPassword();
 
-//        guessGame();
+        guessGame();
 
-//        multiplicationTable(num);
+        multiplicationTable(num);
 
-//        System.out.println("Your number is " + (isPrime(num) ? "prime" : "Not Prime"));
+        System.out.println("Your number is " + (isPrime(num) ? "prime" : "Not Prime"));
 
-//        maxArray(inputArray());
+        maxArray(inputArray());
 
-//        System.out.println(occurrencesCheck(inputArray(), 5));
+        System.out.println(occurrencesCheck(inputArray(), 5));
 
-//        inputOnExit();
+        inputOnExit();
 
-//        skipNegative();
+        skipNegative();
 
-//        skipOddEven();
+        skipOddEven();
 
-//        for (int i = 1; i <= num; i++) {
-//            System.out.print(fibonacci(i) + " ");
+        for (int i = 1; i <= num; i++) {
+            System.out.print(fibonacci(i) + " ");
 //        }
 
 
-        System.out.println(checkPalindrome(str) ? "Palindrome":"not Palindrome");
+            System.out.println(checkPalindrome(str) ? "Palindrome" : "not Palindrome");
+        }
     }
 }
