@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Array Update questions">
-      <change afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion01Basic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion02Problems.java" afterDir="false" />
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Recursion Update questions">
+      <change afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion04Arrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion05Strings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java09Recursion/JavaClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion03Practice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java09Recursion/recursionPractice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java09Recursion/Recursion02Problems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion02Problems.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +75,7 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Recursion02Problems">
+  <component name="RunManager" selected="Application.Recursion05Strings">
     <configuration name="Java08String.Problems.String0Swap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java08String.Problems.String0Swap" />
       <module name="LearnJava" />
@@ -103,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String01Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08String.String01Basic" />
+    <configuration name="Recursion05Strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java09Recursion.Recursion05Strings" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java08String.*" />
+          <option name="PATTERN" value="Java09Recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String0Swap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="String.Problems.String0Swap" />
+    <configuration name="String01Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java08String.String01Basic" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="String.Problems.*" />
+          <option name="PATTERN" value="Java08String.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Recursion05Strings" />
         <item itemvalue="Application.Recursion02Problems" />
         <item itemvalue="Application.String1Reverse" />
         <item itemvalue="Application.Java08String.Problems.String0Swap" />
         <item itemvalue="Application.String01Basic" />
-        <item itemvalue="Application.String0Swap" />
       </list>
     </recent_temporary>
   </component>
@@ -223,15 +222,7 @@
       <workItem from="1711574729483" duration="177000" />
       <workItem from="1711575132828" duration="101884000" />
       <workItem from="1712279407402" duration="19092000" />
-      <workItem from="1712403683250" duration="16026000" />
-    </task>
-    <task id="LOCAL-00013" summary="Arrays Practice">
-      <option name="closed" value="true" />
-      <created>1704398397038</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1704398397038</updated>
+      <workItem from="1712403683250" duration="31725000" />
     </task>
     <task id="LOCAL-00014" summary="Arrays Practice">
       <option name="closed" value="true" />
@@ -617,7 +608,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712666787045</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Recursion Update questions">
+      <option name="closed" value="true" />
+      <created>1712667082170</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1712667082170</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,7 +652,8 @@
     <MESSAGE value="HashMap Update questions" />
     <MESSAGE value="String Update questions" />
     <MESSAGE value="Array Update questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Array Update questions" />
+    <MESSAGE value="Recursion Update questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recursion Update questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

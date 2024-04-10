@@ -58,20 +58,67 @@ public class Recursion02Problems {
         // subCase recursive work
         multiples(num, k - 1);
 
+        int ans = num * k;
         // self work
-        System.out.print(num * k + " ");
+        System.out.print(ans + " ");
+    }
 
+    //Given a number n. Find the sum of natural numbers till n but with alternate signs.
+    public static int sumOfNatural(int num) {
+        if (num == 0) return num;
+
+        return sumOfNatural(num - 1) + num;
+    }
+
+    public static int alternateSum(int num) {
+        if (num == 0) return num;
+
+        if (num % 2 == 0) {
+            return alternateSum(num - 1) - num;
+        } else {
+            return alternateSum(num - 1) + num;
+        }
+    }
+
+    //Find GCD using recursion.
+    public static int iterateGCD(int x, int y) {
+        // temp -- Divisor
+        // y -- Divisor
+        // x -- remainder
+
+        while (x % y != 0) {
+            int rem = x % y;
+            x = y;
+            y = rem;
+        }
+        return y;
+    }
+
+    //Find GCD using Euclid
+    public static int euclidGCD(int x, int y){
+
+        if(y == 0){
+            return x;
+        }
+        return euclidGCD(y, x % y);
     }
 
     public static void main(String[] args) {
 
-        int n = 523;
-        System.out.println("Sum of Digits: " + sumOfDigit(n));
+        int num = 523;
+        System.out.println("Sum of Digits: " + sumOfDigit(num));
 
         System.out.println("Power of Digit: " + findPower(5, 4));
         System.out.println("Power of Digit: " + powNum(2, 5));
 
-        multiples(12, 4);
+        multiples(12, 5);
+
+        System.out.println("\nSum of Natural: " + sumOfNatural(10));
+        System.out.println("Sum of Alternate: " + alternateSum(10));
+
+        System.out.println("GCD of x and y: " + iterateGCD(12, 16));
+        System.out.println("GCD of x and y: " + euclidGCD(12, 16));
+
 
     }
 }
