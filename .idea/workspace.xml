@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Recursion Update questions">
-      <change afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion04Arrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion05Strings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java09Recursion/Recursion02Problems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion02Problems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java09Recursion/Recursion04Arrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion04Arrays.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Recursion05Strings">
+  <component name="RunManager" selected="Application.Recursion04Arrays">
     <configuration name="Java08String.Problems.String0Swap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java08String.Problems.String0Swap" />
       <module name="LearnJava" />
@@ -102,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Recursion05Strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java09Recursion.Recursion05Strings" />
+    <configuration name="Recursion04Arrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java09Recursion.Recursion04Arrays" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
@@ -115,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String01Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08String.String01Basic" />
+    <configuration name="Recursion05Strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java09Recursion.Recursion05Strings" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java08String.*" />
+          <option name="PATTERN" value="Java09Recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Recursion04Arrays" />
         <item itemvalue="Application.Recursion05Strings" />
         <item itemvalue="Application.Recursion02Problems" />
         <item itemvalue="Application.String1Reverse" />
         <item itemvalue="Application.Java08String.Problems.String0Swap" />
-        <item itemvalue="Application.String01Basic" />
       </list>
     </recent_temporary>
   </component>
@@ -222,15 +220,7 @@
       <workItem from="1711574729483" duration="177000" />
       <workItem from="1711575132828" duration="101884000" />
       <workItem from="1712279407402" duration="19092000" />
-      <workItem from="1712403683250" duration="31725000" />
-    </task>
-    <task id="LOCAL-00014" summary="Arrays Practice">
-      <option name="closed" value="true" />
-      <created>1704405341225</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1704405341225</updated>
+      <workItem from="1712403683250" duration="40882000" />
     </task>
     <task id="LOCAL-00015" summary="Arrays Practice">
       <option name="closed" value="true" />
@@ -616,7 +606,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712667082170</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Recursion Update questions">
+      <option name="closed" value="true" />
+      <created>1712747662596</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1712747662596</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
