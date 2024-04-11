@@ -113,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Recursion06Strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java09Recursion.Recursion06Strings" />
+    <configuration name="Recursion05Strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java09Recursion.Recursion05Strings" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +142,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Recursion04Arrays" />
-        <item itemvalue="Application.Recursion06Strings" />
+        <item itemvalue="Application.Recursion05Strings" />
         <item itemvalue="Application.Recursion02Problems" />
         <item itemvalue="Application.String1Reverse" />
         <item itemvalue="Application.Java08String.Problems.String0Swap" />

@@ -1,6 +1,6 @@
 package Java09Recursion;
 
-public class Recursion06Strings {
+public class Recursion05Strings {
 
     //1: Remove all the occurrences of 'a' from string s = "abcax"
     public static String removeOccurrence(String str) {
