@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Recursion Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java09Recursion/Recursion04Arrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion04Arrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java08String/String04Problems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/String04Problems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java09Recursion/Recursion06SubSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion06SubSets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,20 +74,7 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Recursion04Arrays">
-    <configuration name="Java08String.Problems.String0Swap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08String.Problems.String0Swap" />
-      <module name="LearnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java08String.Problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.String04Problems">
     <configuration name="Recursion02Problems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java09Recursion.Recursion02Problems" />
       <module name="LearnJava" />
@@ -126,12 +114,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String1Reverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08String.Problems.String1Reverse" />
+    <configuration name="Recursion06SubSets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java09Recursion.Recursion06SubSets" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java08String.Problems.*" />
+          <option name="PATTERN" value="Java09Recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="String04Problems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java08String.String04Problems" />
+      <module name="LearnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java08String.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.String04Problems" />
+        <item itemvalue="Application.Recursion06SubSets" />
         <item itemvalue="Application.Recursion04Arrays" />
         <item itemvalue="Application.Recursion05Strings" />
         <item itemvalue="Application.Recursion02Problems" />
-        <item itemvalue="Application.String1Reverse" />
-        <item itemvalue="Application.Java08String.Problems.String0Swap" />
       </list>
     </recent_temporary>
   </component>
@@ -220,39 +221,9 @@
       <workItem from="1711574729483" duration="177000" />
       <workItem from="1711575132828" duration="101884000" />
       <workItem from="1712279407402" duration="19092000" />
-      <workItem from="1712403683250" duration="40882000" />
-    </task>
-    <task id="LOCAL-00015" summary="Arrays Practice">
-      <option name="closed" value="true" />
-      <created>1704484137522</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1704484137522</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Basic Java Practice">
-      <option name="closed" value="true" />
-      <created>1704728249844</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1704728249844</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Basic Java Practice">
-      <option name="closed" value="true" />
-      <created>1704745195259</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1704745195260</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Basic Java Practice">
-      <option name="closed" value="true" />
-      <created>1704745357286</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1704745357286</updated>
+      <workItem from="1712403683250" duration="41864000" />
+      <workItem from="1712809379320" duration="2726000" />
+      <workItem from="1712932021359" duration="2099000" />
     </task>
     <task id="LOCAL-00019" summary="Add JavaMaths">
       <option name="closed" value="true" />
@@ -614,7 +585,39 @@
       <option name="project" value="LOCAL" />
       <updated>1712747662596</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Recursion Update questions">
+      <option name="closed" value="true" />
+      <created>1712808036704</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1712808036704</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Recursion Update questions">
+      <option name="closed" value="true" />
+      <created>1712808068782</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1712808068782</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Recursion Update questions">
+      <option name="closed" value="true" />
+      <created>1712808077196</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1712808077196</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Recursion Update questions">
+      <option name="closed" value="true" />
+      <created>1712808123833</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1712808123834</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
