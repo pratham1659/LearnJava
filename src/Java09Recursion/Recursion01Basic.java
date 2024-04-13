@@ -3,10 +3,8 @@ package Java09Recursion;
 public class Recursion01Basic {
 
     // Ques 1: Program to find Factorial Array
-    // Time Complexity per call: O(1)
-    // Space Complexity per call:
-    // With tail call optimization: O(1)
-    // Without tail call optimization: O(n)
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
     public static int factorial(int n) {
 
         // Base case
@@ -17,13 +15,12 @@ public class Recursion01Basic {
         int ans = factorial(n - 1);
 
         // big problem - self problem
-        int factAns = n * ans;
-        return factAns;
+        return n * ans;
     }
 
     // Ques 2: program to find Factorial Array
     // time complexity - O(2^n) time complexity
-    // space Complexity - O(2^n) space complexity
+    // space Complexity - O(n) space complexity
     public static int fibonacci(int n) {
 
         // Base case
@@ -40,7 +37,7 @@ public class Recursion01Basic {
 
     public static void main(String[] args) {
 
-        System.out.println("Factorial: " + factorial(4));
+        System.out.println("Factorial: " + factorial(5));
 
         for (int i = 0; i <= 10; i++) {
             System.out.print(fibonacci(i) + " ");

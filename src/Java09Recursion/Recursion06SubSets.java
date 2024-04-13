@@ -33,18 +33,54 @@ public class Recursion06SubSets {
     }
 
     //2: Given a string, write a method to print all its subsequences.
-    public static void printSubsequence(String str){
-        
+    public static void printSubsequence(String str, String currAns) {
+
+
+        if(str.length() == 0){
+            System.out.println(currAns);
+            return;
+        }
+        char curr = str.charAt(0);
+
+        String remString = str.substring(1);
+
+        // Curr char → chooses to be a part of currAns
+        printSubsequence(remString, currAns + curr); //add curr
+
+        // curr char → does not choose to be a part of currAns
+        printSubsequence(remString, currAns); // do not add curr
+
+    }
+
+    //Given an array of integers, print sums of all subsets in it. Output sums can be printed in
+    //any order.
+    public static void printNumberSubs(int[] arr, int n, int idx, int sum){
+
+        if(idx >= n){
+            System.out.println(sum);
+            return;
+        }
+        //curr Idx + sum
+        printNumberSubs(arr, n, idx+1, sum + arr[idx]); //include
+
+        //curr ans
+        printNumberSubs(arr, n, idx+1, sum); //exclude
+
     }
 
     public static void main(String[] args) {
 
-        ArrayList<String> arrLst = subSequence("abc");
+//        ArrayList<String> arrLst = subSequence("abc");
+//
+//        for (String ss : arrLst) {
+//            System.out.println(ss);
+//        }
 
-        for (String ss : arrLst) {
-            System.out.println(ss);
-        }
 
-        printSubsequence("abc");
+        System.out.println("Print Subsequence");
+        printSubsequence("abc", "");
+
+        int[] arr = {2, 4, 5};
+        printNumberSubs(arr, arr.length, 0, 0);
     }
 }
