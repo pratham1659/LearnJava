@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Recursion Update questions">
+      <change afterPath="$PROJECT_DIR$/src/Java04Maths/MathsPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java05Array/Array13Extras.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/String04Problems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/String04Problems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java09Recursion/Recursion06SubSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java09Recursion/Recursion06SubSets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,15 +223,8 @@
       <workItem from="1712279407402" duration="19092000" />
       <workItem from="1712403683250" duration="41864000" />
       <workItem from="1712809379320" duration="2726000" />
-      <workItem from="1712932021359" duration="2099000" />
-    </task>
-    <task id="LOCAL-00019" summary="Add JavaMaths">
-      <option name="closed" value="true" />
-      <created>1704831570115</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1704831570115</updated>
+      <workItem from="1712932021359" duration="2157000" />
+      <workItem from="1712981898541" duration="2459000" />
     </task>
     <task id="LOCAL-00020" summary="Basic Programs">
       <option name="closed" value="true" />
@@ -617,7 +610,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712808123834</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Recursion Update questions">
+      <option name="closed" value="true" />
+      <created>1712934133273</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1712934133273</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
