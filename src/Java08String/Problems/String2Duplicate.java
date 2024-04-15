@@ -5,13 +5,10 @@ import java.util.Map.Entry;
 
 public class String2Duplicate {
 
-    /*
-     * Remove Duplicate
-     * Characters In
-     * Given String
-     */
+    // Remove Duplicate Characters In  Given String
 
     // Approach - 1
+    // Time complexity : O(N)
     public static void duplicateRemove(String str) {
 
         StringBuilder sb = new StringBuilder();
@@ -26,6 +23,7 @@ public class String2Duplicate {
     }
 
     // Approach - 2
+    // Time complexity : O(N^2)
     public static void duplicateCharArray(String str) {
 
         char[] chArray = str.toCharArray();
@@ -48,6 +46,7 @@ public class String2Duplicate {
     }
 
     // Approach - 3
+    // TimeComplexity O(n)
     public static void duplicateBuilder(String str) {
 
         StringBuilder sb = new StringBuilder();

@@ -1,5 +1,7 @@
 package Java08String.Problems;
 
+import java.util.Arrays;
+
 public class String1Reverse {
 
     /*
@@ -10,6 +12,7 @@ public class String1Reverse {
      */
 
     // Approach-1
+    // Time complexity : O(N)
     public static String reverseCharAt(String str) {
 
         int length = str.length();
@@ -21,6 +24,7 @@ public class String1Reverse {
     }
 
     // Approach-2
+    // Time Complexity : O(nlogN)
     public static String reverseAtCharArray(String str) {
 
         char[] charArray = str.toCharArray();
@@ -37,6 +41,7 @@ public class String1Reverse {
     }
 
     // Approach-3
+    // Time complexity : O(N)
     public static String reverseStringBuilder(String str) {
         StringBuilder sb = new StringBuilder(str);
         return sb.reverse().toString();
@@ -44,6 +49,7 @@ public class String1Reverse {
 
 
      // Java Program To Reverse Each Word In String
+     // Time complexity : O(N^2)
     public static String reverseWordStringArray(String str) {
         System.out.println("Original String: " + str);
 
@@ -60,6 +66,20 @@ public class String1Reverse {
         return output.toString();
     }
 
+    // Java Program To Reverse Each Word In String
+    // Time complexity : O(NlogN)
+    public static String reverseWordStringArray2(String str){
+
+        String[] words = str.split(" ");
+        StringBuilder result = new StringBuilder();
+
+        for(String st : words){
+            result.append(reverseAtCharArray(st)).append(" ");
+        }
+
+        return result.toString();
+    }
+
     public static void main(String[] args) {
 
         String strAtChar = "Hello";
@@ -70,5 +90,6 @@ public class String1Reverse {
 
         String strString = "This is Hello World";
         System.out.println("Reverse words in String: " +  reverseWordStringArray(strString));
+        System.out.println("Reverse words in String: " +  reverseWordStringArray2(strString));
     }
 }
