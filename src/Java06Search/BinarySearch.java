@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class BinarySearch {
 
-    // 1. binary Search using Array : Time Complexity O(logN), Space Complexity O(1)
+    // 1. binary Search using Array: Time Complexity O(logN), Space Complexity O(1)
     public static int binarySearchArray(int[] arr, int key) {
 
         int left = 0;
@@ -13,17 +13,17 @@ public class BinarySearch {
         while (left <= right) {
             int mid = left + (right - left) / 2;
 
-            // Check if target is present at mid
+            // Check if the target is present at mid
             if (arr[mid] == key) {
                 return mid;
             }
 
-            // If target is greater, ignore left half
+            // If the target is greater, ignore the left half
             if (arr[mid] < key) {
                 left = mid + 1;
             }
 
-            // If target is smaller, ignore right half
+            // If the target is smaller, ignore the right half
             else {
                 right = mid - 1;
             }

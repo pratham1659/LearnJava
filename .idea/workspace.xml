@@ -6,16 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="String Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/String10Manipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/String10Manipulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/String4Substring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/String4Substring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/String6Remove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/String6Remove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/String7Anagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/String7Anagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/String8Stacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/String8Stacks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/String9Analyze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/String9Analyze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/StringCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/StringCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/StringFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/StringOops/StringFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/StudentToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/StringOops/StudentToString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/stringSubString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/stringSubString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java06Search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java06Search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java06Search/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java06Search/LinearSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,13 +75,26 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.String4Substring">
-    <configuration name="String3Occurrence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08String.Problems.String3Occurrence" />
+  <component name="RunManager" selected="Application.BinarySearch">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java06Search.BinarySearch" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java08String.Problems.StringOops.*" />
+          <option name="PATTERN" value="Java06Search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinearSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java06Search.LinearSearch" />
+      <module name="LearnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java06Search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,19 +104,6 @@
     </configuration>
     <configuration name="String4Substring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java08String.Problems.String4Substring" />
-      <module name="LearnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java08String.Problems.StringOops.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="String6Remove" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08String.Problems.String6Remove" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
@@ -151,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.LinearSearch" />
         <item itemvalue="Application.String4Substring" />
         <item itemvalue="Application.String8Stacks" />
         <item itemvalue="Application.String7Anagram" />
-        <item itemvalue="Application.String6Remove" />
-        <item itemvalue="Application.String3Occurrence" />
       </list>
     </recent_temporary>
   </component>
@@ -234,15 +226,7 @@
       <workItem from="1712809379320" duration="2726000" />
       <workItem from="1712932021359" duration="2157000" />
       <workItem from="1712981898541" duration="17505000" />
-      <workItem from="1713174113829" duration="38837000" />
-    </task>
-    <task id="LOCAL-00028" summary="DSA questions">
-      <option name="closed" value="true" />
-      <created>1707155904201</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1707155904201</updated>
+      <workItem from="1713174113829" duration="40070000" />
     </task>
     <task id="LOCAL-00029" summary="DSA questions">
       <option name="closed" value="true" />
@@ -628,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713290992907</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="String Update questions">
+      <option name="closed" value="true" />
+      <created>1713292267434</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1713292267434</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
