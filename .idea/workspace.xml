@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Recursion Update questions">
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="String Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/String1Reverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/String1Reverse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/String04Problems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/String04Problems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java08String/String05LeetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/String05LeetCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,20 +75,7 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.String04Problems">
-    <configuration name="String01Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08String.String01Basic" />
-      <module name="LearnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java08String.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.String05LeetCode">
     <configuration name="String02Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java08String.String02Builder" />
       <module name="LearnJava" />
@@ -105,6 +91,19 @@
     </configuration>
     <configuration name="String04Problems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java08String.String04Problems" />
+      <module name="LearnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java08String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="String05LeetCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java08String.String05LeetCode" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
@@ -144,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.String05LeetCode" />
         <item itemvalue="Application.String04Problems" />
         <item itemvalue="Application.String02Builder" />
         <item itemvalue="Application.String2Duplicate" />
         <item itemvalue="Application.String1Reverse" />
-        <item itemvalue="Application.String01Basic" />
       </list>
     </recent_temporary>
   </component>
@@ -227,15 +226,7 @@
       <workItem from="1712809379320" duration="2726000" />
       <workItem from="1712932021359" duration="2157000" />
       <workItem from="1712981898541" duration="17505000" />
-      <workItem from="1713174113829" duration="26524000" />
-    </task>
-    <task id="LOCAL-00024" summary="Class Files">
-      <option name="closed" value="true" />
-      <created>1706272985631</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1706272985631</updated>
+      <workItem from="1713174113829" duration="31089000" />
     </task>
     <task id="LOCAL-00025" summary="New files">
       <option name="closed" value="true" />
@@ -621,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713185226434</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="String Update questions">
+      <option name="closed" value="true" />
+      <created>1713267863275</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1713267863275</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,10 +654,10 @@
     <MESSAGE value="DSA questions" />
     <MESSAGE value="Arrays Update questions" />
     <MESSAGE value="HashMap Update questions" />
-    <MESSAGE value="String Update questions" />
     <MESSAGE value="Array Update questions" />
     <MESSAGE value="Recursion Update questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recursion Update questions" />
+    <MESSAGE value="String Update questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="String Update questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
