@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="String Update questions">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java08String/String05LeetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/String05LeetCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java08String/Problems/String1Reverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/Problems/String1Reverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java08String/String06Geeks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java08String/String06Geeks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +75,9 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.String05LeetCode">
-    <configuration name="String02Builder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08String.String02Builder" />
+  <component name="RunManager" selected="Application.String2Duplicate">
+    <configuration name="String01Basic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java08String.String01Basic" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.String2Duplicate" />
+        <item itemvalue="Application.String01Basic" />
+        <item itemvalue="Application.String1Reverse" />
         <item itemvalue="Application.String05LeetCode" />
         <item itemvalue="Application.String04Problems" />
-        <item itemvalue="Application.String02Builder" />
-        <item itemvalue="Application.String2Duplicate" />
-        <item itemvalue="Application.String1Reverse" />
       </list>
     </recent_temporary>
   </component>
@@ -226,15 +226,7 @@
       <workItem from="1712809379320" duration="2726000" />
       <workItem from="1712932021359" duration="2157000" />
       <workItem from="1712981898541" duration="17505000" />
-      <workItem from="1713174113829" duration="31089000" />
-    </task>
-    <task id="LOCAL-00025" summary="New files">
-      <option name="closed" value="true" />
-      <created>1706356348043</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1706356348044</updated>
+      <workItem from="1713174113829" duration="34373000" />
     </task>
     <task id="LOCAL-00026" summary="Oops Concepts">
       <option name="closed" value="true" />
@@ -620,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713267863275</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="String Update questions">
+      <option name="closed" value="true" />
+      <created>1713274302149</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1713274302149</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -4,18 +4,17 @@ import java.util.*;
 
 public class String06Geeks {
 
-    //Ques 1: Maximum Occurring Character
     /*
-    Input:
-    str = testsample
-    Output: e
-    Explanation: e is the character which
-    is having the highest frequency.
-     */
+        Ques 1: Maximum Occurring Character
+        Input:
+        str = testsample
+        Output: e
+        Explanation: e is the character which
+        is having the highest frequency.
+    */
     public static char getMaximumOccur(String line) {
 
         int[] freq = new int[26];
-
         for (char c : line.toCharArray()) {
             freq[c - 'a']++;
         }
@@ -99,7 +98,7 @@ public class String06Geeks {
         }
 
         // Check if all characters are removed
-        if (result.length() == 0) {
+        if (result.isEmpty()) {
             return "-1";
         }
 
@@ -114,6 +113,6 @@ public class String06Geeks {
 
         System.out.println("Find first Repeated Character: " + findFirstRepeatedCharacter("abcdefa"));
 
-        System.out.println("uncommon characters: " +uncommonCharacters("aacdb", "gafd"));
+        System.out.println("uncommon characters: " + uncommonCharacters("aacdb", "gafd"));
     }
 }

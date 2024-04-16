@@ -15,6 +15,7 @@ public class String2Duplicate {
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             int idx = str.indexOf(ch, i + 1);
+            System.out.println(idx);
             if (idx == -1) {
                 sb.append(ch);
             }
@@ -117,7 +118,7 @@ public class String2Duplicate {
     public static void findDuplicateWord(String inputString) {
 
         // split:
-        String words[] = inputString.split(" ");
+        String[] words = inputString.split(" ");
 
         // Create one HashMap
         Map<String, Integer> wordCount = new HashMap<String, Integer>();

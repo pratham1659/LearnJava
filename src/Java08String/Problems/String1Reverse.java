@@ -72,7 +72,7 @@ public class String1Reverse {
     public static String reverseEachWord(String str) {
 
         String ans = "";
-        StringBuilder sb = new StringBuilder("");
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
 
