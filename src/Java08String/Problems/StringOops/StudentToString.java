@@ -1,4 +1,4 @@
-package Java08String.Problems;
+package Java08String.Problems.StringOops;
 
 public class StudentToString {
 

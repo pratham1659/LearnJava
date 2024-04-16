@@ -1,4 +1,4 @@
-package String.Problems;
+package Java08String.Problems;
 
 import java.util.Stack;
 
@@ -32,6 +32,25 @@ public class String8Stacks {
         return stack.isEmpty();
     }
 
+    // Best Approach
+    public static boolean validParenthesis(String s) {
+        Stack<Character> stack = new Stack<>();
+        for (char c : s.toCharArray()) {
+            if (c == '(' || c == '{' || c == '[') {
+                stack.push(c);
+            } else if (c == ')' && !stack.isEmpty() && stack.peek() == '(') {
+                stack.pop();
+            } else if (c == '}' && !stack.isEmpty() && stack.peek() == '{') {
+                stack.pop();
+            } else if (c == ']' && !stack.isEmpty() && stack.peek() == '[') {
+                stack.pop();
+            } else {
+                return false;
+            }
+        }
+        return stack.isEmpty();
+    }
+
     public static void main(String[] args) {
         String testString1 = "{[()]}";
         String testString2 = "{[()]";
@@ -42,5 +61,11 @@ public class String8Stacks {
         System.out.println("Is \"" + testString2 + "\" well-formed? " + isWellFormed(testString2));
         System.out.println("Is \"" + testString3 + "\" well-formed? " + isWellFormed(testString3));
         System.out.println("Is \"" + testString4 + "\" well-formed? " + isWellFormed(testString4));
+
+
+        System.out.println(validParenthesis(testString1));
+        System.out.println(validParenthesis(testString2));
+        System.out.println(validParenthesis(testString3));
+        System.out.println(validParenthesis(testString4));
     }
 }

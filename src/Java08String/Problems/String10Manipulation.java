@@ -1,4 +1,4 @@
-package String.Problems;
+package Java08String.Problems;
 
 public class String10Manipulation {
 

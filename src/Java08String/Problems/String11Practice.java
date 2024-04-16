@@ -2,7 +2,7 @@ package Java08String.Problems;
 
 import java.util.Scanner;
 
-public class StringPractice {
+public class String11Practice {
     static Scanner sc = new Scanner(System.in);
 
     //Concatenate and Convert: Take two strings, concatenate them,
@@ -21,7 +21,7 @@ public class StringPractice {
     //    StringPractice(){
 //        //Empty Constructor
 //    }
-    StringPractice(double radiusInMm) {
+    String11Practice(double radiusInMm) {
         this.radiusInMm = radiusInMm;
     }
 
@@ -51,7 +51,7 @@ public class StringPractice {
     //    Create a number guessing game where the program selects a random number, and the user has to guess it.
     int random;
 
-    StringPractice() {
+    String11Practice() {
         random = (int) Math.ceil(Math.random() * 100);
     }
 
@@ -73,7 +73,7 @@ public class StringPractice {
 
         int guess;
         int result;
-        StringPractice game = new StringPractice();
+        String11Practice game = new String11Practice();
         do {
             System.out.print("Guess the number: ");
             guess = sc.nextInt();

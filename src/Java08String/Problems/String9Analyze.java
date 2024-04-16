@@ -1,4 +1,4 @@
-package String.Problems;
+package Java08String.Problems;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,7 +25,7 @@ public class String9Analyze {
                 if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
                     vowelCount++;
                 }
-                // Update character frequency map
+                // Update a character frequency map
                 charFrequency.put(c, charFrequency.getOrDefault(c, 0) + 1);
             }
         }
@@ -44,7 +44,7 @@ public class String9Analyze {
      * How to Verify if the String Contains only Digits
      */
     public static boolean isEmpty(CharSequence cs) {
-        return cs == null || cs.length() == 0;
+        return cs == null || cs.isEmpty();
     }
 
     public static boolean isNumericFind(CharSequence cs) {

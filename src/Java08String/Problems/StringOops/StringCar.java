@@ -1,4 +1,4 @@
-package Java08String.Problems;
+package Java08String.Problems.StringOops;
 
 public class StringCar {
     int noOfWheels;
@@ -31,11 +31,7 @@ public class StringCar {
 
     public static void main(String[] args) {
         StringCar swift = new StringCar(4,4,80,"Suzuki", "45BA", "Maruti");
-
         System.out.println(swift.toString());
-
-
-
     }
 }
 
