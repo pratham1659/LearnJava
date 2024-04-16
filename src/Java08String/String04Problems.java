@@ -4,6 +4,9 @@ import java.util.*;
 
 public class String04Problems {
 
+    // Ques 1:  Program to find a Palindrome in String
+    // Time Complexity: O(NlogN)
+    // Space Complexity: O(1)
     public static boolean checkPalindrome(String str) {
 
         int i = 0;
@@ -18,7 +21,10 @@ public class String04Problems {
         return true;
     }
 
-    public static void palindromeSubstring(String str) {
+    // Ques 2:  program to find palindrome substring
+    // Time Complexity: O(N^2)
+    // Space Complexity: O(N^2)
+    public static int palindromeSubstring(String str) {
 
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
@@ -29,13 +35,16 @@ public class String04Problems {
                 }
             }
         }
-        System.out.println("The number of palindrome substring : " + count);
+        return count;
     }
 
+    // Ques 3: Reverse Each word in String
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
     public static void reverseEachWord(String str) {
 
-        String ans = "";
-        StringBuilder sb = new StringBuilder("");
+        StringBuilder ans = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
 
@@ -43,25 +52,22 @@ public class String04Problems {
                 sb.append(ch);
             } else {
                 sb.reverse();
-                ans += sb;
-                ans += " ";
-                // sb.delete(0, sb.length());
+                ans.append(sb);
+                ans.append(" ");
                 sb = new StringBuilder();
             }
         }
         sb.reverse();
-        ans += sb;
+        ans.append(sb);
         System.out.println("Reverse String: " + ans);
     }
 
-    /*
-     * The string should be compressed such that consecutive
-     * duplicates of characters are replaced with the character
-     * and followed by the number of consecutive duplicates.
-     */
+    // Ques 4: The string should be compressed such that consecutive
+    // duplicates of characters are replaced with the character
+    // and followed by the number of consecutive duplicates.
 
     public static void stringCompress(String str) {
-        String ans = "" + str.charAt(0);
+        StringBuilder ans = new StringBuilder("" + str.charAt(0));
         int count = 1;
         for (int i = 1; i < str.length(); i++) {
             char curr = str.charAt(i);
@@ -70,15 +76,18 @@ public class String04Problems {
             if (curr == prev) {
                 count++;
             } else {
-                ans += count;
+                ans.append(count);
                 count = 1;
-                ans += curr;
+                ans.append(curr);
             }
         }
-        ans += count;
+        ans.append(count);
         System.out.println(ans);
     }
 
+    // Ques 5: find Palindrome in Big String
+    // Time Complexity: O(N^2)
+    // Space Complexity: O(N^2)
     public static ArrayList<String> findPalindromes(String bigString) {
         ArrayList<String> palindromes = new ArrayList<>();
 
@@ -109,19 +118,21 @@ public class String04Problems {
         return true;
     }
 
-    //
+    // Ques 6: Add Number in String
+    // Time Complexity: O(N)
+    // Space Complexity: O(N)
     public static int addNumberInString(String str) {
 
-        String num = "";
+        StringBuilder num = new StringBuilder();
         int sum = 0;
 
         for (int i = 0; i < str.length(); i++) {
             if (Character.isDigit(str.charAt(i))) {
-                num += str.charAt(i);
+                num.append(str.charAt(i));
             } else {
-                if (!num.equals("")) {
-                    sum = sum + Integer.parseInt(num);
-                    num = "";
+                if (!num.toString().isEmpty()) {
+                    sum = sum + Integer.parseInt(num.toString());
+                    num = new StringBuilder();
                 }
             }
         }
@@ -129,8 +140,10 @@ public class String04Problems {
         return sum;
     }
 
-    // CommonCharactersBetweenTwoStringsInAlphabeticalOrder
-    public static void CommonChar(String s1, String s2) {
+    // Ques 7: Common Character between two String Alphabetical Order.
+    // Time Complexity: O(n log k)
+    // Space Complexity: O(n)
+    public static void CommonCharacter(String s1, String s2) {
         char[] fStringToCharArray = s1.replaceAll("\\s+", "").toCharArray();
         char[] sStringToCharArray = s2.replaceAll("\\s+", "").toCharArray();
 
@@ -150,54 +163,63 @@ public class String04Problems {
 
     }
 
-    //Convert 2nd Character in Upper Case
-    public static void makeUpperCase() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your sentence: ");
-        String str = sc.nextLine();
-        String upperCase = "";
-        Scanner scanner = new Scanner(str);
-        while (scanner.hasNext()) {
-            String word = scanner.next();
-            upperCase = upperCase + word.charAt(0) + Character.toUpperCase(word.charAt(1)) + word.substring(2) + " ";
-        }
-        System.out.println(upperCase);
-        scanner.close();
+    //Ques 8: Convert 2nd Character in Upper Case
+    // Time Complexity: O(1)
+    // Space Complexity: O(1)
+    public static void makeUpperCase(String str) {
 
+        String ans = "";
+
+        ans = ans + str.charAt(0) + Character.toUpperCase(str.charAt(1)) + str.substring(2) + " ";
+        System.out.println(ans);
     }
 
-    //Sum of count of A and B in String
-    public static void countCharacter() {
-        String s = "acbbd";
-        int count = 0;
+    //Ques 9: Sum of count of A and B in String
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    public static void countAndSumCharacter() {
+        String s = "acabbd";
+        int countA = 0;
+        int countB = 0;
+        int sum = 0;
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == 'a' || s.charAt(i) == 'b') {
-                count++;
+            if (s.charAt(i) == 'a') {
+                countA++;
+            }
+            if (s.charAt(i) == 'b') {
+                countB++;
             }
         }
-        System.out.println(count);
+
+        sum += countA + countB;
+        System.out.println(sum);
     }
 
-    //Found substring in String
+    //Ques 10: Program to find substring in String
+    // Time Complexity: O(n * m)
+    // Space Complexity: O(1)
     public static void findSubstring() {
-        String stringVal = "dhimanman";
-        String subStringval = "man";
-        int c = 0;
-        while (stringVal.length() >= subStringval.length()) {
-            if (stringVal.substring(0, subStringval.length()).equals(subStringval))
-                c = c + 1;
-            stringVal = stringVal.substring(1);
+        String stringValue = "dhimanman";
+        String subStringValue = "man";
+        int count = 0;
+        while (stringValue.length() >= subStringValue.length()) {
+            if (stringValue.startsWith(subStringValue)) {
+                count++;
+            }
+            stringValue = stringValue.substring(1);
 
         }
-        if (c == 0) {
+        if (count == 0) {
             System.out.println("Substring not found");
         } else {
-            System.out.println("Frequency of substring is: " + c);
+            System.out.println("Frequency of substring is: " + count);
         }
     }
 
-    //Rotation Of String
-    public static void rotateString() {
+    //Ques 11: Rotation Of String
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
+    public static void rotateStringCheck() {
         String s1 = "AmritaAmritaisis";
         String s2 = "isisAmritaAmrita";
         if (s1.length() != s2.length()) {
@@ -212,64 +234,44 @@ public class String04Problems {
         }
     }
 
-    //Reverse words in String only
-    public static void reverseWordStr() {
-        String str = "My Name Is Amrita";
-        String a[] = str.split(" ");
-        for (int i = a.length - 1; i >= 0; i--) {
-            System.out.println(a[i] + "");
-        }
-    }
-
-    //Reverse Letters in String
-    public static void reverseCharStr() {
-        String str = "Amrita is my name";
-        String[] words = str.split(" ");
-        String reverseString = "";
-        for (int i = 0; i < words.length; i++) {
-            String word = words[i];
-            String reversedWord = "";
-            for (int j = word.length() - 1; j >= 0; j--) {
-                reversedWord = reversedWord + word.charAt(j);
-            }
-            reverseString = reverseString + reversedWord + " ";
-        }
-        System.out.println(reverseString);
-    }
-
-    //Remove Extra White space from String
-    public static void removeWhiteSpace() {
-        String s = "  Hello World, I am   Amrita";
+    //Ques 12: Program Remove Extra White space from String
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    public static void removeWhiteSpace(String s) {
         s = s.replaceAll("\\s+", "");
         System.out.println(s);
     }
 
-    //Highest frequency of elements
-    public static void checkFrequency() {
-        String s = "this is demooo is demo is is amrita";
+    //Ques 14: Highest frequency of elements
+    // Time Complexity: O(n + m)
+    // Space Complexity: O(m)
+    public static void checkFrequency(String s) {
         String[] words = s.split(" ");
-        HashMap<String, Integer> hm = new HashMap<>();
+        HashMap<String, Integer> map = new HashMap<>();
 
         for (String str : words) {
-            if (hm.get(str) != null) {
-                hm.put(str, hm.get(str) + 1);
+            if (map.get(str) != null) {
+                map.put(str, map.get(str) + 1);
             } else {
-                hm.put(str, 1);
+                map.put(str, 1);
             }
         }
         int maxCount = 0;
         String maxString = "";
 
-        for (Map.Entry<String, Integer> me : hm.entrySet()) {
+        for (Map.Entry<String, Integer> me : map.entrySet()) {
             if (maxCount < me.getValue()) {
                 maxCount = me.getValue();
                 maxString = me.getKey();
             }
         }
-        System.out.println("Max String :  " + maxString + ":" + maxCount);
+        System.out.println("Max String: " + maxString);
+        System.out.println("Count: " + maxCount);
     }
 
-    //count Character Occurrence
+    //Ques 15: Program to Count Character Occurrence in String
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
     public static int countOccurrences(String input, char target) {
         int count = 0;
 
@@ -282,48 +284,41 @@ public class String04Problems {
         return count;
     }
 
-    //firstRepeatedNonRepeatedChar
-    static void firstRepeatedNonRepeatedChar(String inputString)
-    {
+    //Ques 16: Program to find First Repeated Non-Repeated Char
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    public static void firstRepeatedNonRepeatedChar(String str) {
         HashMap<Character, Integer> charCountMap = new HashMap<Character, Integer>();
-        char[] strArray = inputString.toCharArray();
-        for (char c : strArray)
-        {
-            if(charCountMap.containsKey(c))
-            {
-                charCountMap.put(c, charCountMap.get(c)+1);
-            }
-            else
-            {
-                charCountMap.put(c, 1);
+        char[] charArray = str.toCharArray();
+        for (char ch : charArray) {
+            if (charCountMap.containsKey(ch)) {
+                charCountMap.put(ch, charCountMap.get(ch) + 1);
+            } else {
+                charCountMap.put(ch, 1);
             }
         }
+
         //checking for first non-repeated character
-        for (char c : strArray)
-        {
-            if (charCountMap.get(c) == 1)
-            {
-                System.out.println("First Non-Repeated Character In '"+inputString+"' is '"+c+"'");
+        for (char ch : charArray) {
+            if (charCountMap.get(ch) == 1) {
+                System.out.println("First Non-Repeated Character In '" + str + "' is '" + ch + "'");
                 break;
             }
         }
+
         //checking for first repeated character
-
-        for (char c : strArray)
-        {
-            if (charCountMap.get(c) > 1)
-            {
-                System.out.println("First Repeated Character In '"+inputString+"' is '"+c+"'");
-
+        for (char ch : charArray) {
+            if (charCountMap.get(ch) > 1) {
+                System.out.println("First Repeated Character In '" + str + "' is '" + ch + "'");
                 break;
             }
         }
     }
 
-    public static void duplicateWordsUsingHashMap(){
-        System.out.print("enter String to analysis:");
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
+    //Ques 16: Program to find duplicate Word Using HashMap
+    // Time Complexity: O(n + m)
+    // Space Complexity: O(m)
+    public static void duplicateWordsUsingHashMap(String input) {
         String[] words = input.split(" ");
         Map<String, Integer> wordMap = new HashMap<String, Integer>();
         for (String str : words) {
@@ -337,42 +332,56 @@ public class String04Problems {
 
         for (String str : str2) {
             if (wordMap.get(str) > 1) {
-                ;
-                System.out.println("Words:" + str + ":repeated " + wordMap.get(str) + " times");
-
+                System.out.println("Words: " + str + " - repeated " + wordMap.get(str) + " times");
             }
-
         }
-        sc.close();
     }
 
-    //DuplicateCharacterUsingHashMap
-    public static void duplicateCharacterUsingHashMap(String str){
+    //Ques 16: Program to find duplicate Word Using HashMap
+    // Time Complexity: O(N^2)
+    // Space Complexity: O(m)
+    public static void duplicateCharacterUsingHashMap(String str) {
 
         Map<Character, Integer> map = new HashMap<Character, Integer>();
-        char[] charecters = str.toCharArray();
-        for (char c : charecters) {
+        char[] charArray = str.toCharArray();
+        for (char c : charArray) {
             if (!map.containsKey(c)) {
                 map.put(c, 1);
             } else {
                 map.put(c, map.get(c) + 1);
             }
-            Set<Map.Entry<Character, Integer>> entrySet = map.entrySet();
-            for (Map.Entry<Character, Integer> entry : entrySet) {
-                if (entry.getValue() > 1) {
+        }
 
-                    System.out.printf("%s:%d %n", entry.getKey(), entry.getValue());
-                }
-
-
+        Set<Map.Entry<Character, Integer>> entrySet = map.entrySet();
+        for (Map.Entry<Character, Integer> entry : entrySet) {
+            if (entry.getValue() > 1) {
+                System.out.printf("%s:%d %n", entry.getKey(), entry.getValue());
             }
         }
     }
 
+
+    //Ques 17: Convert 2nd Character in Upper Case
+    public static void InputForUpperCase() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your sentence: ");
+        String str = sc.nextLine();
+        String upperCase = "";
+        Scanner scanner = new Scanner(str);
+        while (scanner.hasNext()) {
+            String word = scanner.next();
+            upperCase = upperCase + word.charAt(0) + Character.toUpperCase(word.charAt(1)) + word.substring(2) + " ";
+        }
+        System.out.println(upperCase);
+        scanner.close();
+    }
+
     public static void main(String[] args) {
 
-        String str = "abcba";
-        palindromeSubstring(str);
+        System.out.println("Check Palindrome: " + checkPalindrome("level"));
+        System.out.println("Check Palindrome: " + checkPalindrome("levee"));
+
+        System.out.println("\n" + palindromeSubstring("abcba"));
 
         String wordStr = "I am an Online Player";
         reverseEachWord(wordStr);
@@ -383,38 +392,44 @@ public class String04Problems {
         String bigString = "abcbadefedabcba"; // Example big string
         ArrayList<String> palindromes = findPalindromes(bigString);
 
-//        // Print the palindromic strings found
-//        System.out.println("Palindromic Strings:");
-//        for (String palindrome : palindromes) {
-//            System.out.println(palindrome);
-//        }
-
+        // Print the palindromic strings found
+        System.out.println("Palindromic Strings:");
+        for (String palindrome : palindromes) {
+            System.out.println(palindrome);
+        }
 
         System.out.println("Add Number: " + addNumberInString("hllo57dk25gautm"));
 
         String fString = "thin sticks";
         String sString = "thick bricks";
-        CommonChar(fString, sString);
+        CommonCharacter(fString, sString);
 
+        makeUpperCase("abcde");
 
-        makeUpperCase();
-        countCharacter();
+        countAndSumCharacter();
+
         findSubstring();
-        rotateString();
-        reverseWordStr();
+
+        rotateStringCheck();
+
+        removeWhiteSpace("abc    d e f    which k l m n   o p first");
+
+        checkFrequency("this this is demo demo demo demo is demo is is amrita");
+
 
         String inputString = "Hello, how are you?";
-
         char targetCharacter = 'o';
         int occurrences = countOccurrences(inputString, targetCharacter);
-
         System.out.println("Number of occurrences of '" + targetCharacter + "': " + occurrences);
 
         String repeatedStr = "aabcshsddss";
         firstRepeatedNonRepeatedChar(repeatedStr);
 
-        String dupliStr = "amritaa";
-        duplicateCharacterUsingHashMap(dupliStr);
+        String duplicateStr = "margarita";
+        duplicateCharacterUsingHashMap(duplicateStr);
+
+        String duplicateArray = "Amrita man man mon pow mon";
+        duplicateWordsUsingHashMap(duplicateArray);
 
     }
 }

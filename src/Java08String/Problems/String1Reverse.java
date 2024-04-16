@@ -30,7 +30,7 @@ public class String1Reverse {
         char[] charArray = str.toCharArray();
         int start = 0;
         int end = str.length() - 1;
-        while(start < end){
+        while (start < end) {
             char temp = charArray[start];
             charArray[start] = charArray[end];
             charArray[end] = temp;
@@ -48,8 +48,8 @@ public class String1Reverse {
     }
 
 
-     // Java Program To Reverse Each Word In String
-     // Time complexity : O(N^2)
+    // Java Program To Reverse Each Word In String
+    // Time complexity : O(N^2)
     public static String reverseWordStringArray(String str) {
         System.out.println("Original String: " + str);
 
@@ -66,14 +66,38 @@ public class String1Reverse {
         return output.toString();
     }
 
+    // Ques 3: reverse Each word in String
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    public static String reverseEachWord(String str) {
+
+        String ans = "";
+        StringBuilder sb = new StringBuilder("");
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if (ch != ' ') {
+                sb.append(ch);
+            } else {
+                sb.reverse();
+                ans += sb;
+                ans += " ";
+                sb = new StringBuilder();
+            }
+        }
+        sb.reverse();
+        ans += sb;
+        return ans;
+    }
+
     // Java Program To Reverse Each Word In String
     // Time complexity : O(NlogN)
-    public static String reverseWordStringArray2(String str){
+    public static String reverseWordStringArray2(String str) {
 
         String[] words = str.split(" ");
         StringBuilder result = new StringBuilder();
 
-        for(String st : words){
+        for (String st : words) {
             result.append(reverseAtCharArray(st)).append(" ");
         }
 
@@ -89,7 +113,8 @@ public class String1Reverse {
         System.out.println("Reverse String using Builder: " + reverseStringBuilder(strAtChar));
 
         String strString = "This is Hello World";
-        System.out.println("Reverse words in String: " +  reverseWordStringArray(strString));
-        System.out.println("Reverse words in String: " +  reverseWordStringArray2(strString));
+        System.out.println("Reverse words in String: " + reverseEachWord(strString));
+        System.out.println("Reverse words in String: " + reverseWordStringArray(strString));
+        System.out.println("Reverse words in String: " + reverseWordStringArray2(strString));
     }
 }
