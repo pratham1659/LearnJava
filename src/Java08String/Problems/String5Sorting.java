@@ -1,16 +1,18 @@
-package String.Problems;
+package Java08String.Problems;
 
 import java.util.*;
 
 public class String5Sorting {
 
     /*
-     * To Sort String Chatacters
+     * To Sort String Characters
      * In Alphabetical Order
      */
 
     // Approach - without using sort Method
-    public static void charcterSort(String str) {
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(n)
+    public static void characterSort(String str) {
 
         char[] arr = str.toCharArray();
         char temp;
@@ -24,21 +26,23 @@ public class String5Sorting {
             }
         }
         System.out.println(arr);
-
     }
 
-    public static void charcterMethodSort(String str) {
+    // Approach - using sort Method
+    // Time Complexity: O(n log n)
+    //Space Complexity: O(n)
+    public static void characterMethodSort(String str) {
 
         char[] charArray = str.toCharArray();
         Arrays.sort(charArray);
         System.out.println(new String(charArray));
     }
 
-    // Approach - using sort Method
+
 
     public static void main(String[] args) {
 
-        charcterSort("rock");
-        charcterMethodSort("rock");
+        characterSort("rock");
+        characterMethodSort("rock");
     }
 }

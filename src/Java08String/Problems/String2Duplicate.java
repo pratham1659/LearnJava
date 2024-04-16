@@ -5,7 +5,7 @@ import java.util.Map.Entry;
 
 public class String2Duplicate {
 
-    // Remove Duplicate Characters In  Given String
+    // Remove Duplicate Characters in Given String
 
     // Approach - 1
     // Time complexity : O(N)
@@ -83,7 +83,7 @@ public class String2Duplicate {
         }
 
         // Approach - 2; Using HashSet, Time Complexity O(N) -- worst solution
-        Set<String> store = new HashSet<String>();
+        Set<String> store = new HashSet<>();
 
         for (String name : str) {
             if (!store.add(name)) {
@@ -114,14 +114,14 @@ public class String2Duplicate {
     }
 
 
-     // Java Program to Count Number of Duplicate Words in Given String
+     // Java Program to Count the Number of Duplicate Words in Given String
     public static void findDuplicateWord(String inputString) {
 
         // split:
         String[] words = inputString.split(" ");
 
         // Create one HashMap
-        Map<String, Integer> wordCount = new HashMap<String, Integer>();
+        Map<String, Integer> wordCount = new HashMap<>();
 
         for (String word : words) {
             if (wordCount.containsKey(word)) {

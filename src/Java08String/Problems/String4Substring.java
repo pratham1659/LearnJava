@@ -1,20 +1,19 @@
-package String.Problems;
+package Java08String.Problems;
 
 import java.util.*;
 
 public class String4Substring {
 
-    /*
-     * Write a java program to find longest substring length which doesn't
-     * contain repeating characters in given String.
-     */
-
+    // Write a java program to find the longest substring length which doesn't
+    // contain repeating characters in given String.
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
     public static void longestSubstring(String str) {
 
         String longestSubString = null;
         int longestSubstringLength = 0;
 
-        Map<Character, Integer> map = new LinkedHashMap<Character, Integer>();
+        Map<Character, Integer> map = new LinkedHashMap<>();
 
         char[] arr = str.toCharArray();
         for (int i = 0; i < arr.length; i++) {

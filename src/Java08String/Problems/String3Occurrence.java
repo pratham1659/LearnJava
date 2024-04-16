@@ -1,15 +1,15 @@
-package String.Problems;
+package Java08String.Problems;
 
 import java.util.*;
 import java.util.Map.Entry;
 
-public class String3Occurence {
+public class String3Occurrence {
 
-    /*
-     * Write a Java Program to find occurrence of each character in given String
-     */
 
-    public static void wordOccurence(String str) {
+    // Write a Java Program to find the occurrence of each character in given String
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    public static void wordOccurrence(String str) {
 
         Map<Character, Integer> map = new HashMap<>();
         char[] chArray = str.toCharArray();
@@ -26,11 +26,10 @@ public class String3Occurence {
         System.out.println(map);
     }
 
-    /*
-     * Java Program To Find First Non Repeated Character In String
-     */
 
-    // Approach using Normal
+    // Java Program To Find First Non-Repeated Character In String - Normal Approach
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1)
     public static void nonRepeatedWord(String str) {
 
         for (int i = 0; i < str.length(); i++) {
@@ -49,7 +48,9 @@ public class String3Occurence {
 
     }
 
-    // Approach Using Collection
+    // Approach Using HashMap
+    // Time Complexity: O(n+m)
+    // Space Complexity: O(n)
     public static void nonRepeatedCollection(String str) {
 
         Map<Character, Integer> map = new HashMap<>();
@@ -74,29 +75,31 @@ public class String3Occurence {
         }
     }
 
-    /*
-     * Java Program to replace a character with it's occurrence in given String
-     */
 
-    public static void replaceOccurenceChracter(String str) {
+    // Java Program to replace a character with it`s occurrence in given String
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
+    public static void replaceOccurrenceCharacter(String str) {
 
-        // Charcter is present or not
+        // Character is present or not
         char charToReplace = 'T';
         if (str.indexOf(charToReplace) == -1) {
             System.out.println("Given Character is not a valid occurrence");
             System.exit(0);
         }
 
-        // // Logic to replace char occurance in String
-        // char[] arr = str.toCharArray();
-        // int count = 1;
-        // for (int i = 0; i < str.length(); i++) {
-        // if (arr[i] == charToReplace) {
-        // arr[i] = String.valueOf(count).charAt(0);
-        // count++;
-        // }
-        // }
-        // System.out.println(Arrays.toString(arr));
+        /*
+         Logic to replace char occurrence in String
+         char[] arr = str.toCharArray();
+         int count = 1;
+         for (int i = 0; i < str.length(); i++) {
+         if (arr[i] == charToReplace) {
+         arr[i] = String.valueOf(count).charAt(0);
+         count++;
+         }
+         }
+         System.out.println(Arrays.toString(arr));
+        */
 
         int count = 1;
         for (int i = 0; i < str.length(); i++) {
@@ -110,10 +113,10 @@ public class String3Occurence {
 
     }
 
-    /*
-     * Write a java program to print even length words in a String?
-     */
 
+    //Write a java program to print even length words in a String?
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
     public static void printEvenLengthWords(String str) {
         // Split the string into words
         String[] words = str.split("\\s+"); // Splitting by whitespace
@@ -131,14 +134,14 @@ public class String3Occurence {
     public static void main(String[] args) {
 
         String str = "aaabbbbccdeee";
-        wordOccurence(str);
+        wordOccurrence(str);
 
         String str1 = "AABCCDBECE";
         nonRepeatedWord(str1);
         nonRepeatedCollection(str1);
 
         String str2 = "OPENTEXT";
-        replaceOccurenceChracter(str2);
+        replaceOccurrenceCharacter(str2);
 
         String inputString = "This is a sample string containing words of various lengths";
         System.out.println("Even length words in the string:");

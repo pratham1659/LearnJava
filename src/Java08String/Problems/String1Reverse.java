@@ -1,7 +1,5 @@
 package Java08String.Problems;
 
-import java.util.Arrays;
-
 public class String1Reverse {
 
     /*
@@ -71,7 +69,7 @@ public class String1Reverse {
     // Space Complexity: O(n)
     public static String reverseEachWord(String str) {
 
-        String ans = "";
+        StringBuilder ans = new StringBuilder();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
@@ -80,14 +78,14 @@ public class String1Reverse {
                 sb.append(ch);
             } else {
                 sb.reverse();
-                ans += sb;
-                ans += " ";
+                ans.append(sb);
+                ans.append(" ");
                 sb = new StringBuilder();
             }
         }
         sb.reverse();
-        ans += sb;
-        return ans;
+        ans.append(sb);
+        return ans.toString();
     }
 
     // Java Program To Reverse Each Word In String
