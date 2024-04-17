@@ -1,16 +1,16 @@
-package Collections.ArrayList;
+package Java11Collections.ArrayList;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class Java3ArrayList3 {
+public class Java02ArrayList {
     public static void main(String[] args) {
 
         /*
          * Synchronize ArrayList in Java
          * What is the Thread Safe variant of ArrayList
-         * answer : copyOnArrayList - class
-         * answer : Collections.synchronizedList() - method
+         * answer: copyOnArrayList - class
+         * answer: Collections.synchronizedList() - method
          */
 
         List<String> namesList = Collections.synchronizedList(new ArrayList<String>());
@@ -19,7 +19,7 @@ public class Java3ArrayList3 {
         namesList.add("Python");
         namesList.add("Ruby");
 
-        // add, remove - we dont need explicit synchronization
+        // add, remove - we don't need explicit synchronization
         // to fetch/traverse the values from this list —- we have to use explicit
         // synchronization
 

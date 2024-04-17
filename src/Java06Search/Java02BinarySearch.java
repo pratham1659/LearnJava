@@ -2,7 +2,7 @@ package Java06Search;
 
 import java.util.ArrayList;
 
-public class BinarySearch {
+public class Java02BinarySearch {
 
     // 1. binary Search using Array: Time Complexity O(logN), Space Complexity O(1)
     public static int binarySearchArray(int[] arr, int key) {

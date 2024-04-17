@@ -1,4 +1,4 @@
-package Collections.ArrayList;
+package Java11Collections.ArrayList;
 
 import java.util.*;
 
@@ -14,7 +14,7 @@ class Student {
     }
 }
 
-public class Java2ArrayList {
+class JavaArrayList {
 
     public static void addElementsInArrayList() {
         ArrayList<String> name = new ArrayList<String>();
@@ -54,7 +54,7 @@ public class Java2ArrayList {
         name.add("Gaurav");
 
         // JDK 8 - streams with lambda
-        System.out.print("An intial List of element: ");
+        System.out.print("An initial List of element: ");
         name.stream().forEach(element -> System.out.print(element + " "));
 
         System.out.println("----");
@@ -77,7 +77,7 @@ public class Java2ArrayList {
 
         System.out.println("Updated name2: " + name);
 
-        // Using Lamba Expression
+        // Using Lambda Expression
         name.removeIf(str -> str.contains("Gaurav"));
 
         System.out.println("list after removeIf: " + name);

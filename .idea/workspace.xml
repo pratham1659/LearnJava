@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Sorting Update questions">
-      <change afterPath="$PROJECT_DIR$/src/Java07Sorting/Java05QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java07Sorting/Java06CountSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java06Search/SearchPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java06Search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java06Search/Java02BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java06Search/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java06Search/Java01LinearSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java01ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java01ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java1ArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java2ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java04ArrayListOops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java3ArrayList3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java02ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java4ArrayList4Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java03ArrayListMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +82,13 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Java06CountSort">
-    <configuration name="Java03InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java07Sorting.Java03InsertionSort" />
+  <component name="RunManager" selected="Application.Java01ArrayList">
+    <configuration name="Java01ArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java11Collections.ArrayList.Java01ArrayList" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java07Sorting.*" />
+          <option name="PATTERN" value="Java11Collections.ArrayList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Java01ArrayList" />
         <item itemvalue="Application.Java06CountSort" />
         <item itemvalue="Application.Java05QuickSort" />
         <item itemvalue="Application.Java04MergeSort" />
         <item itemvalue="Application.SortingPractice" />
-        <item itemvalue="Application.Java03InsertionSort" />
       </list>
     </recent_temporary>
   </component>
@@ -226,15 +233,8 @@
       <workItem from="1712809379320" duration="2726000" />
       <workItem from="1712932021359" duration="2157000" />
       <workItem from="1712981898541" duration="17505000" />
-      <workItem from="1713174113829" duration="55277000" />
-    </task>
-    <task id="LOCAL-00033" summary="DSA questions">
-      <option name="closed" value="true" />
-      <created>1711576224428</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1711576224428</updated>
+      <workItem from="1713174113829" duration="55639000" />
+      <workItem from="1713351553024" duration="3467000" />
     </task>
     <task id="LOCAL-00034" summary="DSA questions">
       <option name="closed" value="true" />
@@ -620,7 +620,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713349610358</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Sorting Update questions">
+      <option name="closed" value="true" />
+      <created>1713349847610</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1713349847611</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

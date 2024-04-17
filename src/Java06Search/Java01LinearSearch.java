@@ -2,7 +2,7 @@ package Java06Search;
 
 import java.util.*;
 
-public class LinearSearch {
+public class Java01LinearSearch {
 
     //Approach 1
     // Time Complexity: O(n)

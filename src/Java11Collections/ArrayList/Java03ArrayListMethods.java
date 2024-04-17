@@ -1,30 +1,29 @@
-package Collections.ArrayList;
+package Java11Collections.ArrayList;
 
 import java.util.*;
 
-public class Java4ArrayList4Methods {
+public class Java03ArrayListMethods {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> ints = new ArrayList<Integer>(Arrays.asList(23, 43, 34, 35, 56));
+        ArrayList<Integer> ints = new ArrayList<>(Arrays.asList(23, 43, 34, 35, 56));
 
         System.out.println(ints);
 
-        ArrayList<String> strs = new ArrayList<String>(Arrays.asList("Hello", "World", "Robot"));
+        ArrayList<String> str = new ArrayList<>(Arrays.asList("Hello", "World", "Robot"));
 
-        System.out.println(strs);
+        System.out.println(str);
 
-        ArrayList<String> arr1 = new ArrayList<String>();
+        ArrayList<String> arr1 = new ArrayList<>();
 
         arr1.add("Java");
         arr1.add("Pythons");
         arr1.add("JavaScript");
         arr1.add("C++");
-        ;
 
         System.out.println(arr1);
 
-        ArrayList<String> arr2 = new ArrayList<String>();
+        ArrayList<String> arr2 = new ArrayList<>();
 
         arr2.add("testing");
         arr2.add("Selenium");
@@ -43,11 +42,11 @@ public class Java4ArrayList4Methods {
 
         System.out.println(arr1.indexOf("Pythons") > 0);
 
-        // System.out.println(arr1.lastIndexOf(arr2));
+         System.out.println(arr1.lastIndexOf(arr2));
 
-        // ArrayList<String> cloneList = (ArrayList<String>) arr1.clone();
+         ArrayList<String> cloneList = (ArrayList<String>) arr1.clone();
 
-        // System.out.println(cloneList);
+         System.out.println(cloneList);
 
     }
 }
