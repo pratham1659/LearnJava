@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="String Update questions">
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Searching Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java06Search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java06Search/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java06Search/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java06Search/LinearSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/BubbleSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +75,26 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BinarySearch">
+  <component name="RunManager" selected="Application.BubbleSort">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java06Search.BinarySearch" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Java06Search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java07Sorting.BubbleSort" />
+      <module name="LearnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java07Sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,19 +128,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String7Anagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08String.Problems.String7Anagram" />
-      <module name="LearnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java08String.Problems.StringOops.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="String8Stacks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="String.Problems.String8Stacks" />
       <module name="LearnJava" />
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.LinearSearch" />
         <item itemvalue="Application.String4Substring" />
         <item itemvalue="Application.String8Stacks" />
-        <item itemvalue="Application.String7Anagram" />
       </list>
     </recent_temporary>
   </component>
@@ -226,15 +226,7 @@
       <workItem from="1712809379320" duration="2726000" />
       <workItem from="1712932021359" duration="2157000" />
       <workItem from="1712981898541" duration="17505000" />
-      <workItem from="1713174113829" duration="40070000" />
-    </task>
-    <task id="LOCAL-00029" summary="DSA questions">
-      <option name="closed" value="true" />
-      <created>1707306888319</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1707306888319</updated>
+      <workItem from="1713174113829" duration="44113000" />
     </task>
     <task id="LOCAL-00030" summary="DSA questions">
       <option name="closed" value="true" />
@@ -620,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713292267434</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Searching Update questions">
+      <option name="closed" value="true" />
+      <created>1713293427066</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1713293427067</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +657,8 @@
     <MESSAGE value="Array Update questions" />
     <MESSAGE value="Recursion Update questions" />
     <MESSAGE value="String Update questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="String Update questions" />
+    <MESSAGE value="Searching Update questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Searching Update questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
