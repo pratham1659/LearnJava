@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Sorting Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/Java01BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/Java03InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/Java04MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/Java02SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/SortPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/SortingPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/Java02SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/Java02SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/Java03InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/Java03InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/Java04MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/Java04MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/SortingPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/SortingPractice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,20 +77,7 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Java02SelectionSort">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java06Search.BinarySearch" />
-      <module name="LearnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java06Search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Java04MergeSort">
     <configuration name="Java01BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java07Sorting.Java01BubbleSort" />
       <module name="LearnJava" />
@@ -118,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinearSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java06Search.LinearSearch" />
+    <configuration name="Java03InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java07Sorting.Java03InsertionSort" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java06Search.*" />
+          <option name="PATTERN" value="Java07Sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,12 +117,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String4Substring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java08String.Problems.String4Substring" />
+    <configuration name="Java04MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java07Sorting.Java04MergeSort" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java08String.Problems.StringOops.*" />
+          <option name="PATTERN" value="Java07Sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortingPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java07Sorting.SortingPractice" />
+      <module name="LearnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java07Sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Java04MergeSort" />
+        <item itemvalue="Application.SortingPractice" />
+        <item itemvalue="Application.Java03InsertionSort" />
         <item itemvalue="Application.Java02SelectionSort" />
         <item itemvalue="Application.Java01BubbleSort" />
-        <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.LinearSearch" />
-        <item itemvalue="Application.String4Substring" />
       </list>
     </recent_temporary>
   </component>
@@ -229,15 +228,7 @@
       <workItem from="1712809379320" duration="2726000" />
       <workItem from="1712932021359" duration="2157000" />
       <workItem from="1712981898541" duration="17505000" />
-      <workItem from="1713174113829" duration="48023000" />
-    </task>
-    <task id="LOCAL-00031" summary="DSA questions">
-      <option name="closed" value="true" />
-      <created>1711574750395</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1711574750396</updated>
+      <workItem from="1713174113829" duration="55032000" />
     </task>
     <task id="LOCAL-00032" summary="DSA questions">
       <option name="closed" value="true" />
@@ -623,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713330860891</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Sorting Update questions">
+      <option name="closed" value="true" />
+      <created>1713335821000</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1713335821000</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
