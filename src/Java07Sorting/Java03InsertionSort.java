@@ -1,6 +1,6 @@
 package Java07Sorting;
 
-public class InsertionSort {
+public class Java03InsertionSort {
 
     public static void increaseInsertion(int[] arr){
         int len = arr.length;

@@ -1,6 +1,6 @@
 package Java07Sorting;
 
-public class SortPractice {
+public class SortingPractice {
 
 //    Given an integer array arr, move all O's to the end of it while maintaining the relative order of
 //    the non-zero elements.

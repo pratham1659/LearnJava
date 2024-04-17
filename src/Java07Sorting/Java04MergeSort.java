@@ -1,6 +1,6 @@
 package Java07Sorting;
 
-public class MergeSort {
+public class Java04MergeSort {
 
 
 

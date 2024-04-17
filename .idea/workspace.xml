@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Searching Update questions">
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Sorting Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java06Search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java06Search/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/Java01BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/Java03InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/Java04MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/Java02SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java07Sorting/SortPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java07Sorting/SortingPractice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +78,7 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BubbleSort">
+  <component name="RunManager" selected="Application.Java02SelectionSort">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java06Search.BinarySearch" />
       <module name="LearnJava" />
@@ -89,8 +92,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java07Sorting.BubbleSort" />
+    <configuration name="Java01BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java07Sorting.Java01BubbleSort" />
+      <module name="LearnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java07Sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Java02SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java07Sorting.Java02SelectionSort" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
@@ -128,26 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String8Stacks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="String.Problems.String8Stacks" />
-      <module name="LearnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="String.Problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.Java02SelectionSort" />
+        <item itemvalue="Application.Java01BubbleSort" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.LinearSearch" />
         <item itemvalue="Application.String4Substring" />
-        <item itemvalue="Application.String8Stacks" />
       </list>
     </recent_temporary>
   </component>
@@ -226,15 +229,7 @@
       <workItem from="1712809379320" duration="2726000" />
       <workItem from="1712932021359" duration="2157000" />
       <workItem from="1712981898541" duration="17505000" />
-      <workItem from="1713174113829" duration="44113000" />
-    </task>
-    <task id="LOCAL-00030" summary="DSA questions">
-      <option name="closed" value="true" />
-      <created>1708464251641</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1708464251641</updated>
+      <workItem from="1713174113829" duration="48023000" />
     </task>
     <task id="LOCAL-00031" summary="DSA questions">
       <option name="closed" value="true" />
@@ -620,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713293427067</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Sorting Update questions">
+      <option name="closed" value="true" />
+      <created>1713330860890</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1713330860891</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +661,8 @@
     <MESSAGE value="Recursion Update questions" />
     <MESSAGE value="String Update questions" />
     <MESSAGE value="Searching Update questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Searching Update questions" />
+    <MESSAGE value="Sorting Update questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorting Update questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
