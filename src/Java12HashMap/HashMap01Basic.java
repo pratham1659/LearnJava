@@ -10,7 +10,7 @@ public class HashMap01Basic {
         /*
          * No order - no indexing
          * stores value - key value <Key, Value>
-         * key can not be duplicate
+         * key cannot be duplicate
          * can store null Values but only one null key
          *
          * Searching

@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Sorting Update questions">
-      <change afterPath="$PROJECT_DIR$/src/Java06Search/SearchPractice.java" afterDir="false" />
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="ArrayList Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java06Search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java06Search/Java02BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java06Search/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java06Search/Java01LinearSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java01ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java01ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java1ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java2ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java04ArrayListOops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java3ArrayList3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java02ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java4ArrayList4Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java11Collections/ArrayList/Java03ArrayListMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java12HashMap/HashMap01Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java12HashMap/HashMap01Basic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,15 +227,7 @@
       <workItem from="1712932021359" duration="2157000" />
       <workItem from="1712981898541" duration="17505000" />
       <workItem from="1713174113829" duration="55639000" />
-      <workItem from="1713351553024" duration="3467000" />
-    </task>
-    <task id="LOCAL-00034" summary="DSA questions">
-      <option name="closed" value="true" />
-      <created>1711623520933</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1711623520933</updated>
+      <workItem from="1713351553024" duration="4157000" />
     </task>
     <task id="LOCAL-00035" summary="DSA questions">
       <option name="closed" value="true" />
@@ -628,7 +613,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713349847611</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="ArrayList Update questions">
+      <option name="closed" value="true" />
+      <created>1713355078924</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1713355078925</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,7 +660,8 @@
     <MESSAGE value="String Update questions" />
     <MESSAGE value="Searching Update questions" />
     <MESSAGE value="Sorting Update questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorting Update questions" />
+    <MESSAGE value="ArrayList Update questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="ArrayList Update questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
