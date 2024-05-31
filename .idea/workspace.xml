@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="ArrayList Update questions">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java12HashMap/HashMap01Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java12HashMap/HashMap01Basic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java01Basic/Java02AdvanceProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java01Basic/Java02AdvanceProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java02Conditional/Java2Operands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java02Conditional/Java2Operands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Java01ArrayList">
+  <component name="RunManager" selected="Application.Java02AdvanceProgram">
     <configuration name="Java01ArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java11Collections.ArrayList.Java01ArrayList" />
       <module name="LearnJava" />
@@ -89,12 +89,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java04MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java07Sorting.Java04MergeSort" />
+    <configuration name="Java01BasicProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java01Basic.Java01BasicProgram" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java07Sorting.*" />
+          <option name="PATTERN" value="Java01Basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Java02AdvanceProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java01Basic.Java02AdvanceProgram" />
+      <module name="LearnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java01Basic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,26 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java07Sorting.SortingPractice" />
-      <module name="LearnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java07Sorting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Java02AdvanceProgram" />
+        <item itemvalue="Application.Java01BasicProgram" />
         <item itemvalue="Application.Java01ArrayList" />
         <item itemvalue="Application.Java06CountSort" />
         <item itemvalue="Application.Java05QuickSort" />
-        <item itemvalue="Application.Java04MergeSort" />
-        <item itemvalue="Application.SortingPractice" />
       </list>
     </recent_temporary>
   </component>
@@ -228,14 +228,9 @@
       <workItem from="1712981898541" duration="17505000" />
       <workItem from="1713174113829" duration="55639000" />
       <workItem from="1713351553024" duration="4157000" />
-    </task>
-    <task id="LOCAL-00035" summary="DSA questions">
-      <option name="closed" value="true" />
-      <created>1711637450948</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1711637450948</updated>
+      <workItem from="1715950367744" duration="7173000" />
+      <workItem from="1716221804042" duration="632000" />
+      <workItem from="1717003663217" duration="10546000" />
     </task>
     <task id="LOCAL-00036" summary="DSA questions">
       <option name="closed" value="true" />
@@ -621,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713355078925</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="ArrayList Update questions">
+      <option name="closed" value="true" />
+      <created>1715952366521</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1715952366521</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

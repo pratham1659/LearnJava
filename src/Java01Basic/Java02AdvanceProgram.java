@@ -3,7 +3,7 @@ package Java01Basic;
 
 public class Java02AdvanceProgram {
 
-    // Ques: program to print the Fibonacci series up to a certain number.
+    // Ques 1: program to print the Fibonacci series up to a certain number.
     public static void fibonacciSeries(int num) {
         int firstTerm = 0, secondTerm = 1;
 
@@ -92,6 +92,17 @@ public class Java02AdvanceProgram {
             rows++;
         }
     }
+
+    //Ques 6.1
+    /*
+    for(int rows = 0; rows < num; rows++){
+        System.out.print("*");
+         for(int col = 0; col < rows; col++){
+            System.out.print(" *");
+         }
+          System.out.println();
+    }
+     */
 
     // Ques 6: Program to print Reverse Right Triangle
     public static void reverseRightTriangle(int maxRows) {
