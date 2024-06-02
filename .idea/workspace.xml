@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Basic Update questions">
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Loops Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java01Basic/Java01BasicProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java01Basic/Java01BasicProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java03Loops/ForLoops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/ForLoops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java03Loops/patterns/NumericalPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/patterns/NumericalPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java03Loops/patterns/StarPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/patterns/StarPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java03Loops/patterns/patternPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/patterns/patternPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java03Loops/DoWhileLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/DoWhileLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java03Loops/LoopsPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/LoopsPractice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,20 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.patternPractice">
+  <component name="RunManager" selected="Application.LoopsPractice">
+    <configuration name="DoWhileLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java03Loops.DoWhileLoop" />
+      <module name="LearnJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java03Loops.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ForLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java03Loops.ForLoops" />
       <module name="LearnJava" />
@@ -105,25 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java02AdvanceProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java01Basic.Java02AdvanceProgram" />
+    <configuration name="LoopsPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java03Loops.LoopsPractice" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java01Basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumericalPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java03Loops.patterns.NumericalPattern" />
-      <module name="LearnJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java03Loops.patterns.*" />
+          <option name="PATTERN" value="Java03Loops.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.patternPractice" />
+        <item itemvalue="Application.LoopsPractice" />
         <item itemvalue="Application.ForLoops" />
+        <item itemvalue="Application.DoWhileLoop" />
+        <item itemvalue="Application.patternPractice" />
         <item itemvalue="Application.Java01BasicProgram" />
-        <item itemvalue="Application.NumericalPattern" />
-        <item itemvalue="Application.Java02AdvanceProgram" />
       </list>
     </recent_temporary>
   </component>
@@ -234,15 +231,7 @@
       <workItem from="1715950367744" duration="7173000" />
       <workItem from="1716221804042" duration="632000" />
       <workItem from="1717003663217" duration="11312000" />
-      <workItem from="1717165215694" duration="7583000" />
-    </task>
-    <task id="LOCAL-00038" summary="DSA questions">
-      <option name="closed" value="true" />
-      <created>1711860149509</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1711860149509</updated>
+      <workItem from="1717165215694" duration="10103000" />
     </task>
     <task id="LOCAL-00039" summary="DSA questions">
       <option name="closed" value="true" />
@@ -628,7 +617,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717305527133</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Loops Update questions">
+      <option name="closed" value="true" />
+      <created>1717320338344</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1717320338344</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,7 +666,8 @@
     <MESSAGE value="Sorting Update questions" />
     <MESSAGE value="ArrayList Update questions" />
     <MESSAGE value="Basic Update questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic Update questions" />
+    <MESSAGE value="Loops Update questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loops Update questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
