@@ -206,6 +206,20 @@ public class Java01BasicProgram {
         System.out.println("b " + b);
     }
 
+    //Ques 18: Count the number of digits for a given number
+    public static int countNum(){
+        long num = 982436986L;
+        Long digit = num;
+        int ans = 0;
+
+        while(num > 0){
+            num = num/10;
+            ans++;
+        }
+       return ans;
+
+    }
+
     public static void main(String[] args) {
 
         System.out.println("Check EvenOrOdd: " + isEvenOrOdd(34));
@@ -222,6 +236,7 @@ public class Java01BasicProgram {
         System.out.println("Gcd of 5 and 6: " + greatestCommonDivisor(5, 16));
         System.out.println("Check Prime of 49: " + checkPrime(49));
         System.out.println("Reverse Digit 123: " + reverseDigit(123));
+        System.out.println("CountDigit: "+ countNum());
     }
 
 }

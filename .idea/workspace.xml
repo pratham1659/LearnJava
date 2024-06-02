@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="ArrayList Update questions">
+    <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="Basic Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java02Conditional/Java3Maths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java02Conditional/Java3Maths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java02Conditional/Java4Switch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java02Conditional/Java4Switch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java03Loops/StarPractice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java01Basic/Java01BasicProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java01Basic/Java01BasicProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java03Loops/ForLoops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/ForLoops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java03Loops/patterns/NumericalPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/patterns/NumericalPattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java03Loops/patterns/StarPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/patterns/StarPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java03Loops/patterns/patternPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/patterns/patternPractice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +78,13 @@
       <recent name="$PROJECT_DIR$/src/Java11HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Java02AdvanceProgram">
-    <configuration name="Java01ArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java11Collections.ArrayList.Java01ArrayList" />
+  <component name="RunManager" selected="Application.patternPractice">
+    <configuration name="ForLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java03Loops.ForLoops" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java11Collections.ArrayList.*" />
+          <option name="PATTERN" value="Java03Loops.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java05QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java07Sorting.Java05QuickSort" />
+    <configuration name="NumericalPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java03Loops.patterns.NumericalPattern" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java07Sorting.*" />
+          <option name="PATTERN" value="Java03Loops.patterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java06CountSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java07Sorting.Java06CountSort" />
+    <configuration name="patternPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java03Loops.patterns.patternPractice" />
       <module name="LearnJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java07Sorting.*" />
+          <option name="PATTERN" value="Java03Loops.patterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Java02AdvanceProgram" />
+        <item itemvalue="Application.patternPractice" />
+        <item itemvalue="Application.ForLoops" />
         <item itemvalue="Application.Java01BasicProgram" />
-        <item itemvalue="Application.Java01ArrayList" />
-        <item itemvalue="Application.Java06CountSort" />
-        <item itemvalue="Application.Java05QuickSort" />
+        <item itemvalue="Application.NumericalPattern" />
+        <item itemvalue="Application.Java02AdvanceProgram" />
       </list>
     </recent_temporary>
   </component>
@@ -233,15 +234,7 @@
       <workItem from="1715950367744" duration="7173000" />
       <workItem from="1716221804042" duration="632000" />
       <workItem from="1717003663217" duration="11312000" />
-      <workItem from="1717165215694" duration="2788000" />
-    </task>
-    <task id="LOCAL-00037" summary="DSA questions">
-      <option name="closed" value="true" />
-      <created>1711738804801</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1711738804801</updated>
+      <workItem from="1717165215694" duration="7583000" />
     </task>
     <task id="LOCAL-00038" summary="DSA questions">
       <option name="closed" value="true" />
@@ -627,7 +620,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717163993452</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Basic Update questions">
+      <option name="closed" value="true" />
+      <created>1717305527132</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1717305527133</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,7 +668,8 @@
     <MESSAGE value="Searching Update questions" />
     <MESSAGE value="Sorting Update questions" />
     <MESSAGE value="ArrayList Update questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="ArrayList Update questions" />
+    <MESSAGE value="Basic Update questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic Update questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

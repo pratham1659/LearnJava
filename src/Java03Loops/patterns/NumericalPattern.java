@@ -13,15 +13,15 @@ public class NumericalPattern {
         int c = sc.nextInt();
 
         //Numerical Rectangular print
-//        for(int i=1; i<=r; i++){
-//            for(int j=i; j<=r; j++){
-//                System.out.print(j);
-//            }
-//            for(int k=1; k<=i-1; k++){
-//                System.out.print(k);
-//            }
-//            System.out.println();
-//        }
+        for(int i=1; i<=r; i++){
+            for(int j=i; j<=r; j++){
+                System.out.print(j);
+            }
+            for(int k=1; k<=i-1; k++){
+                System.out.print(k);
+            }
+            System.out.println();
+        }
 
         //Numerical Print
 //        for(int i=1; i<=r; i++){
@@ -82,25 +82,25 @@ public class NumericalPattern {
 //          121
 //         12321
 //        1234321
-        for(int i=1; i<=r; i++){
-
-            //print r-i spaces
-            for(int j=1; j<=r-i; j++){
-                System.out.print(" ");
-            }
-
-            //print 1 to i print
-            for(int k=1; k<=i; k++){
-                System.out.print(k);
-            }
+//        for(int i=1; i<=r; i++){
+//
+//            //print r-i spaces
+//            for(int j=1; j<=r-i; j++){
+//                System.out.print(" ");
+//            }
+//
+//            //print 1 to i print
+//            for(int k=1; k<=i; k++){
+//                System.out.print(k);
+//            }
 
             //print i-1 to l
-            for(int l=i-1; l>=1; l--){
-                System.out.print(l);
-            }
-
-            System.out.println();
-        }
+//            for(int l=i-1; l>=1; l--){
+//                System.out.print(l);
+//            }
+//
+//            System.out.println();
+//        }
 
 
 //        Triangle Hollow Pyramid pattern
@@ -108,24 +108,24 @@ public class NumericalPattern {
 //          2 2
 //         3   3
 //        4444444
-        for(int i=1; i<=r; i++){
-
-            //Print Spaces
-            for(int j=r; j>i; j--){
-                System.out.print(" ");
-            }
-
-            //print left Side of the Pyramid
-            for(int k=1; k<=i * 2 - 1; k++){
-                if(k==1 || k==i*2-1 || i==r){
-                    System.out.print(i);
-                }else{
-                    System.out.print(" ");
-                }
-            }
-            // Move to the next line
-            System.out.println();
-        }
+//        for(int i=1; i<=r; i++){
+//
+//            //Print Spaces
+//            for(int j=r; j>i; j--){
+//                System.out.print(" ");
+//            }
+//
+//            //print left Side of the Pyramid
+//            for(int k=1; k<=i * 2 - 1; k++){
+//                if(k==1 || k==i*2-1 || i==r){
+//                    System.out.print(i);
+//                }else{
+//                    System.out.print(" ");
+//                }
+//            }
+//            // Move to the next line
+//            System.out.println();
+//        }
 
 
     }
