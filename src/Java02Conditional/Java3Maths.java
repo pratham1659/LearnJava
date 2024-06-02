@@ -3,7 +3,7 @@ package Java02Conditional;
 import java.util.Scanner;
 
 public class Java3Maths {
-//    Ques : Given three points (xl, yl), (×2, y2) and
+//    Ques 1: Given three points (xl, yl), (×2, y2) and
 //    (×3, y3), write a program to check if all the three
 //    points fall on one straight line.
     static void threePoints(){
@@ -19,7 +19,7 @@ public class Java3Maths {
         }
     }
 
-//    Ques: Given a point (x, y), write a program to find
+//    Ques 2: Given a point (x, y), write a program to find
 //    out if it lies on the x-axis, y-axis or at the origin, viz (0, 0).
 
     static void axisPoints(int x, int y){
@@ -34,11 +34,10 @@ public class Java3Maths {
         }
     }
 
-//    Ques: Given the coordinates (x, y) of a center of a
+//    Ques 3: Given the coordinates (x, y) of a center of a
 //    circle and its radius, write a program which will
 //    determine whether a point lies inside the circle, on
 //    the circle or outside the circle.
-
 //    static void coordinate(int x, int y, int r){
 //
 //    }
@@ -48,8 +47,8 @@ public class Java3Maths {
         int y = sc.nextInt();
         int r = sc.nextInt();
 
-//        threePoints();
-//        axisPoints(x, y);
+        threePoints();
+        axisPoints(x, y);
 //        coordinate(x , y, r);
     }
 }

@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d61ca995-87c6-4c63-a005-0426e2e1c3ce" name="Changes" comment="ArrayList Update questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java01Basic/Java02AdvanceProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java01Basic/Java02AdvanceProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java02Conditional/Java2Operands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java02Conditional/Java2Operands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java02Conditional/Java3Maths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java02Conditional/Java3Maths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java02Conditional/Java4Switch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java02Conditional/Java4Switch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java03Loops/StarPractice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java03Loops/patterns/StarPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java03Loops/patterns/StarPattern.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,15 +232,8 @@
       <workItem from="1713351553024" duration="4157000" />
       <workItem from="1715950367744" duration="7173000" />
       <workItem from="1716221804042" duration="632000" />
-      <workItem from="1717003663217" duration="10546000" />
-    </task>
-    <task id="LOCAL-00036" summary="DSA questions">
-      <option name="closed" value="true" />
-      <created>1711664061843</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1711664061843</updated>
+      <workItem from="1717003663217" duration="11312000" />
+      <workItem from="1717165215694" duration="2788000" />
     </task>
     <task id="LOCAL-00037" summary="DSA questions">
       <option name="closed" value="true" />
@@ -624,7 +619,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715952366521</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="ArrayList Update questions">
+      <option name="closed" value="true" />
+      <created>1717163993452</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1717163993452</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,16 +672,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Java03Loops/StarPractice.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Java03Loops/StarPractice.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Practice/IBM/MissingElementFinder.java</url>
           <line>14</line>
