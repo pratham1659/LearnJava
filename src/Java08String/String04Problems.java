@@ -4,7 +4,7 @@ import java.util.*;
 
 public class String04Problems {
 
-    // Ques 1:  Program to find a Palindrome in String
+    // Ques 1: Program to find a Palindrome in String
     // Time Complexity: O(NlogN)
     // Space Complexity: O(1)
     public static boolean checkPalindrome(String str) {
@@ -21,7 +21,7 @@ public class String04Problems {
         return true;
     }
 
-    // Ques 2:  program to find palindrome substring
+    // Ques 2: program to find palindrome substring
     // Time Complexity: O(N^2)
     // Space Complexity: O(N^2)
     public static int palindromeSubstring(String str) {
@@ -163,7 +163,7 @@ public class String04Problems {
 
     }
 
-    //Ques 8: Convert 2nd Character in Upper Case
+    // Ques 8: Convert 2nd Character in Upper Case
     // Time Complexity: O(1)
     // Space Complexity: O(1)
     public static void makeUpperCase(String str) {
@@ -174,7 +174,7 @@ public class String04Problems {
         System.out.println(ans);
     }
 
-    //Ques 9: Sum of count of A and B in String
+    // Ques 9: Sum of count of A and B in String
     // Time Complexity: O(n)
     // Space Complexity: O(n)
     public static void countAndSumCharacter() {
@@ -195,7 +195,7 @@ public class String04Problems {
         System.out.println(sum);
     }
 
-    //Ques 10: Program to find substring in String
+    // Ques 10: Program to find substring in String
     // Time Complexity: O(n * m)
     // Space Complexity: O(1)
     public static void findSubstring() {
@@ -216,7 +216,7 @@ public class String04Problems {
         }
     }
 
-    //Ques 11: Rotation Of String
+    // Ques 11: Rotation Of String
     // Time Complexity: O(n)
     // Space Complexity: O(1)
     public static void rotateStringCheck() {
@@ -234,7 +234,7 @@ public class String04Problems {
         }
     }
 
-    //Ques 12: Program Remove Extra White space from String
+    // Ques 12: Program Remove Extra White space from String
     // Time Complexity: O(n)
     // Space Complexity: O(n)
     public static void removeWhiteSpace(String s) {
@@ -242,7 +242,7 @@ public class String04Problems {
         System.out.println(s);
     }
 
-    //Ques 14: Highest frequency of elements
+    // Ques 14: Highest frequency of elements
     // Time Complexity: O(n + m)
     // Space Complexity: O(m)
     public static void checkFrequency(String s) {
@@ -269,7 +269,7 @@ public class String04Problems {
         System.out.println("Count: " + maxCount);
     }
 
-    //Ques 15: Program to Count Character Occurrence in String
+    // Ques 15: Program to Count Character Occurrence in String
     // Time Complexity: O(n)
     // Space Complexity: O(1)
     public static int countOccurrences(String input, char target) {
@@ -284,7 +284,7 @@ public class String04Problems {
         return count;
     }
 
-    //Ques 16: Program to find First Repeated Non-Repeated Char
+    // Ques 16: Program to find First Repeated Non-Repeated Char
     // Time Complexity: O(n)
     // Space Complexity: O(n)
     public static void firstRepeatedNonRepeatedChar(String str) {
@@ -298,7 +298,7 @@ public class String04Problems {
             }
         }
 
-        //checking for first non-repeated character
+        // checking for first non-repeated character
         for (char ch : charArray) {
             if (charCountMap.get(ch) == 1) {
                 System.out.println("First Non-Repeated Character In '" + str + "' is '" + ch + "'");
@@ -306,7 +306,7 @@ public class String04Problems {
             }
         }
 
-        //checking for first repeated character
+        // checking for first repeated character
         for (char ch : charArray) {
             if (charCountMap.get(ch) > 1) {
                 System.out.println("First Repeated Character In '" + str + "' is '" + ch + "'");
@@ -315,7 +315,7 @@ public class String04Problems {
         }
     }
 
-    //Ques 16: Program to find duplicate Word Using HashMap
+    // Ques 16: Program to find duplicate Word Using HashMap
     // Time Complexity: O(n + m)
     // Space Complexity: O(m)
     public static void duplicateWordsUsingHashMap(String input) {
@@ -337,7 +337,7 @@ public class String04Problems {
         }
     }
 
-    //Ques 16: Program to find duplicate Word Using HashMap
+    // Ques 16: Program to find duplicate Word Using HashMap
     // Time Complexity: O(N^2)
     // Space Complexity: O(m)
     public static void duplicateCharacterUsingHashMap(String str) {
@@ -360,8 +360,7 @@ public class String04Problems {
         }
     }
 
-
-    //Ques 17: Convert 2nd Character in Upper Case
+    // Ques 17: Convert 2nd Character in Upper Case
     public static void InputForUpperCase() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your sentence: ");
@@ -373,6 +372,7 @@ public class String04Problems {
             upperCase = upperCase + word.charAt(0) + Character.toUpperCase(word.charAt(1)) + word.substring(2) + " ";
         }
         System.out.println(upperCase);
+        sc.close();
         scanner.close();
     }
 
@@ -415,7 +415,6 @@ public class String04Problems {
         removeWhiteSpace("abc    d e f    which k l m n   o p first");
 
         checkFrequency("this this is demo demo demo demo is demo is is amrita");
-
 
         String inputString = "Hello, how are you?";
         char targetCharacter = 'o';

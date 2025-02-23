@@ -7,33 +7,33 @@ public class HashSet01Basic {
 
         HashSet<Integer> set = new HashSet<>();
 
-        //Inserting
+        // Inserting
         set.add(1);
         set.add(2);
         set.add(3);
         set.add(1);
 
-        //Size
+        // Size
         System.out.println("Size of the Test: " + set.size());
 
-        //Search
+        // Search
         if (set.contains(1)) {
             System.out.println("Set Contains");
         } else {
             System.out.println("Does Not Contains");
         }
 
-        //Iterator
+        // Iterator
+        @SuppressWarnings("rawtypes")
         Iterator it = set.iterator();
 
         while (it.hasNext()) {
             System.out.print(it.next() + " ");
         }
 
-        //Remove
+        // Remove
         set.remove(1);
         System.out.println(set);
-
 
         HashSet<String> hs = new HashSet<>();
 
@@ -55,4 +55,3 @@ public class HashSet01Basic {
         System.out.println();
     }
 }
-

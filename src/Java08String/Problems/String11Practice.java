@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class String11Practice {
     static Scanner sc = new Scanner(System.in);
 
-    //Concatenate and Convert: Take two strings, concatenate them,
-//ánd convert the result to uppercase.
+    // Concatenate and Convert: Take two strings, concatenate them,
+    // ánd convert the result to uppercase.
     public static void StringName() {
         String firstName = "Rakesh";
         String lastName = "Kumar";
@@ -15,12 +15,13 @@ public class String11Practice {
         System.out.println(fullName.toUpperCase());
     }
 
-    //    Calculate the area and circumference of a circle for a given radius using Math.PI
+    // Calculate the area and circumference of a circle for a given radius using
+    // Math.PI
     double radiusInMm;
 
-    //    StringPractice(){
-//        //Empty Constructor
-//    }
+    // StringPractice(){
+    // //Empty Constructor
+    // }
     String11Practice(double radiusInMm) {
         this.radiusInMm = radiusInMm;
     }
@@ -42,13 +43,14 @@ public class String11Practice {
                 '}';
     }
 
-    //    Simulate a dice roll using Math.random) and display the outcome (1 to 6).
+    // Simulate a dice roll using Math.random) and display the outcome (1 to 6).
     int diceRoll() {
         double random = Math.random() * 6;
         return (int) Math.ceil(random);
     }
 
-    //    Create a number guessing game where the program selects a random number, and the user has to guess it.
+    // Create a number guessing game where the program selects a random number, and
+    // the user has to guess it.
     int random;
 
     String11Practice() {
@@ -60,16 +62,16 @@ public class String11Practice {
     }
 
     public static void main(String[] args) {
-//        StringName();
+        // StringName();
 
         Scanner sc = new Scanner(System.in);
-//        System.out.print("Enter Radius: ");
-//        double num = sc.nextDouble();
+        // System.out.print("Enter Radius: ");
+        // double num = sc.nextDouble();
 
-//        StringPractice str = new StringPractice();
-//        for(int i = 1; i<20; i++){
-//            System.out.print(str.diceRoll() + " ");
-//        }
+        // StringPractice str = new StringPractice();
+        // for(int i = 1; i<20; i++){
+        // System.out.print(str.diceRoll() + " ");
+        // }
 
         int guess;
         int result;
@@ -78,15 +80,15 @@ public class String11Practice {
             System.out.print("Guess the number: ");
             guess = sc.nextInt();
             result = game.guess(guess);
-            if(result == 0){
+            if (result == 0) {
                 System.out.println("Congrats your guess is correct, Hurray");
             } else if (result < 0) {
                 System.out.println("Please guess Higher number, ------");
-            }else{
+            } else {
                 System.out.println("Please guess lower, ------");
             }
-        }while(result != 0);
-
+        } while (result != 0);
+        sc.close();
 
     }
 }

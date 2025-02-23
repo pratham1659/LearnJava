@@ -19,7 +19,7 @@ public class WhileLoops {
         System.out.print("Write Number to Print sum of number: ");
         int num = sc.nextInt();
 
-        //Print the sum of the first n natural numbers, where n is the input.
+        // Print the sum of the first n natural numbers, where n is the input.
         int i = 0;
         int sum = 0;
         while (i <= num) {
@@ -28,6 +28,8 @@ public class WhileLoops {
             i++;
         }
         System.out.print(sum);
+
+        sc.close();
 
     }
 

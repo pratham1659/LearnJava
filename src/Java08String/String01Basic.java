@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class String01Basic {
 
     /*
-     *  What is a string constant pool ?
+     * What is a string constant pool ?
      *
      * The memory space allocated in the heap memory to store the string literals is
      * called the string constant pool.
@@ -14,21 +14,27 @@ public class String01Basic {
      *
      * Why is Java provided with String constant pool ?
      *
-     * as we can store the objects in heap memory  String constant pool provides the facility of re-usability of the existing string objects.
+     * as we can store the objects in heap memory String constant pool provides the
+     * facility of re-usability of the existing string objects.
      *
-     * When a new string object is created using the string literals, then JVM first checks in the pool if this String already exists or not.
+     * When a new string object is created using the string literals, then JVM first
+     * checks in the pool if this String already exists or not.
      *
-     * If it exists, then it will reference the existing String rather than creating a new object.
+     * If it exists, then it will reference the existing String rather than creating
+     * a new object.
      *
-     * This will help in the speeding up of the application and also helps in saving the memory as no two objects will have the same content.
+     * This will help in the speeding up of the application and also helps in saving
+     * the memory as no two objects will have the same content.
      *
      * Why is string made immutable in JAVA?
      *
      * Immutable means unmodifiable or unchangeable.
      *
      * Security is the major reason why strings in Java are made to be immutable.
-     * Strings in Java can be used to access data sources like files, databases, or even objects found
-     * across networks. Even sometimes, strings store passwords and usernames, which can't be modified
+     * Strings in Java can be used to access data sources like files, databases, or
+     * even objects found
+     * across networks. Even sometimes, strings store passwords and usernames, which
+     * can't be modified
      * once created.
      */
 
@@ -59,10 +65,9 @@ public class String01Basic {
         str = str + st1;
         System.out.println("str join with new str: " + str);
 
-
     }
 
-    public static void StringSubstring(){
+    public static void StringSubstring() {
 
         String phy = "physics";
 
@@ -77,29 +82,29 @@ public class String01Basic {
             }
         }
 
-         String str = "Hello";
-         String gtr = "Hello";
+        String str = "Hello";
+        @SuppressWarnings("unused")
+        String gtr = "Hello";
 
-
-         str = str.substring(0, 2) + 'y' + str.substring(3);
-         System.out.println(str); // performance issue in this code
+        str = str.substring(0, 2) + 'y' + str.substring(3);
+        System.out.println(str); // performance issue in this code
     }
 
-    public static void stringInput(){
+    public static void stringInput() {
         Scanner sc = new Scanner(System.in);
 
-        String str = sc.next();  //skip the word after space
-        String str1 = sc.nextLine(); //print as usual
+        String str = sc.next(); // skip the word after space
+        String str1 = sc.nextLine(); // print as usual
 
         System.out.println(str + str1);
-        String gtr = "Pratham Sharma";
-        int len = str.length(); //Print the length pf string.
+        int len = str.length(); // Print the length pf string.
         System.out.println(len);
         char ch = str.charAt(3);
-        System.out.println(str.charAt(3)); //Print character at specific string
+        System.out.println(str.charAt(3)); // Print character at specific string
         System.out.println(ch);
 
-        System.out.println(str.indexOf(" ")); //find the index of the character
+        System.out.println(str.indexOf(" ")); // find the index of the character
+        sc.close();
 
     }
 

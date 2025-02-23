@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Java03ArrayListMethods {
 
+    @SuppressWarnings({ "unchecked", "unlikely-arg-type" })
     public static void main(String[] args) {
 
         ArrayList<Integer> ints = new ArrayList<>(Arrays.asList(23, 43, 34, 35, 56));
@@ -42,11 +43,11 @@ public class Java03ArrayListMethods {
 
         System.out.println(arr1.indexOf("Pythons") > 0);
 
-         System.out.println(arr1.lastIndexOf(arr2));
+        System.out.println(arr1.lastIndexOf(arr2));
 
-         ArrayList<String> cloneList = (ArrayList<String>) arr1.clone();
+        ArrayList<String> cloneList = (ArrayList<String>) arr1.clone();
 
-         System.out.println(cloneList);
+        System.out.println(cloneList);
 
     }
 }

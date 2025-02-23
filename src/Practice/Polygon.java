@@ -1,4 +1,4 @@
-package Temp;
+package Practice;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -29,10 +29,11 @@ public class Array08Practice {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
+        sc.close();
         return arr;
     }
 
-    public static int[][] input2DArray(){
+    public static int[][] input2DArray() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Please Enter the number of rows: ");
         int rows = sc.nextInt();
@@ -42,10 +43,11 @@ public class Array08Practice {
         int[][] numArray = new int[rows][columns];
 
         for (int i = 0; i < rows; i++) {
-            for(int j = 0; j < columns; j++){
+            for (int j = 0; j < columns; j++) {
                 numArray[i][j] = sc.nextInt();
             }
         }
+        sc.close();
         return numArray;
     }
 
@@ -68,7 +70,7 @@ public class Array08Practice {
         }
     }
 
-    //  Create a program to find number of occurrences of an element in an array.
+    // Create a program to find number of occurrences of an element in an array.
     public static int occurrencesArray(int[] arr, int num) {
         int count = 0;
         int i = 0;
@@ -82,7 +84,7 @@ public class Array08Practice {
         return count;
     }
 
-    //Create a program to find the maximum and minimum element in an array.
+    // Create a program to find the maximum and minimum element in an array.
     public static int minArray(int[] arr) {
         if (arr.length == 0) {
             return Integer.MIN_VALUE;
@@ -135,7 +137,7 @@ public class Array08Practice {
         return false;
     }
 
-    //    Create a program to return a new array deleting a specific element.
+    // Create a program to return a new array deleting a specific element.
     public static int[] deleteArray(int[] arr, int numToDel) {
         int count = 0;
         int i = 0;
@@ -165,7 +167,7 @@ public class Array08Practice {
         return newArray;
     }
 
-//    Create a program to reverse an array.
+    // Create a program to reverse an array.
 
     public static void reverseArray(int[] arr) {
         int i = 0;
@@ -177,7 +179,7 @@ public class Array08Practice {
         }
     }
 
-    //    Create a program to check is the array is palindrome or not.
+    // Create a program to check is the array is palindrome or not.
     public static boolean checkPalindrome(int[] arr) {
         int i = 0;
         while (i < arr.length) {
@@ -190,22 +192,21 @@ public class Array08Practice {
     }
 
     /*
-
-    public static boolean checkPalindrome(int[] arr) {
-        int i = 0;
-        int j = arr.length - 1;
-
-        while (i < j) {
-            if (arr[i] != arr[j]) {
-                return false;
-            }
-            i++;
-            j--;
-        }
-        return true;
-    }
+     * 
+     * public static boolean checkPalindrome(int[] arr) {
+     * int i = 0;
+     * int j = arr.length - 1;
+     * 
+     * while (i < j) {
+     * if (arr[i] != arr[j]) {
+     * return false;
+     * }
+     * i++;
+     * j--;
+     * }
+     * return true;
+     * }
      */
-
 
     public static int[] mergeArray(int[] arr1, int[] arr2) {
         int size1 = arr1.length;
@@ -224,7 +225,6 @@ public class Array08Practice {
         while (i < size1) {
             mergedArray[k++] = arr1[i++];
         }
-
 
         while (j < size2) {
             mergedArray[k++] = arr2[j++];
@@ -308,46 +308,45 @@ public class Array08Practice {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-//        int[] arr = inputArray();
-//        int[] numArray = inputArray();
+        // int[] arr = inputArray();
+        // int[] numArray = inputArray();
         int[][] num2DArray = input2DArray();
 
+        // int sum = arraySum(numArray);
+        // int avg = arrayAverage(numArray);
+        // System.out.println("Sum of Array: " + sum);
+        // System.out.println("Average of Array: " + avg);
 
-//        int sum = arraySum(numArray);
-//        int avg = arrayAverage(numArray);
-//        System.out.println("Sum of Array: " + sum);
-//        System.out.println("Average of Array: " + avg);
+        // System.out.print("Enter the element to find: ");
+        // int num = sc.nextInt();
+        // System.out.println( occurrencesArray(numArray, num));
 
-//        System.out.print("Enter the element to find: ");
-//        int num = sc.nextInt();
-//        System.out.println( occurrencesArray(numArray, num));
+        // System.out.println(minArray(numArray));
+        // System.out.println(maxArray(numArray));
 
-//        System.out.println(minArray(numArray));
-//        System.out.println(maxArray(numArray));
+        // System.out.println(isIncreasedArray(numArray));
+        // System.out.println(isDecreasedArray(numArray));
 
-//        System.out.println(isIncreasedArray(numArray));
-//        System.out.println(isDecreasedArray(numArray));
+        // System.out.println("Enter Element to be delete: ");
+        // int numToDel = sc.nextInt();
+        // int[] newArr = deleteArray(numArray, numToDel);
+        // displayArray(newArr);
 
+        // reverseArray(numArray);
+        // displayArray(numArray);
 
-//        System.out.println("Enter Element to be delete: ");
-//        int numToDel = sc.nextInt();
-//        int[] newArr = deleteArray(numArray, numToDel);
-//        displayArray(newArr);
+        // checkPalindrome(numArray);
+        // checkBooleanResult(numArray);
 
-//        reverseArray(numArray);
-//        displayArray(numArray);
+        // displayArray(mergeArray(arr, numArray));
 
-//        checkPalindrome(numArray);
-//        checkBooleanResult(numArray);
+        // System.out.println(searchElement(num2DArray, 8));
 
-//        displayArray(mergeArray(arr, numArray));
-
-//        System.out.println(searchElement(num2DArray, 8));
-
-//        calculateSumAndAverage(num2DArray);
+        // calculateSumAndAverage(num2DArray);
 
         int sum = calculateDiagonalSum(num2DArray);
         System.out.println("Sum of diagonal elements: " + sum);
+        sc.close();
 
     }
 }

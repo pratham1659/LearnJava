@@ -3,10 +3,10 @@ package Java07Sorting;
 public class Java01BubbleSort {
 
     /*
-    Bubble Sort - Stable Algorithm arr = [1, 2, 3, 3*, 5]
-    Bubble Sort - inPlace Algorithm
+     * Bubble Sort - Stable Algorithm arr = [1, 2, 3, 3*, 5]
+     * Bubble Sort - inPlace Algorithm
      */
-    //Ques 1: Program to Sort Array increasing Order
+    // Ques 1: Program to Sort Array increasing Order
     // Time Complexity: O(N^2)
     // Space Complexity: O(1)
     public static void increaseSort(int[] arr) {
@@ -22,7 +22,7 @@ public class Java01BubbleSort {
         }
     }
 
-    //Ques 2: Program to Sort Array decreasing Order
+    // Ques 2: Program to Sort Array decreasing Order
     // Time Complexity: O(N^2)
     // Space Complexity: O(1)
     public static void decreaseSort(int[] arr) {
@@ -39,11 +39,11 @@ public class Java01BubbleSort {
         }
     }
 
-    //Ques 2: Program to Sort Array increasing Order another Approach but not bubble sort
+    // Ques 2: Program to Sort Array increasing Order another Approach but not
+    // bubble sort
     // Time Complexity: O(N^2)
     // Space Complexity: O(1)
     public static void sorting(int[] arr) {
-        int len = arr.length;
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
@@ -57,7 +57,7 @@ public class Java01BubbleSort {
 
     }
 
-    //Ques 2: Program to Sort Array optimiseBubble
+    // Ques 2: Program to Sort Array optimiseBubble
     // Time Complexity: O(N^2)
     // Space Complexity: O(1)
     public static void optimiseBubble(int[] arr) {
@@ -73,15 +73,15 @@ public class Java01BubbleSort {
                     flag = true;
                 }
             }
-            if (!flag) {  //Have any swaps Happened
+            if (!flag) { // Have any swaps Happened
                 return;
             }
         }
     }
 
-    //Ques 4: Maximum no of swaps in the worst case in Bubble Sort
+    // Ques 4: Maximum no of swaps in the worst case in Bubble Sort
 
-    //printArray Approach
+    // printArray Approach
     public static void printArray(int[] arr) {
         for (int i : arr) {
             System.out.print(i + " ");
@@ -91,7 +91,7 @@ public class Java01BubbleSort {
 
     public static void main(String[] args) {
 
-        int[] arr = {64, 34, 25, 12, 22, 11, 90};
+        int[] arr = { 64, 34, 25, 12, 22, 11, 90 };
         System.out.print("Increasing Order: ");
         increaseSort(arr);
         printArray(arr);
@@ -104,12 +104,10 @@ public class Java01BubbleSort {
         sorting(arr);
         printArray(arr);
 
-
         optimiseBubble(arr);
         for (int i : arr) {
             System.out.print(i + " ");
         }
-
 
     }
 }
