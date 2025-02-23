@@ -1,4 +1,4 @@
-package Temp;
+package Practice;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;

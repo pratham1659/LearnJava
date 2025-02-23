@@ -1,4 +1,4 @@
-package Temp;
+package Practice;
 
 public class CherryPickup {
     public int cherryPickup(int[][] grid) {

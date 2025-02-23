@@ -1,4 +1,4 @@
-package Temp;
+package Practice;
 
 public class CountPalindrome {
     public int countSubstrings(String s) {

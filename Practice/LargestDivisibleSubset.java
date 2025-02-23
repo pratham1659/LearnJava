@@ -1,4 +1,4 @@
-package Temp;
+package Practice;
 
 import java.util.ArrayList;
 import java.util.Arrays;

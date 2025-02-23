@@ -1,4 +1,4 @@
-package Temp;
+package Practice;
 
 public class Diagonal {
     public static void main(String[] args) {

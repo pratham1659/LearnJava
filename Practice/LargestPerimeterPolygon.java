@@ -1,5 +1,5 @@
 package Practice;
-import java.util.Arrays;
+
 import java.util.Arrays;
 
 public class LargestPerimeterPolygon {
@@ -21,8 +21,9 @@ public class LargestPerimeterPolygon {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 1, 2, 3, 5, 12, 50};
-        int[] num2 = {5, 5, 20};
+        int[] nums = { 1, 1, 2, 3, 5, 12, 50 };
+        int[] num2 = { 5, 5, 20 };
         System.out.println(largestPerimeter(nums));
+        System.out.println(largestPerimeter(num2));
     }
 }

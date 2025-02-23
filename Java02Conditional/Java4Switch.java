@@ -18,5 +18,7 @@ public class Java4Switch {
             case 7 -> System.out.println("Sunday");
             default -> System.out.println("Invalid Output");
         }
+
+        sc.close();
     }
 }
