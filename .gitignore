@@ -3,9 +3,10 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-.cph/*
-bin/*
-lib/*
+/.cph/*
+/bin/*
+/lib/*
+
 
 ### Eclipse ###
 .apt_generated
