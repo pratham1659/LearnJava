@@ -3,6 +3,10 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
+.cph/*
+bin/*
+lib/*
+
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -22,8 +26,7 @@ bin/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
-.vscode/
+
 
 ### Mac OS ###
 .DS_Store
