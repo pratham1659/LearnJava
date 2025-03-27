@@ -1,4 +1,5 @@
 package Java10Oops.Java01Class;
+
 class Book {
     static int totalNoOfBooks;
     String author;
