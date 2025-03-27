@@ -1,4 +1,4 @@
-package Java10Oops.Java02Constructor;
+package Java10Oops.Java03Constructor;
 
 public class CarFinal {
     final int noOfWheel;

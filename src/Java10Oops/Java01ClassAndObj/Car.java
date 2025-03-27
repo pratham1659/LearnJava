@@ -1,4 +1,4 @@
-package Java10Oops.Java01Class;
+package Java10Oops.Java01ClassAndObj;
 
 public class Car {
 

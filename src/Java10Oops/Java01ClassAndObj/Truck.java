@@ -1,4 +1,4 @@
-package Java10Oops.Java01Class;
+package Java10Oops.Java01ClassAndObj;
 
 public class Truck {
 
@@ -82,9 +82,9 @@ public class Truck {
         System.out.println("Fuel level : " + swift.getCurrentFuelLevel());
         System.out.println("Car Default Colour: " + swift.color);
 
-        Driver myDriver = new Driver();
-        myDriver.name = "PrathamKr.";
-        myDriver.dateOfLicence = "29-01-2023";
+        Truck tr = new Truck();
+        tr.name = "PrathamKr.";
+        tr.dateOfLicence = "29-01-2023";
 
         System.out.println("Minimum Age: " + minimumAgeOfDriving);
     }
