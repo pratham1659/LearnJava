@@ -26,6 +26,6 @@
   - Default Constructor (No-arg constructor)
   - Parametrized Constructor
   - Constructor Overloading
-  - Copy Conctructor
+  - Copy Conctructor not available in Java
   - Does constructor return any
     value?
