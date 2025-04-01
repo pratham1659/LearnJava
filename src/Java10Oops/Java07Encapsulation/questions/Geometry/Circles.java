@@ -1,4 +1,4 @@
-package Java10Oops.Java03Encapsulation.questions.Geometry;
+package Java10Oops.Java07Encapsulation.questions.Geometry;
 
 public class Circles {
     public double radius;

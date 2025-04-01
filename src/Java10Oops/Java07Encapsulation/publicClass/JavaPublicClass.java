@@ -1,4 +1,4 @@
-package Java10Oops.Java03Encapsulation.publicClass;
+package Java10Oops.Java07Encapsulation.publicClass;
 
 public class JavaPublicClass {
     public static void main(String[] args) {

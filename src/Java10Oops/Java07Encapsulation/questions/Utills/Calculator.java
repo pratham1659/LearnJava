@@ -1,7 +1,7 @@
-package Java10Oops.Java03Encapsulation.questions.Utills;
+package Java10Oops.Java07Encapsulation.questions.Utills;
 
-import Java10Oops.Java03Encapsulation.questions.Geometry.Circles;
-import Java10Oops.Java03Encapsulation.questions.Geometry.Rectangle;
+import Java10Oops.Java07Encapsulation.questions.Geometry.Circles;
+import Java10Oops.Java07Encapsulation.questions.Geometry.Rectangle;
 
 public class Calculator {
 

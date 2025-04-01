@@ -1,4 +1,4 @@
-package Java10Oops.Java05EqualHashNode;
+package Java10Oops.Java08EqualHashNode;
 
 import java.util.Objects;
 

@@ -1,6 +1,6 @@
-package Java10Oops.Java03Encapsulation.publicClass;
+package Java10Oops.Java07Encapsulation.publicClass;
 
-import Java10Oops.Java03Encapsulation.getterSetter.Car;
+import Java10Oops.Java07Encapsulation.getterSetter.Car;
 
 public class getterSetterTest {
 

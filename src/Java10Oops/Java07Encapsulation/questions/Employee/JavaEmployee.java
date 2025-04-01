@@ -1,4 +1,4 @@
-package Java10Oops.Java03Encapsulation.questions.Employee;
+package Java10Oops.Java07Encapsulation.questions.Employee;
 
 class JavaEmployee {
 //    Define a class Employee with private attributes (like name, age,

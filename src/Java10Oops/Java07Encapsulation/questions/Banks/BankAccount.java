@@ -1,4 +1,4 @@
-package Java10Oops.Java03Encapsulation.questions.Banks;
+package Java10Oops.Java07Encapsulation.questions.Banks;
 
 public class BankAccount {
 //    Define a BankAccount class with private attributes like
