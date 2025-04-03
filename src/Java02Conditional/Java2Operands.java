@@ -27,6 +27,12 @@ public class Java2Operands {
         }
     }
 
+    static void divideBy5and3Ternary(int num) {
+        boolean val = ((num % 5 == 0) && (num % 3 == 0)) ? true : false;
+
+        System.out.println(val);
+    }
+
     // Ques: Take 3 positive integers input and print
     // the greatest of them.
 
@@ -88,21 +94,21 @@ public class Java2Operands {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Number Here");
+        System.out.print("Enter Number Here: ");
         int A = sc.nextInt();
         // int B = sc.nextInt();
         // int C = sc.nextInt();
 
         // ThreeDigit(A);
         // divideBy5and3(A);
+        divideBy5and3Ternary(A);
         // GreatestNum(A, B, C);
         // YoungAge(A, B, C);
 
         // checkTriangle(A, B, C);
+        // divisible3or5not15(A);
 
         sc.close();
-
-        divisible3or5not15(A);
 
     }
 }

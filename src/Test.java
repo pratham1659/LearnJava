@@ -5,15 +5,11 @@ public class Test {
 
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
 
-        if (a >= b && a >= c) {
-            System.out.println("a is max");
-        } else if (b >= a && b >= c) {
-            System.out.println("b is max");
-        } else {
-            System.out.println("c is max");
+        for (int i = 1; i <= a; i++) {
+            if (i % 5 == 0 && i % 3 == 0) {
+                System.out.println(i);
+            }
         }
 
         sc.close();
