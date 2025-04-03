@@ -3,11 +3,11 @@ package Java10Oops.Java04Inheritance.VehicleTest;
 // The base class
 public class Vehicle {
     private String brand;
-    private int year;
+    private int launchYear;
 
-    public Vehicle(String brand, int year) {
+    public Vehicle(String brand, int launchYear) {
         this.brand = brand;
-        this.year = year;
+        this.launchYear = launchYear;
     }
 
     public void start() {
@@ -20,7 +20,7 @@ public class Vehicle {
 
     public void displayInfo() {
         System.out.println("Brand: " + brand);
-        System.out.println("Year: " + year);
+        System.out.println("Year: " + launchYear);
     }
 }
 
@@ -44,12 +44,28 @@ class Car extends Vehicle {
     }
 }
 
+// Subclass 2: Two Wheeler
+class TwoWheeler extends Vehicle {
+    private int mileage;
+
+    public TwoWheeler(String brand, int launchYear, int mileage) {
+        super(brand, launchYear);
+        this.mileage = mileage;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Mileage capacity: " + mileage);
+    }
+}
+
 // Subclass 2: Motorcycle
-class Motorcycle extends Vehicle {
+class MotorCycle extends TwoWheeler {
     private boolean hasFairing;
 
-    public Motorcycle(String brand, int year, boolean hasFairing) {
-        super(brand, year);
+    public MotorCycle(String brand, int launchYear, int mileage, boolean hasFairing) {
+        super(brand, launchYear, mileage);
         this.hasFairing = hasFairing;
     }
 
@@ -62,6 +78,22 @@ class Motorcycle extends Vehicle {
         super.displayInfo();
         System.out.println("Has Fairing: " + hasFairing);
     }
+
+    public static void main(String[] args) {
+
+        Car c1 = new Car("Toyata", 2024, 4);
+
+        c1.start();
+        c1.displayInfo();
+        c1.displayInfo();
+
+        TwoWheeler tw = new TwoWheeler("Honda", 2023, 45);
+
+        tw.displayInfo();
+
+        MotorCycle mc = new MotorCycle("Suzuki", 2024, 23, false);
+
+        mc.displayInfo();
+        c1.stop();
+    }
 }
-
-

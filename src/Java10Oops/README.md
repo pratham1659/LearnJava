@@ -29,3 +29,14 @@
   - Copy Conctructor not available in Java
   - Does constructor return any
     value?
+
+### Topic 4 - Inheritance in Java
+
+- Inheritance
+- Types of Inheritance
+  - Super Key
+  - Single Inheritance
+  - Multilevel Inhertance
+  - Hierarchical Inheritance
+  - Multiple Inheritance used by interface
+  - Hybrid Inheritance
