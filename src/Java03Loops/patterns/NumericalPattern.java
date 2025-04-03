@@ -3,25 +3,48 @@ package Java03Loops.patterns;
 import java.util.Scanner;
 
 public class NumericalPattern {
+
+    // Pattern questions start from here
+    // 1 2 3 4
+    // 1 2 3 4
+    // 1 2 3 4
+    public static void pattern1(int n) {
+
+        System.out.println("Question Pattern 1");
+        int i = 1;
+
+        while (i <= n) {
+            int j = 1;
+
+            while (j <= n) {
+                System.out.print(j + " ");
+                j = j + 1;
+            }
+            System.out.println();
+            i = i + 1;
+        }
+
+    }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the Number of Rows: ");
-        int r = sc.nextInt();
-        System.out.println("Enter the Number of Columns: ");
-        // int c = sc.nextInt();
+        // System.out.println("Enter the Number of Rows: ");
+        // int r = sc.nextInt();
 
-        // Numerical Rectangular print
-        for (int i = 1; i <= r; i++) {
-            for (int j = i; j <= r; j++) {
-                System.out.print(j);
-            }
-            for (int k = 1; k <= i - 1; k++) {
-                System.out.print(k);
-            }
-            System.out.println();
-        }
+        pattern1(4);
+
+        // // Numerical Rectangular print
+        // for (int i = 1; i <= r; i++) {
+        // for (int j = i; j <= r; j++) {
+        // System.out.print(j);
+        // }
+        // for (int k = 1; k <= i - 1; k++) {
+        // System.out.print(k);
+        // }
+        // System.out.println();
+        // }
 
         // Numerical Print
         // for(int i=1; i<=r; i++){

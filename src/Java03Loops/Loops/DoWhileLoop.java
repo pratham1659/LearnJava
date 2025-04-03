@@ -1,4 +1,4 @@
-package Java03Loops;
+package Java03Loops.Loops;
 
 public class DoWhileLoop {
     public static void main(String[] args) {
