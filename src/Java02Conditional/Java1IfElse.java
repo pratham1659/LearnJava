@@ -126,11 +126,58 @@ public class Java1IfElse {
         }
     }
 
+    // Ques 9 : check whether a character is digit or alphabet
+    public static void checkDigit(char ch) {
+        System.out.println("Ques 9 : check whether a character is digit or alphabet");
+
+        int value = (int) ch;
+
+        if ((value >= 65 && value <= 90) || (value >= 97 && value <= 122)) {
+            System.out.println("yes");
+        } else {
+            System.out.println("no");
+        }
+    }
+
+    // Ques 10 : Print Multiplication Table
+    public static void MultiTable(int num) {
+
+        for (int i = 1; i <= num; i++) {
+            System.out.println(num + "X" + i + "=" + num * i);
+        }
+    }
+
+    // Ques 11 : Count the digit in number
+    public static void countDigit(int num) {
+        System.out.println("Ques 11 : Count the digit in number");
+
+        int count = 0;
+        while (num > 0) {
+            num = num / 10;
+            count++;
+        }
+        System.out.println(count);
+    }
+
+    // Ques 12 : Sum of Positive Number
+    public static void sumOfDigit(int num) {
+        System.out.println("Ques 12 : Sum of Positive Number");
+
+        int sum = 0;
+        while (num > 0) {
+            int digit = num % 10;
+            sum += digit;
+            num = num / 10;
+        }
+        System.out.println(sum);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter Number Here: ");
         int A = sc.nextInt();
+        // char num = sc.next().charAt(0);
         // int B = sc.nextInt();
         // evenOdd(A);
         // divideBy5(A);
@@ -139,7 +186,11 @@ public class Java1IfElse {
         // profitLoss(A, B);
         // maxRectangle(A, B);
         // marks(A);
-        AdvanceProblem1(A);
+        // AdvanceProblem1(A);
+        // checkDigit(num);
+        // MultiTable(num);
+        // countDigit(A);
+        sumOfDigit(A);
 
         sc.close();
     }

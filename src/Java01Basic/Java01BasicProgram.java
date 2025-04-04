@@ -1,5 +1,7 @@
 package Java01Basic;
 
+import java.util.Scanner;
+
 public class Java01BasicProgram {
 
     // Ques 1: Program to check EvenOrOdd
@@ -215,26 +217,44 @@ public class Java01BasicProgram {
             ans++;
         }
         return ans;
+    }
 
+    // Ques 19 : Prefix and Postfix of digits
+    public static void prefixPostfix(int n) {
+        System.out.println("Ques 19 : Prefix and Postfix of digits");
+
+        int temp1 = n;
+        int a = ++temp1;
+        System.out.println(a); // prefix
+
+        int temp2 = n;
+        int b = temp2++;
+        System.out.println(b);
     }
 
     public static void main(String[] args) {
 
-        System.out.println("Check EvenOrOdd: " + isEvenOrOdd(34));
-        System.out.println("Check DivideBy5: " + isDivideBy5(34));
-        System.out.println("Check LeapYearOrNot: " + isLeapYearOrNot(1997));
-        System.out.println("The Absolute Integer: " + isAbsoluteInteger(-1));
-        isProfitAndLoss(200, 300);
-        System.out.println("Sum of 10 Natural numbers: " + sumOfNatural(10));
-        System.out.println("Sum of Odd numbers: " + sumOfOddNumbers(100));
-        System.out.println("Factorial of 5: " + factorial(5));
-        System.out.println("Sum of Digits: " + sumOfDigits(123));
-        System.out.println("No of Digits: " + noOfDigits(321));
-        System.out.println("Lcm of 10 and 20: " + leastCommonMultiplier(3, 180));
-        System.out.println("Gcd of 5 and 6: " + greatestCommonDivisor(5, 16));
-        System.out.println("Check Prime of 49: " + checkPrime(49));
-        System.out.println("Reverse Digit 123: " + reverseDigit(123));
-        System.out.println("CountDigit: " + countNum());
+        Scanner sc = new Scanner(System.in);
+
+        // System.out.println("Check EvenOrOdd: " + isEvenOrOdd(34));
+        // System.out.println("Check DivideBy5: " + isDivideBy5(34));
+        // System.out.println("Check LeapYearOrNot: " + isLeapYearOrNot(1997));
+        // System.out.println("The Absolute Integer: " + isAbsoluteInteger(-1));
+        // isProfitAndLoss(200, 300);
+        // System.out.println("Sum of 10 Natural numbers: " + sumOfNatural(10));
+        // System.out.println("Sum of Odd numbers: " + sumOfOddNumbers(100));
+        // System.out.println("Factorial of 5: " + factorial(5));
+        // System.out.println("Sum of Digits: " + sumOfDigits(123));
+        // System.out.println("No of Digits: " + noOfDigits(321));
+        // System.out.println("Lcm of 10 and 20: " + leastCommonMultiplier(3, 180));
+        // System.out.println("Gcd of 5 and 6: " + greatestCommonDivisor(5, 16));
+        // System.out.println("Check Prime of 49: " + checkPrime(49));
+        // System.out.println("Reverse Digit 123: " + reverseDigit(123));
+        // System.out.println("CountDigit: " + countNum());
+
+        // prefixPostfix(5);
+        sc.close();
+
     }
 
 }
