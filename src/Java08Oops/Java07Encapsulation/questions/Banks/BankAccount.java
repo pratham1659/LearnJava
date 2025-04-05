@@ -1,11 +1,11 @@
-package Java10Oops.Java07Encapsulation.questions.Banks;
+package Java08Oops.Java07Encapsulation.questions.Banks;
 
 public class BankAccount {
-//    Define a BankAccount class with private attributes like
-//    accountNumber, accountHolderName, and balance. Provide
-//    public methods to deposit and withdraw money, ensuring that
-//    these methods don't allow illegal operations like withdrawing
-//    more money than the current balance.
+    // Define a BankAccount class with private attributes like
+    // accountNumber, accountHolderName, and balance. Provide
+    // public methods to deposit and withdraw money, ensuring that
+    // these methods don't allow illegal operations like withdrawing
+    // more money than the current balance.
 
     private String accountNumber;
     private double balance;
@@ -74,5 +74,3 @@ public class BankAccount {
         System.out.println("Balance: " + balance);
     }
 }
-
-

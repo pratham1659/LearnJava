@@ -1,4 +1,4 @@
-package Java10Oops.Java07Encapsulation.questions.Geometry;
+package Java08Oops.Java07Encapsulation.questions.Geometry;
 
 public class Rectangle {
 

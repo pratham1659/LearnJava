@@ -1,4 +1,4 @@
-package Java08String;
+package Java10String;
 
 public class String03Buffer {
 }

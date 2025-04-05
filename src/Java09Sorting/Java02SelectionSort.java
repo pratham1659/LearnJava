@@ -1,13 +1,13 @@
-package Java07Sorting;
+package Java09Sorting;
 
 public class Java02SelectionSort {
 
     /*
-        Selection Sort - notStable Sorting
-        Selection Sort - Inplace Sorting
-    */
+     * Selection Sort - notStable Sorting
+     * Selection Sort - Inplace Sorting
+     */
 
-    //Ques 1: Program to Sort Array increasing Order
+    // Ques 1: Program to Sort Array increasing Order
     // Time Complexity: O(N^2)
     // Space Complexity: O(1)
     public static void increaseSelection(int[] arr) {
@@ -27,7 +27,7 @@ public class Java02SelectionSort {
         }
     }
 
-    //Ques 1: Program to Sort Array increasing Order
+    // Ques 1: Program to Sort Array increasing Order
     // Time Complexity: O(N^2)
     // Space Complexity: O(1)
     public static void decreaseSelection(int[] arr) {
@@ -47,7 +47,7 @@ public class Java02SelectionSort {
         }
     }
 
-    //printArray
+    // printArray
     public static void printArray(int[] arr) {
         for (int i : arr) {
             System.out.print(i + " ");
@@ -55,9 +55,8 @@ public class Java02SelectionSort {
         System.out.println();
     }
 
-
     public static void main(String[] args) {
-        int[] arr = {7, 5, 4, 1, 3};
+        int[] arr = { 7, 5, 4, 1, 3 };
 
         System.out.print("Increasing Selection: ");
         increaseSelection(arr);

@@ -1,4 +1,4 @@
-package Java08String.Problems;
+package Java10String.Problems;
 
 public class String6Remove {
 
@@ -50,7 +50,6 @@ public class String6Remove {
             System.out.println("Hello " + name + ", Your marks are: " + marks);
             System.out.printf("Hello %S, Your marks are: %,5d", name, marks);
             System.out.println();
-
 
             StringBuilder str = new StringBuilder("First ");
 

@@ -1,4 +1,4 @@
-package Java06Search;
+package Java07Search;
 
 import java.util.ArrayList;
 
@@ -56,7 +56,7 @@ public class Java02BinarySearch {
     public static int recursiveBinarySearch(int[] arr, int left, int right, int target) {
         if (left <= right) {
 
-            int mid = left + (right - left) / 2; //better way to prevent overflow in binary search.
+            int mid = left + (right - left) / 2; // better way to prevent overflow in binary search.
 
             if (arr[mid] == target)
                 return mid;
@@ -70,8 +70,8 @@ public class Java02BinarySearch {
         return -1;
     }
 
-
-    // Find the first occurrence of a given element x, given that the given array is sorted.
+    // Find the first occurrence of a given element x, given that the given array is
+    // sorted.
     // If no occurrence of x is found, then return -1.
     public static int findFirstOccurrence(int[] arr, int target) {
         int len = arr.length;
@@ -113,7 +113,8 @@ public class Java02BinarySearch {
         return lastIndex;
     }
 
-    // Find the square root of given non-negative value x. Round it off to the nearest floor integer.
+    // Find the square root of given non-negative value x. Round it off to the
+    // nearest floor integer.
     public static int squareRootBinarySearch(int target) {
         int start = 0, end = target;
         int ans = -1;
@@ -137,7 +138,7 @@ public class Java02BinarySearch {
 
     public static void main(String[] args) {
 
-        int[] arr = {2, 4, 6, 8, 10, 12, 14};
+        int[] arr = { 2, 4, 6, 8, 10, 12, 14 };
         System.out.println("Binary Search Array at index: " + binarySearchArray(arr, 12));
 
         ArrayList<Integer> arrayList = new ArrayList<>();
@@ -152,8 +153,7 @@ public class Java02BinarySearch {
         System.out.println("Binary Search ArrayList: " + binarySearchArrayList(arrayList, 10));
         System.out.println("Recursion Binary: " + recursiveBinarySearch(arr, 0, arr.length - 1, 12));
 
-
-        int[] findArr = {2, 5, 5, 5, 6, 6, 8, 9, 9, 9};
+        int[] findArr = { 2, 5, 5, 5, 6, 6, 8, 9, 9, 9 };
         int target = 5;
         System.out.println("First Occurrence index: " + findFirstOccurrence(findArr, target));
         System.out.println("Last Occurrence index: " + findLastOccurrence(findArr, target));

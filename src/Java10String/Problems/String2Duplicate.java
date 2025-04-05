@@ -1,4 +1,4 @@
-package Java08String.Problems;
+package Java10String.Problems;
 
 import java.util.*;
 import java.util.Map.Entry;
@@ -113,8 +113,7 @@ public class String2Duplicate {
         }
     }
 
-
-     // Java Program to Count the Number of Duplicate Words in Given String
+    // Java Program to Count the Number of Duplicate Words in Given String
     public static void findDuplicateWord(String inputString) {
 
         // split:

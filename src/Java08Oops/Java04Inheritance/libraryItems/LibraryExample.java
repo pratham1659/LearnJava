@@ -1,4 +1,5 @@
-package Java10Oops.Java04Inheritance.libraryItems;
+package Java08Oops.Java04Inheritance.libraryItems;
+
 // Example usage
 public class LibraryExample {
     public static void main(String[] args) {

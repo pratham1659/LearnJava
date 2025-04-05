@@ -1,4 +1,4 @@
-package Java09Recursion;
+package Java11Recursion;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class Recursion03Practice {
 
     static Scanner sc = new Scanner(System.in);
 
-    //Ques 1: Factorial in Java using for Loops
+    // Ques 1: Factorial in Java using for Loops
     public static long factorialWithLoop(int num) {
         long ans = 1;
         for (int i = 1; i <= num; i++) {
@@ -15,7 +15,7 @@ public class Recursion03Practice {
         return ans;
     }
 
-    //Ques 2: Factorial in Java Using Recursion Calls
+    // Ques 2: Factorial in Java Using Recursion Calls
     public static long factorial(int num) {
         System.out.println("Function called for: " + num);
         if (num == 1) {
@@ -24,7 +24,8 @@ public class Recursion03Practice {
         return num * factorial(num - 1);
     }
 
-    //Ques 3: Create a program to find password checker until a valid password is entered.
+    // Ques 3: Create a program to find password checker until a valid password is
+    // entered.
     public static boolean isValidPassword(String password) {
         return password.length() > 6;
     }
@@ -38,7 +39,7 @@ public class Recursion03Practice {
         System.out.println("Thanks for Entering a valid password");
     }
 
-    //Ques 4: Create a program using do-while to implement a number guessing game.
+    // Ques 4: Create a program using do-while to implement a number guessing game.
     public static void guessGame() {
         Scanner scanner = new Scanner(System.in);
         int secretNumber = (int) (Math.random() * 100) + 1; // Generate a random number between 1 and 100
@@ -65,8 +66,8 @@ public class Recursion03Practice {
         scanner.close();
     }
 
-
-    //Ques 5: Create a program using break to read inputs from the user in a loop and break
+    // Ques 5: Create a program using break to read inputs from the user in a loop
+    // and break
     // the loop if a specific keyword (like "exit") is entered.
     public static void inputOnExit() {
         String str;
@@ -80,8 +81,9 @@ public class Recursion03Practice {
         }
     }
 
-    //Ques 6: Create a program using continue to sum all positive numbers entered by the
-    //user skip any negative numbers.
+    // Ques 6: Create a program using continue to sum all positive numbers entered
+    // by the
+    // user skip any negative numbers.
     public static void skipNegative(int[] arr) {
         int sum = 0;
         for (int i : arr) {
@@ -101,7 +103,7 @@ public class Recursion03Practice {
         checkPassword();
         guessGame();
 
-        int[] arr = {-1, 2, 4, 5, -8, -5};
+        int[] arr = { -1, 2, 4, 5, -8, -5 };
         skipNegative(arr);
     }
 }

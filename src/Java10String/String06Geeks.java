@@ -1,17 +1,17 @@
-package Java08String;
+package Java10String;
 
 import java.util.*;
 
 public class String06Geeks {
 
     /*
-        Ques 1: Maximum Occurring Character
-        Input:
-        str = testsample
-        Output: e
-        Explanation: e is the character which
-        is having the highest frequency.
-    */
+     * Ques 1: Maximum Occurring Character
+     * Input:
+     * str = testsample
+     * Output: e
+     * Explanation: e is the character which
+     * is having the highest frequency.
+     */
     public static char getMaximumOccur(String line) {
 
         int[] freq = new int[26];
@@ -34,7 +34,7 @@ public class String06Geeks {
         return maxChar;
     }
 
-    //Ques 2: Sum of Numbers in Given String
+    // Ques 2: Sum of Numbers in Given String
     public static int sumOfNumbers(String str) {
         int sum = 0;
         StringBuilder num = new StringBuilder();
@@ -56,7 +56,7 @@ public class String06Geeks {
         return sum;
     }
 
-    //Ques 3: Find First Repeated character from String
+    // Ques 3: Find First Repeated character from String
     public static String findFirstRepeatedCharacter(String str) {
         HashSet<Character> set = new HashSet<>();
 
@@ -70,7 +70,7 @@ public class String06Geeks {
         return "-1"; // Return null character if no repeated character found
     }
 
-    //Ques 4: remove common character and concat String
+    // Ques 4: remove common character and concat String
     public static String uncommonCharacters(String s1, String s2) {
         Set<Character> set1 = new HashSet<>();
         Set<Character> set2 = new HashSet<>();

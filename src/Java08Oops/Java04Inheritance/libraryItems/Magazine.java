@@ -1,4 +1,4 @@
-package Java10Oops.Java04Inheritance.libraryItems;
+package Java08Oops.Java04Inheritance.libraryItems;
 
 class Magazine extends LibraryItem {
     private int issueNumber;

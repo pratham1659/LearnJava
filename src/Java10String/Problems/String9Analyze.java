@@ -1,4 +1,4 @@
-package Java08String.Problems;
+package Java10String.Problems;
 
 import java.util.HashMap;
 import java.util.Map;

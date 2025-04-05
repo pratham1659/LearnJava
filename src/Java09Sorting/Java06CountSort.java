@@ -1,4 +1,4 @@
-package Java07Sorting;
+package Java09Sorting;
 
 public class Java06CountSort {
     public static void countSort(int[] arr) {
@@ -22,7 +22,8 @@ public class Java06CountSort {
             count[arr[i]]++;
         }
 
-        // Modify the count array to store the actual position of each element in the sorted array
+        // Modify the count array to store the actual position of each element in the
+        // sorted array
         for (int i = 1; i <= max; i++) {
             count[i] += count[i - 1];
         }
@@ -43,7 +44,7 @@ public class Java06CountSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4, 2, 2, 8, 3, 3, 1};
+        int[] arr = { 4, 2, 2, 8, 3, 3, 1 };
         System.out.println("Array before sorting:");
         printArray(arr);
 

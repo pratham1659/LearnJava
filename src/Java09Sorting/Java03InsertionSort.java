@@ -1,19 +1,19 @@
-package Java07Sorting;
+package Java09Sorting;
 
 public class Java03InsertionSort {
 
     /*
-        Insertion Sort - Stable Algorithm
-        Insertion Sort -
-    */
+     * Insertion Sort - Stable Algorithm
+     * Insertion Sort -
+     */
 
-    //Ques 1: Program to Sort Array Increasing Order
+    // Ques 1: Program to Sort Array Increasing Order
     // Time Complexity: O(N^2)
     // Space Complexity: O(1)
-    public static void increaseInsertion(int[] arr){
+    public static void increaseInsertion(int[] arr) {
         int len = arr.length;
 
-        for(int i = 1; i < len; i++) {
+        for (int i = 1; i < len; i++) {
             int j = i;
             while (j > 0 && arr[j] < arr[j - 1]) {
                 int temp = arr[j];
@@ -24,13 +24,13 @@ public class Java03InsertionSort {
         }
     }
 
-    //Ques 1: Program to Sort Array Decreasing Order
+    // Ques 1: Program to Sort Array Decreasing Order
     // Time Complexity: O(N^2)
     // Space Complexity: O(1)
-    public static void decreaseInsertion(int[] arr){
+    public static void decreaseInsertion(int[] arr) {
         int len = arr.length;
 
-        for(int i = 1; i < len; i++) {
+        for (int i = 1; i < len; i++) {
             int j = i;
             while (j > 0 && arr[j] > arr[j - 1]) {
                 int temp = arr[j];
@@ -41,16 +41,17 @@ public class Java03InsertionSort {
         }
     }
 
-    //printArray
-    public static void printArray(int[] arr){
-        for (int i : arr){
+    // printArray
+    public static void printArray(int[] arr) {
+        for (int i : arr) {
             System.out.print(i + " ");
         }
         System.out.println();
     }
+
     public static void main(String[] args) {
 
-        int[] arr = {8, 3, 6, 5, 4, 2};
+        int[] arr = { 8, 3, 6, 5, 4, 2 };
         System.out.print("Increasing Insertion: ");
         increaseInsertion(arr);
         printArray(arr);

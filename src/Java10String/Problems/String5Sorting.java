@@ -1,4 +1,4 @@
-package Java08String.Problems;
+package Java10String.Problems;
 
 import java.util.*;
 
@@ -30,15 +30,13 @@ public class String5Sorting {
 
     // Approach - using sort Method
     // Time Complexity: O(n log n)
-    //Space Complexity: O(n)
+    // Space Complexity: O(n)
     public static void characterMethodSort(String str) {
 
         char[] charArray = str.toCharArray();
         Arrays.sort(charArray);
         System.out.println(new String(charArray));
     }
-
-
 
     public static void main(String[] args) {
 

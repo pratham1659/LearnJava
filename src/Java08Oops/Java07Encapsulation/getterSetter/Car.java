@@ -1,4 +1,4 @@
-package Java10Oops.Java07Encapsulation.getterSetter;
+package Java08Oops.Java07Encapsulation.getterSetter;
 
 public class Car {
     private String colour;
@@ -7,7 +7,7 @@ public class Car {
     private double costOfPurchase;
 
     public Car() {
-        //Empty Constructor
+        // Empty Constructor
     }
 
     public Car(String color, String model, double fuelLevel, double costOfPurchase) {
@@ -29,14 +29,14 @@ public class Car {
         return fuelLevel;
     }
 
-    public double getCostOfPurchase(){
+    public double getCostOfPurchase() {
         return costOfPurchase;
     }
 
     public void setColour(String colour) {
-        if(colour.equals("Yellow")){
+        if (colour.equals("Yellow")) {
             System.out.println(false);
-        }else{
+        } else {
             this.colour = colour;
         }
 

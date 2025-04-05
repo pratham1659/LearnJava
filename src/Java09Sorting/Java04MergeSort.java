@@ -1,12 +1,12 @@
-package Java07Sorting;
+package Java09Sorting;
 
 public class Java04MergeSort {
 
     /*
-        Merge Sort - Divide the array in two halves
-        sort 2 sub arrays separately using Recursion
-        Merge the 2 sorted sub arrays to create an overall sorted array
-    */
+     * Merge Sort - Divide the array in two halves
+     * sort 2 sub arrays separately using Recursion
+     * Merge the 2 sorted sub arrays to create an overall sorted array
+     */
 
     public static void mergeSort(int[] arr) {
         if (arr == null || arr.length <= 1) {
@@ -56,7 +56,7 @@ public class Java04MergeSort {
         }
     }
 
-    //printArray
+    // printArray
     public static void printArray(int[] arr) {
         for (int i : arr) {
             System.out.print(i + " ");
@@ -66,7 +66,7 @@ public class Java04MergeSort {
 
     public static void main(String[] args) {
 
-        int[] arr = {8, 3, 6, 5, 4, 2};
+        int[] arr = { 8, 3, 6, 5, 4, 2 };
         System.out.print("Increasing MergeSort: ");
         mergeSort(arr);
         printArray(arr);

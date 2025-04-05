@@ -1,4 +1,4 @@
-package Java10Oops.Java02Keyword;
+package Java08Oops.Java02Keyword;
 
 public class StaticKey {
 

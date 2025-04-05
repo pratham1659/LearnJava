@@ -1,11 +1,11 @@
-package Java10Oops.Java07Encapsulation.questions.Employee;
+package Java08Oops.Java07Encapsulation.questions.Employee;
 
 class JavaEmployee {
-//    Define a class Employee with private attributes (like name, age,
-//    and salary), public methods to get and set these attributes, and a
-//    package-private method to displayEmployeeDetails. Create
-//    another class in the same package to test access to the
-//    displayEmployeeDetails method.
+    // Define a class Employee with private attributes (like name, age,
+    // and salary), public methods to get and set these attributes, and a
+    // package-private method to displayEmployeeDetails. Create
+    // another class in the same package to test access to the
+    // displayEmployeeDetails method.
 
     private int employeeId;
     private String name;

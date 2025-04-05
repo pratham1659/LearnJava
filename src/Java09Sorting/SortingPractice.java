@@ -1,15 +1,16 @@
-package Java07Sorting;
+package Java09Sorting;
 
 public class SortingPractice {
 
-/*
-    Ques 1: Given an integer array arr, move all O's to the end of it while maintaining the relative order of
-    the non-zero elements.
-    Note that you must do this in-place without making a copy of the array.
-    Input: 0 5 0 3 42
-    Output: 5 3 42 0 0
-    Using BubbleSort Approach
-*/
+    /*
+     * Ques 1: Given an integer array arr, move all O's to the end of it while
+     * maintaining the relative order of
+     * the non-zero elements.
+     * Note that you must do this in-place without making a copy of the array.
+     * Input: 0 5 0 3 42
+     * Output: 5 3 42 0 0
+     * Using BubbleSort Approach
+     */
 
     public static void moveElement(int[] arr) {
         int len = arr.length;
@@ -24,18 +25,19 @@ public class SortingPractice {
                     flag = true;
                 }
             }
-            if (!flag) {  // Have any swaps Happened
+            if (!flag) { // Have any swaps Happened
                 return;
             }
         }
     }
 
-/*
-    Ques 2: Give an array of names of the fruits; you are supposed to sort it in lexicographical order using
-    the selection sort
-    Input : ["papaya" "lime" "watermelon", "apple" "mango", "kiwi"]
-    Output: ["apple", "kiwi", "lime", "mango", "papaya", "watermelon"]
-*/
+    /*
+     * Ques 2: Give an array of names of the fruits; you are supposed to sort it in
+     * lexicographical order using
+     * the selection sort
+     * Input : ["papaya" "lime" "watermelon", "apple" "mango", "kiwi"]
+     * Output: ["apple", "kiwi", "lime", "mango", "papaya", "watermelon"]
+     */
     public static void lexicoElement(String[] str) {
         int len = str.length;
 
@@ -53,9 +55,9 @@ public class SortingPractice {
         }
     }
 
-    //printArray
-    public static void printArray(int[] arr){
-        for(int i : arr){
+    // printArray
+    public static void printArray(int[] arr) {
+        for (int i : arr) {
             System.out.print(i + " ");
         }
         System.out.println();
@@ -63,11 +65,11 @@ public class SortingPractice {
 
     public static void main(String[] args) {
 
-        int[] arr = {0, 5, 0, 3, 4, 2};
+        int[] arr = { 0, 5, 0, 3, 4, 2 };
         moveElement(arr);
         printArray(arr);
 
-        String[] str = {"papaya", "lime", "watermelon", "apple", "mango", "kiwi"};
+        String[] str = { "papaya", "lime", "watermelon", "apple", "mango", "kiwi" };
         lexicoElement(str);
 
         for (String i : str) {

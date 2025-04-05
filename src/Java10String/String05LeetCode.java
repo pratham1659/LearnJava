@@ -1,4 +1,4 @@
-package Java08String;
+package Java10String;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -81,7 +81,6 @@ public class String05LeetCode {
         return "";
     }
 
-
     // Ques 4: Program to Check Anagram or Not.
     // Time Complexity: O(n log n)
     // Space Complexity: O(n)
@@ -102,7 +101,7 @@ public class String05LeetCode {
         return Arrays.equals(charArray1, charArray2);
     }
 
-    //Ques 4. Program to check Valid parenthesis
+    // Ques 4. Program to check Valid parenthesis
     // Time Complexity: O(n)
     // Space Complexity: O(n)
     public static boolean validParenthesis(String s) {
@@ -123,7 +122,7 @@ public class String05LeetCode {
         return stack.isEmpty();
     }
 
-    //Ques 5. Program to remove consecutive duplicates:
+    // Ques 5. Program to remove consecutive duplicates:
     // Time Complexity: O(n)
     // Space Complexity: O(n)
     public static String removeConsecutiveChars(String s) {
@@ -142,7 +141,7 @@ public class String05LeetCode {
         return res.toString();
     }
 
-    //Ques 6. Check UpperCase or not
+    // Ques 6. Check UpperCase or not
     // Time Complexity: O(1)
     // Space Complexity: O(1)
     public static String checkStringCase(String s) {
@@ -155,15 +154,15 @@ public class String05LeetCode {
     }
 
     /*
-    Ques 7: Program to check Good String
-    Example 1:
-        Input: s = "aaa"
-        Output: NO
-        Explanation: distance between 'a' and 'a' is not 1.
-    Example 2:
-        Input: s = "cbc"
-        Output: YES
-        Explanation: distance between 'b' and 'c' is 1.
+     * Ques 7: Program to check Good String
+     * Example 1:
+     * Input: s = "aaa"
+     * Output: NO
+     * Explanation: distance between 'a' and 'a' is not 1.
+     * Example 2:
+     * Input: s = "cbc"
+     * Output: YES
+     * Explanation: distance between 'b' and 'c' is 1.
      */
     // Time Complexity: O(N)
     // Space Complexity: O(1)
@@ -176,7 +175,7 @@ public class String05LeetCode {
         return "YES";
     }
 
-    //Ques 8: Program to check the last Index of the duplicate character
+    // Ques 8: Program to check the last Index of the duplicate character
     // Time Complexity: O(N)
     // Space Complexity: O(1)
     public static int findLastIndex(String s, char p) {
@@ -188,10 +187,10 @@ public class String05LeetCode {
         return -1;
     }
 
-    //Ques 9: Sort in Ascending Order:
+    // Ques 9: Sort in Ascending Order:
     // Time Complexity: O(N)
     // Space Complexity: O(1)
-    public static void reverseString(char[] arr){
+    public static void reverseString(char[] arr) {
         int start = 0;
         int end = arr.length - 1;
         while (start < end) {
@@ -205,20 +204,20 @@ public class String05LeetCode {
         }
     }
 
-    public static String sortAscendingString(String str){
+    public static String sortAscendingString(String str) {
 
         char[] chArray = str.toCharArray();
         Arrays.sort(chArray);
 
-        StringBuilder sb  = new StringBuilder();
-        for(char ch : chArray){
+        StringBuilder sb = new StringBuilder();
+        for (char ch : chArray) {
             sb.append(ch);
         }
 
         return sb.toString();
     }
 
-    //Ques 10: program to sort in Descending order
+    // Ques 10: program to sort in Descending order
     // Time Complexity: O(n log n)
     // Space Complexity: O(n)
     public static String sortDescendingString(String str) {
@@ -228,7 +227,7 @@ public class String05LeetCode {
         Arrays.sort(charArray);
 
         StringBuilder sb = new StringBuilder();
-        for(Character c : charArray){
+        for (Character c : charArray) {
             sb.append(c);
         }
 
@@ -236,31 +235,31 @@ public class String05LeetCode {
         return sb.toString();
     }
 
-    //Ques 11: Program to check String is Isogram or not
+    // Ques 11: Program to check String is Isogram or not
     /*
-    Example 1:
-        Input:
-        S = machine
-        Output: 1
-        Explanation: machine is an isogram
-        as no letter has appeared twice. Hence
-        we print 1.
-    Example 2:
-        Input:
-        S = geeks
-        Output: 0
-        Explanation: geeks is not an isogram
-        as 'e' appears twice. Hence, we print 0.
+     * Example 1:
+     * Input:
+     * S = machine
+     * Output: 1
+     * Explanation: machine is an isogram
+     * as no letter has appeared twice. Hence
+     * we print 1.
+     * Example 2:
+     * Input:
+     * S = geeks
+     * Output: 0
+     * Explanation: geeks is not an isogram
+     * as 'e' appears twice. Hence, we print 0.
      */
 
     // Time Complexity: O(n^2)
     // Space Complexity: O(1)
-    public static boolean isIsogramString(String data){
+    public static boolean isIsogramString(String data) {
 
         data = data.toLowerCase();
-        for(int i=0; i<data.length(); i++){
-            for(int j = i+1; j<data.length(); j++){
-                if(data.charAt(i) ==  data.charAt(j)){
+        for (int i = 0; i < data.length(); i++) {
+            for (int j = i + 1; j < data.length(); j++) {
+                if (data.charAt(i) == data.charAt(j)) {
                     return false;
                 }
             }
@@ -270,15 +269,15 @@ public class String05LeetCode {
 
     // Time Complexity: O(n) Using HashMap
     // Space Complexity: O(n)
-    public static boolean isIsoGramHash(String str){
+    public static boolean isIsoGramHash(String str) {
         str = str.toLowerCase();
         HashMap<Character, Integer> map = new HashMap<>();
         char[] chArray = str.toCharArray();
-        for(char ch : chArray){
-            if(map.containsKey(ch)){
+        for (char ch : chArray) {
+            if (map.containsKey(ch)) {
                 map.put(ch, map.get(ch) + 1);
                 return false;
-            }else{
+            } else {
                 map.put(ch, 1);
             }
         }
@@ -293,11 +292,10 @@ public class String05LeetCode {
         String checkPal = "abca";
         System.out.println("Check palindrome: " + isAdvancePalindrome(checkPal));
 
-        String[] words = {"xngla", "level", "itrn", "y", "s", "pfp", "rfd"};
+        String[] words = { "xngla", "level", "itrn", "y", "s", "pfp", "rfd" };
         System.out.println("Check First Palindrome: " + firstPalindrome(words));
 
         System.out.println("Check Anagram: " + isAnagramCheck("anagram", "nagaram"));
-
 
         System.out.println("Check Valid Parenthesis: " + validParenthesis("{[()]}"));
         System.out.println("Check Valid Parenthesis: " + validParenthesis("(]"));
@@ -312,8 +310,8 @@ public class String05LeetCode {
 
         System.out.println("Find Last Index: " + findLastIndex("Geeks", 'e'));
 
-        System.out.println("Sorting in String: "+ sortAscendingString("geeks"));
-        System.out.println("Sorting in String: "+ sortDescendingString("geeks"));
+        System.out.println("Sorting in String: " + sortAscendingString("geeks"));
+        System.out.println("Sorting in String: " + sortDescendingString("geeks"));
 
         System.out.println("Check IsoGram: " + isIsogramString("machine"));
         System.out.println("Check IsoGram: " + isIsogramString("geeks"));

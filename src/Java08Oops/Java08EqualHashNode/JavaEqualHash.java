@@ -1,4 +1,4 @@
-package Java10Oops.Java08EqualHashNode;
+package Java08Oops.Java08EqualHashNode;
 
 import java.util.Objects;
 
@@ -13,7 +13,6 @@ public class JavaEqualHash {
         this.id = id;
     }
 
-
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Java05EqualHashNode{");
@@ -23,7 +22,6 @@ public class JavaEqualHash {
         sb.append('}');
         return sb.toString();
     }
-
 
     @Override
     public int hashCode() {

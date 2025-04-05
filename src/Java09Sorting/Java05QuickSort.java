@@ -1,4 +1,4 @@
-package Java07Sorting;
+package Java09Sorting;
 
 public class Java05QuickSort {
     public static void quickSort(int[] arr) {
@@ -39,7 +39,7 @@ public class Java05QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {10, 7, 8, 9, 1, 5};
+        int[] arr = { 10, 7, 8, 9, 1, 5 };
         System.out.println("Array before sorting:");
         printArray(arr);
 
@@ -56,4 +56,3 @@ public class Java05QuickSort {
         System.out.println();
     }
 }
-

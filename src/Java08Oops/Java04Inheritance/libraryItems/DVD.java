@@ -1,4 +1,4 @@
-package Java10Oops.Java04Inheritance.libraryItems;
+package Java08Oops.Java04Inheritance.libraryItems;
 
 class DVD extends LibraryItem {
     private int duration; // Duration of the DVD in minutes
@@ -19,5 +19,3 @@ class DVD extends LibraryItem {
         this.duration = duration;
     }
 }
-
-

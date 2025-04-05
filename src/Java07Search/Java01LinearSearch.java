@@ -1,4 +1,4 @@
-package Java06Search;
+package Java07Search;
 
 import java.util.*;
 

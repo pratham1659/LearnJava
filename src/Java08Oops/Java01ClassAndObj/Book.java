@@ -1,4 +1,4 @@
-package Java10Oops.Java01ClassAndObj;
+package Java08Oops.Java01ClassAndObj;
 
 class Book {
     static int totalNoOfBooks;

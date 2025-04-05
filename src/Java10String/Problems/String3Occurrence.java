@@ -1,10 +1,9 @@
-package Java08String.Problems;
+package Java10String.Problems;
 
 import java.util.*;
 import java.util.Map.Entry;
 
 public class String3Occurrence {
-
 
     // Write a Java Program to find the occurrence of each character in given String
     // Time Complexity: O(n)
@@ -25,7 +24,6 @@ public class String3Occurrence {
 
         System.out.println(map);
     }
-
 
     // Java Program To Find First Non-Repeated Character In String - Normal Approach
     // Time Complexity: O(n^2)
@@ -75,7 +73,6 @@ public class String3Occurrence {
         }
     }
 
-
     // Java Program to replace a character with it`s occurrence in given String
     // Time Complexity: O(n)
     // Space Complexity: O(1)
@@ -89,17 +86,17 @@ public class String3Occurrence {
         }
 
         /*
-         Logic to replace char occurrence in String
-         char[] arr = str.toCharArray();
-         int count = 1;
-         for (int i = 0; i < str.length(); i++) {
-         if (arr[i] == charToReplace) {
-         arr[i] = String.valueOf(count).charAt(0);
-         count++;
-         }
-         }
-         System.out.println(Arrays.toString(arr));
-        */
+         * Logic to replace char occurrence in String
+         * char[] arr = str.toCharArray();
+         * int count = 1;
+         * for (int i = 0; i < str.length(); i++) {
+         * if (arr[i] == charToReplace) {
+         * arr[i] = String.valueOf(count).charAt(0);
+         * count++;
+         * }
+         * }
+         * System.out.println(Arrays.toString(arr));
+         */
 
         int count = 1;
         for (int i = 0; i < str.length(); i++) {
@@ -113,8 +110,7 @@ public class String3Occurrence {
 
     }
 
-
-    //Write a java program to print even length words in a String?
+    // Write a java program to print even length words in a String?
     // Time Complexity: O(n)
     // Space Complexity: O(1)
     public static void printEvenLengthWords(String str) {

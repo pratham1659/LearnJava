@@ -1,4 +1,4 @@
-package Java10Oops.Java01ClassAndObj;
+package Java08Oops.Java01ClassAndObj;
 
 public class Truck {
 
@@ -18,27 +18,27 @@ public class Truck {
         return this.age >= minimumAgeOfDriving;
     }
 
-    static{
+    static {
         noOfCarsAvail = 0;
         System.out.println("Blocks with static run once when the class is Loaded");
-    }{
+    }
+    {
         noOfCarsAvail++;
         System.out.println("Code blocks f} determine the scope of variables");
     }
 
-    Truck(String color, int noOfSeats) {       // Default Constructor
+    Truck(String color, int noOfSeats) { // Default Constructor
         noOfWheels = 4;
-        this.color = color;             //Parametrized Constructor
+        this.color = color; // Parametrized Constructor
         maxSpeed = 120;
         currentFuelInLiters = 2;
         this.noOfSeats = noOfSeats;
     }
 
-    Truck() {       // Default Constructor
+    Truck() { // Default Constructor
         this("Black", 7);
         currentFuelInLiters = 5;
     }
-
 
     public Truck start() {
         if (currentFuelInLiters <= 0) {

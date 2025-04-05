@@ -1,4 +1,4 @@
-package Java08String.Problems;
+package Java10String.Problems;
 
 public class String1Reverse {
 
@@ -44,7 +44,6 @@ public class String1Reverse {
         StringBuilder sb = new StringBuilder(str);
         return sb.reverse().toString();
     }
-
 
     // Java Program To Reverse Each Word In String
     // Time complexity : O(N^2)

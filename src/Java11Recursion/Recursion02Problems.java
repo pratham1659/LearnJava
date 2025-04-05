@@ -1,4 +1,4 @@
-package Java09Recursion;
+package Java11Recursion;
 
 public class Recursion02Problems {
 
@@ -49,7 +49,7 @@ public class Recursion02Problems {
         return p * smallPow * smallPow;
     }
 
-    //Ques 3: Given a number num and a value k. Print k multiples of num.
+    // Ques 3: Given a number num and a value k. Print k multiples of num.
     // Time Complexity: O(k)
     // Space Complexity: O(k)
     public static void multiples(int num, int k) {
@@ -68,17 +68,20 @@ public class Recursion02Problems {
         System.out.print(ans + " ");
     }
 
-    //Ques 4: Given a number n. Find the sum of natural numbers till n but with alternate signs.
+    // Ques 4: Given a number n. Find the sum of natural numbers till n but with
+    // alternate signs.
     // Time Complexity: O(n)
     // Space Complexity: O(n)
     public static int sumOfNatural(int num) {
-        if (num == 0) return num;
+        if (num == 0)
+            return num;
 
         return sumOfNatural(num - 1) + num;
     }
 
     public static int alternateSum(int num) {
-        if (num == 0) return num;
+        if (num == 0)
+            return num;
 
         if (num % 2 == 0) {
             return alternateSum(num - 1) - num;

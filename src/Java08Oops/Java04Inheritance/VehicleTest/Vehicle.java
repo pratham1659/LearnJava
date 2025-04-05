@@ -1,4 +1,4 @@
-package Java10Oops.Java04Inheritance.VehicleTest;
+package Java08Oops.Java04Inheritance.VehicleTest;
 
 // The base class
 public class Vehicle {

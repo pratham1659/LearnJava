@@ -1,4 +1,4 @@
-package Java08String;
+package Java10String;
 
 public class String02Builder {
 
@@ -79,15 +79,15 @@ public class String02Builder {
         } else
             System.out.println(" Not Palindrome");
 
-
-//        String[] arr = new String[] {"Java", "is" ,"the" ,"best" ,"programming" ,"Language"};
-//
-//        StringBuilder sb = new StringBuilder();
-//        for(String i : arr){
-//            sb.append(i).append(" ");
-//        }
-//
-//        System.out.println(sb);
+        // String[] arr = new String[] {"Java", "is" ,"the" ,"best" ,"programming"
+        // ,"Language"};
+        //
+        // StringBuilder sb = new StringBuilder();
+        // for(String i : arr){
+        // sb.append(i).append(" ");
+        // }
+        //
+        // System.out.println(sb);
 
     }
 }
