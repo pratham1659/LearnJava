@@ -38,9 +38,7 @@ public class Java3Maths {
     // circle and its radius, write a program which will
     // determine whether a point lies inside the circle, on
     // the circle or outside the circle.
-    // static void coordinate(int x, int y, int r){
-    //
-    // }
+    // static void coordinate(int x, int y, int r)
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();

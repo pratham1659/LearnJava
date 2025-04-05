@@ -54,25 +54,89 @@ public class LoopsPractice {
             }
             System.out.println(i + " ");
         }
-        // int i = 1;
-        // while(i <= num){
-        // if(i % 3 == 0){
-        // num++;
-        // continue;
-        // }
-        // System.out.println(i);
-        // i++;
-        // }
-
         return num;
+    }
+
+    // Ques 4: Program to find the prime factors of a numbers
+    public static boolean isPrime(int num) {
+
+        int count = 0;
+        for (int i = 1; i <= num; i++) {
+            if (num % i == 0) {
+                count++;
+            }
+        }
+
+        if (count == 2) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static void primeFactor(int num) {
+
+        for (int i = 1; i <= num; i++) {
+            if (num % i == 0 && isPrime(i) == true) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+    }
+
+    // Ques 5 : Program to find the fibonacci series
+    public static void findFibonnaci(int num) {
+
+        int firstTerm = 0;
+        int secondTerm = 1;
+
+        if (num <= 0) {
+            System.out.println("Please enter a positive integer greater than 0.");
+        } else if (num == 1) {
+            System.out.print((firstTerm));
+        } else if (num == 2) {
+            System.out.print(firstTerm + " " + secondTerm);
+        } else {
+            System.out.print(firstTerm + " " + secondTerm + " ");
+
+            num = num - 2;
+            while (num > 0) {
+                int thirdTerm = firstTerm + secondTerm;
+                firstTerm = secondTerm;
+                secondTerm = thirdTerm;
+
+                System.out.print(thirdTerm + " ");
+                num--;
+            }
+        }
+    }
+
+    // Ques 6 : Convert number from binary to Decimal
+    // 0 * 2^0, 1 * 2^1, 0 * 2^2, 1 * 2^3
+    public static void binaryToDecimal(int num) {
+
+        int sumNum = 0;
+        int power = 1;
+        while (num > 0) {
+            int lastDigit = num % 10;
+            sumNum = sumNum + lastDigit * power;
+            power = power * 2;
+            num = num / 10;
+        }
+
+        System.out.println(sumNum);
+
     }
 
     public static void main(String[] args) {
 
-        checkNegativeInteger();
-        loopBreak(6);
-        multipleOf5and7();
-        expectThree(45);
+        // checkNegativeInteger();
+        // loopBreak(6);
+        // multipleOf5and7();
+        // expectThree(45);
+        // primeFactor(200);
+        // findFibonnaci(12);
+        binaryToDecimal(1011);
 
     }
 }
