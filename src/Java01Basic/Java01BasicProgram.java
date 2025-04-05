@@ -154,15 +154,6 @@ public class Java01BasicProgram {
             }
         }
         return true;
-
-        // int i = 2;
-        // while (i < num) {
-        // if (num % 2 == 0) {
-        // return false;
-        // }
-        // i++;
-        // }
-        // return true;
     }
 
     // Ques 15: program to reverse the digits of a number.
@@ -251,7 +242,6 @@ public class Java01BasicProgram {
         // System.out.println("Check Prime of 49: " + checkPrime(49));
         // System.out.println("Reverse Digit 123: " + reverseDigit(123));
         // System.out.println("CountDigit: " + countNum());
-
         // prefixPostfix(5);
         sc.close();
 

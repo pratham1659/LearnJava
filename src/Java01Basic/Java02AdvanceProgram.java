@@ -92,17 +92,6 @@ public class Java02AdvanceProgram {
         }
     }
 
-    // Ques 6.1
-    /*
-     * for(int rows = 0; rows < num; rows++){
-     * System.out.print("*");
-     * for(int col = 0; col < rows; col++){
-     * System.out.print(" *");
-     * }
-     * System.out.println();
-     * }
-     */
-
     // Ques 6: Program to print Reverse Right Triangle
     public static void reverseRightTriangle(int maxRows) {
         int rows = maxRows;
