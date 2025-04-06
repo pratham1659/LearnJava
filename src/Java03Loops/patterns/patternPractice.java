@@ -34,9 +34,9 @@ public class patternPractice {
 
     // Ques 3: Hollow Rectangle star print
     // *****
-    // * *
-    // * *
-    // * *
+    // * /*
+    // * /*
+    // * /*
     // *****
     public static void printHollowStar() {
         for (int i = 1; i <= 5; i++) {
@@ -98,10 +98,11 @@ public class patternPractice {
 
     // Ques 7: Star Pyramid Pattern
     // *
-    // ***
-    // *****
-    // *******
-    // *********
+    // * *
+    // * * *
+    // * * * *
+    // * * * * *
+    // * * * * * *
     public static void starPyramidPattern() {
         for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= 5 - i; j++) {
@@ -116,6 +117,7 @@ public class patternPractice {
 
     // Ques 8: Print the top half of the pyramid
     public static void printHalfPyramid() {
+        System.out.println("Ques 8: Print the top half of the pyramid");
         int rows = 4;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < rows - i - 1; j++) {
@@ -130,6 +132,7 @@ public class patternPractice {
 
     // Ques 9: Print the bottom half of the pyramid
     public static void printHalfBottomPyramid() {
+        System.out.println("Ques 9: Print the bottom half of the pyramid");
         int rows = 4; // You can change this value to adjust the height of the pyramid
         for (int i = rows - 2; i >= 0; i--) {
             for (int j = 0; j < rows - i - 1; j++) {
@@ -142,256 +145,13 @@ public class patternPractice {
         }
     }
 
-    // Ques 10: check this alphabets pattern
-    public static void alphabetPattern1(int n) {
-        System.out.println("Alphabtes Pattern -1");
-
-        char row = 1;
-        char val = 'A';
-        while (row <= n) {
-            char col = 1;
-            while (col <= n) {
-                System.out.print(val + " ");
-                col++;
-            }
-            System.out.println();
-            val++;
-            row++;
-        }
-    }
-
-    public static void alphabetPatternAnother1(int n) {
-
-        System.out.println("Alphabtes Pattern Another -1");
-        int row = 1;
-        while (row <= n) {
-            int col = 1;
-            while (col <= n) {
-                char ch = (char) ('A' + row - 1);
-                System.out.print(ch + " ");
-                col++;
-            }
-            System.out.println();
-            row++;
-
-        }
-    }
-
-    // Ques 11 - Alphabets pattern - 2
-    // A B C
-    // A B C
-    // A B C
-    public static void alphabetPattern2(int n) {
-        System.out.println("Ques 11 -  Alphabets pattern - 2");
-
-        int row = 1;
-        while (row <= n) {
-            int col = 1;
-            char val = 'A';
-            while (col <= n) {
-                System.out.print(val + " ");
-                col++;
-                val++;
-            }
-            System.out.println();
-
-            row++;
-        }
-    }
-
-    public static void alphabetPatternAnother2(int n) {
-        System.out.println("Alphabtes Pattern Another -2");
-        int row = 1;
-        while (row <= n) {
-            int col = 1;
-            while (col <= n) {
-                char ch = (char) ('A' + col - 1);
-                System.out.print(ch + " ");
-                col++;
-            }
-            System.out.println();
-            row++;
-        }
-    }
-
-    // Ques 12 - Alphabets pattern - 3
-    // A B C
-    // D E F
-    // G H I
-    public static void alphabetPattern3(int n) {
-        System.out.println("Ques 12 -  Alphabets pattern - 3");
-
-        int row = 1;
-        char val = 'A';
-        while (row <= n) {
-            int col = 1;
-
-            while (col <= n) {
-                System.out.print(val + " ");
-                col++;
-                val++;
-            }
-            System.out.println();
-
-            row++;
-        }
-    }
-
-    // Ques 13 - Alphabets pattern - 4
-    // A B C
-    // B C D
-    // C D E
-    public static void alphabetPattern4(int n) {
-        System.out.println("Alphabetical Pattern - 4");
-
-        int row = 1;
-        while (row <= n) {
-            int col = 1;
-
-            while (col <= n) {
-                char val = (char) ('A' + row + col - 2);
-                System.out.print(val + " ");
-                val++;
-                col++;
-            }
-            System.out.println();
-            row++;
-        }
-    }
-
-    // Ques 14 - Alphabets Traingle pattern - 1
-    // A
-    // B B
-    // C C C
-    // D D D D
-    public static void alphabetTrianglePattern1(int n) {
-        System.out.println("Ques 14 - Alphabets Traingle pattern - 1");
-
-        int row = 1;
-        char val = 'A';
-        while (row <= n) {
-            int col = 1;
-            while (col <= row) {
-                System.out.print(val + " ");
-                col++;
-            }
-            System.out.println();
-            val++;
-            row++;
-        }
-    }
-
-    public static void alphabetTriangleAnotherPattern1(int n) {
-        System.out.println("Alphabets Traingle Another pattern - 1");
-
-        int row = 1;
-        while (row <= n) {
-            int col = 1;
-            while (col <= row) {
-                char val = (char) ('A' + row - 1);
-                System.out.print(val + " ");
-                col++;
-                val++;
-            }
-            System.out.println();
-            row++;
-        }
-    }
-
-    // Ques 15 - Alphabets Traingle pattern - 2
-    // A
-    // B C
-    // D E F
-    // G H I J
-    public static void alphabetTriangleAnotherPattern2(int n) {
-        System.out.println("Ques 15 - Alphabets Traingle pattern - 2");
-
-        int row = 1;
-        char val = 'A';
-        while (row <= n) {
-            int col = 1;
-            while (col <= row) {
-                System.out.print(val + " ");
-                col++;
-                val++;
-            }
-            System.out.println();
-            row++;
-        }
-    }
-
-    // Ques 16 - Alphabets Traingle pattern - 3
-    // A
-    // B C
-    // C D E
-    // D E F G
-    public static void alphabetTriangleAnotherPattern3(int n) {
-        System.out.println("Ques 16 - Alphabets Traingle pattern - 3");
-
-        int row = 1;
-
-        while (row <= n) {
-            int col = 1;
-            while (col <= row) {
-                char val = (char) ('A' + row + col - 2);
-                System.out.print(val + " ");
-                col++;
-            }
-            System.out.println();
-            row++;
-        }
-    }
-
-    // Ques 17 - Alphabets Traingle Inverse pattern - 1
-    // D
-    // C D
-    // B C D
-    // A B C D
-
-    public static void alphabetsTriangleInverse(int n) {
-        System.out.println("Ques 17 - Alphabets Traingle Inverse pattern - 1");
-
-        int row = 1;
-        while (row <= n) {
-            int col = 1;
-            char val = (char) ('A' + n - row);
-            while (col <= row) {
-                System.out.print(val + " ");
-                val++;
-                col++;
-            }
-            System.out.println();
-            row++;
-        }
-    }
-
-    // Ques 18 - alphabet pattern 5
-    // A B C
-    // B C D
-    // C D E
-    public static void alphabetPattern5(int n) {
-        System.out.println("Ques 18 - alphabet pattern 5");
-        int row = 1;
-        while (row <= n) {
-            int col = 1;
-            char val = (char) ('A' + row - 1);
-            while (col <= n) {
-                System.out.print(val + " ");
-                val++;
-                col++;
-            }
-            System.out.println();
-            row++;
-        }
-    }
-
-    // Ques 19 - inverse star pattern - 2
+    // Ques 10 - inverse star pattern - 2
     // *
     // * *
     // * * *
     // * * * *
     public static void inverseStarPattern(int n) {
-        System.out.println("Ques 19 - inverse star pattern - 2");
+        System.out.println("Ques 10 - inverse star pattern - 2");
 
         int row = 1;
         while (row <= n) {
@@ -413,13 +173,13 @@ public class patternPractice {
         }
     }
 
-    // Ques 20 - inverse star pattern - 3
+    // Ques 11 - inverse star pattern - 3
     // * * * *
     // * * *
     // * *
     // *
     public static void InverseStarPattern3(int n) {
-        System.out.println("Ques 20 - inverse star pattern - 3");
+        System.out.println("Ques 11 - inverse star pattern - 3");
         int row = n;
         while (row >= 1) {
             int col = 1;
@@ -432,13 +192,13 @@ public class patternPractice {
         }
     }
 
-    // Ques 21: Inverse star pattern - 4
+    // Ques 12: Inverse star pattern - 4
     // * * * *
-    // /* * *
-    // /* *
-    // /*
+    // * * *
+    // * *
+    // *
     public static void InverseStarPattern4(int n) {
-        System.out.println("Ques 21: Inverse star pattern - 4");
+        System.out.println("Ques 12: Inverse star pattern - 4");
 
         int row = 1;
         while (row <= n) {
@@ -460,6 +220,67 @@ public class patternPractice {
         }
     }
 
+    // Ques 13: Rhombus Pattern - 1
+    public static void rhombusPattern(int n) {
+        System.out.println("Ques 13: Rhombus Pattern - 1");
+
+        int space = 0;
+        // Loop 1
+        for (int i = 1; i <= n; i++) {
+
+            // Loop 2
+            for (int j = 1; j <= space; j++) {
+                System.out.print(" ");
+            }
+
+            // Loop 3
+            for (int j = 1; j <= n; j++) {
+                System.out.print("*");
+            }
+            space++;
+            System.out.println();
+
+        }
+    }
+
+    // Ques 14: Inverse Diamond Pattern
+    public static void inverseDiamond(int n) {
+        System.out.println("Ques 14: Inverse Diamond Pattern");
+        int space = n - 1;
+        int star = 1;
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= space; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 1; j <= star; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+            space--;
+            star += 2;
+        }
+
+        space = 1;
+        star = star - 4;
+
+        for (int i = 1; i <= n - 1; i++) {
+
+            for (int j = 1; j <= space; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 1; j <= star; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+            space++;
+            star -= 2;
+
+        }
+    }
+
     public static void main(String[] args) {
         printRectanglePattern1();
         printHollowStar();
@@ -470,20 +291,10 @@ public class patternPractice {
         starPyramidPattern();
         printHalfPyramid();
         printHalfBottomPyramid();
-        alphabetPattern1(3);
-        alphabetPatternAnother1(3);
-        alphabetPattern2(3);
-        alphabetPatternAnother2(3);
-        alphabetPattern3(3);
-        alphabetPattern4(3);
-        alphabetTrianglePattern1(4);
-        alphabetTriangleAnotherPattern1(4);
-        alphabetTriangleAnotherPattern2(4);
-        alphabetTriangleAnotherPattern3(4);
-        alphabetsTriangleInverse(4);
-        alphabetPattern5(3);
         inverseStarPattern(4);
         InverseStarPattern3(4);
         InverseStarPattern4(4);
+        rhombusPattern(4);
+        inverseDiamond(6);
     }
 }
