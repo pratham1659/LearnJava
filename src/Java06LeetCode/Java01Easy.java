@@ -1,6 +1,9 @@
 package Java06LeetCode;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Java01Easy {
 
@@ -59,14 +62,61 @@ public class Java01Easy {
         }
     }
 
+    // Ques 3: Chracter Repetiton
+    // https://cses.fi/problemset/task/1069
+    public static void CharRepetition() throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String dna = br.readLine();
+
+        long maxLength = 1;
+        long currentLength = 1;
+
+        for (int i = 1; i < dna.length(); i++) {
+            if (dna.charAt(i) == dna.charAt(i - 1)) {
+                currentLength++;
+            } else {
+                currentLength = 1;
+            }
+            maxLength = Math.max(maxLength, currentLength);
+        }
+
+        System.out.println(maxLength);
+    }
+
+    // Ques 4: Increasing Array
+    // https://cses.fi/problemset/task/1094/
+    public static void IncreasingArr() throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        int n = Integer.parseInt(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        long moves = 0;
+        int prev = Integer.parseInt(st.nextToken());
+
+        for (int i = 1; i < n; i++) {
+            int current = Integer.parseInt(st.nextToken());
+
+            if (current < prev) {
+                moves += (prev - current);
+            } else {
+                prev = current;
+            }
+        }
+
+        System.out.println(moves);
+    }
+
     public static void main(String[] args) throws Exception {
 
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        // int n = sc.nextInt();
         // long[] numbers = getInputNumbers(n);
         // System.out.println(findMissing(numbers, n));
 
-        System.out.println(powerOfTwo2(n));
+        // System.out.println(powerOfTwo2(n));
+        CharRepetition();
+        IncreasingArr();
 
         sc.close();
 
