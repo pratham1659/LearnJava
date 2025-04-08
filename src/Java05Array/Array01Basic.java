@@ -12,17 +12,17 @@ public class Array01Basic {
     void singleArray() {
         // Representation of Arrays
         // int[] uid = new int[2];
-        String[] name = {"Raj", "Vikash", "Ball", "Hero"};
+        String[] name = { "Raj", "Vikash", "Ball", "Hero" };
         // String roll[];
         // float price[];
 
         // Array literals
-        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr = { 1, 2, 3, 4, 5 };
         int[] age = new int[10]; // Size of an Array
         arr[1] = 34;
         age[0] = 12;
         System.out.println(arr[2]);
-        int[] ages = {45, 56, 67, 89, 32, 76, 54};
+        int[] ages = { 45, 56, 67, 89, 32, 76, 54 };
         System.out.println(ages.length);
 
         for (int i = 0; i < ages.length; i++) {
@@ -47,7 +47,7 @@ public class Array01Basic {
     void multiArray() {
         // int[][] arr2d = new int [3][3];
 
-        int[][] arr2d = {{23, 34, 34}, {34, 78, 98}, {56, 76, 67}};
+        int[][] arr2d = { { 23, 34, 34 }, { 34, 78, 98 }, { 56, 76, 67 } };
 
         System.out.println(arr2d[0][0]); // 23
         System.out.println(arr2d[1][1]); // 78
@@ -62,7 +62,7 @@ public class Array01Basic {
 
     void sumOfArray() {
 
-        int[] arr = {1, 2, 3, 4, 6, 7, 8};
+        int[] arr = { 1, 2, 3, 4, 6, 7, 8 };
         int sum = 0;
 
         for (int i : arr) {
@@ -175,6 +175,21 @@ public class Array01Basic {
 
     }
 
+    // Ques 8: check array is sorted or not
+    public static boolean checkArray(int[] arr) {
+
+        int n = arr.length;
+        boolean isArrSorted = true;
+        for (int i = 0; i < n - 1; i++) {
+
+            if (arr[i] > arr[i + 1]) {
+                isArrSorted = false;
+                break;
+            }
+        }
+        return isArrSorted;
+    }
+
     public static void main(String[] args) {
 
         Array01Basic obj = new Array01Basic();
@@ -183,6 +198,9 @@ public class Array01Basic {
         obj.singleArray();
         obj.multiArray();
         obj.sumOfArray();
+
+        int arr[] = { 1, 2, 3, 4, 5 };
+        System.out.println(checkArray(arr));
 
     }
 }

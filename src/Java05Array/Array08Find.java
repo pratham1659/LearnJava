@@ -213,6 +213,18 @@ public class Array08Find {
         return -1;
     }
 
+    // 8 find missing number in Array
+    // https://leetcode.com/problems/missing-number
+    public static int missingNumber(int[] nums) {
+        int n = nums.length;
+        int sumArr = 0;
+        int totalSum = (n * (n + 1)) / 2;
+        for (int i = 0; i < n; i++) {
+            sumArr = sumArr + nums[i];
+        }
+        return totalSum - sumArr;
+    }
+
     public static void main(String[] args) {
 
         System.out.println("Check ArmStrong: " + checkArmstring(153));
@@ -244,6 +256,9 @@ public class Array08Find {
         System.out.println("Second Maximum Array: " + secondMax(arr));
 
         System.out.println("First Repetitive Array: " + findFirstRepeat(duplicateArray));
+
+        int miss[] = { 3, 0, 1 };
+        System.out.println(missingNumber(miss));
 
     }
 }

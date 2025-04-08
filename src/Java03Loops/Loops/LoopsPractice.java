@@ -128,6 +128,31 @@ public class LoopsPractice {
 
     }
 
+    // Ques 7: Check n^Cr value for the two integer
+    // n^Cr = n! / (r! * (n - r)!)
+    public static long factorial(long num) {
+        long fact = 1;
+        for (long i = 1; i <= num; i++) {
+
+            fact = fact * i;
+        }
+        return fact;
+    }
+
+    public static void valueNcr(int num1, int num2) {
+
+        long n = factorial(num1);
+        long r = factorial(num2);
+        long nr = factorial(num1 - num2);
+
+        long value = n / r;
+        value = value / nr;
+
+        System.out.println(value);
+    }
+
+   
+
     public static void main(String[] args) {
 
         // checkNegativeInteger();
@@ -137,6 +162,6 @@ public class LoopsPractice {
         // primeFactor(200);
         // findFibonnaci(12);
         binaryToDecimal(1011);
-
+        valueNcr(5, 2);
     }
 }
