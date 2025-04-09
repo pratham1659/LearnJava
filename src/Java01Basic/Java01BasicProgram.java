@@ -1,250 +1,158 @@
 package Java01Basic;
 
-import java.util.Scanner;
+import java.io.IOException;
 
 public class Java01BasicProgram {
 
-    // Ques 1: Program to check EvenOrOdd
-    public static boolean isEvenOrOdd(int num) {
-        if (num % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    // Ques 1: Logic to find diameter, circumference and area of circle
+    public static void areaCircle(int rad) {
+        System.out.println("Ques 1: Logic to find diameter, circumference and area of circle");
 
-    // Ques 2: Program to check divideBy5
-    public static boolean isDivideBy5(int num) {
-        if (num % 5 == 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+        double diameter = 2 * rad;
+        double pi = Math.PI;
+        double circumference = 2 * pi * rad;
+        double area = pi * (rad * rad);
 
-    // Ques 3: Program to check Leap Year Or Not
-    public static boolean isLeapYearOrNot(int num) {
-        if ((num % 4 == 0) && (num % 100 != 0) || (num % 400 == 0)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    // Ques 4: Program to check Absolute Integer
-    public static int isAbsoluteInteger(int num) {
-        if (num < 0) {
-            num = num * (-1);
-        }
-        return num;
-    }
-
-    // Ques 5: Program to check cost price and selling price of an item check profit
-    // and Loss.
-    public static void isProfitAndLoss(int cp, int sp) {
-        int profit = 0;
-        int loss = 0;
-        if (cp < sp) {
-            profit = sp - cp;
-            System.out.println("Profit will be " + profit);
-        } else if (sp < cp) {
-            loss = cp - sp;
-            System.out.println("Loss will be " + loss);
-        }
+        System.out.printf("%.2f%n", diameter);
+        System.out.printf("%.2f%n", circumference);
+        System.out.printf("%.2f%n", area);
 
     }
 
-    // Ques 6: Multiplication Table of 2
-    public static void multiplyTable(int num) {
-        int i = 1;
-        while (i <= 10) {
-            System.out.printf("5 X %d = %d%n", i, i * num);
-            i++;
-        }
+    // Ques 2 : program to convert centimeter to meter and kilometer
+    public static void centiToKm(int cm) {
+        System.out.println("Ques 2 : program to convert centimeter to meter and kilometer");
+
+        double meter = cm / 100.0;
+        double kilometer = meter / 1000.0;
+
+        System.out.println(meter);
+        System.out.println(kilometer);
     }
 
-    // Ques 7: Print the sum of the first n natural numbers, where n is the input.
-    public static int sumOfNatural(int num) {
-        int i = 1;
-        int sum = 0;
-        while (i <= num) {
-            sum += i;
-            i++;
-        }
-        return sum;
+    // Ques 3 : program to find convert temperature from Fahrenheit to Celsius
+    public static void CelsiusToFarhenheit(double c, double f) {
+        System.out.println("Ques 3 : program to find convert temperature from Fahrenheit to Celsius");
+
+        double fahrenheit = (9.0 / 5.0 * c) + 32.0;
+        double celcius = (5.0 / 9.0) * (f - 32.0);
+
+        System.out.printf("%.2f%n", celcius);
+        System.out.printf("%.2f%n", fahrenheit);
     }
 
-    // Ques 8: program to sum all odd numbers from 1 to a specified number N.
-    public static int sumOfOddNumbers(int num) {
-        int i = 1;
-        int sumOfOdd = 0;
-        while (i <= num) {
-            if (i % 2 != 0) {
-                sumOfOdd += i;
-            }
-            i++;
-        }
-        return sumOfOdd;
-    }
+    // Ques 4: program to find power of a number using pow function
+    public static double findPower(double value, double pow) {
 
-    // Ques 9: program that calculates the factorial of a given number.
-    public static long factorial(int num) {
-        if (num < 0) {
-            throw new IllegalArgumentException("Number must be positive");
-        }
-        long fact = 1;
-        int i = 1;
-        while (i <= num) {
-            fact = fact * i;
-            i++;
-        }
-        return fact;
-    }
+        double ans = Math.pow(value, pow);
 
-    // Ques 10: program that computes the sum of the digits of an integer.
-    public static int noOfDigits(int num) {
-        int count = 0;
-        while (num > 0) {
-            num = num / 10;
-            count++;
-        }
-        return count;
-    }
+        // System.out.println(ans);
 
-    // Ques 11: program that computes the sum of the digits of an integer.
-    public static int sumOfDigits(int num) {
-        int sum = 0;
-        while (num > 0) {
-            sum = sum + num % 10;
-            num = num / 10;
-        }
-        return sum;
-    }
-
-    // Ques 12: program to find the Least Common Multiple (LCM) of two numbers.
-    public static int leastCommonMultiplier(int num1, int num2) {
-        int max = Math.max(num1, num2);
-        while (true) {
-            if (max % num1 == 0 && max % num2 == 0) {
-                return max;
-            }
-            max++;
-        }
-    }
-
-    // Ques 13: program to find the Greatest Common Divisor (GCD) of two numbers.
-    public static int greatestCommonDivisor(int num1, int num2) {
-        while (num2 != 0) {
-            int temp = num2;
-            num2 = num1 % num2;
-            num1 = temp;
-        }
-        return num1;
-    }
-
-    // Ques 14: program that computes the sum of the digits of an integer.
-    public static boolean checkPrime(int num) {
-        if (num <= 1) {
-            return false;
-        }
-
-        for (int i = 2; i < Math.sqrt(num); i++) {
-            if (num % 2 == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    // Ques 15: program to reverse the digits of a number.
-    public static int reverseDigit(int num) {
-        int newNum = 0;
-        while (num > 0) {
-            int digit = num % 10;
-            newNum = newNum * 10 + digit;
-            num = num / 10;
-        }
-        return newNum;
-    }
-
-    // Ques 16: swap in digits
-    public static void swap(int a, int b) {
-        System.out.println("Original Values: ");
-        System.out.println("a " + a);
-        System.out.println("b " + b);
-
-        int temp = a;
-        a = b;
-        b = temp;
-
-        System.out.println("After Swap Values: ");
-        System.out.println("a " + a);
-        System.out.println("b " + b);
-
-    }
-
-    // Ques 17: swap Without Temp
-    public static void swapWithoutTemp(int a, int b) {
-        System.out.println("Original Values: ");
-        System.out.println("a " + a);
-        System.out.println("b " + b);
-
-        a = a + b; // 11 = 9 + 3
-        b = a - b; // 9 = 11 - 3
-        a = a - b; // 3 = 11 - 9
-
-        System.out.println("After Swap Values: ");
-        System.out.println("a " + a);
-        System.out.println("b " + b);
-    }
-
-    // Ques 18: Count the number of digits for a given number
-    public static int countNum() {
-        long num = 982436986L;
-        int ans = 0;
-
-        while (num > 0) {
-            num = num / 10;
-            ans++;
-        }
         return ans;
     }
 
-    // Ques 19 : Prefix and Postfix of digits
-    public static void prefixPostfix(int n) {
-        System.out.println("Ques 19 : Prefix and Postfix of digits");
+    // Ques 5 : program to find cube of a number using for loop function
+    public static void findPowerLoop(int value, int pow) {
 
-        int temp1 = n;
-        int a = ++temp1;
-        System.out.println(a); // prefix
+        double ans = 1;
+        for (int i = 1; i <= pow; i++) {
+            ans = ans * value;
+        }
 
-        int temp2 = n;
-        int b = temp2++;
-        System.out.println(b);
+        System.out.println(ans);
     }
 
-    public static void main(String[] args) {
+    // Ques 6: Program to find cube using function
+    public static int cube(int n) {
+        return n * n * n;
+    }
 
-        Scanner sc = new Scanner(System.in);
+    public static void findCube(int n) {
 
-        // System.out.println("Check EvenOrOdd: " + isEvenOrOdd(34));
-        // System.out.println("Check DivideBy5: " + isDivideBy5(34));
-        // System.out.println("Check LeapYearOrNot: " + isLeapYearOrNot(1997));
-        // System.out.println("The Absolute Integer: " + isAbsoluteInteger(-1));
-        // isProfitAndLoss(200, 300);
-        // System.out.println("Sum of 10 Natural numbers: " + sumOfNatural(10));
-        // System.out.println("Sum of Odd numbers: " + sumOfOddNumbers(100));
-        // System.out.println("Factorial of 5: " + factorial(5));
-        // System.out.println("Sum of Digits: " + sumOfDigits(123));
-        // System.out.println("No of Digits: " + noOfDigits(321));
-        // System.out.println("Lcm of 10 and 20: " + leastCommonMultiplier(3, 180));
-        // System.out.println("Gcd of 5 and 6: " + greatestCommonDivisor(5, 16));
-        // System.out.println("Check Prime of 49: " + checkPrime(49));
-        // System.out.println("Reverse Digit 123: " + reverseDigit(123));
-        // System.out.println("CountDigit: " + countNum());
-        // prefixPostfix(5);
-        sc.close();
+        int c = cube(n);
+        System.out.println(c);
+    }
+
+    // Ques 7: program to find square root of a number
+    public static void findSquareRoot(int n) {
+
+        double sq = Math.sqrt(n);
+
+        System.out.println((int) sq);
+    }
+
+    // Ques 8: program to find angles of triangle if two angles are given
+    public static void findAngle(int a1, int a2) {
+
+        int a3 = 180 - (a1 + a2);
+
+        System.out.println(a3);
+    }
+
+    // Ques 9 program to find area of a triangle
+    public static void areaTriangle(int h, int b) {
+
+        double area = 0.5 * (h * b);
+
+        System.out.println((int) area + " sq.units");
+    }
+
+    // Ques 10: program to find area of an equilateral triangle
+    public static void equilTriangle(int side) {
+
+        double area = (Math.sqrt(3) / 4) * (side * side);
+
+        System.out.println(area);
+    }
+
+    // Ques 11: program to calculate total average and percentage of five subjects
+    public static void calciSubject(int[] sub) {
+
+        double sum = 0;
+        int n = sub.length;
+        for (int i = 0; i < n; i++) {
+            sum = sum + sub[i];
+        }
+
+        double percentage = (sum / n * 100) / 100;
+
+        System.out.println(sum + " Total");
+        System.out.println(percentage + " %");
 
     }
 
+    // Ques 12: program to calculate Simple Interest
+    public static void simpleInterest(double p, double r, double t) {
+
+        double SI = (p * r * t) / 100;
+        System.out.println(SI);
+    }
+
+    // Ques 13: program to calculate Compound Interest
+    public static void compoundInterest(double p, double r, double t) {
+
+        double CI = p * findPower((1 + r / 100), t);
+
+        System.out.printf("%.2f%n", CI);
+    }
+
+    public static void main(String[] args) throws IOException {
+        areaCircle(10);
+        centiToKm(173);
+        CelsiusToFarhenheit(32, 205);
+        findPower(5, 2);
+        findPower(5, 3);
+        findPowerLoop(5, 4);
+        findCube(5);
+        findSquareRoot(25);
+        findAngle(60, 30);
+        areaTriangle(10, 15);
+        equilTriangle(10);
+
+        int sub[] = { 95, 76, 85, 90, 89, 90 };
+        calciSubject(sub);
+
+        simpleInterest(1200, 2, 5.4);
+        compoundInterest(1200, 2, 5.4);
+    }
 }

@@ -3,16 +3,9 @@ import java.util.StringTokenizer;
 
 public class Test {
 
-    public static int checkArray(int[] arr) {
+    public static void minOperations(int n) {
 
-        int n = arr.length;
-        int sumArr = 0;
-        int totalSum = (n * (n + 1)) / 2;
-        for (int i = 0; i < n; i++) {
-            sumArr = sumArr + arr[i];
-        }
-        return totalSum - sumArr;
-
+        System.out.println();
     }
 
     public static void main(String[] args) throws IOException {
@@ -32,9 +25,10 @@ public class Test {
                 System.out.println("Not enough elements provided.");
                 return;
             }
+
         }
 
-        System.out.println(checkArray(arr));
+        minOperations(n);
 
     }
 }

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Array07Insert {
 
-    // Insert in Array
+    // Ques 1: Insert element in Array
     public static int[] insertInArray(int[] arr, int index, int value) {
         if (index >= 0 && index < arr.length) {
 
@@ -20,10 +20,9 @@ public class Array07Insert {
         } else {
             return arr;
         }
-
     }
 
-    // Delete in Array
+    // Ques 2: Delete element in Array
     public static int[] deleteElement(int[] array, int index) {
         if (index >= 0 && index < array.length) {
             int[] newArray = new int[array.length - 1];
@@ -39,11 +38,35 @@ public class Array07Insert {
         }
     }
 
+    // Ques 3 : Insert element in new Array
+    public static int[] checkArray(int[] arr, int value, int position) {
+
+        int n = arr.length;
+        int ans[] = new int[n + 1];
+        int i = 0;
+        int j = 0;
+
+        while (i < n + 1) {
+            if (i == position - 1) {
+                ans[i] = value;
+            } else {
+                ans[i] = arr[j];
+                j++;
+            }
+            i++;
+        }
+
+        return ans;
+
+    }
+
     public static void main(String[] args) {
 
         int[] arr = { 1, 2, 4, 5, 6 }; // Example array
         System.out.println("Insert in Array:" + Arrays.toString(insertInArray(arr, 2, 3)));
         System.out.println("Delete in Array: " + Arrays.toString(deleteElement(arr, 3)));
+
+        System.out.println(Arrays.toString(checkArray(arr, 3, 3)));
+
     }
 }
-
