@@ -4,34 +4,7 @@ import java.util.Scanner;
 
 public class Java02AdvanceProgram {
 
-    // Ques 1: Program to check EvenOrOdd
-    public static boolean isEvenOrOdd(int num) {
-        if (num % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    // Ques 2: Program to check divideBy5
-    public static boolean isDivideBy5(int num) {
-        if (num % 5 == 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    // Ques 3: Program to check Leap Year Or Not
-    public static boolean isLeapYearOrNot(int num) {
-        if ((num % 4 == 0) && (num % 100 != 0) || (num % 400 == 0)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    // Ques 4: Program to check Absolute Integer
+    // Ques 1: Program to check Absolute Integer
     public static int isAbsoluteInteger(int num) {
         if (num < 0) {
             num = num * (-1);
@@ -39,7 +12,7 @@ public class Java02AdvanceProgram {
         return num;
     }
 
-    // Ques 5: Program to check cost price and selling price of an item check profit
+    // Ques 2: Program to check cost price and selling price of an item check profit
     // and Loss.
     public static void isProfitAndLoss(int cp, int sp) {
         int profit = 0;
@@ -54,7 +27,7 @@ public class Java02AdvanceProgram {
 
     }
 
-    // Ques 6: Multiplication Table of 2
+    // Ques 3: Multiplication Table of 2
     public static void multiplyTable(int num) {
         int i = 1;
         while (i <= 10) {
@@ -63,7 +36,7 @@ public class Java02AdvanceProgram {
         }
     }
 
-    // Ques 7: Print the sum of the first n natural numbers, where n is the input.
+    // Ques 4: Print the sum of the first n natural numbers, where n is the input.
     public static int sumOfNatural(int num) {
         int i = 1;
         int sum = 0;
@@ -147,9 +120,9 @@ public class Java02AdvanceProgram {
         if (num <= 1) {
             return false;
         }
-
-        for (int i = 2; i < Math.sqrt(num); i++) {
-            if (num % 2 == 0) {
+        double val = Math.sqrt(num);
+        for (int i = 2; i < val; i++) {
+            if (num % i == 0) {
                 return false;
             }
         }
