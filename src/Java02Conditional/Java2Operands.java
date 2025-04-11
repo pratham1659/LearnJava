@@ -72,6 +72,7 @@ public class Java2Operands {
     // Ques: Take positive integer input and tell if it
     // is divisible by 5 or 3 but not divisible by 15.
     static void divisible3or5not15(int num) {
+
         /*
          * if(num % 3 ==0 || num % 5 == 0) {
          * if(num % 15 == 0){

@@ -4,27 +4,25 @@ import java.util.Scanner;
 
 public class Java02AdvanceProgram {
 
-    // Ques 1: Program to check Absolute Integer
-    public static int isAbsoluteInteger(int num) {
-        if (num < 0) {
-            num = num * (-1);
+    // Ques 1: program to find the Least Common Multiple (LCM) of two numbers.
+    public static int leastCommonMultiplier(int num1, int num2) {
+        int max = Math.max(num1, num2);
+        while (true) {
+            if (max % num1 == 0 && max % num2 == 0) {
+                return max;
+            }
+            max++;
         }
-        return num;
     }
 
-    // Ques 2: Program to check cost price and selling price of an item check profit
-    // and Loss.
-    public static void isProfitAndLoss(int cp, int sp) {
-        int profit = 0;
-        int loss = 0;
-        if (cp < sp) {
-            profit = sp - cp;
-            System.out.println("Profit will be " + profit);
-        } else if (sp < cp) {
-            loss = cp - sp;
-            System.out.println("Loss will be " + loss);
+    // Ques 2: program to find the Greatest Common Divisor (GCD) of two numbers.
+    public static int greatestCommonDivisor(int num1, int num2) {
+        while (num2 != 0) {
+            int temp = num2;
+            num2 = num1 % num2;
+            num1 = temp;
         }
-
+        return num1;
     }
 
     // Ques 3: Multiplication Table of 2
@@ -47,7 +45,7 @@ public class Java02AdvanceProgram {
         return sum;
     }
 
-    // Ques 8: program to sum all odd numbers from 1 to a specified number N.
+    // Ques 5: program to sum all odd numbers from 1 to a specified number N.
     public static int sumOfOddNumbers(int num) {
         int i = 1;
         int sumOfOdd = 0;
@@ -60,7 +58,7 @@ public class Java02AdvanceProgram {
         return sumOfOdd;
     }
 
-    // Ques 9: program that calculates the factorial of a given number.
+    // Ques 6: program that calculates the factorial of a given number.
     public static long factorial(int num) {
         if (num < 0) {
             throw new IllegalArgumentException("Number must be positive");
@@ -74,7 +72,7 @@ public class Java02AdvanceProgram {
         return fact;
     }
 
-    // Ques 10: program that computes the sum of the digits of an integer.
+    // Ques 7: program that computes the sum of the digits of an integer.
     public static int noOfDigits(int num) {
         int count = 0;
         while (num > 0) {
@@ -84,7 +82,7 @@ public class Java02AdvanceProgram {
         return count;
     }
 
-    // Ques 11: program that computes the sum of the digits of an integer.
+    // Ques 8: program that computes the sum of the digits of an integer.
     public static int sumOfDigits(int num) {
         int sum = 0;
         while (num > 0) {
@@ -94,28 +92,30 @@ public class Java02AdvanceProgram {
         return sum;
     }
 
-    // Ques 12: program to find the Least Common Multiple (LCM) of two numbers.
-    public static int leastCommonMultiplier(int num1, int num2) {
-        int max = Math.max(num1, num2);
-        while (true) {
-            if (max % num1 == 0 && max % num2 == 0) {
-                return max;
-            }
-            max++;
+    // Ques 9: Program to check Absolute Integer
+    public static int isAbsoluteInteger(int num) {
+        if (num < 0) {
+            num = num * (-1);
         }
+        return num;
     }
 
-    // Ques 13: program to find the Greatest Common Divisor (GCD) of two numbers.
-    public static int greatestCommonDivisor(int num1, int num2) {
-        while (num2 != 0) {
-            int temp = num2;
-            num2 = num1 % num2;
-            num1 = temp;
+    // Ques 10: Program to check cost price and selling price of an item check
+    // profit and Loss.
+    public static void isProfitAndLoss(int cp, int sp) {
+        int profit = 0;
+        int loss = 0;
+        if (cp < sp) {
+            profit = sp - cp;
+            System.out.println("Profit will be " + profit);
+        } else if (sp < cp) {
+            loss = cp - sp;
+            System.out.println("Loss will be " + loss);
         }
-        return num1;
+
     }
 
-    // Ques 14: program that computes the sum of the digits of an integer.
+    // Ques 11: program that computes the sum of the digits of an integer.
     public static boolean checkPrime(int num) {
         if (num <= 1) {
             return false;
@@ -129,7 +129,7 @@ public class Java02AdvanceProgram {
         return true;
     }
 
-    // Ques 15: program to reverse the digits of a number.
+    // Ques 12: program to reverse the digits of a number.
     public static int reverseDigit(int num) {
         int newNum = 0;
         while (num > 0) {
@@ -140,7 +140,7 @@ public class Java02AdvanceProgram {
         return newNum;
     }
 
-    // Ques 16: swap in digits
+    // Ques 13: swap in digits
     public static void swap(int a, int b) {
         System.out.println("Original Values: ");
         System.out.println("a " + a);
@@ -156,7 +156,7 @@ public class Java02AdvanceProgram {
 
     }
 
-    // Ques 17: swap Without Temp
+    // Ques 14: swap Without Temp
     public static void swapWithoutTemp(int a, int b) {
         System.out.println("Original Values: ");
         System.out.println("a " + a);
@@ -171,7 +171,7 @@ public class Java02AdvanceProgram {
         System.out.println("b " + b);
     }
 
-    // Ques 18: Count the number of digits for a given number
+    // Ques 15: Count the number of digits for a given number
     public static int countNum() {
         long num = 982436986L;
         int ans = 0;
@@ -183,7 +183,7 @@ public class Java02AdvanceProgram {
         return ans;
     }
 
-    // Ques 19 : Prefix and Postfix of digits
+    // Ques 16: Prefix and Postfix of digits
     public static void prefixPostfix(int n) {
         System.out.println("Ques 19 : Prefix and Postfix of digits");
 
@@ -196,31 +196,27 @@ public class Java02AdvanceProgram {
         System.out.println(b);
     }
 
-    // Ques 1: program to print the Fibonacci series up to a certain number.
+    // Ques 17: program to print the Fibonacci series up to a certain number.
     public static void fibonacciSeries(int num) {
         int firstTerm = 0, secondTerm = 1;
 
         if (num <= 0) {
             System.out.println("Please enter a positive integer greater than 0.");
-        } else if (num == 1) {
-            System.out.print((firstTerm));
-        } else if (num == 2) {
-            System.out.print(firstTerm + " " + secondTerm);
-        } else {
-            System.out.print(firstTerm + " " + secondTerm + " ");
-
-            for (int i = 2; i <= num; i++) {
-                int nextTerm = firstTerm + secondTerm;
-
-                System.out.print(nextTerm + " ");
-
-                firstTerm = secondTerm;
-                secondTerm = nextTerm;
-            }
+            return;
         }
+
+        for (int i = 1; i <= num; i++) {
+            int nextTerm = firstTerm + secondTerm;
+
+            System.out.print(nextTerm + " ");
+
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+        }
+
     }
 
-    // Ques 2: Program to check Palindrome Number.
+    // Ques 18: Program to check Palindrome Number.
     public static boolean checkPalindromeNumber(int num) {
 
         int original = num;
@@ -234,7 +230,7 @@ public class Java02AdvanceProgram {
         return original == newNum;
     }
 
-    // Ques 3: Program to check Power.
+    // Ques 19: Program to check Power.
     public static int pow(int num1, int num2) {
         int result = num1;
         int i = 1;

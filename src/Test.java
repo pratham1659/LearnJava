@@ -1,16 +1,26 @@
 import java.io.*;
-import java.util.StringTokenizer;
+// import java.util.StringTokenizer;
 
 public class Test {
 
-    public static void Operations(int num1, int num2) {
+    public static void Operations(int num) {
 
-        int temp = num1;
-        num1 = num2;
-        num2 = temp;
+        if (num <= 0) {
+            System.out.println("invalid");
+            return;
+        }
 
-        System.out.println(num1);
-        System.out.println(num2);
+        int firstTerm = 0;
+        int secondTerm = 1;
+        int nextTerm = 0;
+
+        for (int i = 2; i <= num; i++) {
+            nextTerm = firstTerm + secondTerm;
+
+            System.out.print(nextTerm + " ");
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+        }
 
     }
 
@@ -18,7 +28,7 @@ public class Test {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(br.readLine());
-        int n2 = Integer.parseInt(br.readLine());
+        // int n2 = Integer.parseInt(br.readLine());
 
         // StringTokenizer st = new StringTokenizer(br.readLine());
 
@@ -35,7 +45,7 @@ public class Test {
 
         // }
 
-        Operations(n, n2);
+        Operations(n);
 
     }
 }
