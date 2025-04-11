@@ -25,7 +25,6 @@ public class Array04Reverse {
         for (int i = n - 1; i >= 0; i--) {
             reverse[j++] = arr[i];
         }
-
         return reverse;
     }
 

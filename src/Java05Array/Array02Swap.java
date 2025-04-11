@@ -50,13 +50,33 @@ public class Array02Swap {
     }
 
     // 4. Program to left rotate the elements of an array
-    public static void leftRotateFromArrayIndex(int[] arr, int index) {
+    public static int[] leftRotateFromArrayIndex(int[] arr, int index) {
         int n = arr.length;
-        int temp = arr[index];
-        for (int i = index; i < n - 1; i++) {
-            arr[i] = arr[i + 1];
+
+        if (index < 0 || index >= n) {
+            System.out.println("Invalid index");
+            return arr;
         }
-        arr[n - 1] = temp;
+
+        int[] temp = new int[n];
+
+        // Copy the elements from index to end
+        int k = 0;
+        for (int i = index; i < n; i++) {
+            temp[k++] = arr[i];
+        }
+
+        // Copy the elements from start to index - 1
+        for (int i = 0; i < index; i++) {
+            temp[k++] = arr[i];
+        }
+
+        // Copy back to original array
+        for (int i = 0; i < n; i++) {
+            arr[i] = temp[i];
+        }
+
+        return arr;
     }
 
     // 5. Program to left rotate the elements of an array

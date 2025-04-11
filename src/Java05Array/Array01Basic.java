@@ -4,11 +4,6 @@ import java.util.Scanner;
 
 public class Array01Basic {
 
-    static void sum(int a, int b) {
-        int c = a + b;
-        System.out.println(c);
-    }
-
     void singleArray() {
         // Representation of Arrays
         // int[] uid = new int[2];
@@ -155,11 +150,11 @@ public class Array01Basic {
         int i = 1;
         while (i < arr.length) {
             if (arr[i] >= arr[i - 1]) {
-                return true;
+                return false;
             }
             i++;
         }
-        return false;
+        return true;
     }
 
     // 7. check Array in Decreasing order or not
@@ -194,7 +189,6 @@ public class Array01Basic {
 
         Array01Basic obj = new Array01Basic();
 
-        sum(23, 34);
         obj.singleArray();
         obj.multiArray();
         obj.sumOfArray();

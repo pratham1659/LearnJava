@@ -1,31 +1,24 @@
 import java.io.*;
-// import java.util.StringTokenizer;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class Test {
 
-    public static void pattern(int num) {
+    public static boolean pattern(String str) {
 
-        int row = 1;
+        StringBuilder reverse = new StringBuilder(str).reverse();
 
-        while (row <= num) {
-            int col = 1;
+        return str.equals(reverse.toString());
 
-            while (col <= row) {
-                char ch = (char) ('A' + row + col - 2);
-                System.out.print(ch + " ");
-                ch++;
-                col++;
-            }
-            System.out.println();
-            row++;
-        }
     }
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int n = Integer.parseInt(br.readLine());
+        // int n = Integer.parseInt(br.readLine());
+        // int n1 = Integer.parseInt(br.readLine());
         // int n2 = Integer.parseInt(br.readLine());
+        String str = br.readLine();
 
         // StringTokenizer st = new StringTokenizer(br.readLine());
 
@@ -39,9 +32,12 @@ public class Test {
         // System.out.println("Not enough elements provided.");
         // return;
         // }
-
         // }
 
-        pattern(n);
+        pattern(str);
+
+        // System.out.println(pattern(arr));
+
+        // System.out.println(Arrays.toString(pattern(str)));
     }
 }

@@ -131,28 +131,25 @@ public class Array03Practice {
     }
 
     // Ques 11: Program to find the frequency of each element in the array
-    public static void frequency(int[] array) {
+    public static void frequency(int[] arr) {
 
-        int[] freq = new int[array.length];
-        int visited = -1;
-        for (int i = 0; i < array.length; i++) {
+        int n = arr.length;
+        boolean[] visited = new boolean[n];
+
+        for (int i = 0; i < n; i++) {
+            if (visited[i])
+                continue;
+
             int count = 1;
-            for (int j = i + 1; j < array.length; j++) {
-                if (array[i] == array[j]) {
+            for (int j = i + 1; j < n; j++) {
+
+                if (arr[i] == arr[j]) {
+                    visited[j] = true;
                     count++;
-                    freq[j] = visited;
                 }
             }
-            if (freq[i] != visited) {
-                freq[i] = count;
-            }
-        }
 
-        // Display the frequency of each element
-        for (int i = 0; i < freq.length; i++) {
-            if (freq[i] != visited) {
-                System.out.println(" " + array[i] + " " + freq[i]);
-            }
+            System.out.println("Element" + arr[i] + "Freq" + count);
         }
     }
 
