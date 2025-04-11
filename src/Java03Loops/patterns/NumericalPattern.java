@@ -262,12 +262,13 @@ public class NumericalPattern {
     // 1 1 1 1 1
     public static void NumericInverseTriangle3(int n) {
         System.out.println("Ques 9: Numeric Inverse Triangle Pattern - 3");
-        // for (int i = 1; i <= n; i++) {
-        // for (int j = i; j >= i; j--) {
-        // System.out.print(j + " ");
-        // }
-        // System.out.println();
-        // }
+        for (int i = 1; i <= n; i++) {
+            int num = n;
+            for (int j = 1; j <= i; j++) {
+                System.out.print((num--) + " ");
+            }
+            System.out.println();
+        }
     }
 
     // Ques 10: Numeric Triangle Pattern - 4

@@ -84,34 +84,7 @@ public class LoopsPractice {
         System.out.println();
     }
 
-    // Ques 5 : Program to find the fibonacci series
-    public static void findFibonnaci(int num) {
-
-        int firstTerm = 0;
-        int secondTerm = 1;
-
-        if (num <= 0) {
-            System.out.println("Please enter a positive integer greater than 0.");
-        } else if (num == 1) {
-            System.out.print((firstTerm));
-        } else if (num == 2) {
-            System.out.print(firstTerm + " " + secondTerm);
-        } else {
-            System.out.print(firstTerm + " " + secondTerm + " ");
-
-            num = num - 2;
-            while (num > 0) {
-                int thirdTerm = firstTerm + secondTerm;
-                firstTerm = secondTerm;
-                secondTerm = thirdTerm;
-
-                System.out.print(thirdTerm + " ");
-                num--;
-            }
-        }
-    }
-
-    // Ques 6 : Convert number from binary to Decimal
+    // Ques 5: Convert number from binary to Decimal
     // 0 * 2^0, 1 * 2^1, 0 * 2^2, 1 * 2^3
     public static void binaryToDecimal(int num) {
 
@@ -150,8 +123,6 @@ public class LoopsPractice {
 
         System.out.println(value);
     }
-
-   
 
     public static void main(String[] args) {
 
