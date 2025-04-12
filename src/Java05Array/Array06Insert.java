@@ -2,7 +2,7 @@ package Java05Array;
 
 import java.util.Arrays;
 
-public class Array07Insert {
+public class Array06Insert {
 
     // Ques 1: Insert element in Array
     public static int[] insertInArray(int[] arr, int index, int value) {

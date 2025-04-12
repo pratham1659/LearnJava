@@ -3,7 +3,7 @@ package Java05Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Array04Reverse {
+public class Array03Reverse {
 
     // Program to Display Array
     public static void displayArray(int[] arr) {
@@ -48,29 +48,18 @@ public class Array04Reverse {
     // 4. check Palindrome Number
     public static boolean checkPalindrome(int num) {
 
+        int digit = 0;
         int newNum = 0;
-        int sum = 0;
         int temp = num;
         while (num > 0) {
-            newNum = num % 10;
-            sum = (sum * 10) + newNum;
+            digit = num % 10;
+            newNum = (newNum * 10) + digit;
             num = num / 10;
         }
-
-        return temp == sum;
+        return temp == newNum;
     }
 
-    // 5. check palindrom number using String Builder
-    public static boolean isPalindrome(String str) {
-        // Convert the number to a string
-        // String str = Integer.toString(num);
-
-        // Reverse the string
-        StringBuilder reversed = new StringBuilder(str).reverse();
-        return str.equals(reversed.toString());
-    }
-
-    // 6: To find palindrome numbers within a long integer using an array,
+    // 5: To find palindrome numbers within a long integer using an array,
     public static boolean isPalindrome(int number) {
 
         char[] digits = Integer.toString(number).toCharArray();
@@ -90,7 +79,7 @@ public class Array04Reverse {
 
     }
 
-    // 7. Reverse of an Array
+    // 6. Reverse of an Array
     public static int[] reverseArrayTemp(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
@@ -107,7 +96,7 @@ public class Array04Reverse {
         return arr;
     }
 
-    // 8. Count the number of elements strictly greater than value x.
+    // 7. Count the number of elements strictly greater than value x.
     public static int strictlyGreater(int[] arr, int key) {
 
         Arrays.sort(arr);
@@ -120,7 +109,7 @@ public class Array04Reverse {
         return -1;
     }
 
-    // 9. Reverse the digits in Descending Order TimeComplexity O(Nlog N)
+    // 8. Reverse the digits in Descending Order TimeComplexity O(Nlog N)
     public static void reverseMax(int num) {
 
         String str = Integer.toString(num);
@@ -137,18 +126,19 @@ public class Array04Reverse {
 
     }
 
-    // 8. Reverse of Array
+    // 9. Reverse of Array
     public static void reverseArraySwap(int[] arr) {
         int i = 0;
-        while (i < arr.length / 2) {
+        int n = arr.length;
+        while (i < n / 2) {
             int swap = arr[i];
-            arr[i] = arr[(arr.length - i) - 1];
-            arr[(arr.length - i) - 1] = swap;
+            arr[i] = arr[(n - i) - 1];
+            arr[(n - i) - 1] = swap;
             i++;
         }
     }
 
-    // 9. Create a program to check is the array is palindrome or not.
+    // 10. Create a program to check is the array is palindrome or not.
     public static boolean checkPalindrome(int[] arr) {
         int i = 0;
         while (i < arr.length) {
@@ -160,11 +150,14 @@ public class Array04Reverse {
         return true;
     }
 
-    // Given an integer array 'a', return the prefix sum/running sum in the same
+    // 11. Given an integer array 'a', return the prefix sum/running sum in the same
+    // int[] arr = {1, 2, 3, 4, 5};
+    // Output: [1, 3, 6, 10, 15]
     public static int[] prefixSumArray(int[] arr) {
 
         int n = arr.length;
         int[] prefix = new int[n];
+
         prefix[0] = arr[0];
 
         for (int i = 1; i < n; i++) {
@@ -173,16 +166,22 @@ public class Array04Reverse {
         return prefix;
     }
 
+    // 12. Given an integer array 'a', return the sufix sum in the same
+    // int[] arr = {1, 2, 3, 4, 5};
+    // Output: [15, 14, 12, 9, 5]
     public static int[] sufixSumArray(int[] arr) {
-        int sum = 0;
-        for (int i = arr.length - 1; i >= 0; i--) {
-            sum += arr[i];
-            arr[i] = sum;
+        int n = arr.length;
+        int[] suffix = new int[n];
+
+        suffix[n - 1] = arr[n - 1];
+
+        for (int i = n - 2; i >= 0; i--) {
+            suffix[i] = suffix[i + 1] + arr[i];
         }
-        return arr;
+        return suffix;
     }
 
-    // array without creating a new array.
+    // 13. Array without creating a new array.
     public static int[] prefixSum(int[] arr) {
         int n = arr.length;
         for (int i = 1; i < n; i++) {
@@ -191,10 +190,10 @@ public class Array04Reverse {
         return arr;
     }
 
-    // Given an array of integers of size n. Answer q queries where you need to
-    // print the sum
-    // of valuesin a given range of indices from 1 to r (both included). //Note: The
-    // values of 1 and r in queries follow 1-based indexing.
+    // 14. Given an array of integers of size n. Answer q queries where you need to
+    // print the sum of valuesin a given range of indices from 1 to r (both
+    // included).
+    // Note: The values of 1 and r in queries follow 1-based indexing.
 
     public static void indicesArray(int[] arr, int q) {
         Scanner sc = new Scanner(System.in);
@@ -214,7 +213,7 @@ public class Array04Reverse {
 
     }
 
-    // Check if we can partition the array into two subarrays with equal sum. More
+    // 15. Check if we can partition the array into two subarrays with equal sum. More
     // formally, check that the prefix sum of a part of the array is equal to the
     // suffix sum of rest of the array.
     public static int findSumArray(int[] arr) {
@@ -240,14 +239,12 @@ public class Array04Reverse {
         return false;
     }
 
-
     public static void main(String[] args) {
 
         int[] arr = { 2, 7, 8, 9, 4, 10, 8, 5 };
 
         System.out.println("Reverse Integer: " + reverseInteger(123));
         reverseStringInteger(456);
-        System.out.println("Check Palindrome String: " + isPalindrome("AMA"));
         System.out.println("Check Palindrome: " + isPalindrome(121897));
 
         System.out.println("Strictly greater: " + strictlyGreater(arr, 5));

@@ -1,5 +1,6 @@
 package Java05Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array08Practice {
@@ -58,6 +59,93 @@ public class Array08Practice {
             i++;
         }
         System.out.println();
+    }
+
+    // 1. Find the total number of pairs in the Array whose sum is equal key.
+    public static int countPairs(int[] arr, int key) {
+
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] + arr[j] == key) {
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+
+    // 2. Count the number of triplets whose sum is equal to the given value x.
+    public static int countTriplets(int[] arr, int key) {
+
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                for (int k = j + 1; k < arr.length; k++) {
+                    if (arr[i] + arr[j] + arr[k] == key) {
+                        count++;
+                    }
+                }
+            }
+        }
+
+        return count;
+    }
+
+    // 7. Find Substing of Max Sum Sub Array
+    public static int maxSubArray(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+
+        int maxSum = nums[0];
+        int currentSum = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            currentSum = Math.max(nums[i], currentSum + nums[i]);
+            maxSum = Math.max(maxSum, currentSum);
+        }
+
+        return maxSum;
+    }
+
+    // 8. Find Substing of Max Product Sub Array
+    public static int maxProductSubArray(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+
+        int maxNum = nums[0];
+        int minNum = nums[0];
+        int ans = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            int tempMax = Math.max(nums[i], Math.max(maxNum * nums[i], minNum * nums[i]));
+            int tempMin = Math.min(nums[i], Math.min(maxNum * nums[i], minNum * nums[i]));
+
+            maxNum = tempMax;
+            minNum = tempMin;
+
+            ans = Math.max(ans, maxNum);
+        }
+
+        return ans;
+    }
+
+    // 9. Maximum Three Digits in Array
+    public static int maximumProduct(int[] nums) {
+
+        Arrays.sort(nums);
+        int n = nums.length;
+
+        // Case 1: All three largest elements are positive
+        int maxProduct1 = nums[n - 1] * nums[n - 2] * nums[n - 3];
+
+        // Case 2: Two smallest elements (if they exist) and the largest element
+        int maxProduct2 = nums[0] * nums[1] * nums[n - 1];
+
+        return Math.max(maxProduct1, maxProduct2);
     }
 
     public static void checkBooleanResult(int[] arr) {

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Array08Find {
+public class Array07Search {
     /*
      * Find Armstrong Number
      * 153
@@ -143,7 +143,7 @@ public class Array08Find {
 
     }
 
-    // 3. find Unique number in Array
+    // 11. find Unique number in Array
     public static int findUnique(int[] arr) {
         int ans = 0;
         int n = arr.length;
@@ -167,7 +167,7 @@ public class Array08Find {
 
     }
 
-    // 4. Find Max Number in Array
+    // 12. Find Max Number in Array
     public static int findMax(int[] arr) {
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
@@ -178,7 +178,7 @@ public class Array08Find {
         return max;
     }
 
-    // 5. Find Max Number in Array
+    // 13. Find Max Number in Array
     public static int findMin(int[] arr) {
         int min = arr[0];
         for (int i = 0; i < arr.length; i++) {
@@ -189,7 +189,7 @@ public class Array08Find {
         return min;
     }
 
-    // 6. find Second Max Number in Array
+    // 14. find Second Max Number in Array
     public static int secondMax(int[] arr) {
         int max = findMax(arr);
 
@@ -201,7 +201,7 @@ public class Array08Find {
         return findMax(arr);
     }
 
-    // 7. find First Repetitive number in Array
+    // 16. find First Repetitive number in Array
     public static int findFirstRepeat(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
@@ -213,7 +213,7 @@ public class Array08Find {
         return -1;
     }
 
-    // 8 find missing number in Array
+    // 17 find missing number in Array
     // https://leetcode.com/problems/missing-number
     public static int missingNumber(int[] nums) {
         int n = nums.length;
@@ -223,6 +223,64 @@ public class Array08Find {
             sumArr = sumArr + nums[i];
         }
         return totalSum - sumArr;
+    }
+
+    // 1. Find Missing Number in Array
+    public static void findMissingNumber(int[] arr) {
+
+        int[] missingArr = arr;
+        int sum = 0;
+        for (int i = 0; i < missingArr.length; i++) {
+            sum += missingArr[i];
+        }
+        int newSum = 0;
+        for (int i = 1; i <= 10; i++) {
+            newSum += i;
+        }
+
+        System.out.println("Missing Number: " + (newSum - sum));
+    }
+
+    // 2. Find Largest and Smallest in array
+    public static int[] findLargestAndSmallest(int[] arr) {
+
+        int max = arr[0];
+        int min = arr[0];
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            } else if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return new int[] { min, max };
+    }
+
+    // 12. Search elements in Matrix 2d Array
+    public static boolean searchElement(int[][] matrix, int target) {
+
+        if (matrix.length == 0 || matrix[0].length == 0) {
+            return false;
+        }
+
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        int row = 0;
+        int col = cols - 1;
+
+        while (row < rows && col >= 0) {
+            if (matrix[row][col] == target) {
+                return true;
+            } else if (matrix[row][col] > target) {
+                col--;
+            } else {
+                row++;
+            }
+        }
+
+        return false;
     }
 
     public static void main(String[] args) {
@@ -248,6 +306,12 @@ public class Array08Find {
 
         int[] duplicateArray = { 2, 3, 4, 2, 6, 3, 4, 7, 9, 8 };
 
+        int[] num = { 1, 2, 3, 4, 5, 7, 8, 9, 10 };
+        findMissingNumber(num);
+
+        int[] num2 = { -10, 24, 50, 123, 88 };
+        System.out.println("Find Largest and Smallest: " + Arrays.toString(findLargestAndSmallest(num2)));
+
         System.out.println("Find Unique Array: " + findUnique(duplicateArray));
 
         System.out.println("Find Max in Array: " + findMax(arr));
@@ -259,6 +323,13 @@ public class Array08Find {
 
         int miss[] = { 3, 0, 1 };
         System.out.println(missingNumber(miss));
+
+        int[] subArr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+
+        int[] sortedArray = { 1, 2, 3, 4 };
+        int[] productArr = { 2, 3, -2, 4 };
+
+        int[] arr1 = { 1, 2, 3, 5, 6, 8, 9, 4, 2 };
 
     }
 }

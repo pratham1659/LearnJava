@@ -1,15 +1,9 @@
 package Java05Array;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Array02Swap {
-    // Printing Array Methods
-    public static void printArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-    }
 
     // 1. swap in Array Methods
     public static void swapInArray(int[] arr, int i, int j) {
@@ -101,18 +95,62 @@ public class Array02Swap {
         return rotatedArray;
     }
 
+    // 7: Program to find the frequency of each element in the array
+    public static void frequency(int[] arr) {
+
+        int n = arr.length;
+        boolean[] visited = new boolean[n];
+
+        for (int i = 0; i < n; i++) {
+            if (visited[i])
+                continue;
+
+            int count = 1;
+            for (int j = i + 1; j < n; j++) {
+
+                if (arr[i] == arr[j]) {
+                    visited[j] = true;
+                    count++;
+                }
+            }
+
+            System.out.println("Element" + arr[i] + "Freq" + count);
+        }
+    }
+
+    // 8. frequency of the element using HashMap
+    public static void frequencyHash(int[] array) {
+        HashMap<Integer, Integer> freq = new HashMap<>();
+
+        for (int i = 0; i < array.length; i++) {
+            int element = array[i];
+            if (freq.containsKey(element)) {
+                freq.put(element, freq.get(element) + 1);
+            } else {
+                freq.put(element, 1);
+            }
+        }
+
+        // Display the frequency of each element
+        System.out.println("Element : Frequency");
+        for (int element : freq.keySet()) {
+            System.out.println(element + " : " + freq.get(element));
+        }
+    }
+
     public static void main(String[] args) {
 
         int[] arr = { 1, 2, 3, 5, 6, 8, 9, 4, 2 };
 
-        System.out.println("Swapping in Array Reverse: ");
-        printArray(swapOutArray(arr));
+        System.out.println(Arrays.toString(swapOutArray(arr)));
 
-        int[] ans = rotateA(arr, 2);
-        printArray(ans);
+        System.out.println(Arrays.toString(rotateA(arr, 2)));
 
         System.out.println(Arrays.toString(rotateLeft(arr, 3)));
         System.out.println(Arrays.toString(rightRotate(arr, 3)));
+
+        int[] arr2 = { 1, 2, 3, 5, 6, 8, 9, 4, 2 };
+        frequency(arr2);
 
     }
 

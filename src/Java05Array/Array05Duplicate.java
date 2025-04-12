@@ -1,8 +1,9 @@
 package Java05Array;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
-public class Array06Duplicate {
+public class Array05Duplicate {
 
     public static int findDuplicatesONN(int[] arr) {
 
@@ -27,14 +28,27 @@ public class Array06Duplicate {
         return false; // No duplicates found
     }
 
-    // // Print elements with frequency > 1
-    // System.out.print("Duplicate elements: ");
-    // for (Map.Entry<Integer, Integer> entry : freq.entrySet()) {
-    // if (entry.getValue() > 1) {
-    // System.out.println(entry.getKey());
-    // }
-    // }
-    // }
+    // 8. frequency of the element using HashMap
+    public static void frequencyHash(int[] arr) {
+
+        HashMap<Integer, Integer> freqMap = new HashMap<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            int num = arr[i];
+
+            if (freqMap.containsKey(num)) {
+                int oldCount = freqMap.get(num);
+                freqMap.put(num, oldCount + 1);
+            } else {
+                freqMap.put(num, 1);
+            }
+        }
+
+        // Display the frequencies using a normal for loop on keySet
+        for (Integer key : freqMap.keySet()) {
+            System.out.println("Element: " + key + " → Frequency: " + freqMap.get(key));
+        }
+    }
 
     // 3. Remoce Duuplicates from Array
     public static int[] removeDuplicateArray(int[] arr) {
@@ -88,11 +102,16 @@ public class Array06Duplicate {
 
     public static void main(String[] args) {
 
-        int[] arr = { 2, 5, 6, 8, 8, 4 };
-        System.out.println("Duplicate Element found: " + findDuplicatesONN(arr));
-        System.out.println("Find Duplicates HashMap: " + findDuplicatesON(arr));
-        System.out.println("Remove Duplicates: " + Arrays.toString(removeDuplicateArray(arr)));
+        // int[] arr = { 2, 5, 6, 8, 8, 4 };
 
-        System.out.println(removeDuplicates(arr));
+        // System.out.println("Duplicate Element found: " + findDuplicatesONN(arr));
+        // System.out.println("Find Duplicates HashMap: " + findDuplicatesON(arr));
+        // System.out.println("Remove Duplicates: " +
+        // Arrays.toString(removeDuplicateArray(arr)));
+
+        // System.out.println(removeDuplicates(arr));
+
+        int[] freqArr = { 2, 2, 3, 3, 4, 4 };
+        frequencyHash(freqArr);
     }
 }

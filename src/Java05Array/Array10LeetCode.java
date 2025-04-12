@@ -2,7 +2,7 @@ package Java05Array;
 
 import java.util.PriorityQueue;
 
-public class Array11LeetCode {
+public class Array10LeetCode {
 
     /*
      * Input: time = [1,2,3], totalTrips = 5

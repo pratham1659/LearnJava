@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Array01Basic {
 
+    // Array concept
     void singleArray() {
         // Representation of Arrays
         // int[] uid = new int[2];
@@ -55,18 +56,26 @@ public class Array01Basic {
         }
     }
 
-    void sumOfArray() {
-
-        int[] arr = { 1, 2, 3, 4, 6, 7, 8 };
-        int sum = 0;
-
-        for (int i : arr) {
-            sum = sum + i;
+    // Input Array
+    public static void inputArray() {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
-        System.out.print(sum);
+        sc.close();
     }
 
-    // 1. Find Sum of Array
+    // Printing Array Methods
+    public static void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    // Ques 1. Find Sum of Array
     public static int sumOfArray(int[] arr) {
 
         int sum = 0;
@@ -78,14 +87,14 @@ public class Array01Basic {
         return sum;
     }
 
-    // 2. Average Array
+    // Ques 2. Find the Average of Array
     public static int averageArray(int[] arr) {
 
         int sum = sumOfArray(arr);
         return (sum / arr.length);
     }
 
-    // 3. inputArray using Scanner Class
+    // Ques 3. inputArray using Scanner Class
     public static int[] inputArray(int num) {
 
         int[] arr = new int[num];
@@ -100,7 +109,8 @@ public class Array01Basic {
         return arr;
     }
 
-    // 4. Create a program to find number of occurrences of an element in an array.
+    // Ques 4. Create a program to find number of occurrences of an element in an
+    // array.
     public static int occurrencesArray(int[] arr, int num) {
         int count = 0;
         int i = 0;
@@ -114,38 +124,7 @@ public class Array01Basic {
         return count;
     }
 
-    // 5. Create a program to find the maximum and minimum element in an array.
-    public static int minArray(int[] arr) {
-        if (arr.length == 0) {
-            return Integer.MIN_VALUE;
-        }
-        int min = arr[0];
-        int i = 1;
-        while (i < arr.length) {
-            if (min > arr[i]) {
-                min = arr[i];
-            }
-            i++;
-        }
-        return min;
-    }
-
-    public static int maxArray(int[] arr) {
-        if (arr.length == 0) {
-            return Integer.MAX_VALUE;
-        }
-        int max = arr[0];
-        int i = 1;
-        while (i < arr.length) {
-            if (max < arr[i]) {
-                max = arr[i];
-            }
-            i++;
-        }
-        return max;
-    }
-
-    // 6. check Array in Incresing order or not
+    // Ques 5. check Array in Incresing order or not
     public static boolean isIncreasedArray(int[] arr) {
         int i = 1;
         while (i < arr.length) {
@@ -157,7 +136,7 @@ public class Array01Basic {
         return true;
     }
 
-    // 7. check Array in Decreasing order or not
+    // Ques 6. check Array in Decreasing order or not
     public static boolean isDecreasedArray(int[] arr) {
         int i = 1;
         while (i < arr.length) {
@@ -170,7 +149,7 @@ public class Array01Basic {
 
     }
 
-    // Ques 8: check array is sorted or not
+    // Ques 7: check array is sorted or not
     public static boolean checkArray(int[] arr) {
 
         int n = arr.length;
@@ -185,13 +164,111 @@ public class Array01Basic {
         return isArrSorted;
     }
 
+    // Ques 8: Sum of two Number
+    public static int sumOfTwo(int num1, int num2) {
+        int sum = 0;
+        sum = num1 + num2;
+        return sum;
+    }
+
+    // Ques 9: swap With Temp
+    public static void swapTemp(int a, int b) {
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("First Element: " + a + " Second Element: " + b);
+    }
+
+    // Ques 10: Swap without Temp
+    public static void swapWithoutTemp(int a, int b) {
+
+        a = a + b; // 2+3 = 5
+        b = a - b; // 5-3 = 2
+        a = a - b; // 5-2 = 3
+
+        System.out.println("First Element: " + a + " Second Element: " + b);
+    }
+
+    // Ques 11: print 2d Array
+    public static void print2dArray(int[][] arr2d) {
+        for (int i = 0; i < arr2d.length; i++) {
+            for (int j = 0; j < arr2d.length; j++) {
+                System.out.print(arr2d[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Ques 12: Maximum Array
+    public static int maxArray(int[] arr) {
+
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    // Ques 13: Minimum Array
+    public static int minArray(int[] arr) {
+
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    // Ques 14: Find elements in Array
+    public static void findElements(int[] arr, int key) {
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == key) {
+                int idx = i;
+                System.out.println("Elements found at index " + idx);
+                return;
+            }
+        }
+        System.out.println("Element Not Found");
+    }
+
+    // Ques 15: Program to print the elements of an array present on even position
+    public static void printArrayEven(int[] arr) {
+        for (int i = 0; i < arr.length; i = i + 2) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    // Ques 16: Program to print the elements of an array present on odd position
+    public static void printArrayOdd(int[] arr) {
+        for (int i = 1; i < arr.length; i = i + 2) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    // Ques 17: Program to copy all elements of one array into another array
+    public static int[] copyArray(int[] array) {
+        int[] array2 = new int[array.length];
+
+        for (int i = 0; i < array.length; i++) {
+            array2[i] = array[i];
+        }
+        return array2;
+    }
+
     public static void main(String[] args) {
 
         Array01Basic obj = new Array01Basic();
 
         obj.singleArray();
         obj.multiArray();
-        obj.sumOfArray();
 
         int arr[] = { 1, 2, 3, 4, 5 };
         System.out.println(checkArray(arr));

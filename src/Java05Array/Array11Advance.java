@@ -2,7 +2,7 @@ package Java05Array;
 
 import java.util.*;
 
-public class Array13Extras {
+public class Array11Advance {
 
     public static void CountDuplicate(int[] arr) {
         Arrays.sort(arr);

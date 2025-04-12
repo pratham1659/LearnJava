@@ -89,5 +89,17 @@ public class String02Builder {
         //
         // System.out.println(sb);
 
+
+
+    }
+
+    // 5. check palindrom number using String Builder
+    public static boolean isPalindrome(String str) {
+        // Convert the number to a string
+        // String str = Integer.toString(num);
+
+        // Reverse the string
+        StringBuilder reversed = new StringBuilder(str).reverse();
+        return str.equals(reversed.toString());
     }
 }

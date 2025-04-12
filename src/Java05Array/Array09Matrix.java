@@ -2,7 +2,7 @@ package Java05Array;
 
 import java.util.Scanner;
 
-public class Array12Matrix {
+public class Array09Matrix {
     // Print 2d Array
     public static void printArray(int[][] arr) {
         System.out.println("Printed Array: ");
