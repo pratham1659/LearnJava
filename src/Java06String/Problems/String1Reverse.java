@@ -63,30 +63,6 @@ public class String1Reverse {
         return output.toString();
     }
 
-    // Ques 3: reverse Each word in String
-    // Time Complexity: O(n)
-    // Space Complexity: O(n)
-    public static String reverseEachWord(String str) {
-
-        StringBuilder ans = new StringBuilder();
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-
-            if (ch != ' ') {
-                sb.append(ch);
-            } else {
-                sb.reverse();
-                ans.append(sb);
-                ans.append(" ");
-                sb = new StringBuilder();
-            }
-        }
-        sb.reverse();
-        ans.append(sb);
-        return ans.toString();
-    }
-
     // Java Program To Reverse Each Word In String
     // Time complexity : O(NlogN)
     public static String reverseWordStringArray2(String str) {
@@ -104,14 +80,17 @@ public class String1Reverse {
     public static void main(String[] args) {
 
         String strAtChar = "Hello";
+
         System.out.println("Reverse String atCharAt: " + reverseCharAt(strAtChar));
         System.out.println("Reverse String atCharArray: " + reverseAtCharArray(strAtChar));
 
         System.out.println("Reverse String using Builder: " + reverseStringBuilder(strAtChar));
 
         String strString = "This is Hello World";
-        System.out.println("Reverse words in String: " + reverseEachWord(strString));
+
         System.out.println("Reverse words in String: " + reverseWordStringArray(strString));
         System.out.println("Reverse words in String: " + reverseWordStringArray2(strString));
+
     }
+
 }

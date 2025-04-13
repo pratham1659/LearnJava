@@ -5,8 +5,7 @@ import java.util.Map.Entry;
 
 public class String2Duplicate {
 
-    // Remove Duplicate Characters in Given String
-
+    // Ques 1: Remove Duplicate Characters in Given String
     // Approach - 1
     // Time complexity : O(N)
     public static void duplicateRemove(String str) {

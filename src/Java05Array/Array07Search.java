@@ -324,12 +324,12 @@ public class Array07Search {
         int miss[] = { 3, 0, 1 };
         System.out.println(missingNumber(miss));
 
-        int[] subArr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        // int[] subArr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
 
-        int[] sortedArray = { 1, 2, 3, 4 };
-        int[] productArr = { 2, 3, -2, 4 };
+        // int[] sortedArray = { 1, 2, 3, 4 };
+        // int[] productArr = { 2, 3, -2, 4 };
 
-        int[] arr1 = { 1, 2, 3, 5, 6, 8, 9, 4, 2 };
+        // int[] arr1 = { 1, 2, 3, 5, 6, 8, 9, 4, 2 };
 
     }
 }

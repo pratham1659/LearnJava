@@ -1,4 +1,4 @@
-package Java06String.Problems.StringOops;
+package Java06String.StringOops;
 
 public class StudentToString {
 
