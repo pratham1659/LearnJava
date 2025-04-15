@@ -2,66 +2,57 @@ package Java06String;
 
 public class String02Builder {
 
-    public static void main(String[] args) {
+    public static void StringBuilderOperations() {
 
-        StringBuilder st = new StringBuilder("Hello");
+        // Create a new StringBuilder
+        StringBuilder sb = new StringBuilder("Hello");
+        // Time: O(1), Space: O(n)
+        System.out.println("Initial: " + sb);
 
-        st.append("World");
-        System.out.println(st);
+        // Append a string
+        sb.append(" World");
+        // Time: O(m), Space: O(n+m)
+        System.out.println("After append: " + sb);
 
-        st.setCharAt(1, 'M');
-        System.out.println(st);
+        // Insert a string
+        sb.insert(6, "Java ");
+        // Time: O(n), Space: O(n)
+        System.out.println("After insert: " + sb);
 
-        st.insert(1, 'A');
-        System.out.println(st);
+        // Replace a part of string
+        sb.replace(6, 10, "Awesome");
+        // Time: O(n), Space: O(n)
+        System.out.println("After replace: " + sb);
 
-        st.deleteCharAt(0);
-        System.out.println(st);
+        // Delete a part of string
+        sb.delete(6, 13);
+        // Time: O(n), Space: O(n)
+        System.out.println("After delete: " + sb);
 
-        System.out.println(st.reverse());
+        // Reverse the string
+        sb.reverse();
+        // Time: O(n), Space: O(n)
+        System.out.println("After reverse: " + sb);
 
-        System.out.println(st.delete(0, 3));
+        // Length of string
+        System.out.println("Length: " + sb.length()); // O(1)
 
-        String prevWord = "phYSics";
-        // StringBuilder sb = new StringBuilder(str);
+        // Capacity of StringBuilder
+        System.out.println("Capacity: " + sb.capacity()); // O(1)
 
-        for (int i = 0; i < prevWord.length(); i++) {
-            boolean flag = true; // True -> Capital
-            char ch = prevWord.charAt(i);
-            if (ch == ' ')
-                continue;
-            int ascii = (int) ch;
-            if (ascii >= 97)
-                flag = false; // False -> Small
+        // Set char at index
+        sb.setCharAt(0, 'X');
+        // Time: O(1)
+        System.out.println("After setCharAt: " + sb);
 
-            if (flag) {
-                ascii += 32;
-                char dh = (char) ascii;
-                prevWord = prevWord.substring(0, i) + dh + prevWord.substring(i + 1);
-            } else {
-                ascii -= 32;
-                char dh = (char) ascii;
-                prevWord = prevWord.substring(0, i) + dh + prevWord.substring(i + 1);
-            }
-        }
-        System.out.println(prevWord);
+        // Convert to String
+        String finalString = sb.toString(); // O(n)
+        System.out.println("Final String: " + finalString);
 
-        /*
-         * Check whether it is Palindrome or not
-         */
+    }
 
-        String str = "abcdcbc";
-        StringBuilder gtr = new StringBuilder(str);
-        System.out.println(gtr);
-
-        // String sb = gtr.reverse() + "";
-
-        // if (str.equals(sb)) {
-        // System.out.println("Palindrome");
-        // } else {
-        // System.out.println("Not Palindrome");
-        // }
-
+    // Q1. check palindrom number using loop method
+    public static void isPalindrome1(String str) {
         int i = 0;
         int j = str.length() - 1;
         boolean flag = true;
@@ -77,29 +68,76 @@ public class String02Builder {
         if (flag) {
             System.out.println("Palindrome");
         } else
-            System.out.println(" Not Palindrome");
-
-        // String[] arr = new String[] {"Java", "is" ,"the" ,"best" ,"programming"
-        // ,"Language"};
-        //
-        // StringBuilder sb = new StringBuilder();
-        // for(String i : arr){
-        // sb.append(i).append(" ");
-        // }
-        //
-        // System.out.println(sb);
-
-
-
+            System.out.println("Not Palindrome");
     }
 
-    // 5. check palindrom number using String Builder
-    public static boolean isPalindrome(String str) {
+    // Q2. check palindrom number using String Builder
+    public static boolean isPalindrome2(String str) {
         // Convert the number to a string
         // String str = Integer.toString(num);
 
         // Reverse the string
-        StringBuilder reversed = new StringBuilder(str).reverse();
-        return str.equals(reversed.toString());
+        StringBuilder reverseString = new StringBuilder(str).reverse();
+        return str.equals(reverseString.toString());
     }
+
+    // Q3. check palindrome number using String Builder two
+    public static void isPalindrome3(String str) {
+        StringBuilder gtr = new StringBuilder(str);
+        System.out.println(gtr);
+
+        String sb = gtr.reverse() + "";
+
+        if (str.equals(sb)) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
+    }
+
+    // Q4. check String value append in String Builder
+    public static void stringAppend(String str) {
+        String[] arr = new String[] { "Java", "is", "the", "best", "programming", "Language" };
+        StringBuilder sb = new StringBuilder();
+        for (String i : arr) {
+            sb.append(i).append(" ");
+        }
+        System.out.println(sb);
+    }
+
+    // Q5. check string changeAlphabetCase
+    // ✅ Time Complexity: O(n)
+    // ✅ Space Complexity: O(n) (for the StringBuilder)
+    public static void changeAlphabetCase(String prevWord) {
+
+        StringBuilder sb = new StringBuilder(prevWord);
+
+        for (int i = 0; i < sb.length(); i++) {
+            char ch = sb.charAt(i);
+            if (ch == ' ')
+                continue;
+
+            if (Character.isUpperCase(ch)) {
+                sb.setCharAt(i, Character.toLowerCase(ch));
+            } else {
+                sb.setCharAt(i, Character.toUpperCase(ch));
+            }
+        }
+
+        System.out.println(sb.toString());
+    }
+
+    public static void main(String[] args) {
+
+        StringBuilderOperations();
+
+        isPalindrome1("abcdcbc");
+        System.out.println(isPalindrome2("abcdcbc"));
+
+        isPalindrome3("abcdcbc");
+
+        changeAlphabetCase("phYSics");
+
+    }
+
 }

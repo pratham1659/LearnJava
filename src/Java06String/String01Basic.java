@@ -42,52 +42,75 @@ public class String01Basic {
         String str = "Hello";
         String gtr = "World";
 
+        // 1. Length of the string
+        // Time: O(1), Space: O(1)
+        System.out.println("Length: " + str.length());
+
+        // 2. Accessing character at index
+        // Time: O(1), Space: O(1)
         char ch = str.charAt(2);
+        System.out.println("Character at index 2: " + ch);
 
-        System.out.println("Char At index 2: " + ch);
+        // 3. Index of a character or substring
+        // Time: O(n), Space: O(1)
+        System.out.println("Index of 'o': " + str.indexOf('o'));
 
-        System.out.println("Index of o: " + str.indexOf("o"));
+        // 4. Comparing two strings
+        // Time: O(n), Space: O(1)
+        System.out.println("Compare with gtr: " + str.compareTo(gtr));
 
-        System.out.println("Compare Two String: " + str.compareTo(gtr));
+        // 5. Contains a substring
+        // Time: O(n * m), Space: O(1)
+        System.out.println("Contains 'llo': " + str.contains("llo"));
 
-        System.out.println("str contains llo: " + str.contains("llo"));
+        // 6. Starts with a substring
+        // Time: O(k), Space: O(1)
+        System.out.println("Starts with 'He': " + str.startsWith("He"));
 
-        System.out.println("str start with rld: " + str.startsWith("rld"));
+        // 7. Ends with a substring
+        // Time: O(k), Space: O(1)
+        System.out.println("Ends with 'lo': " + str.endsWith("lo"));
 
-        System.out.println("str end with rld: " + str.endsWith("o"));
+        // 8. Convert to lowercase
+        // Time: O(n), Space: O(n)
+        System.out.println("Lowercase: " + str.toLowerCase());
 
-        System.out.println("lowercase str: " + str.toLowerCase());
-        System.out.println("Uppercase str: " + str.toUpperCase());
+        // 9. Convert to uppercase
+        // Time: O(n), Space: O(n)
+        System.out.println("Uppercase: " + str.toUpperCase());
 
-        System.out.println("Concat String: " + str.concat(gtr).toUpperCase());
+        // 10. Concatenate using concat()
+        // Time: O(n + m), Space: O(n + m)
+        System.out.println("Concatenated: " + str.concat(gtr));
 
-        String st1 = "abc";
-        str = str + st1;
-        System.out.println("str join with new str: " + str);
+        // 11. Concatenate using +
+        // Time: O(n + m), Space: O(n + m)
+        String joined = str + gtr;
+        System.out.println("Joined with + : " + joined);
 
-    }
+        // 12. Substring
+        // Time: O(k), Space: O(k)
+        System.out.println("Substring from 1 to 3: " + str.substring(1, 3));
 
-    public static void StringSubstring() {
+        // 13. Replace characters
+        // Time: O(n), Space: O(n)
+        System.out.println("Replace 'l' with 'x': " + str.replace('l', 'x'));
 
-        String phy = "physics";
+        // 14. Trim whitespace
+        // Time: O(n), Space: O(n)
+        String spaced = "   Hello   ";
+        System.out.println("Trimmed: '" + spaced.trim() + "'");
 
-        for (int i = 0; i < phy.length(); i++) {
-            System.out.print(phy.substring(i) + " ");
-        }
+        // 15. Equals method
+        // Time: O(n), Space: O(1)
+        System.out.println("Equals 'Hello': " + str.equals("Hello"));
 
-        System.out.println();
-        for (int i = 0; i <= phy.length() - 1; i++) {
-            for (int j = i + 1; j <= phy.length(); j++) {
-                System.out.print(phy.substring(i, j) + " ");
-            }
-        }
+        // 16. Using StringBuilder for better performance in loops
+        // Time: O(1) per append, Space: O(n)
+        StringBuilder sb = new StringBuilder();
+        sb.append("Java").append("Rocks");
+        System.out.println("StringBuilder result: " + sb.toString());
 
-        String str = "Hello";
-        @SuppressWarnings("unused")
-        String gtr = "Hello";
-
-        str = str.substring(0, 2) + 'y' + str.substring(3);
-        System.out.println(str); // performance issue in this code
     }
 
     public static void stringInput() {
@@ -112,7 +135,7 @@ public class String01Basic {
 
         stringBasic();
         stringInput();
-        StringSubstring();
 
     }
+
 }
