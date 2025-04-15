@@ -1,4 +1,4 @@
-package Java12HashMap;
+package Java11Collections.HashMap;
 
 import java.util.HashMap;
 import java.util.Map;
