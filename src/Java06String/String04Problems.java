@@ -41,6 +41,8 @@ public class String04Problems {
     // Ques 3: Reverse Each word in String
     // Time Complexity: O(n)
     // Space Complexity: O(n)
+    // ABC CDE XYZ
+    // Reverse String: CBA EDC ZYX
     public static void reverseEachWord(String str) {
 
         StringBuilder ans = new StringBuilder();
