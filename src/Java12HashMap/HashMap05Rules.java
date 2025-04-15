@@ -1,4 +1,4 @@
-package Java11Collections.HashMap;
+package Java12HashMap;
 import java.util.*;
 public class HashMap05Rules {
     /*
