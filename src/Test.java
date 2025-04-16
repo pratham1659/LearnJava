@@ -1,35 +1,44 @@
 import java.io.*;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 
 public class Test {
 
-    public static boolean pattern(String str) {
+    public static Boolean substringPalindrom(String str1, String str2) {
 
-        StringBuilder sb = new StringBuilder(str).reverse();
-
-        return str.equals(sb.toString());
-    }
-
-    public static void substringPalindrom(String str) {
-
-        StringBuilder ans = new StringBuilder();
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-
-            if (ch != ' ') {
-                sb.append(ch);
-            } else {
-                sb.reverse();
-                ans.append(sb);
-                ans.append(" ");
-                sb = new StringBuilder();
-            }
+        if (str1.length() != str2.length()) {
+            return false;
         }
-        sb.reverse();
-        ans.append(sb);
-        System.out.println(ans);
+
+        HashMap<Character, Character> mapA = new HashMap<>();
+        HashMap<Character, Character> mapB = new HashMap<>();
+
+        for (int i = 0; i < str1.length(); i++) {
+
+            Character chA = str1.charAt(i);
+            Character chB = str2.charAt(i);
+
+            if (mapA.containsKey(chA)) {
+                if (mapA.get(chA) != chB) {
+                    return false;
+                }
+            } else {
+                mapA.put(chA, chB);
+            }
+
+            if (mapB.containsKey(chB)) {
+                if (mapB.get(chB) != chA) {
+                    return false;
+                }
+            } else {
+                mapB.put(chB, chA);
+            }
+
+        }
+
+        return true;
+
     }
 
     public static void main(String[] args) throws IOException {
@@ -39,6 +48,7 @@ public class Test {
         // int n1 = Integer.parseInt(br.readLine());
         // int n2 = Integer.parseInt(br.readLine());
         String str = br.readLine();
+        String str2 = br.readLine();
 
         // StringTokenizer st = new StringTokenizer(br.readLine());
 
@@ -58,7 +68,7 @@ public class Test {
 
         // System.out.println(pattern(str));
 
-        substringPalindrom(str);
+        System.out.println(substringPalindrom(str, str2));
 
     }
 }
