@@ -312,23 +312,6 @@ public class Java02AdvanceProgram {
 
         Scanner sc = new Scanner(System.in);
 
-        // System.out.println("Check EvenOrOdd: " + isEvenOrOdd(34));
-        // System.out.println("Check DivideBy5: " + isDivideBy5(34));
-        // System.out.println("Check LeapYearOrNot: " + isLeapYearOrNot(1997));
-        // System.out.println("The Absolute Integer: " + isAbsoluteInteger(-1));
-        // isProfitAndLoss(200, 300);
-        // System.out.println("Sum of 10 Natural numbers: " + sumOfNatural(10));
-        // System.out.println("Sum of Odd numbers: " + sumOfOddNumbers(100));
-        // System.out.println("Factorial of 5: " + factorial(5));
-        // System.out.println("Sum of Digits: " + sumOfDigits(123));
-        // System.out.println("No of Digits: " + noOfDigits(321));
-        // System.out.println("Lcm of 10 and 20: " + leastCommonMultiplier(3, 180));
-        // System.out.println("Gcd of 5 and 6: " + greatestCommonDivisor(5, 16));
-        // System.out.println("Check Prime of 49: " + checkPrime(49));
-        // System.out.println("Reverse Digit 123: " + reverseDigit(123));
-        // System.out.println("CountDigit: " + countNum());
-        // prefixPostfix(5);
-
         fibonacciSeries(9);
         System.out.println("\nCheck Palindrome: " + checkPalindromeNumber(121));
         System.out.println("Power of Two Number: " + pow(5, 3));

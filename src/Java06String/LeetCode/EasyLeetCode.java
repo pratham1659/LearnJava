@@ -202,6 +202,18 @@ public class EasyLeetCode {
         return true;
     }
 
+    // Q. 11 Rotate String
+    // https://leetcode.com/problems/rotate-string
+    public static boolean rotateString(String s, String goal) {
+
+        if (s.length() != goal.length()) {
+            return false;
+        }
+
+        String doubled = s + s;
+        return doubled.contains(goal);
+    }
+
     public static void main(String[] args) {
 
         System.out.println(removeOuterParentheses("(()())(())"));
@@ -229,6 +241,10 @@ public class EasyLeetCode {
         String st1 = "paper";
         String st2 = "title";
         System.out.println(isIsomorphic(st1, st2));
+
+        String set = "abcde";
+        String goal = "cdeab";
+        System.out.println(rotateString(set, goal));
 
     }
 

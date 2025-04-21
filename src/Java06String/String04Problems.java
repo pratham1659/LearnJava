@@ -772,6 +772,42 @@ public class String04Problems {
         return true;
     }
 
+    // Q . 14. Process of String
+    // Input: "a#b*c"
+    // Rules:
+    // -'#'- means convert next character to uppercase
+    // -'*' means skip the next character
+
+    // Output:"aB"Explanation:-'a'
+    // stays as
+    // it is-'#'
+    // applies to'b'→becomes'B'-'*'skips'c'→it'sremoved
+    public static String processString(String str) {
+
+        StringBuilder sb = new StringBuilder();
+        int i = 0;
+        while (i < str.length()) {
+            char ch = str.charAt(i);
+
+            if (ch == '#') {
+                if (i + 1 < str.length()) {
+                    Character nextChar = str.charAt(i + 1);
+                    sb.append(Character.toUpperCase(nextChar));
+                    i += 2;
+                } else {
+                    i++;
+                }
+            } else if (ch == '*') {
+                i += 2;
+            } else {
+                sb.append(ch);
+            }
+        }
+
+        return sb.toString();
+
+    }
+
     public static void main(String[] args) {
 
         // System.out.println("Check Palindrome: " + checkPalindrome("level"));
@@ -872,6 +908,9 @@ public class String04Problems {
         // System.out.println("Check IsoGram: " + isIsogramString("geeks"));
         // System.out.println("Check IsoGram: " + isIsoGramHash("geeks"));
         // System.out.println("Check IsoGram: " + isIsoGramHash("machine"));
+
+        String process = "a#b*c";
+        System.out.println(processString(process));
 
     }
 }
