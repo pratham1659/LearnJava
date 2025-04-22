@@ -3,9 +3,26 @@ import java.util.*;
 
 public class Test {
 
+    // Given a Sorted Array find its mediun
     public static void practice(int[] nums, int target) {
 
-        
+        int n = nums.length;
+        int[] reverse = new int[n];
+
+        int t = target % n;
+
+        for (int i = 0; i < n; i++) {
+
+            int newIndex = i - t;
+            if (newIndex < 0) {
+                newIndex = newIndex + n;
+            }
+            reverse[newIndex] = nums[i];
+        }
+
+        for (int i = 0; i < n; i++) {
+            nums[i] = reverse[i];
+        }
 
     }
 
@@ -23,15 +40,7 @@ public class Test {
             arr[i] = sc.nextInt();
         }
 
-        // int i = 0;
-        // while (true) {
-        // arr[i] = sc.nextInt();
-        // i++;
-        // if (i == n) {
-        // break;
-        // }
-        // }
-
+        // System.out.println(Arrays.toString(practice(arr)));
         practice(arr, target);
 
         sc.close();

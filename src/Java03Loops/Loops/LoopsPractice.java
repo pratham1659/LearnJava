@@ -1,5 +1,6 @@
 package Java03Loops.Loops;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LoopsPractice {
@@ -57,7 +58,7 @@ public class LoopsPractice {
         return num;
     }
 
-    // Ques 4: Program to find the prime factors of a numbers
+    // Ques 5: Program to find the prime factors of a numbers
     public static boolean isPrime(int num) {
 
         int count = 0;
@@ -84,7 +85,7 @@ public class LoopsPractice {
         System.out.println();
     }
 
-    // Ques 5: Convert number from binary to Decimal
+    // Ques 6: Convert number from binary to Decimal
     // 0 * 2^0, 1 * 2^1, 0 * 2^2, 1 * 2^3
     public static void binaryToDecimal(int num) {
 
@@ -112,6 +113,70 @@ public class LoopsPractice {
         return fact;
     }
 
+    // Ques 8. put even and odd array in seperate array in Java
+    public static void seperateOddEven(int n, int[] nums) {
+        int countEven = 0;
+        int countOdd = 0;
+
+        for (int i = 0; i < n; i++) {
+
+            if (nums[i] % 2 == 0) {
+                countEven++;
+            } else {
+                countOdd++;
+            }
+        }
+
+        if (countEven > 0) {
+            for (int i = 0; i < n; i++) {
+                if (nums[i] % 2 == 0) {
+                    System.out.print(nums[i] + " ");
+                }
+            }
+        }
+
+        System.out.println();
+
+        if (countOdd > 0) {
+            for (int i = 0; i < n; i++) {
+                if (nums[i] % 2 != 0) {
+                    System.out.print(nums[i] + " ");
+                }
+            }
+        }
+
+    }
+
+    // Ques 9: Find two indexes in array whose sums equal to target element
+    // numbers = [2,7,11,5] , target = 9
+    // Note Array is sorted
+    public static int[] twoSum(int[] numbers, int target) {
+
+        int[] result = new int[2];
+        result[0] = -1;
+        result[1] = -1;
+
+        int n = numbers.length;
+        int i = 0;
+        int j = n - 1;
+
+        while (i <= j) {
+            int currSum = numbers[i] + numbers[j];
+            if (currSum == target) {
+                result[0] = i + 1;
+                result[1] = j + 1;
+                break;
+            } else if (currSum > target) {
+                j--;
+            } else {
+                i++;
+            }
+        }
+
+        return result;
+    }
+
+    // Ques 10: Find the NCR Value in Java
     public static void valueNcr(int num1, int num2) {
 
         long n = factorial(num1);
@@ -124,6 +189,46 @@ public class LoopsPractice {
         System.out.println(value);
     }
 
+    // Ques 11. find smallest and 2nd smalled in an array
+    public static void s2ndSmallestInArray(int[] arr) {
+
+        int n = arr.length;
+        int eMin = Integer.MAX_VALUE;
+        int sMin = (int) (1e9);
+
+        for (int i = 0; i < n; i++) {
+            if (arr[i] < eMin) {
+
+                sMin = eMin;
+                eMin = arr[i];
+            } else if (arr[i] > eMin && arr[i] < sMin) {
+                sMin = arr[i];
+            }
+        }
+
+        System.out.println(eMin);
+        System.out.println(sMin);
+
+    }
+
+    // Ques 12. Reverse an Array without increaing the time and Space complexity
+    public static void reverseArrays(int[] arr) {
+
+        int n = arr.length;
+        int i = 0;
+        int j = n - 1;
+        while (i <= j) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+
+            i++;
+            j--;
+        }
+        System.out.println(Arrays.toString(arr));
+
+    }
+
     public static void main(String[] args) {
 
         // checkNegativeInteger();
@@ -134,5 +239,17 @@ public class LoopsPractice {
         // findFibonnaci(12);
         binaryToDecimal(1011);
         valueNcr(5, 2);
+
+        int[] oddEven = { 2, 3, 4, 5, 6, 7, 8, 9 };
+        seperateOddEven(oddEven.length, oddEven);
+
+        int[] twoSumArray = { 2, 7, 13, 15, 19 };
+        System.out.println(twoSum(twoSumArray, 9));
+
+        int[] smallArr = { 10, 12, 5, 7, 1, 4 };
+
+        s2ndSmallestInArray(smallArr);
+
+        reverseArrays(smallArr);
     }
 }

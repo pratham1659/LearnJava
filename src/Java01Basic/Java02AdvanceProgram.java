@@ -308,6 +308,17 @@ public class Java02AdvanceProgram {
         }
     }
 
+    // Ques 8: find median of an array
+    public static void findMedian(int[] arr) {
+        int n = arr.length;
+        if (n % 2 != 2) {
+            System.out.println(arr[n / 2]);
+        } else {
+            double median = (double) (arr[n / 2] + arr[(n / 2) - 1] / 2.0);
+            System.out.println(median);
+        }
+    }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -319,6 +330,9 @@ public class Java02AdvanceProgram {
         starPrintRightTriangle(5);
         reverseRightTriangle(5);
         printLeftHalfPyramid(5);
+
+        int[] arrMedian = { 1, 2, 3, 4, 5 };
+        findMedian(arrMedian);
 
         sc.close();
     }
