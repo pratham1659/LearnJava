@@ -3,26 +3,30 @@ import java.util.*;
 
 public class Test {
 
-    // Given a Sorted Array find its mediun
-    public static void practice(int[] nums, int target) {
+    public static void practice(int[] nums) {
 
         int n = nums.length;
-        int[] reverse = new int[n];
 
-        int t = target % n;
+        int maxNumber = 0;
 
         for (int i = 0; i < n; i++) {
+            maxNumber = Math.max(maxNumber, nums[i]);
+        }
 
-            int newIndex = i - t;
-            if (newIndex < 0) {
-                newIndex = newIndex + n;
+        int[] freq = new int[maxNumber + 1];
+
+        for (int i = 0; i < n; i++) {
+            freq[nums[i]]++;
+        }
+
+        int count = 0;
+        for (int i = 0; i < maxNumber + 1; i++) {
+            if (freq[i] >= 2) {
+                count++;
             }
-            reverse[newIndex] = nums[i];
         }
 
-        for (int i = 0; i < n; i++) {
-            nums[i] = reverse[i];
-        }
+        System.out.println(count);
 
     }
 
@@ -32,7 +36,6 @@ public class Test {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int target = sc.nextInt();
 
         int[] arr = new int[n];
 
@@ -40,8 +43,11 @@ public class Test {
             arr[i] = sc.nextInt();
         }
 
-        // System.out.println(Arrays.toString(practice(arr)));
-        practice(arr, target);
+        // Print array to verify input
+        System.out.println("Array elements:");
+        for (int val : arr) {
+            System.out.print(val + " ");
+        }
 
         sc.close();
 

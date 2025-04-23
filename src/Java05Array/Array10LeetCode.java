@@ -1,5 +1,6 @@
 package Java05Array;
 
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class Array10LeetCode {
@@ -104,6 +105,55 @@ public class Array10LeetCode {
         return -1;
     }
 
+    // Rotate the array from the target index element and print the results
+    public static void rotateA(int[] nums, int target) {
+        int n = nums.length;
+        int[] reverse = new int[n];
+
+        int t = target % n;
+
+        for (int i = 0; i < n; i++) {
+
+            int newIndex = i - t;
+            if (newIndex < 0) {
+                newIndex = newIndex + n;
+            }
+            reverse[newIndex] = nums[i];
+        }
+
+        for (int i = 0; i < n; i++) {
+            nums[i] = reverse[i];
+        }
+
+        System.out.println(Arrays.toString(nums));
+    }
+
+    // Rotate the array upto target times and print the array
+    // Input: nums = [1,2,3,4,5,6,7], k = 3
+    // Output: [5,6,7,1,2,3,4]
+    // Explanation:
+    // rotate 1 steps to the right: [7,1,2,3,4,5,6]
+    // rotate 2 steps to the right: [6,7,1,2,3,4,5]
+    // rotate 3 steps to the right: [5,6,7,1,2,3,4]
+    // https://leetcode.com/problems/rotate-array
+    public static void rotateTimes(int[] nums, int k) {
+        int n = nums.length;
+        int[] reverse = new int[n];
+
+        int target = k % n;
+
+        for (int i = 0; i < n; i++) {
+            int newIndex = (i + target) % n;
+            reverse[newIndex] = nums[i];
+        }
+
+        for (int i = 0; i < n; i++) {
+            nums[i] = reverse[i];
+        }
+
+        System.out.println(Arrays.toString(nums));
+    }
+
     public static void main(String[] args) {
 
         int[] arr = { 1, 2, 3 };
@@ -119,6 +169,9 @@ public class Array10LeetCode {
         int[] minHeap = { 3, 2, 1, 5, 6, 4 };
         int k = 2;
         System.out.println("Kth Largest Element: " + findKthLargest(minHeap, k));
+
+        int[] rotate = { 1, 2, 3, 4, 5, 6 };
+        // rotateA(rotate, 3);
+        rotateTimes(rotate, 3);
     }
 }
-
