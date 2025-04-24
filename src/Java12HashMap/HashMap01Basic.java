@@ -2,6 +2,7 @@ package Java12HashMap;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Map.Entry;
 
 public class HashMap01Basic {
@@ -21,41 +22,98 @@ public class HashMap01Basic {
          * Time Complexity O(1);
          */
 
-        HashMap<String, String> capitalMap = new HashMap<String, String>();
+        // 1. Creating a HashMap
+        HashMap<String, Integer> map = new HashMap<>();
 
-        capitalMap.put("India", "New Delhi");
-        capitalMap.put("India", "Patna");
-        capitalMap.put("Pakistan", "Lahor");
-        capitalMap.put("USA", "New York");
-        capitalMap.put(null, "Berlin");
-        capitalMap.put(null, "Los Angeles");
-        capitalMap.put("France", null);
-        capitalMap.remove("France");
+        // 2. put(key, value): Add elements
+        map.put("Apple", 50);
+        map.put("Banana", 30);
+        map.put("Mango", 70);
+        System.out.println("Initial Map: " + map);
 
-        System.out.println(capitalMap.get("USA"));
-        System.out.println(capitalMap.get(null));
-        System.out.println(capitalMap.get("France"));
+        // 3. get(key): Get value by key
+        System.out.println("Price of Mango: " + map.get("Mango"));
 
-        // iterator: over the keys: by using keySet()
+        // 4. containsKey(key)
+        System.out.println("Has Apple? " + map.containsKey("Apple"));
 
-        for (String key : capitalMap.keySet()) {
-            String value = capitalMap.get(key);
-            System.out.println("Key: " + key + " Value: " + value);
+        // 5. containsValue(value)
+        System.out.println("Has price 30? " + map.containsValue(30));
+
+        // 6. remove(key)
+        map.remove("Banana");
+        System.out.println("After removing Banana: " + map);
+
+        // 7. size()
+        System.out.println("Map Size: " + map.size());
+
+        // 8. isEmpty()
+        System.out.println("Is map empty? " + map.isEmpty());
+
+        // 9. replace(key, newValue)
+        map.replace("Mango", 80);
+        System.out.println("After replacing Mango price: " + map);
+
+        // 10. putIfAbsent(key, value)
+        map.putIfAbsent("Orange", 60);
+        System.out.println("After putIfAbsent: " + map);
+
+        // 11. getOrDefault(key, defaultValue)
+        System.out.println("Price of Grapes: " + map.getOrDefault("Orange", 0));
+
+        // 12. keySet()
+        System.out.println("Keys: " + map.keySet());
+
+        // 13. values()
+        System.out.println("Values: " + map.values());
+
+        // 14. entrySet() - to loop through map
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
 
-        // iterator: over the set(pair): by using
-        Iterator<Entry<String, String>> it2 = capitalMap.entrySet().iterator();
+        // 15. clear()
+        map.clear();
+        System.out.println("After clear: " + map);
 
-        System.out.println("------------------------");
-        while (it2.hasNext()) {
-            Entry<String, String> entry = it2.next();
-            System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
+        // Use Cases and Benefits getOrDefault()
+        // 1. 🔒 Avoid null values
+        // Instead of checking with containsKey() and then calling get(), you can do it
+        // all in one line.
+        int value = map.getOrDefault("someKey", 0); // if key doesn't exist, return 0 instead of null
 
+        System.out.println(value);
+
+        // 2. 🧮 Frequency counting
+        // When you're counting the number of times something occurs (like characters or
+        // words), getOrDefault() is perfect.
+        HashMap<Character, Integer> freq = new HashMap<>();
+        for (char c : "banana".toCharArray()) {
+            freq.put(c, freq.getOrDefault(c, 0) + 1);
+        }
+        System.out.println(freq); // {a=3, b=1, n=2}
+
+        // 3. 🧾 Default values for missing data
+        // Say you're checking marks for a student who might not be in the list.
+        HashMap<String, Integer> marks = new HashMap<>();
+        marks.put("Alice", 90);
+
+        int bobMarks = marks.getOrDefault("Bob", -1); // returns -1 if Bob not found
+        System.out.println("Bob's Marks: " + bobMarks);
+
+        // 4. 🧼 Cleaner code Instead of this:
+
+        int vaue;
+        if (map.containsKey("key")) {
+            vaue = map.get("key");
+            System.out.println(vaue);
+        } else {
+            value = 0;
         }
 
-        System.out.println("------------------------");
-        // literate HashMap using java 8 for each and lambda:
-        capitalMap.forEach((k, v) -> System.out.println("key =" + k + "and value = " + v));
+        // You can just write:
+        int vars = map.getOrDefault("key", 0);
+        System.out.println(vars);
 
     }
 

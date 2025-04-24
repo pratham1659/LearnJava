@@ -3,13 +3,14 @@ package Java12HashMap;
 import java.util.*;
 
 public class HashMap04Problems {
-/*
-• To access a value one must know its key.
-• HashMap doesn't allow duplicate keys but allows duplicate values. That means A single key can't       contain more than 1 value
-but more than 1 key can contain a single value.
-• HashMap allows null key also but only once and multiple null values.
-• Java HashMap maintains no order.
-*/
+    /*
+     * • To access a value one must know its key.
+     * • HashMap doesn't allow duplicate keys but allows duplicate values. That
+     * means A single key can't contain more than 1 value but more than 1 key can
+     * contain a single value.
+     * HashMap allows null key also but only once and multiple null values.
+     * Java HashMap maintains no order.
+     */
 
     public class HashMap05Internal {
 
@@ -160,12 +161,12 @@ but more than 1 key can contain a single value.
         // Two sum in Array
         public static int[] twoSum(int[] arr, int key) {
             int n = arr.length;
-            int[] ans = {-1};
+            int[] ans = { -1 };
 
             for (int i = 0; i < n; i++) {
                 for (int j = i + 1; i < n; j++) {
                     if (arr[j] == key - arr[i]) {
-                        return ans = new int[]{i, j};
+                        return ans = new int[] { i, j };
                     }
                 }
             }
@@ -182,7 +183,7 @@ but more than 1 key can contain a single value.
             while (left < right) {
                 int sum = arr[left] + arr[right];
                 if (sum == key) {
-                    return new int[]{left, right};
+                    return new int[] { left, right };
                 } else if (sum < key) {
                     left++;
                 } else {
@@ -195,14 +196,14 @@ but more than 1 key can contain a single value.
         // Two sum in Array Using HashMap
         public static int[] twoSumHashMap(int[] arr, int key) {
             int n = arr.length;
-            int[] ans = new int[]{-1};
+            int[] ans = new int[] { -1 };
 
             HashMap<Integer, Integer> map = new HashMap<>();
             for (int i = 0; i < n; i++) {
                 int partner = key - arr[i];
 
                 if (map.containsKey(partner)) {
-                    ans = new int[]{i, map.get(partner)};
+                    ans = new int[] { i, map.get(partner) };
                     return ans;
                 }
 
@@ -232,7 +233,7 @@ but more than 1 key can contain a single value.
 
         public static void main(String[] args) {
 
-            int[] arr = {1, 3, 2, 1, 4, 1, 2, 4, 3, 7};
+            int[] arr = { 1, 3, 2, 1, 4, 1, 2, 4, 3, 7 };
 
             System.out.println("Frequency: ");
             frequencyCount(arr);
@@ -243,12 +244,12 @@ but more than 1 key can contain a single value.
             System.out.println("Check Isomorphic: " + isomorphic("abccd", "xywwz"));
             System.out.println("Check Isomorphic: " + checkIsomorphic("aab", "xxy"));
 
-            int[] arrSum = {2, 7, 11, 15};
+            int[] arrSum = { 2, 7, 11, 15 };
             System.out.println("Two Sum : " + Arrays.toString(twoSum(arrSum, 9)));
             System.out.println("Two Sum Binary : " + Arrays.toString(twoSumBinary(arrSum, 9)));
             System.out.println("Two Sum HashMap: " + Arrays.toString(twoSumHashMap(arrSum, 9)));
 
-            int[] subArray = {15, -2, 1, 0, 1, 10};
+            int[] subArray = { 15, -2, 1, 0, 1, 10 };
             System.out.println("Longest SubArray: " + zeroSumlargestSubArray(subArray));
 
         }
