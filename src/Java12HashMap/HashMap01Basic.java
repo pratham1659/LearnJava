@@ -1,9 +1,7 @@
 package Java12HashMap;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Map.Entry;
 
 public class HashMap01Basic {
     public static void main(String[] args) {

@@ -8,13 +8,13 @@ public class Java01ArrayList {
     // Basic Find Even Using ArrayList
     public static void evenArrayList() {
         ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 1; i < 10; i++) {
             if (i % 2 == 0) {
                 list.add(i);
             }
         }
 
-        //Iterating ArrayList using Iterator
+        // Iterating ArrayList using Iterator
         Iterator<Integer> iter = list.iterator();
         while (iter.hasNext()) {
             System.out.print(iter.next() + " ");
@@ -22,8 +22,8 @@ public class Java01ArrayList {
         System.out.println();
     }
 
-    //Basic String Input and Iteration in ArrayList
-    public static void inputStringArrayList(){
+    // Basic String Input and Iteration in ArrayList
+    public static void inputStringArrayList() {
 
         ArrayList<String> str = new ArrayList<>();
         str.add("Mango");
@@ -31,7 +31,7 @@ public class Java01ArrayList {
         str.add("Apple");
         str.add("Banana");
 
-       //Iterating Using Iterator
+        // Iterating Using Iterator
         Iterator<String> iter = str.iterator();
         while (iter.hasNext()) {
             System.out.print(iter.next() + " ");
@@ -56,7 +56,7 @@ public class Java01ArrayList {
         System.out.println(itr);
     }
 
-    //Ques 2: Set in ArrayList
+    // Ques 2: Set in ArrayList
     public static void setArrayList() {
         System.out.print("Set and get in ArrayListClass: ");
         ArrayList<Integer> list = new ArrayList<>();
@@ -210,7 +210,6 @@ public class Java01ArrayList {
         lang1.retainAll(lang2);
         System.out.println("Common Element: " + lang1);
     }
-
 
     public static void main(String[] args) {
 
