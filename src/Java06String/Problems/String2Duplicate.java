@@ -14,7 +14,7 @@ public class String2Duplicate {
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             int idx = str.indexOf(ch, i + 1);
-            System.out.println(idx);
+            System.out.print(idx + " ");
             if (idx == -1) {
                 sb.append(ch);
             }
@@ -56,6 +56,7 @@ public class String2Duplicate {
     }
 
     // Approach - 4
+    // TimeComplexity O(n)
     public static void duplicateSetInterface(String str) {
         StringBuilder sb = new StringBuilder();
         Set<Character> set = new LinkedHashSet<>();
@@ -70,6 +71,7 @@ public class String2Duplicate {
     }
 
     // Duplicate elements in String Array
+    // TimeComplexity O(N*N)
     public static void findDuplicates(String[] str) {
 
         // Approach - 1; Time Complexity O(N)^2 -- Worst Solution

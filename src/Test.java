@@ -3,27 +3,8 @@ import java.util.*;
 
 public class Test {
 
-    public static void practice(ArrayList<Integer> arr) {
+    public static boolean practice(String str1) {
 
-        ArrayList<Integer> list = new ArrayList<>();
-
-        int i = 0;
-        int j = arr.size() - 1;
-
-        while (i < j) {
-            Integer temp = arr.get(i);
-            arr.set(i, arr.get(j));
-            arr.set(j, temp);
-
-            i++;
-            j--;
-        }
-
-        Iterator<Integer> it = arr.iterator();
-
-        while (it.hasNext()) {
-            System.out.print(it.next() + " ");
-        }
     }
 
     public static void main(String[] args) throws IOException {
@@ -31,7 +12,7 @@ public class Test {
         Scanner sc = new Scanner(System.in);
 
         // String str = sc.nextLine();
-        int n = sc.nextInt();
+        // int n = sc.nextInt();
 
         // int[] arr = new int[n];
 
@@ -39,15 +20,17 @@ public class Test {
         // arr[i] = sc.nextInt();
         // }
 
-        ArrayList<Integer> arr = new ArrayList<>();
+        // ArrayList<Integer> arr = new ArrayList<>();
 
-        arr.add(5);
-        arr.add(6);
-        arr.add(7);
-        arr.add(8);
-        arr.add(9);
-
-        practice(arr);
+        // arr.add(5);
+        // arr.add(6);
+        // arr.add(7);
+        // arr.add(8);
+        // arr.add(9);
+        // String[] str = { "Java", "JavaScript", "Python", "Ruby", "Cpp", "Java" };
+        // practice(str);
+        System.out.println(practice("{[()]}"));
+        // System.out.println(practice(str));
 
         sc.close();
 

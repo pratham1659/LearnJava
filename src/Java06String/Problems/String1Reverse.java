@@ -8,7 +8,6 @@ public class String1Reverse {
      * Using java.lang.String Buffer class provided reverse() method
      * Using java.lang.StringBuilder class provided reverse() method
      */
-
     // Approach-1
     // Time complexity : O(N)
     public static String reverseCharAt(String str) {
@@ -40,6 +39,8 @@ public class String1Reverse {
 
     // Approach-3
     // Time complexity : O(N)
+    // Input : This is Hello World
+    // Output: sihT si olleH dlroW
     public static String reverseStringBuilder(String str) {
         StringBuilder sb = new StringBuilder(str);
         return sb.reverse().toString();
@@ -65,6 +66,8 @@ public class String1Reverse {
 
     // Java Program To Reverse Each Word In String
     // Time complexity : O(NlogN)
+    // Input : This is Hello World
+    // Output: sihT si olleH dlroW
     public static String reverseWordStringArray2(String str) {
 
         String[] words = str.split(" ");

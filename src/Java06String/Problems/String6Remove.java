@@ -10,11 +10,11 @@ public class String6Remove {
     // Space Complexity: O(1)
     public static void removeWhiteSpaces(String str) {
 
-        // String trimmedString = str.trim();
-        // System.out.println(trimmedString);
+        String trimmedString = str.trim();
+        System.out.println(trimmedString);
 
-        String replaceStr = str.replaceAll("\\s", "");
-        System.out.println(replaceStr);
+        // String replaceStr = str.replaceAll("\\s", "");
+        // System.out.println(replaceStr);
 
     }
 
@@ -27,6 +27,9 @@ public class String6Remove {
     public static void removeSpecialCharacters(String str) {
 
         // Approach 1
+        // ^ (inside brackets) → Negation. This means "anything not in this set."
+        // So, [^a-zA-Z0-9] means:
+        // Match any character that is NOT a letter or digit.
         String plainStr1 = str.replaceAll("[^a-zA-Z0-9]", "");
         System.out.println(plainStr1);
     }

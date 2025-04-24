@@ -14,14 +14,13 @@ public class String3Occurrence {
         char[] chArray = str.toCharArray();
 
         for (char ch : chArray) {
-            if (!map.containsKey(ch)) {
-                map.put(ch, 1);
-            } else {
+            if (map.containsKey(ch)) {
                 int value = map.get(ch);
                 map.put(ch, value + 1);
+            } else {
+                map.put(ch, 1);
             }
         }
-
         System.out.println(map);
     }
 
@@ -69,7 +68,6 @@ public class String3Occurrence {
                 System.out.println("Non Repeated: " + entrySet.getKey());
                 break;
             }
-
         }
     }
 
