@@ -1,4 +1,4 @@
-package Java09Oops.Java04Inheritance.PersonTest;
+package Java09Oops.Java05Inheritance.PersonTest;
 
 // Example usage
 public class PersonTest {

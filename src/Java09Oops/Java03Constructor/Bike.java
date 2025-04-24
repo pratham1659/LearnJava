@@ -8,15 +8,23 @@ public class Bike {
 
     // creating a default constructor
     Bike() {
-        System.out.println("Bike is Created");
+        System.out.println("This is non parametried Constructor");
     }
 
-    // Constructor Overloading in Java
-    Bike(int i, String n) {
+    // parametried Constructor in Java
+    Bike(int id, String name) {
         // creating two arg constructor
-        id = i;
-        name = n;
+        this.id = id;
+        this.name = name;
+        System.out.println("This is parametried Constructor");
     }
+
+    // // Constructor Overloading in Java
+    // Bike(int i, String n) {
+    // // creating two arg constructor
+    // id = i;
+    // name = n;
+    // }
 
     Bike(Bike s) {
         id = s.id;
@@ -40,12 +48,15 @@ public class Bike {
     public static void main(String[] args) {
         // calling a default constructor
         Bike b1 = new Bike();
-        Bike b2 = new Bike(123, "Pratham");
-        Bike b3 = new Bike(2, "Rahul", 234);
-        Bike b4 = new Bike(b3);
         b1.display();
+
+        Bike b2 = new Bike(123, "Pratham");
         b2.display();
+
+        Bike b3 = new Bike(2, "Rahul", 234);
         b3.display();
+
+        Bike b4 = new Bike(b3);
         b4.display();
 
     }

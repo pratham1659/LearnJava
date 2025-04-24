@@ -1,4 +1,4 @@
-package Java09Oops.Java04Inheritance;
+package Java09Oops.Java05Inheritance;
 
 class Animal {
 

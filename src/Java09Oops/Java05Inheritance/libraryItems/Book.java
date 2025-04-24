@@ -1,4 +1,4 @@
-package Java09Oops.Java04Inheritance.libraryItems;
+package Java09Oops.Java05Inheritance.libraryItems;
 
 // Subclass: Book
 class Book extends LibraryItem {
