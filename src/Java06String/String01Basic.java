@@ -57,7 +57,10 @@ public class String01Basic {
 
         // 4. Comparing two strings
         // Time: O(n), Space: O(1)
-        System.out.println("Compare with gtr: " + str.compareTo(gtr));
+        String a = "aa";
+        String b = "az";
+        System.out.println("Compare with gtr: " + a.compareTo(b)); // -25
+        System.out.println("Compare with gtr: " + b.compareTo(a)); // 25
 
         // 5. Contains a substring
         // Time: O(n * m), Space: O(1)
@@ -82,6 +85,8 @@ public class String01Basic {
         // 10. Concatenate using concat()
         // Time: O(n + m), Space: O(n + m)
         System.out.println("Concatenated: " + str.concat(gtr));
+
+        System.out.println("Adding Two String: " + str + "Hello");
 
         // 11. Concatenate using +
         // Time: O(n + m), Space: O(n + m)
@@ -110,6 +115,12 @@ public class String01Basic {
         StringBuilder sb = new StringBuilder();
         sb.append("Java").append("Rocks");
         System.out.println("StringBuilder result: " + sb.toString());
+
+        // 17. Convert String to Integer and Integer to String
+        int num = -12;
+        String st = Integer.toString(num);
+        int c = Integer.parseInt(st);
+        System.out.println(c);
 
     }
 

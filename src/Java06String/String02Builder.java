@@ -127,6 +127,26 @@ public class String02Builder {
         System.out.println(sb.toString());
     }
 
+    // Reverse of String Using Two Pointer method
+    public static void reverseString(String str) {
+
+        int i = 0;
+        int j = str.length() - 1;
+
+        StringBuilder sb = new StringBuilder(str);
+
+        while (i < j) {
+            char temp = sb.charAt(i);
+            sb.setCharAt(i, sb.charAt(j));
+            sb.setCharAt(j, temp);
+
+            i++;
+            j--;
+        }
+
+        System.out.println(sb);
+    }
+
     public static void main(String[] args) {
 
         StringBuilderOperations();
@@ -137,6 +157,8 @@ public class String02Builder {
         isPalindrome3("abcdcbc");
 
         changeAlphabetCase("phYSics");
+
+        reverseString("ABCDEF");
 
     }
 

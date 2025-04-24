@@ -3,31 +3,55 @@ import java.util.*;
 
 public class Test {
 
-    public static void practice(int[] nums) {
+    public static void reverseWord(String words[]) {
 
-        int n = nums.length;
+        int i = 0;
+        int j = words.length - 1;
 
-        int maxNumber = 0;
+        while (i < j) {
 
-        for (int i = 0; i < n; i++) {
-            maxNumber = Math.max(maxNumber, nums[i]);
+            String temp = words[i];
+            words[i] = words[j];
+            words[j] = temp;
+            i++;
+            j--;
         }
+    }
 
-        int[] freq = new int[maxNumber + 1];
+    public static void practice(String str) {
 
-        for (int i = 0; i < n; i++) {
-            freq[nums[i]]++;
-        }
+        int l = str.length();
 
-        int count = 0;
-        for (int i = 0; i < maxNumber + 1; i++) {
-            if (freq[i] >= 2) {
+        int count = 1;
+        for (int i = 0; i < l; i++) {
+            if (str.charAt(i) == ' ') {
                 count++;
             }
         }
 
-        System.out.println(count);
+        String currentWord = "";
 
+        String words[] = new String[count];
+
+        int index = 0;
+
+        for (int i = 0; i < l; i++) {
+            if (str.charAt(i) != ' ') {
+                currentWord = currentWord + str.charAt(i);
+            } else {
+                words[index] = currentWord;
+                currentWord = "";
+                index++;
+
+            }
+        }
+
+        words[index] = currentWord;
+        reverseWord(words);
+
+        for (int i = 0; i < words.length; i++) {
+            System.out.print(words[i] + " ");
+        }
     }
 
     public static void main(String[] args) throws IOException {
@@ -35,19 +59,21 @@ public class Test {
 
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
+        String str = sc.nextLine();
 
-        int[] arr = new int[n];
+        // int[] arr = new int[n];
 
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
+        // for (int i = 0; i < n; i++) {
+        // arr[i] = sc.nextInt();
+        // }
 
-        // Print array to verify input
-        System.out.println("Array elements:");
-        for (int val : arr) {
-            System.out.print(val + " ");
-        }
+        // // Print array to verify input
+        // System.out.println("Array elements:");
+        // for (int val : arr) {
+        // System.out.print(val + " ");
+        // }
+
+        practice(str);
 
         sc.close();
 

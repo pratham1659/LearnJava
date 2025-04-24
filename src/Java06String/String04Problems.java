@@ -64,10 +64,150 @@ public class String04Problems {
         System.out.println("Reverse String: " + ans);
     }
 
-    // Ques 4: The string should be compressed such that consecutive
+    // Ques 4: character occurence in String
+    // I love Programming I love codeForWin.
+    // find the index of "O present the string"
+    public static void findCharacterIndex(String str) {
+
+        int n = str.length();
+        StringBuilder sb = new StringBuilder();
+        boolean first = true;
+        for (int i = 0; i < n; i++) {
+
+            if (str.charAt(i) == 'o') {
+                if (!first) {
+                    sb.append(", ");
+                }
+                sb.append(i);
+                first = false;
+            }
+        }
+
+        System.out.println(sb.toString());
+    }
+
+    // Ques 5: character occurence in String
+    // I love Programming I love codeForWin.
+    // find the index of "O present the string"
+    public static boolean match(String str, String target, int startIndex) {
+
+        int i = startIndex;
+        int j = 0;
+        while (i < str.length() && j < target.length()) {
+
+            if (str.charAt(i) != target.charAt(j)) {
+                return false;
+            }
+            i++;
+            j++;
+        }
+
+        return j == target.length();
+    }
+
+    public static void findWordIndex(String str) {
+
+        String target = "love";
+        int n = str.length();
+
+        for (int i = 0; i < n - target.length(); i++) {
+            if (match(str, target, i) == true) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
+    // Ques 6: Find Maximum Occurence of character in String
+    // Fixing Technique Brute Force Approach
+    public static void maximumOccurence(String str) {
+
+        if (str.length() == 0) {
+            System.out.println("Empty string");
+            return;
+        }
+
+        str = str.trim().toLowerCase().replaceAll("\\s", "");
+        int l = str.length();
+        int maxFreq = 0;
+        char answer = ' ';
+
+        for (int i = 0; i < l; i++) {
+
+            char fixedCharacter = str.charAt(i);
+            int currentFreq = 0;
+
+            for (int j = 0; j < l; j++) {
+                if (str.charAt(j) == fixedCharacter) {
+                    currentFreq++;
+                }
+            }
+
+            if (currentFreq > maxFreq) {
+                maxFreq = currentFreq;
+                answer = fixedCharacter;
+            }
+        }
+        System.out.println(answer);
+        System.out.println(maxFreq);
+    }
+
+    // Ques 7: Reverse order of word in String
+    // Fixing Technique Brute Force Approach
+    // codeforwin love I. programming love I.
+    public static void reverseWord(String words[]) {
+
+        int i = 0;
+        int j = words.length - 1;
+
+        while (i < j) {
+
+            String temp = words[i];
+            words[i] = words[j];
+            words[j] = temp;
+            i++;
+            j--;
+        }
+    }
+
+    public static void reverseStringWord(String str) {
+
+        int l = str.length();
+
+        int count = 1;
+        for (int i = 0; i < l; i++) {
+            if (str.charAt(i) == ' ') {
+                count++;
+            }
+        }
+
+        String currentWord = "";
+
+        String words[] = new String[count];
+
+        int index = 0;
+
+        for (int i = 0; i < l; i++) {
+            if (str.charAt(i) != ' ') {
+                currentWord = currentWord + str.charAt(i);
+            } else {
+                words[index] = currentWord;
+                currentWord = "";
+                index++;
+
+            }
+        }
+
+        words[index] = currentWord;
+        reverseWord(words);
+
+        for (int i = 0; i < words.length; i++) {
+            System.out.print(words[i] + " ");
+        }
+    }
+
+    // Ques 5: The string should be compressed such that consecutive
     // duplicates of characters are replaced with the character
     // and followed by the number of consecutive duplicates.
-
     public static void stringCompress(String str) {
         StringBuilder ans = new StringBuilder("" + str.charAt(0));
         int count = 1;
@@ -87,7 +227,7 @@ public class String04Problems {
         System.out.println(ans);
     }
 
-    // Ques 5: find Palindrome in Big String
+    // Ques 6: find Palindrome in Big String
     // Time Complexity: O(N^2)
     // Space Complexity: O(N^2)
     public static ArrayList<String> findPalindromes(String bigString) {
@@ -120,7 +260,7 @@ public class String04Problems {
         return true;
     }
 
-    // Ques 6: Add Number in String
+    // Ques 7: Add Number in String
     // Time Complexity: O(N)
     // Space Complexity: O(N)
     public static int addNumberInString(String str) {
@@ -142,7 +282,7 @@ public class String04Problems {
         return sum;
     }
 
-    // Ques 7: Common Character between two String Alphabetical Order.
+    // Ques 8: Common Character between two String Alphabetical Order.
     // Time Complexity: O(n log k)
     // Space Complexity: O(n)
     public static void CommonCharacter(String s1, String s2) {
@@ -165,7 +305,7 @@ public class String04Problems {
 
     }
 
-    // Ques 8: Convert 2nd Character in Upper Case
+    // Ques 9: Convert 2nd Character in Upper Case
     // Time Complexity: O(1)
     // Space Complexity: O(1)
     public static void makeUpperCase(String str) {
@@ -176,7 +316,7 @@ public class String04Problems {
         System.out.println(ans);
     }
 
-    // Ques 9: Sum of count of A and B in String
+    // Ques 10: Sum of count of A and B in String
     // Time Complexity: O(n)
     // Space Complexity: O(n)
     public static void countAndSumCharacter() {
@@ -813,8 +953,16 @@ public class String04Problems {
         // System.out.println("Check Palindrome: " + checkPalindrome("level"));
         // System.out.println("Check Palindrome: " + checkPalindrome("levee"));
 
-        System.out.println("\n" + palindromeSubstring("abcba"));
-        System.out.println("\n" + palindromeSubstring("abc"));
+        // System.out.println("\n" + palindromeSubstring("abcba"));
+        // System.out.println("\n" + palindromeSubstring("abc"));
+
+        String charIndex = "I love programming. I love codeforwin.";
+        // findCharacterIndex(charIndex);
+        // findWordIndex(charIndex);
+
+        // maximumOccurence(charIndex);
+
+        reverseStringWord(charIndex);
 
         // String wordStr = "I am an Online Player";
         // reverseEachWord(wordStr);
@@ -909,8 +1057,8 @@ public class String04Problems {
         // System.out.println("Check IsoGram: " + isIsoGramHash("geeks"));
         // System.out.println("Check IsoGram: " + isIsoGramHash("machine"));
 
-        String process = "a#b*c";
-        System.out.println(processString(process));
+        // String process = "a#b*c";
+        // System.out.println(processString(process));
 
     }
 }
