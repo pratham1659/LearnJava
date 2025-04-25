@@ -105,6 +105,9 @@ public class String04Problems {
         return j == target.length();
     }
 
+    // Ques 6: Word occurence in String
+    // I love Programming I love codeForWin.
+    // find the index of "O present the string"
     public static void findWordIndex(String str) {
 
         String target = "love";
@@ -117,8 +120,10 @@ public class String04Problems {
         }
     }
 
-    // Ques 6: Find Maximum Occurence of character in String
+    // Ques 7: Find Maximum Occurence of character in String
     // Fixing Technique Brute Force Approach
+    // I love Programming I love codeForWin.
+    // o
     public static void maximumOccurence(String str) {
 
         if (str.length() == 0) {
@@ -533,36 +538,6 @@ public class String04Problems {
 
     }
 
-    /*
-     * Ques 1: Maximum Occurring Character
-     * Input:
-     * str = testsample
-     * Output: e
-     * Explanation: e is the character which
-     * is having the highest frequency.
-     */
-    public static char getMaximumOccur(String line) {
-
-        int[] freq = new int[26];
-        for (char c : line.toCharArray()) {
-            freq[c - 'a']++;
-        }
-
-        char maxChar = 'a';
-        int maxFreq = 0;
-
-        for (int i = 0; i < 26; i++) {
-            if (freq[i] > maxFreq) {
-                maxFreq = freq[i];
-                maxChar = (char) (i + 'a');
-            } else if (freq[i] == maxFreq && i + 'a' < maxChar) {
-                maxChar = (char) (i + 'a');
-            }
-        }
-
-        return maxChar;
-    }
-
     // Ques 2: Sum of Numbers in Given String
     public static int sumOfNumbers(String str) {
         int sum = 0;
@@ -632,81 +607,6 @@ public class String04Problems {
         }
 
         return result.toString();
-    }
-
-    // Ques 1: Program to Check Palindrome or Not.
-    // Time Complexity: O(n)
-    // Space Complexity: O(n)
-    public static boolean isPalindromes(String str) {
-
-        String regex = "[^a-zA-Z0-9]";
-        String newInput = str.replaceAll(regex, "").toLowerCase();
-        int left = 0;
-        int right = newInput.length() - 1;
-
-        while (left < right) {
-            if (newInput.charAt(left) != newInput.charAt(right)) {
-                return false;
-            }
-            left++;
-            right--;
-        }
-        return true;
-    }
-
-    // Ques 2: Program to Check Advance Palindrome or Not.
-    // Time Complexity: O(2^n) in the worst case
-    // Space Complexity: Varies based on recursion implementation, potentially O(n)
-    public static boolean isAdvancePalindrome(String str) {
-
-        int left = 0;
-        int right = str.length() - 1;
-
-        while (left < right) {
-            if (str.charAt(left) != str.charAt(right)) {
-                return isPalindrome(str, left + 1, right) || isPalindrome(str, left, right - 1);
-            }
-            left++;
-            right--;
-        }
-
-        return true;
-    }
-
-    public static boolean isPalindrome(String s, int left, int right) {
-        while (left < right) {
-            if (s.charAt(left) != s.charAt(right)) {
-                return false;
-            }
-            left++;
-            right--;
-        }
-        return true;
-    }
-
-    public static boolean isPalindromeCheck(String word) {
-        int left = 0;
-        int right = word.length() - 1;
-        while (left < right) {
-            if (word.charAt(left) != word.charAt(right)) {
-                return false;
-            }
-            left++;
-            right--;
-        }
-        return true;
-    }
-
-    // Ques 3: Program to Check First Palindrome or Not.
-    // Time Complexity: O(n)
-    // Space Complexity: O(n)
-    public static String firstPalindrome(String[] words) {
-        for (String word : words) {
-            if (isPalindromeCheck(word)) {
-                return word;
-            }
-        }
-        return "";
     }
 
     // Ques 4: Program to Check Anagram or Not.
