@@ -1,4 +1,4 @@
-package Java09Oops.Java07Encapsulation.getterSetter;
+package Java09Oops.Java07Encapsulation;
 
 public class Car {
     private String colour;

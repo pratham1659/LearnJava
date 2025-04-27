@@ -3,6 +3,16 @@ import java.util.*;
 
 public class Test {
 
+    public class App {
+        // defining fields
+        int id;// field or data member or instance variable
+        String name;
+
+        // creating main method inside the App class
+        public static void main(String args[]) {
+        }
+    }
+
     public static void minMedals(int[] ranks) {
         int n = ranks.length;
 
@@ -39,29 +49,90 @@ public class Test {
         System.out.println(totalMedals);
     }
 
+    public static int minMovesToEqualAB(String L, int start) {
+        int N = L.length();
+        if (N % 2 != 0)
+            return -1; // Impossible if N is odd
+
+        int totalA = 0, totalB = 0;
+        for (char c : L.toCharArray()) {
+            if (c == 'a')
+                totalA++;
+            else
+                totalB++;
+        }
+
+        if (totalA == totalB)
+            return 0; // Already balanced
+
+        // Bitmask for board: 0 = 'a', 1 = 'b'
+        int board = 0;
+        for (int i = 0; i < N; i++) {
+            if (L.charAt(i) == 'b')
+                board |= (1 << i);
+        }
+
+        Queue<int[]> queue = new LinkedList<>();
+        Set<String> visited = new HashSet<>();
+
+        // state: [position, board, moves]
+        queue.offer(new int[] { start, board, 0 });
+        visited.add(start + "," + board);
+
+        while (!queue.isEmpty()) {
+            int[] state = queue.poll();
+            int pos = state[0], currBoard = state[1], moves = state[2];
+
+            // Count a's and b's in currBoard
+            int a = 0, b = 0;
+            for (int i = 0; i < N; i++) {
+                if (((currBoard >> i) & 1) == 0)
+                    a++;
+                else
+                    b++;
+            }
+            if (a == b)
+                return moves;
+
+            // Try move left
+            if (pos > 0) {
+                int nextBoard = currBoard ^ (1 << (pos - 1)); // flip between pos-1 and pos
+                String key = (pos - 1) + "," + nextBoard;
+                if (!visited.contains(key)) {
+                    visited.add(key);
+                    queue.offer(new int[] { pos - 1, nextBoard, moves + 1 });
+                }
+            }
+            // Try move right
+            if (pos < N) {
+                int nextBoard = currBoard ^ (1 << pos); // flip between pos and pos+1
+                String key = (pos + 1) + "," + nextBoard;
+                if (!visited.contains(key)) {
+                    visited.add(key);
+                    queue.offer(new int[] { pos + 1, nextBoard, moves + 1 });
+                }
+            }
+        }
+        return -1; // No solution found
+    }
+
     public static void main(String[] args) throws IOException {
 
         Scanner sc = new Scanner(System.in);
 
         // String str = sc.nextLine();
         // String str2 = sc.nextLine();
-        int n = sc.nextInt();
+        // int n = sc.nextInt();
 
-        int[] arr = new int[n];
+        // int[] arr = new int[n];
 
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
+        // for (int i = 0; i < n; i++) {
+        // arr[i] = sc.nextInt();
+        // }
 
-        // ArrayList<Integer> arr = new ArrayList<>();
-
-        // arr.add(5);
-        // arr.add(6);
-        // arr.add(7);
-        // arr.add(8);
-        // arr.add(9);
-        // String[] str = { "Java", "JavaScript", "Python", "Ruby", "Cpp", "Java" };
-        minMedals(arr);
+        String L = "aaabab";
+        int start = 3;
+        System.out.println(minMovesToEqualAB(L, start)); // Output: 2
 
         // System.out.println(practice("{[()]}"));
         // System.out.println(practice(str));
