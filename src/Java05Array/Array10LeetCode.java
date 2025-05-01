@@ -1,9 +1,49 @@
 package Java05Array;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class Array10LeetCode {
+
+    // LeetCode - EASY 2D Array
+    // Pascal Triangle
+    // Input: numRows = 5
+    // Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+    // https://leetcode.com/problems/pascals-triangle
+
+    public static List<List<Integer>> generate(int numRows) {
+
+        List<List<Integer>> ans = new ArrayList<>();
+        List<Integer> firstRow = new ArrayList<>();
+
+        firstRow.add(1);
+
+        ans.add(new ArrayList<>(firstRow));
+
+        int middleElem = 0;
+
+        for (int i = 1; i < numRows; i++) {
+
+            List<Integer> currentRows = new ArrayList<>();
+            currentRows.add(1);
+
+            for (int j = 1; j <= middleElem; j++) {
+
+                int element = ans.get(i - 1).get(j) + ans.get(i - 1).get(j - 1);
+                currentRows.add(element);
+            }
+
+            currentRows.add(1);
+
+            ans.add(new ArrayList<>(currentRows));
+            middleElem++;
+        }
+
+        return ans;
+
+    }
 
     /*
      * Input: time = [1,2,3], totalTrips = 5
@@ -155,6 +195,8 @@ public class Array10LeetCode {
     }
 
     public static void main(String[] args) {
+
+        System.out.println(generate(5));
 
         int[] arr = { 1, 2, 3 };
         System.out.println("Minimum time: " + minimumTime(arr, 5));

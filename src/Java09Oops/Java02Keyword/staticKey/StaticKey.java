@@ -1,4 +1,4 @@
-package Java09Oops.Java02Keyword;
+package Java09Oops.Java02Keyword.staticKey;
 
 public class StaticKey {
 
@@ -66,5 +66,13 @@ public class StaticKey {
         StaticKey st4 = new StaticKey(12, "Pratham");
         st4.display();
 
+    }
+
+    static public String isSum(String s1, String s2) {
+        return s1 + s2;
+    }
+
+    public static int isSum(int n1, int n2) {
+        return n1 + n2;
     }
 }

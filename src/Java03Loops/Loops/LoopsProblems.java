@@ -3,7 +3,7 @@ package Java03Loops.Loops;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class LoopsPractice {
+public class LoopsProblems {
 
     // Ques 1: Sum the previous integer, when user enter negative loop will break
     public static void checkNegativeInteger() {
