@@ -17,26 +17,11 @@ public class patternPractice {
         }
     }
 
-    // Ques 2: pyramidStar
-    // * * * * *
-    // * * * *
-    // * * *
-    // * *
-    // *
-    public static void printPyramid() {
-        for (int i = 1; i <= 5; i++) {
-            for (int j = i; j <= 5; j++) {
-                System.out.print("* ");
-            }
-            System.out.println();
-        }
-    }
-
-    // Ques 3: Hollow Rectangle star print
+    // Ques 2: Hollow Rectangle star print
     // *****
-    // * /*
-    // * /*
-    // * /*
+    // * //*
+    // * //*
+    // * //*
     // *****
     public static void printHollowStar() {
         for (int i = 1; i <= 5; i++) {
@@ -51,7 +36,7 @@ public class patternPractice {
         }
     }
 
-    // Ques 4: Triangle star pattern
+    // Ques 3: Triangle star pattern
     // *
     // * *
     // * * *
@@ -72,9 +57,9 @@ public class patternPractice {
     // * * *
     // * *
     // *
-    public static void printOppositeStarPattern() {
-        for (int i = 1; i <= 5; i++) {
-            for (int j = 1; j <= 5 + 1 - i; j++) {
+    public static void printOppositeStarPattern(int n1, int n2) {
+        for (int i = 1; i <= n1; i++) {
+            for (int j = 1; j <= (n2 + 1 - i); j++) {
                 System.out.print("* ");
             }
             System.out.println();
@@ -87,8 +72,8 @@ public class patternPractice {
     // * * *
     // * *
     // *
-    public static void printOppositeTriangleAnother() {
-        for (int i = 5; i >= 1; i--) {
+    public static void printOppositeTriangleAnother(int n1, int n2) {
+        for (int i = n1; i >= 1; i--) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
@@ -97,13 +82,14 @@ public class patternPractice {
     }
 
     // Ques 7: Star Pyramid Pattern
-    // *
-    // * *
-    // * * *
-    // * * * *
-    // * * * * *
-    // * * * * * *
+    //////// *
+    /////// * *
+    ////// * * *
+    ///// * * * *
+    //// * * * * *
+    /// * * * * * *
     public static void starPyramidPattern() {
+        System.out.println("Ques 8: Print the Star Pyramid Pattern");
         for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= 5 - i; j++) {
                 System.out.print(" ");
@@ -113,6 +99,26 @@ public class patternPractice {
             }
             System.out.println();
         }
+    }
+
+    // Ques 7: Star Pyramid Pattern
+    /// * * * * * *
+    ///// * * * *
+    ////// * * *
+    /////// * *
+    //////// *
+    public static void reverseStartPyramidPattern(int n1) {
+
+        for (int i = n1; i >= 1; i--) {
+            for (int j = 1; j <= 5 - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
     }
 
     // Ques 8: Print the top half of the pyramid
@@ -284,11 +290,11 @@ public class patternPractice {
     public static void main(String[] args) {
         printRectanglePattern1();
         printHollowStar();
-        printPyramid();
         printTriangle();
-        printOppositeStarPattern();
-        printOppositeTriangleAnother();
+        printOppositeStarPattern(5, 5);
+        printOppositeTriangleAnother(5, 5);
         starPyramidPattern();
+        reverseStartPyramidPattern(5);
         printHalfPyramid();
         printHalfBottomPyramid();
         inverseStarPattern(4);

@@ -308,6 +308,86 @@ public class NumericalPattern {
         }
     }
 
+    // Ques 10.1: Numeric Triangle Pattern - 4
+    ///////// 1
+    /////// 1 2 1
+    ///// 1 2 3 2 1
+    /// 1 2 3 4 3 2 1
+    public static void anotherTrianglePattern(int n) {
+
+        for (int i = 1; i <= n; i++) {
+
+            // print space (row - i)
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            // print 1 to i
+            for (int k = 1; k <= i; k++) {
+                System.out.print(k);
+            }
+
+            // print i-1 to 1
+            for (int l = i - 1; l >= 1; l--) {
+                System.out.print(l);
+            }
+
+            System.out.println();
+        }
+    }
+
+    // Ques 11: Hollow Triangle
+    ///// 1
+    //// 2 2
+    /// 3 //3
+    // 4444444
+    public static void printHollowTriangle(int n) {
+
+    }
+
+    // Ques 11: Numeric Pattern Repeat
+    // 1 2 3 4 5
+    // 2 3 4 5 1
+    // 3 4 5 1 2
+    // 4 5 1 2 3
+    // 5 1 2 3 4
+    public static void numercPatternRepeat(int n) {
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j <= n; j++) {
+                System.out.print(j + " ");
+            }
+            for (int k = 1; k <= i - 1; k++) {
+                System.out.print(k + " ");
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    // Ques 12: Numerical Pattern Odd and Even
+    // 12121
+    // 21212
+    // 12121
+    // 21212
+    // 12121
+    public static void numericPatternOddEven(int n) {
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if ((i + j) % 2 == 0) {
+                    System.out.print("1");
+                } else {
+                    System.out.print("2");
+                }
+            }
+
+            System.out.println();
+        }
+
+    }
+
     // Ques 11: Numeric Rectangle Pattern Print Advance
     // 1 2 3 4 5 4 3 2 1
     // 1 2 3 4 * 4 3 2 1
@@ -853,6 +933,7 @@ public class NumericalPattern {
         NumericInversePattern3(4);
         NumericInverseTriangle3(4);
         NumericTrianglePattern4(4);
+        numercPatternRepeat(5);
         alphabetPattern1(3);
         alphabetPatternAnother1(3);
         alphabetPattern2(3);

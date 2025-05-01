@@ -18,7 +18,7 @@ public class LoopLecture {
         Scanner sc = new Scanner(System.in);
         for (int i = 1; i >= 1; i++) {
             int num = sc.nextInt();
-            if (num % 2 == 0) {
+            if (nums == num) {
                 System.out.println("found");
                 break;
             }
@@ -61,26 +61,26 @@ public class LoopLecture {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt(); // how many inputs
+        // Scanner sc = new Scanner(System.in);
+        // int n = sc.nextInt(); // how many inputs
 
-        int[] arr = new int[n];
+        // int[] arr = new int[n];
 
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt(); // take input one by one
-        }
+        // for (int i = 0; i < n; i++) {
+        // arr[i] = sc.nextInt(); // take input one by one
+        // }
 
-        System.out.println("Array:");
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
+        // System.out.println("Array:");
+        // for (int num : arr) {
+        // System.out.print(num + " ");
+        // }
 
-        takeInput(5);
-        doWhileLoop(10);
+        // takeInput(5);
+        // doWhileLoop(10);
         forLoopInput(5);
-        whileLoopContinous();
+        // whileLoopContinous();
 
-        sc.close();
+        // sc.close();
     }
 
 }

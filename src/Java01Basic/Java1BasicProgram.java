@@ -1,8 +1,9 @@
 package Java01Basic;
 
 import java.io.IOException;
+import java.util.Scanner;
 
-public class Java01BasicProgram {
+public class Java1BasicProgram {
 
     // Ques 1: Logic to find diameter, circumference and area of circle
     public static void areaCircle(int rad) {
@@ -47,8 +48,6 @@ public class Java01BasicProgram {
 
         double ans = Math.pow(value, pow);
 
-        // System.out.println(ans);
-
         return ans;
     }
 
@@ -87,7 +86,7 @@ public class Java01BasicProgram {
 
     // Ques 8: program to find angles of triangle if two angles are given
     public static void findAngle(int a1, int a2) {
-        System.out.println("8: program to find angles of triangle if two angles are given");
+        System.out.println("Ques 8: program to find angles of triangle if two angles are given");
 
         int a3 = 180 - (a1 + a2);
 
@@ -316,7 +315,141 @@ public class Java01BasicProgram {
         }
     }
 
+    // Ques 26: Find EvenOdd of integer
+    static void evenOdd(int num) {
+        System.out.println("Ques 26: Find EvenOdd of integer");
+        if (num % 2 == 0) {
+            System.out.println("This is Even Number");
+        } else {
+            System.out.println("This is Odd Number");
+        }
+    }
+
+    // Ques 27: print the absolute value of that integer A
+    static void absoluteInt(int num) {
+        System.out.println("Ques 27: print the absolute value of that integer A");
+        if (num < 0) {
+            num = num * (-1);
+        }
+        System.out.println("This is Absolute " + num);
+    }
+
+    // Ques 28: If cost price and selling price of an item is
+    // input through the keyboard, write a program to
+    // determine whether the seller has made profit or
+    // incurred loss. Also determine how much profit he
+    // made or loss he incurred.
+    static void profitLoss(int cp, int sp) {
+        System.out.println("Ques 5: cost price and selling price");
+        int profit = 0;
+        profit = sp - cp;
+        if (sp > profit) {
+            System.out.println("You are in " + profit + " Profit");
+        } else {
+            int loss = cp - sp;
+            System.out.println("You Are in Loss " + loss);
+        }
+    }
+
+    // Ques 29: Given the length and breadth of a rectangle,
+    // write a program to find whether the area of the
+    // rectangle is greater than its perimeter.
+    public static void maxRectangle(int l, int b) {
+        System.out.println("Ques 29: Given the length and breadth of a rectangle");
+        int area = 0;
+        int peri = 0;
+
+        area = l * b;
+        peri = 2 * (l + b);
+
+        if (area > peri) {
+            System.out.println("Area is Greater");
+        } else if (peri > area) {
+            System.out.println("Perimeter is Greater");
+        } else {
+            System.out.println("Both are Equal");
+        }
+    }
+
+    // Ques 30: Take input percentage of a student and
+    // print the Grade according to marks:
+    // 1) 90-100 Excellent
+    // 2) 80-90 Very Good
+    // 3) 70-80 Good
+    // 4) 60-70 Can do better
+    // 5) 50-60 Average
+    // 40-50 Below Average
+    // 7) ‹40 Fail 0-100
+    public static void marks(int marks) {
+        System.out.println("Ques 30: Use of Swtich Keyword");
+        if (marks <= 100) {
+            if (marks >= 90) {
+                System.out.println("Excellent");
+            } else if (marks >= 80) {
+                System.out.println("Very Good");
+            } else if (marks >= 70) {
+                System.out.println("Good");
+            } else if (marks >= 60) {
+                System.out.println("Can do better");
+            } else if (marks >= 50) {
+                System.out.println("Average");
+            } else if (marks >= 40) {
+                System.out.println("Below Average");
+            } else {
+                System.out.println("Fail");
+            }
+        } else {
+            System.out.println("Invalid Input");
+        }
+    }
+
+    // Ques 31: Advance problem in ifElse
+    // even which are greater than 2 (YES)
+    // ODD or == 2 (NO)
+    public static void AdvanceProblem1(int n) {
+
+        if (n >= 4 && n % 2 == 0) {
+            System.out.println("YES");
+        } else {
+            System.out.println("No");
+        }
+    }
+
+    // Ques 32 : Print Multiplication Table
+    public static void MultiTable(int num) {
+
+        for (int i = 1; i <= num; i++) {
+            System.out.println(num + "X" + i + "=" + num * i);
+        }
+    }
+
+    // Ques 11 : Count the digit in number
+    public static void countDigit(int num) {
+        System.out.println("Ques 11 : Count the digit in number");
+
+        int count = 0;
+        while (num > 0) {
+            num = num / 10;
+            count++;
+        }
+        System.out.println(count);
+    }
+
+    // Ques 12 : Sum of Positive Number
+    public static void sumOfDigit(int num) {
+        System.out.println("Ques 12 : Sum of Positive Number");
+
+        int sum = 0;
+        while (num > 0) {
+            int digit = num % 10;
+            sum += digit;
+            num = num / 10;
+        }
+        System.out.println(sum);
+    }
+
     public static void main(String[] args) throws IOException {
+
         areaCircle(10);
         centiToKm(173);
         CelsiusToFarhenheit(32, 205);
@@ -344,10 +477,22 @@ public class Java01BasicProgram {
         checkVowel('w');
         checkDigit('A');
         checkUppercase('a');
-
         findDaysWeek(7);
-
         findDaysInMonth(12);
+        evenOdd(34);
+        absoluteInt(-34);
+        profitLoss(230, 270);
+        maxRectangle(25, 50);
+        marks(89);
+
+        absoluteInt(-89);
+        profitLoss(230, 290);
+        maxRectangle(35, 50);
+        marks(78);
+        AdvanceProblem1(34);
+        MultiTable(9);
+        countDigit(456);
+        sumOfDigit(890);
 
     }
 }

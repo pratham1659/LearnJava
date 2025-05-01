@@ -1,8 +1,8 @@
-package Java01Basic;
+package Java02Advance;
 
 import java.util.Scanner;
 
-public class Java02AdvanceProgram {
+public class JavaAdvanceProgram {
 
     // Ques 1: program to find the Least Common Multiple (LCM) of two numbers.
     public static int leastCommonMultiplier(int num1, int num2) {
@@ -242,7 +242,7 @@ public class Java02AdvanceProgram {
         return result;
     }
 
-    // Ques 5: Program to check Armstrong
+    // Ques 20: Program to check Armstrong
     public static boolean checkArmstrong(int num) {
         int originalNumber = num;
         int finalNumber = 0;
@@ -257,7 +257,7 @@ public class Java02AdvanceProgram {
         return finalNumber == originalNumber;
     }
 
-    // Ques 6: Program to print Star Right Triangle
+    // Ques 21: Program to print Star Right Triangle
     public static void starPrintRightTriangle(int maxRows) {
         int rows = 0;
         while (rows < maxRows) {
@@ -272,7 +272,7 @@ public class Java02AdvanceProgram {
         }
     }
 
-    // Ques 6: Program to print Reverse Right Triangle
+    // Ques 22: Program to print Reverse Right Triangle
     public static void reverseRightTriangle(int maxRows) {
         int rows = maxRows;
         while (rows > 0) {
@@ -287,7 +287,7 @@ public class Java02AdvanceProgram {
         }
     }
 
-    // Ques 7: Program to print Left Half Triangle
+    // Ques 23: Program to print Left Half Triangle
     public static void printLeftHalfPyramid(int maxRows) {
         int rows = maxRows;
         while (rows > 0) {
@@ -308,7 +308,7 @@ public class Java02AdvanceProgram {
         }
     }
 
-    // Ques 8: find median of an array
+    // Ques 24: find median of an array
     public static void findMedian(int[] arr) {
         int n = arr.length;
         if (n % 2 != 2) {
@@ -316,6 +316,94 @@ public class Java02AdvanceProgram {
         } else {
             double median = (double) (arr[n / 2] + arr[(n / 2) - 1] / 2.0);
             System.out.println(median);
+        }
+    }
+
+    // Ques 25: Take positive integer input and tell if it
+    // is a three-digit number or not.
+    static void ThreeDigit(int num) {
+        if (num > 9 && num < 100) {
+            System.out.println("Two Digit Number");
+        } else if (num > 99 && num < 1000) {
+            System.out.println("Three Digit Number");
+        } else {
+            System.out.println("Invalid Number");
+        }
+    }
+
+    // Ques 26: Take positive integer input and tell if it
+    // is divisible by 5 and 3.
+
+    static void divideBy5and3(int num) {
+        if (num % 5 == 0 || num % 3 == 0) {
+            System.out.println("Its Divisible");
+        } else {
+            System.out.println("Invalid Number");
+        }
+    }
+
+    static void divideBy5and3Ternary(int num) {
+        boolean val = ((num % 5 == 0) && (num % 3 == 0)) ? true : false;
+
+        System.out.println(val);
+    }
+
+    // Ques 27: Take 3 positive integers input and print
+    // the greatest of them.
+
+    static void GreatestNum(int A, int B, int C) {
+        if (A > B && A > C) {
+            System.out.println(A + " is Greatest");
+        } else if (B > A && B > C) {
+            System.out.println(B + " is Greatest");
+        } else {
+            System.out.println(C + " is Greatest");
+        }
+    }
+
+    // Ques 28: If the ages of Ram, Shyam and Ajay are input
+    // through the keyboard, write a program to
+    // determine the youngest of the three.
+    static void YoungAge(int A, int B, int C) {
+        if (A < B && A < C) {
+            System.out.println(A + " is Younger");
+        } else if (B < A && B < C) {
+            System.out.println(B + " is Younger");
+        } else {
+            System.out.println(C + " is Younger");
+        }
+    }
+
+    // Ques 29: Take 3 numbers input and tell if they
+    // can be the sides of a triangle.
+    static void checkTriangle(int A, int B, int C) {
+        if ((A + B) > C && (A + C) > B && (B + C) > A) {
+            System.out.println("Valid Triangle");
+        } else {
+            System.out.println("Invalid Triangle");
+        }
+    }
+
+    // Ques 30: Take positive integer input and tell if it
+    // is divisible by 5 or 3 but not divisible by 15.
+    static void divisible3or5not15(int num) {
+
+        /*
+         * if(num % 3 ==0 || num % 5 == 0) {
+         * if(num % 15 == 0){
+         * System.out.println("Not Divisible");
+         * }else {
+         * System.out.println(num + " is Divisible by 3 or 5");
+         * }
+         * }else{
+         * System.out.println("Not Divisible");
+         * }
+         */
+
+        if (((num % 3) == 0 || (num % 5) == 0) && (num % 15 != 0)) {
+            System.out.println(num + " is Divisible by 3 or 5 but not 15");
+        } else {
+            System.out.println("Not Divisible");
         }
     }
 
@@ -333,6 +421,19 @@ public class Java02AdvanceProgram {
 
         int[] arrMedian = { 1, 2, 3, 4, 5 };
         findMedian(arrMedian);
+
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
+
+        ThreeDigit(A);
+        divideBy5and3(A);
+        divideBy5and3Ternary(A);
+        GreatestNum(A, B, C);
+        YoungAge(A, B, C);
+
+        checkTriangle(A, B, C);
+        divisible3or5not15(A);
 
         sc.close();
     }
