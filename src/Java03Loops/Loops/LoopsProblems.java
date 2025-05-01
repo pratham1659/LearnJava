@@ -9,7 +9,7 @@ public class LoopsProblems {
     public static void checkNegativeInteger() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter negative to break: ");
-        int num = sc.nextInt();
+        int num = 0;
         int sum = 0;
 
         // Print the sum of the stream of integers in the input.

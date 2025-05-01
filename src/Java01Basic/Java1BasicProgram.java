@@ -1,7 +1,6 @@
 package Java01Basic;
 
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Java1BasicProgram {
 

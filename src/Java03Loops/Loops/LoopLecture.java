@@ -77,7 +77,7 @@ public class LoopLecture {
 
         // takeInput(5);
         // doWhileLoop(10);
-        forLoopInput(5);
+        // forLoopInput(5);
         // whileLoopContinous();
 
         // sc.close();
