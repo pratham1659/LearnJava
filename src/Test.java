@@ -3,29 +3,14 @@ import java.util.*;
 
 public class Test {
 
-    public static int practice(int[] nums) {
+    public static void practice(int[] nums) {
 
-        if (nums == null || nums.length == 0) {
-            return 0;
+        int i = 0;
+        int j = 0;
+
+        while (i < j) {
+
         }
-
-        int n = nums.length;
-        int currentSum = nums[0];
-        int maximumSum = nums[0];
-
-        for (int i = 1; i < n; i++) {
-
-            int option1 = nums[i];
-            int option2 = nums[i] * currentSum;
-
-            currentSum = Math.max(option1, option2);
-
-            if (currentSum > maximumSum) {
-                maximumSum = currentSum;
-            }
-        }
-
-        return maximumSum;
 
     }
 
@@ -46,7 +31,8 @@ public class Test {
 
         // int n1 = 5;
         // int n2 = 5;
-        System.out.println(practice(arr));
+        practice(arr);
+        // System.out.println(practice(arr));
         // System.out.println(practice(str));
 
         sc.close();

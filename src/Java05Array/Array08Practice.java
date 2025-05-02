@@ -49,73 +49,156 @@ public class Array08Practice {
         System.out.println();
     }
 
-    // 1. Find the total number of pairs in the Array whose sum is equal key.
+    // Ques 1: Program to reverse an array.
+    public static void reverseArray(int[] arr) {
+        int i = 0;
+        while (i < arr.length / 2) {
+            int swap = arr[i];
+            arr[i] = arr[(arr.length - i) - 1];
+            arr[(arr.length - i) - 1] = swap;
+            i++;
+        }
+    }
 
+    // Ques 2: Program to check is the array is palindrome or not.
+    public static boolean checkPalindrome(int[] arr) {
+        int i = 0;
+        while (i < arr.length) {
+            if (arr[i] != arr[(arr.length - 1) - i]) {
+                return false;
+            }
+            i++;
+        }
+        return true;
+    }
+
+    // Function called checkPalindrome
+    public static void checkBooleanResult(int[] arr) {
+        boolean result = checkPalindrome(arr);
+
+        if (result) {
+            System.out.println("The array is palindrome");
+        } else {
+            System.out.println("The array is not palindrome");
+        }
+    }
+
+    // Ques 3: find the frequncy of the elements
+    // input: int[] nums = [1, 2, 2, 3, 3, 4, 5, 5, 6, 6]
+    // Ouput: 1 -> 1
+    // 2 -> 2
+    // 3 -> 2
+    // 4 -> 1
+    // 5 -> 2
+    // 6 -> 2
+    public static void frequncyElement(int[] arr) {
+        int n = arr.length;
+        int max = arr[0];
+
+        for (int i = 0; i < n; i++) {
+
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+        int newSize = (max + 1);
+        int[] freq = new int[newSize];
+
+        for (int i = 0; i < n; i++) {
+            freq[arr[i]]++;
+        }
+
+        for (int i = 0; i < newSize; i++) {
+            if (freq[i] > 0) {
+                System.out.println(i + " -> " + freq[i]);
+            }
+        }
+    }
+
+    // Ques 4: Print of SumOfSubArray
+    // Input: 1 2 3
+    // Output:
+    // 0 -> 0 = 1
+    // 0 -> 1 = 3
+    // 0 -> 2 = 6
+    // 1 -> 1 = 2
+    // 1 -> 2 = 5
+    // 2 -> 2 = 3
+
+    // Brute Fore Approach
+    public static void sumOfSubArray(int[] nums) {
+        int n = nums.length;
+
+        for (int i = 0; i < n; i++) {
+            int sum = 0;
+            for (int j = i; j < n; j++) {
+                sum += nums[j];
+                System.out.println(i + " -> " + j + " = " + sum);
+            }
+        }
+    }
+
+    // Ques 5. Find the total number of pairs in the Array whose sum is equal key.
+    // int[] arr1 = { 1, 2, 3, 4, 5 };
+    // int key1 = 5;System.out.println("Total Pairs: "+
+    // countPairs(arr1, key1)); // Output: 2
+
+    // int[] arr2 = {1, 1, 1, 1};
+    // int key2 = 2;
+    // System.out.println("Total Pairs: " + countPairs(arr2, key2)); // Output: 6
+
+    // int[] arr3 = {2, 3, 4, 6, 7};
+    // int key3 = 9;
+    // System.out.println("Total Pairs: " + countPairs(arr3, key3)); // Output: 2
     public static int countPairs(int[] arr, int key) {
-
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] + arr[j] == key) {
+                    System.out.println("Pair: (" + arr[i] + ", " + arr[j] + ")");
                     count++;
                 }
             }
         }
-
         return count;
     }
 
-    // 2. Count the number of triplets whose sum is equal to the given value x.
-    public static int countTriplets(int[] arr, int key) {
+    // Ques 6. Count the number of triplets whose sum is equal to the given value x.
+    // int[] arr1 = { 1, 2, 3, 4, 5 };
+    // int key1 = 9;System.out.println("Total Triplets: "+
+    // countTriplets(arr1, key1)); // (2,3,4), (1,3,5)
 
+    // int[] arr2 = {0, 1, 2, 3, 4, 5};
+    // int key2 = 6;
+    // System.out.println("Total Triplets: " + countTriplets(arr2, key2)); //
+    // Multiple triplets
+
+    // int[] arr3 = {1, 1, 1, 1};
+    // int key3 = 3;
+    // System.out.println("Total Triplets: " + countTriplets(arr3, key3)); // All 1s
+    public static int countTriplets(int[] arr, int key) {
         int count = 0;
+        System.out.println("Triplets summing to " + key + ":");
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
                 for (int k = j + 1; k < arr.length; k++) {
                     if (arr[i] + arr[j] + arr[k] == key) {
+                        System.out.println("(" + arr[i] + ", " + arr[j] + ", " + arr[k] + ")");
                         count++;
                     }
                 }
             }
         }
-
         return count;
     }
 
-    // 3. Maximum Sum possible for all the subarrays
-    // Kadane`s Algorithm
-    // Time and Space :
+    // Ques 7. Find Substing of Max Sum Sub Array
+    // Time and Space : O(N) and O(1)
     // Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
     // Output: 6
     // Input: nums = [1]
     // Output: 1
-    public static int maximumSumArray(int[] nums) {
-
-        if (nums == null || nums.length == 0) {
-            return 0;
-        }
-
-        int n = nums.length;
-        int currentSum = nums[0];
-        int maximumSum = nums[0];
-
-        for (int i = 1; i < n; i++) {
-
-            int option1 = nums[i];
-            int option2 = nums[i] + currentSum;
-
-            currentSum = Math.max(option1, option2);
-
-            if (currentSum > maximumSum) {
-                maximumSum = currentSum;
-            }
-        }
-
-        return maximumSum;
-
-    }
-
-    // 7. Find Substing of Max Sum Sub Array
     public static int maxSubArray(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
@@ -132,7 +215,14 @@ public class Array08Practice {
         return maxSum;
     }
 
-    // 8. Find Substing of Max Product Sub Array
+    // Ques 4. Find Substing of Max Product Sub Array
+    // Time and Space : O(N) and O(1)
+    // Input: nums=[2,3,-2,4]
+    // Output:6
+    // Explanation:[2,3] has the largest product 6.
+    // Input: nums = [-2,0,-1]
+    // Output: 0
+    // Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
     public static int maxProductSubArray(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
@@ -155,7 +245,81 @@ public class Array08Practice {
         return ans;
     }
 
-    // 9. Maximum Three Digits in Array
+    // Ques 5: SubarrayPrinter
+    // Input: { 1, 2, 3 };
+    // output: 1, 1 2, 1 2 3, 2, 2 3, 3
+    public static void SubarrayPrinter(int[] nums) {
+        int[] arr = { 1, 2, 3 };
+
+        int n = arr.length;
+
+        for (int start = 0; start < n; start++) {
+            for (int end = start; end < n; end++) {
+                for (int i = start; i <= end; i++) {
+                    System.out.print(arr[i] + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
+
+    // Ques 1: Insert element in Array
+    public static int[] insertInArray(int[] arr, int index, int value) {
+        if (index >= 0 && index < arr.length) {
+
+            int[] newArr = new int[arr.length + 1];
+            for (int i = 0, j = 0; i < newArr.length; i++) {
+                if (i == index) {
+                    newArr[i] = value;
+                } else {
+                    newArr[i] = arr[j++];
+                }
+            }
+            return newArr;
+        } else {
+            return arr;
+        }
+    }
+
+    // Ques 2: Delete element in Array
+    public static int[] deleteElement(int[] array, int index) {
+        if (index >= 0 && index < array.length) {
+            int[] newArray = new int[array.length - 1];
+            for (int i = 0, j = 0; i < array.length; i++) {
+                if (i != index) {
+                    newArray[j++] = array[i];
+                }
+            }
+            return newArray;
+        } else {
+            System.out.println("Invalid index. Element not deleted.");
+            return array; // Return original array if index is invalid
+        }
+    }
+
+    // Ques 3 : Insert element in new Array
+    public static int[] checkArray(int[] arr, int value, int position) {
+
+        int n = arr.length;
+        int ans[] = new int[n + 1];
+        int i = 0;
+        int j = 0;
+
+        while (i < n + 1) {
+            if (i == position - 1) {
+                ans[i] = value;
+            } else {
+                ans[i] = arr[j];
+                j++;
+            }
+            i++;
+        }
+
+        return ans;
+
+    }
+
+    // Ques 9. Maximum Three Digits in Array
     public static int maximumProduct(int[] nums) {
 
         Arrays.sort(nums);
@@ -170,17 +334,7 @@ public class Array08Practice {
         return Math.max(maxProduct1, maxProduct2);
     }
 
-    public static void checkBooleanResult(int[] arr) {
-        boolean result = checkPalindrome(arr);
-
-        if (result) {
-            System.out.println("The array is palindrome");
-        } else {
-            System.out.println("The array is not palindrome");
-        }
-    }
-
-    // Create a program to find number of occurrences of an element in an array.
+    // Ques 10: program to find number of occurrences of an element in an array.
     public static int occurrencesArray(int[] arr, int num) {
         int count = 0;
         int i = 0;
@@ -194,60 +348,28 @@ public class Array08Practice {
         return count;
     }
 
-    // Create a program to find the maximum and minimum element in an array.
-    public static int minArray(int[] arr) {
+    // Ques 11: Program to find the maximum and minimum element in an array.
+    public static int minMaxArray(int[] arr) {
         if (arr.length == 0) {
             return Integer.MIN_VALUE;
         }
         int min = arr[0];
+        int max = arr[0];
         int i = 1;
         while (i < arr.length) {
             if (min > arr[i]) {
                 min = arr[i];
             }
-            i++;
-        }
-        return min;
-    }
 
-    public static int maxArray(int[] arr) {
-        if (arr.length == 0) {
-            return Integer.MAX_VALUE;
-        }
-        int max = arr[0];
-        int i = 1;
-        while (i < arr.length) {
             if (max < arr[i]) {
                 max = arr[i];
             }
             i++;
         }
-        return max;
+        return min + max;
     }
 
-    public static boolean isIncreasedArray(int[] arr) {
-        int i = 1;
-        while (i < arr.length) {
-            if (arr[i] >= arr[i - 1]) {
-                return true;
-            }
-            i++;
-        }
-        return false;
-    }
-
-    public static boolean isDecreasedArray(int[] arr) {
-        int i = 1;
-        while (i < arr.length) {
-            if (arr[i] <= arr[i - 1]) {
-                return true;
-            }
-            i++;
-        }
-        return false;
-    }
-
-    // Create a program to return a new array deleting a specific element.
+    // Ques 12: Program to return a new array deleting a specific element.
     public static int[] deleteArray(int[] arr, int numToDel) {
         int count = 0;
         int i = 0;
@@ -275,30 +397,6 @@ public class Array08Practice {
         }
 
         return newArray;
-    }
-
-    // Create a program to reverse an array.
-
-    public static void reverseArray(int[] arr) {
-        int i = 0;
-        while (i < arr.length / 2) {
-            int swap = arr[i];
-            arr[i] = arr[(arr.length - i) - 1];
-            arr[(arr.length - i) - 1] = swap;
-            i++;
-        }
-    }
-
-    // Create a program to check is the array is palindrome or not.
-    public static boolean checkPalindrome(int[] arr) {
-        int i = 0;
-        while (i < arr.length) {
-            if (arr[i] != arr[(arr.length - 1) - i]) {
-                return false;
-            }
-            i++;
-        }
-        return true;
     }
 
     public static int[] mergeArray(int[] arr1, int[] arr2) {
@@ -852,7 +950,7 @@ public class Array08Practice {
         Scanner sc = new Scanner(System.in);
         // int[] arr = inputArray();
         // int[] numArray = inputArray();
-        int[][] num2DArray = input2DArray();
+        // int[][] num2DArray = input2DArray();
 
         // int sum = arraySum(numArray);
         // int avg = arrayAverage(numArray);
@@ -862,6 +960,14 @@ public class Array08Practice {
         // System.out.print("Enter the element to find: ");
         // int num = sc.nextInt();
         // System.out.println( occurrencesArray(numArray, num));
+
+        // System.out.println(minMaxArray(arr));
+
+        int[] arr = { 1, 2, 4, 5, 6 }; // Example array
+        System.out.println("Insert in Array:" + Arrays.toString(insertInArray(arr, 2, 3)));
+        System.out.println("Delete in Array: " + Arrays.toString(deleteElement(arr, 3)));
+
+        System.out.println(Arrays.toString(checkArray(arr, 3, 3)));
 
         // System.out.println(minArray(numArray));
         // System.out.println(maxArray(numArray));
@@ -886,24 +992,24 @@ public class Array08Practice {
 
         // calculateSumAndAverage(num2DArray);
 
-        int sum = calculateDiagonalSum(num2DArray);
-        System.out.println("Sum of diagonal elements: " + sum);
+        // int sum = calculateDiagonalSum(num2DArray);
+        // System.out.println("Sum of diagonal elements: " + sum);
 
-        int[] arr = { 6, 1, 2, 1, 9, 9, 3, 1, 2, 6, 8, 6, 5, 9, 6 };
-        CountDuplicate(arr);
+        // int[] arr = { 6, 1, 2, 1, 9, 9, 3, 1, 2, 6, 8, 6, 5, 9, 6 };
+        // CountDuplicate(arr);
 
-        int[] i = { 1, 5, 3, 1, 2, 8, 9 };
-        CountOfIntegersInAnArrayUsingHashMap(i);
+        // int[] i = { 1, 5, 3, 1, 2, 8, 9 };
+        // CountOfIntegersInAnArrayUsingHashMap(i);
 
-        int[] A = { 7, 5, 6, 15, 12, 9, 3 };
-        System.out.println(SumOfNumbersInAnArrayExcludingTheNumbersFrom6To9(A));
+        // int[] A = { 7, 5, 6, 15, 12, 9, 3 };
+        // System.out.println(SumOfNumbersInAnArrayExcludingTheNumbersFrom6To9(A));
 
-        int[] inputArray = { 1, 2, 3, 4, 5 };
-        SwapFirstIndexvaluefromLastIndexValue(inputArray);
+        // int[] inputArray = { 1, 2, 3, 4, 5 };
+        // SwapFirstIndexvaluefromLastIndexValue(inputArray);
 
-        for (int num : inputArray) {
-            System.out.print(num + " ");
-        }
+        // for (int num : inputArray) {
+        // System.out.print(num + " ");
+        // }
         sc.close();
 
     }
