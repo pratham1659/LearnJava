@@ -2,12 +2,121 @@ package Java05Array;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.PriorityQueue;
 
 public class Array10LeetCode {
 
-    // LeetCode - EASY 2D Array
+    // Ques 1: Leetcode - Majority Element
+    // Find the element that appears more than ⌊n / 2⌋ times in the array.
+    // Boyer-Moore Voting Algorithm. Runs in linear time O(n) and uses O(1) space.
+    // https://leetcode.com/problems/majority-element
+    public static int majorityElement(int[] nums) {
+
+        int count = 0;
+        int answer = -1;
+        int n = nums.length;
+
+        for (int i = 0; i < n; i++) {
+
+            if (count == 0) {
+                answer = nums[i];
+                count++;
+            } else {
+
+                if (answer == nums[i]) {
+                    count++;
+                } else {
+                    count--;
+                }
+            }
+        }
+
+        if (count > n / 2) {
+            System.out.println("Majority element: " + answer);
+        } else {
+            System.out.println("No majority element");
+        }
+
+        return answer;
+    }
+
+    // Ques 2 : Leetcode - Majority Element 2
+    // Input: nums = [3,2,3]
+    // Output: [3]
+    // https://leetcode.com/problems/majority-element-ii
+    public static List<Integer> majorityElementII(int[] nums) {
+
+        int n = nums.length;
+        int count1 = 0;
+        int count2 = 0;
+        int answer1 = 0;
+        int answer2 = 1;
+
+        for (int num : nums) {
+            if (num == answer1) {
+                count1++;
+            } else if (num == answer2) {
+                count2++;
+            } else if (count1 == 0) {
+                answer1 = num;
+                count1++;
+            } else if (count2 == 0) {
+                answer2 = num;
+                count2++;
+            } else {
+                count1--;
+                count2--;
+            }
+        }
+
+        count1 = 0;
+        count2 = 0;
+        for (int num : nums) {
+            if (num == answer1)
+                count1++;
+            else if (num == answer2)
+                count2++;
+        }
+
+        List<Integer> result = new ArrayList<>();
+        if (count1 > n / 3)
+            result.add(answer1);
+        if (count2 > n / 3)
+            result.add(answer2);
+
+        Collections.sort(result);
+        return result;
+    }
+
+    // Ques 3: Leetcode - MaxConsecutiveOnes
+    // input: {1,1,0,1,1,1};
+    // output: 3
+    // https://leetcode.com/problems/max-consecutive-ones
+    public static int findMaxConsecutiveOnes(int[] nums) {
+
+        int n = nums.length;
+        int count = 0;
+        int answer = 0;
+
+        for (int i = 0; i < n; i++) {
+
+            if (nums[i] == 1) {
+                count++;
+            } else {
+                count = 0;
+            }
+
+            if (count > answer) {
+                answer = count;
+            }
+        }
+
+        return answer;
+    }
+
+    // Ques 1: LeetCode - EASY 2D Array
     // Pascal Triangle
     // Input: numRows = 5
     // Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
@@ -196,24 +305,31 @@ public class Array10LeetCode {
 
     public static void main(String[] args) {
 
-        System.out.println(generate(5));
+        int[] nums = { 2, 2, 1, 1, 1, 2, 2 };
+        System.out.println(majorityElement(nums));
+        System.out.println(majorityElementII(nums));
 
-        int[] arr = { 1, 2, 3 };
-        System.out.println("Minimum time: " + minimumTime(arr, 5));
+        // int[] nums = { 1, 1, 0, 1, 1, 1 };
+        // System.out.println(findMaxConsecutiveOnes(nums));
 
-        int[] arr2 = { 1, 2, 3 };
-        int[] arr3 = { 3, 2, 1 };
-        int[] arr4 = { 1, 1, 5 };
-        nextPermutation(arr2);
-        nextPermutation(arr3);
-        nextPermutation(arr4);
+        // System.out.println(generate(5));
 
-        int[] minHeap = { 3, 2, 1, 5, 6, 4 };
-        int k = 2;
-        System.out.println("Kth Largest Element: " + findKthLargest(minHeap, k));
+        // int[] arr = { 1, 2, 3 };
+        // System.out.println("Minimum time: " + minimumTime(arr, 5));
 
-        int[] rotate = { 1, 2, 3, 4, 5, 6 };
-        // rotateA(rotate, 3);
-        rotateTimes(rotate, 3);
+        // int[] arr2 = { 1, 2, 3 };
+        // int[] arr3 = { 3, 2, 1 };
+        // int[] arr4 = { 1, 1, 5 };
+        // nextPermutation(arr2);
+        // nextPermutation(arr3);
+        // nextPermutation(arr4);
+
+        // int[] minHeap = { 3, 2, 1, 5, 6, 4 };
+        // int k = 2;
+        // System.out.println("Kth Largest Element: " + findKthLargest(minHeap, k));
+
+        // int[] rotate = { 1, 2, 3, 4, 5, 6 };
+        // // rotateA(rotate, 3);
+        // rotateTimes(rotate, 3);
     }
 }

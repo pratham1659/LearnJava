@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Array01Basic {
 
-    // Array concept
     void singleArray() {
         // Representation of Arrays
         // int[] uid = new int[2];
@@ -38,41 +37,6 @@ public class Array01Basic {
 
         System.out.println(name[1]);
 
-    }
-
-    void multiArray() {
-        // int[][] arr2d = new int [3][3];
-
-        int[][] arr2d = { { 23, 34, 34 }, { 34, 78, 98 }, { 56, 76, 67 } };
-
-        System.out.println(arr2d[0][0]); // 23
-        System.out.println(arr2d[1][1]); // 78
-
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(arr2d[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-
-    // Input Array
-    public static void inputArray() {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
-        sc.close();
-    }
-
-    // Printing Array Methods
-    public static void printArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
     }
 
     // Ques 1. Find Sum of Array
@@ -125,10 +89,12 @@ public class Array01Basic {
     }
 
     // Ques 5. check Array in Incresing order or not
+    // int[] arr1 = {1, 2, 3, 4, 5}; // Strictly increasing
+    // int[] arr2 = { 3, 3, 4, 5, 6 }; // Non-decreasing (equal allowed)
     public static boolean isIncreasedArray(int[] arr) {
         int i = 1;
         while (i < arr.length) {
-            if (arr[i] >= arr[i - 1]) {
+            if (arr[i] <= arr[i - 1]) {
                 return false;
             }
             i++;
@@ -140,12 +106,12 @@ public class Array01Basic {
     public static boolean isDecreasedArray(int[] arr) {
         int i = 1;
         while (i < arr.length) {
-            if (arr[i] <= arr[i - 1]) {
-                return true;
+            if (arr[i] >= arr[i - 1]) {
+                return false;
             }
             i++;
         }
-        return false;
+        return true;
 
     }
 
@@ -265,13 +231,16 @@ public class Array01Basic {
 
     public static void main(String[] args) {
 
-        Array01Basic obj = new Array01Basic();
+        // Array01Basic obj = new Array01Basic();
 
-        obj.singleArray();
-        obj.multiArray();
+        // obj.singleArray();
 
         int arr[] = { 1, 2, 3, 4, 5 };
+        int[] arr1 = { 5, 4, 3, 2, 1 };
         System.out.println(checkArray(arr));
+
+        System.out.println(isIncreasedArray(arr1));
+        System.out.println(isDecreasedArray(arr));
 
     }
 }

@@ -2,7 +2,7 @@ package Java05Array;
 
 import java.util.Scanner;
 
-public class Array09Matrix {
+public class Array07Matrix {
 
     // Practice in 2D Array in Java
     public static void practice(int[][] nums) {
