@@ -141,8 +141,8 @@ public class Array08Practice {
 
     // Ques 5. Find the total number of pairs in the Array whose sum is equal key.
     // int[] arr1 = { 1, 2, 3, 4, 5 };
-    // int key1 = 5;System.out.println("Total Pairs: "+
-    // countPairs(arr1, key1)); // Output: 2
+    // int key = 5;
+    // Output: 2
 
     // int[] arr2 = {1, 1, 1, 1};
     // int key2 = 2;
@@ -369,20 +369,6 @@ public class Array08Practice {
         int maxProduct2 = nums[0] * nums[1] * nums[n - 1];
 
         return Math.max(maxProduct1, maxProduct2);
-    }
-
-    // Ques 10: program to find number of occurrences of an element in an array.
-    public static int occurrencesArray(int[] arr, int num) {
-        int count = 0;
-        int i = 0;
-
-        while (i < arr.length) {
-            if (arr[i] == num) {
-                count++;
-            }
-            i++;
-        }
-        return count;
     }
 
     // Ques 11: Program to find the maximum and minimum element in an array.

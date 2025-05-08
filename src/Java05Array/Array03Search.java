@@ -225,6 +225,34 @@ public class Array03Search {
         return totalSum - sumArr;
     }
 
+    // Chocolate Distribution Problem
+    // int[] packets = {7, 3, 2, 4, 9, 12, 56};
+    // int M = 3;
+    public static int ChocolateDistribution(int[] arr, int M) {
+        int N = arr.length;
+        if (M == 0 || N == 0)
+            return 0;
+
+        Arrays.sort(arr); // Sort the array
+
+        if (N < M) {
+            System.out.println("Not enough packets");
+            return -1;
+        }
+
+        int minDiff = Integer.MAX_VALUE;
+
+        // Traverse the sorted array and find the minimum difference
+        for (int i = 0; i + M - 1 < N; i++) {
+            int diff = arr[i + M - 1] - arr[i];
+            if (diff < minDiff) {
+                minDiff = diff;
+            }
+        }
+
+        return minDiff;
+    }
+
     // 1. Find Missing Number in Array
     public static void findMissingNumber(int[] arr) {
 

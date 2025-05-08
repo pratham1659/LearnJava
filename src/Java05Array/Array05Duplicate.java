@@ -2,6 +2,9 @@ package Java05Array;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class Array05Duplicate {
 
@@ -47,6 +50,49 @@ public class Array05Duplicate {
         // Display the frequencies using a normal for loop on keySet
         for (Integer key : freqMap.keySet()) {
             System.out.println("Element: " + key + " → Frequency: " + freqMap.get(key));
+        }
+    }
+
+    //
+    public static void findDuplicatesUsingMap(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+
+        System.out.println("Duplicates are:");
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (entry.getValue() > 1) {
+                System.out.println(entry.getKey());
+            }
+        }
+    }
+
+    //
+
+    public static void FindDuplicatesUsingSet(int[] nums) {
+        Set<Integer> seen = new HashSet<>();
+        Set<Integer> duplicates = new HashSet<>();
+
+        for (int num : nums) {
+            if (!seen.add(num)) {
+                duplicates.add(num);
+            }
+        }
+
+        System.out.println("Duplicates are: " + duplicates);
+    }
+
+    public static void findDuplicates(int[] nums) {
+        System.out.println("Duplicates:");
+        for (int i = 0; i < nums.length; i++) {
+            int index = Math.abs(nums[i]);
+            if (nums[index - 1] < 0) {
+                System.out.println(index); // Found duplicate
+            } else {
+                nums[index - 1] = -nums[index - 1]; // Mark visited
+            }
         }
     }
 
