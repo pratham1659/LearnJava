@@ -215,6 +215,43 @@ public class Array08Practice {
         return maxSum;
     }
 
+    // Ques 8: Move all zeroes to the start and ones to the end of a given array of
+    // random integers
+    public static int[] rearrangeArray(int[] nums) {
+        int n = nums.length;
+        int[] output = new int[n];
+        int start = 0;
+        int end = n - 1;
+
+        // Step 1: Place all 0s at the start and 1s at the end
+        for (int num : nums) {
+            if (num == 0) {
+                output[start++] = 0;
+            } else if (num == 1) {
+                output[end--] = 1;
+            }
+        }
+
+        // Step 2: Place remaining elements in the middle
+        for (int num : nums) {
+            if (num != 0 && num != 1) {
+                output[start++] = num;
+            }
+        }
+
+        // Reverse the 1s section as they were placed backwards
+        int left = end + 1, right = n - 1;
+        while (left < right) {
+            int temp = output[left];
+            output[left] = output[right];
+            output[right] = temp;
+            left++;
+            right--;
+        }
+
+        return output;
+    }
+
     // Ques 4. Find Substing of Max Product Sub Array
     // Time and Space : O(N) and O(1)
     // Input: nums=[2,3,-2,4]
@@ -991,6 +1028,10 @@ public class Array08Practice {
         // System.out.println(searchElement(num2DArray, 8));
 
         // calculateSumAndAverage(num2DArray);
+
+        int[] nums = { 5, 0, 3, 1, 0, 4, 1, 7, 1 };
+        int[] result = rearrangeArray(nums);
+        System.out.println("Modified Array: " + Arrays.toString(result));
 
         // int sum = calculateDiagonalSum(num2DArray);
         // System.out.println("Sum of diagonal elements: " + sum);

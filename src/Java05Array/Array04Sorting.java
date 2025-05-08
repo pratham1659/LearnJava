@@ -110,13 +110,18 @@ public class Array04Sorting {
     public static void selectionSort(int[] arr) {
 
         int n = arr.length;
+
+        // One by one move boundary of unsorted subarray
         for (int i = 0; i < n - 1; i++) {
+            // Find the minimum element in unsorted array
             int minIndex = i;
             for (int j = i + 1; j < n; j++) {
                 if (arr[j] < arr[minIndex]) {
                     minIndex = j;
                 }
             }
+
+            // Swap the found minimum element with the first element
             int temp = arr[minIndex];
             arr[minIndex] = arr[i];
             arr[i] = temp;
@@ -146,32 +151,65 @@ public class Array04Sorting {
     // 9. Java Program for MERGE SORT
     // How it works: Divide the array into halves, sort each recursively, and merge.
     // Time complexity: O(n log n)
-    private static void merge(int[] arr, int left, int mid, int right) {
-        int[] temp = new int[right - left + 1];
-        int i = left, j = mid + 1, k = 0;
 
-        while (i <= mid && j <= right) {
-            temp[k++] = (arr[i] <= arr[j]) ? arr[i++] : arr[j++];
-        }
+    // Main function that sorts arr[l..r] using merge()
+    public static void mergeSort(int[] arr, int l, int r) {
+        if (l < r) {
+            int m = (l + r) / 2;
 
-        while (i <= mid)
-            temp[k++] = arr[i++];
-        while (j <= right)
-            temp[k++] = arr[j++];
+            // Sort first half
+            mergeSort(arr, l, m);
 
-        for (int p = 0; p < temp.length; p++) {
-            arr[left + p] = temp[p];
+            // Sort second half
+            mergeSort(arr, m + 1, r);
+
+            // Merge the sorted halves
+            merge(arr, l, m, r);
         }
     }
 
-    public static void mergeSort(int[] arr, int left, int right) {
-        if (left < right) {
-            int mid = (left + right) / 2;
+    // Merge two sorted subarrays arr[l..m] and arr[m+1..r]
+    public static void merge(int[] arr, int l, int m, int r) {
+        int n1 = m - l + 1; // Size of left subarray
+        int n2 = r - m; // Size of right subarray
 
-            mergeSort(arr, left, mid);
-            mergeSort(arr, mid + 1, right);
+        // Create temporary arrays
+        int[] left = new int[n1];
+        int[] right = new int[n2];
 
-            merge(arr, left, mid, right);
+        // Copy data to temp arrays
+        for (int i = 0; i < n1; i++)
+            left[i] = arr[l + i];
+        for (int j = 0; j < n2; j++)
+            right[j] = arr[m + 1 + j];
+
+        // Merge temp arrays back into arr[l..r]
+        int i = 0, j = 0;
+        int k = l;
+
+        while (i < n1 && j < n2) {
+            if (left[i] <= right[j]) {
+                arr[k] = left[i];
+                i++;
+            } else {
+                arr[k] = right[j];
+                j++;
+            }
+            k++;
+        }
+
+        // Copy remaining elements of left[], if any
+        while (i < n1) {
+            arr[k] = left[i];
+            i++;
+            k++;
+        }
+
+        // Copy remaining elements of right[], if any
+        while (j < n2) {
+            arr[k] = right[j];
+            j++;
+            k++;
         }
     }
 
@@ -181,33 +219,40 @@ public class Array04Sorting {
     // Time complexity:
     // A) Best & Avg: O(n log n)
     // B) Worst: O(n²) — happens when pivot is worst case
+    // Function to perform quicksort on arr between indices low and high
     public static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
-            int pIndex = partition(arr, low, high);
-            quickSort(arr, low, pIndex - 1);
-            quickSort(arr, pIndex + 1, high);
+            // Partition the array and get the pivot index
+            int pi = partition(arr, low, high);
+
+            // Recursively sort elements before and after partition
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
         }
     }
 
-    private static int partition(int[] arr, int low, int high) {
-        int pivot = arr[high];
-        int i = low - 1;
+    // Partition function to place pivot element at correct position
+    public static int partition(int[] arr, int low, int high) {
+        int pivot = arr[high]; // Choose the last element as pivot
+        int i = low - 1; // Index of smaller element
 
         for (int j = low; j < high; j++) {
+            // If current element is smaller or equal to pivot
             if (arr[j] <= pivot) {
                 i++;
-                // swap arr[i] & arr[j]
+                // Swap arr[i] and arr[j]
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
         }
 
-        // swap arr[i+1] & pivot
+        // Swap arr[i+1] and pivot (arr[high])
         int temp = arr[i + 1];
         arr[i + 1] = arr[high];
         arr[high] = temp;
-        return i + 1;
+
+        return i + 1; // Return the pivot index
     }
 
     // 11. Java Program for HEAP SORT

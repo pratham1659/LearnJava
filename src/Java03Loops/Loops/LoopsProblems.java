@@ -237,19 +237,19 @@ public class LoopsProblems {
         // expectThree(45);
         // primeFactor(200);
         // findFibonnaci(12);
-        binaryToDecimal(1011);
-        valueNcr(5, 2);
+        // binaryToDecimal(1011);
+        // valueNcr(5, 2);
 
-        int[] oddEven = { 2, 3, 4, 5, 6, 7, 8, 9 };
-        seperateOddEven(oddEven.length, oddEven);
+        // int[] oddEven = { 2, 3, 4, 5, 6, 7, 8, 9 };
+        // seperateOddEven(oddEven.length, oddEven);
 
-        int[] twoSumArray = { 2, 7, 13, 15, 19 };
-        System.out.println(twoSum(twoSumArray, 9));
+        // int[] twoSumArray = { 2, 7, 13, 15, 19 };
+        // System.out.println(twoSum(twoSumArray, 9));
 
-        int[] smallArr = { 10, 12, 5, 7, 1, 4 };
+        // int[] smallArr = { 10, 12, 5, 7, 1, 4 };
 
-        s2ndSmallestInArray(smallArr);
+        // s2ndSmallestInArray(smallArr);
 
-        reverseArrays(smallArr);
+        // reverseArrays(smallArr);
     }
 }
