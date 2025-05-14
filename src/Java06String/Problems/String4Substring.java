@@ -57,6 +57,25 @@ public class String4Substring {
         }
     }
 
+    public static void findSubstringInWords(String[] words) {
+        int n = words.length;
+
+        List<String> substring = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+
+                if (!words[i].equalsIgnoreCase(words[j])) {
+                    if (words[j].contains(words[i])) {
+                        substring.add(words[i]);
+                    }
+                }
+            }
+
+        }
+        System.out.println(substring);
+    }
+
     public static void main(String[] args) {
 
         longestSubstring("abbac");

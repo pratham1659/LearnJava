@@ -3,25 +3,24 @@ import java.util.*;
 
 public class Test {
 
-    public static void practice(int[] arr) {
+    public static void practice(String[] nums) {
+        int n = nums.length;
 
-        int index = 3;
-        int value = 3;
+        List<String> substring = new ArrayList<>();
 
-        if (index >= 0 && index < arr.length) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
 
-            int[] newArr = new int[arr.length + 1];
-            for (int i = 0, j = 0; i < newArr.length; i++) {
-                if (i == index) {
-                    newArr[i] = value;
-                } else {
-                    newArr[i] = arr[j++];
+                if (!nums[i].equalsIgnoreCase(nums[j])) {
+                    if (nums[j].contains(nums[i])) {
+                        substring.add(nums[i]);
+                    }
                 }
             }
-            System.out.println(Arrays.toString(newArr));
-        } else {
-            System.out.println(Arrays.toString(arr));
+
         }
+        System.out.println(substring);
+
     }
 
     public static void main(String[] args) throws IOException {
@@ -33,16 +32,18 @@ public class Test {
         int n = sc.nextInt();
         // int n2 = sc.nextInt();
 
-        int[] arr = new int[n];
+        // int[] arr = new int[n];
+        String[] str = new String[n];
 
         for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+            // arr[i] = sc.nextInt();
+            str[i] = sc.next();
         }
 
         // int n1 = 5;
         // int n2 = 5;
-        practice(arr);
-        // System.out.println(practice(arr, 3));
+        practice(str);
+        // System.out.println(practice(arr));
         // System.out.println(practice(str));
 
         sc.close();

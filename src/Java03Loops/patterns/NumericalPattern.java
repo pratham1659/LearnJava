@@ -413,6 +413,48 @@ public class NumericalPattern {
         }
     }
 
+    // Ques 10: rhombus Alternative Number print using while loop
+    // / / / /11 12 13 14
+    // / / /18 17 16 15
+    // / /19 20 21 22
+    // 26 25 24 23
+    public static void rhombusPatternPrint(int nums) {
+        int number = 11;
+        int rows = nums;
+        int columns = rows;
+
+        int i = 0;
+        while (i < rows) {
+            int j = 0;
+            int space = rows - i;
+            while (j < space) {
+                System.out.print("  ");
+                j++;
+            }
+
+            j = 0;
+            if (i % 2 == 0) {
+                while (j < rows) {
+                    System.out.print(number + " ");
+                    number++;
+                    j++;
+                }
+            } else {
+                int temp = number + columns - 1; // Temporary variable for reverse order
+                while (j < columns) {
+                    System.out.print(temp + " ");
+                    temp--; // Decrement for reverse order
+                    j++;
+                }
+                number += columns;
+            }
+
+            System.out.println();
+            i++;
+        }
+
+    }
+
     // Ques 12: Alphabet Another Pattern - 1
     public static void alphabetPatternAnother1(int n) {
         System.out.println("Ques 12: Alphabet Another Pattern - 1");
