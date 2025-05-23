@@ -3,24 +3,21 @@ import java.util.*;
 
 public class Test {
 
-    public static void practice(String[] nums) {
-        int n = nums.length;
+    public static void practice(int[] num, int[] num1) {
+        int n = num.length;
+        int n2 = num1.length;
 
-        List<String> substring = new ArrayList<>();
+        List<Integer> common = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-
-                if (!nums[i].equalsIgnoreCase(nums[j])) {
-                    if (nums[j].contains(nums[i])) {
-                        substring.add(nums[i]);
-                    }
+            for (int j = 0; j < n2; j++) {
+                if (num[i] == num1[j]) {
+                    common.add(num[i]);
                 }
             }
-
         }
-        System.out.println(substring);
 
+        System.out.println(common);
     }
 
     public static void main(String[] args) throws IOException {
@@ -32,17 +29,23 @@ public class Test {
         int n = sc.nextInt();
         // int n2 = sc.nextInt();
 
-        // int[] arr = new int[n];
-        String[] str = new String[n];
+        int[] arr = new int[n];
+        int[] arr2 = new int[n];
+        // String[] str = new String[n];
 
         for (int i = 0; i < n; i++) {
-            // arr[i] = sc.nextInt();
-            str[i] = sc.next();
+            arr[i] = sc.nextInt();
+            // str[i] = sc.next();
+        }
+
+        for (int i = 0; i < n; i++) {
+            arr2[i] = sc.nextInt();
+            // str[i] = sc.next();
         }
 
         // int n1 = 5;
         // int n2 = 5;
-        practice(str);
+        practice(arr, arr2);
         // System.out.println(practice(arr));
         // System.out.println(practice(str));
 
